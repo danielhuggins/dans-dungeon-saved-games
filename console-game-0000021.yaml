@@ -1,0 +1,391 @@
+channel_id: console-game-0000021
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I draw my sword and wave it menacingly
+  dm: |-
+    **TestHero3**:
+    Hearing or seeing the threatening flourish, the nearest guard turns sharply to assess the situation.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Estimating consequences and probabilities**
+
+    I'm considering the consequences of failing to draw a sword cleanly. I want to generate about eight potential outcomes. For proactive NPCs, I could have actions like an innkeeper cleaning glasses or a guard yawning. I’ll also outline 3-6 reactive behaviors, such as a guard investigating or a child running. I need to assign probabilities for each event occurring in a few seconds, using a proper scale. For example, self-cuts could be extremely rare, and I might estimate their probability at 0.01.
+    **Defining probabilities and events**
+
+    I'm planning to create events and their probabilities, as well as joint probabilities for specific pairs. I think it would be interesting to explore combinations like intimidation and a guard investigating, or a self-cut overshadowing intimidation.
+
+    I'll list potential consequences, assigning probabilities to each. For example, intimidation might have a probability of 0.38, while the sword making a loud whoosh could be around 0.72. Additionally, I want to define several proactive NPC actions with their probabilities, like a guard shifting weight or a merchant counting coins.
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero3
+    action_taken: I draw my sword and wave it menacingly
+    consequence_response:
+      potential_consequences:
+      - id: IntimidationSuccess
+        description: |-
+          At least one nearby character visibly flinches or steps back, clearly intimidated by the threatening display.
+        marginal_probability: 0.37
+        joint_probabilities:
+          and GuardInvestigatesNoise: 0.17
+          and CivilianShrieks: 0.09
+      - id: WeaponGlint
+        description: |-
+          Light catches the drawn blade, sending a sharp glint that momentarily dazzles anyone directly in front.
+        marginal_probability: 0.28
+        joint_probabilities:
+          and GuardInvestigatesNoise: 0.11
+          and CatChasesRat: 0.028
+      - id: MinorSelfCut
+        description: |-
+          The wielder nicks their own forearm or hand while flourishing the sword, causing a shallow bleed.
+        marginal_probability: 0.007
+        joint_probabilities:
+          and CivilianShrieks: 0.005
+          and DogBarks: 0.002
+      - id: KnockOverTankard
+        description: |-
+          The sweeping sword tip clips a nearby tankard or mug, sending its contents spilling across the floor.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and TavernKeeperShouts: 0.04
+          and DogBarks: 0.015
+      - id: RopeSway
+        description: |-
+          The blade brushes a dangling rope or sign, setting it swaying noticeably overhead.
+        marginal_probability: 0.012
+        joint_probabilities:
+          and SparkIgnition: 0.0012
+          and GuardShiftsWeight: 0.004
+      - id: WeaponHum
+        description: |-
+          A faint metallic hum resonates from the blade as it moves, hinting at dormant enchantment reacting to local Power Fields.
+        marginal_probability: 0.006
+        joint_probabilities:
+          and HiddenInscriptionRevealed: 0.0005
+          and GuardInvestigatesNoise: 0.001
+      - id: SparkIgnition
+        description: |-
+          The sword edge strikes a metal fixture, throwing tiny sparks that land on stray straw and begin a slow smoulder.
+        marginal_probability: 0.002
+        joint_probabilities:
+          and CivilianShrieks: 0.0013
+          and GuardInvestigatesNoise: 0.001
+      - id: HiddenInscriptionRevealed
+        description: |-
+          The motion exposes a previously obscured runic inscription—either on the blade or a nearby wall—visible for a brief instant.
+        marginal_probability: 0.0007
+        joint_probabilities:
+          and IntimidationSuccess: 0.0003
+          and CatChasesRat: 0.0001
+      npc_proactive_actions:
+      - id: GuardShiftsWeight
+        description: |-
+          A bored town guard independently adjusts his stance and rests a hand on his own weapon, surveying the area.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and GuardInvestigatesNoise: 0.04
+          and DogBarks: 0.03
+      - id: BeggarApproaches
+        description: |-
+          A nearby beggar decides this is a good moment to shuffle closer, palm extended for alms.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and IntimidationSuccess: 0.06
+          and CivilianShrieks: 0.02
+      - id: CatChasesRat
+        description: |-
+          A scrawny cat spots a rat and darts after it across the scene, oblivious to human drama.
+        marginal_probability: 0.14
+        joint_probabilities:
+          and DogBarks: 0.04
+          and WeaponGlint: 0.028
+      - id: MerchantCountsCoins
+        description: |-
+          A merchant on the periphery idly tallies his coin pouch, focused on his own profits.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and IntimidationSuccess: 0.05
+          and GuardInvestigatesNoise: 0.035
+      - id: DogSniffGround
+        description: A stray dog continues rooting around for scraps, nose to the ground.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and CivilianShrieks: 0.03
+          and CatChasesRat: 0.04
+      - id: SparrowDivesForCrumbs
+        description: A sparrow swoops down to snatch crumbs from the dirt, fluttering rapidly.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and CatChasesRat: 0.02
+          and WeaponGlint: 0.03
+      npc_reactions:
+      - id: GuardInvestigatesNoise
+        description: |-
+          Hearing or seeing the threatening flourish, the nearest guard turns sharply to assess the situation.
+        marginal_probability: 0.23
+        joint_probabilities:
+          and DogBarks: 0.08
+          and IntimidationSuccess: 0.17
+      - id: CivilianShrieks
+        description: A nearby civilian lets out a startled cry at the sudden display of steel.
+        marginal_probability: 0.13
+        joint_probabilities:
+          and DogBarks: 0.05
+          and IntimidationSuccess: 0.09
+      - id: TavernKeeperShouts
+        description: |-
+          The tavern keeper (or stall owner) yells for calm and warns against property damage.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and KnockOverTankard: 0.04
+      - id: DogBarks
+        description: Startled by sudden movement and noise, the stray dog breaks into loud barking.
+        marginal_probability: 0.16
+        joint_probabilities:
+          and CatChasesRat: 0.04
+      - id: ChildRuns
+        description: A small child who had been playing nearby bolts for cover at the flash of steel.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and CivilianShrieks: 0.04
+    actual_consequences:
+    - id: GuardInvestigatesNoise
+      description: |-
+        Hearing or seeing the threatening flourish, the nearest guard turns sharply to assess the situation.
+      marginal_probability: 0.23
+    probability_debug_info:
+      random_value: 0.43122853927571014
+      selected_outcome: '{GuardInvestigatesNoise}'
+      probability_ranges:
+        '{}':
+          probability: 0.20418742932406564
+          range_start: 0.0
+          range_end: 0.20418742932406564
+        '{BeggarApproaches}':
+          probability: 0.02523664856814295
+          range_start: 0.20418742932406564
+          range_end: 0.2294240778922086
+        '{CatChasesRat}':
+          probability: 0.033239814076010676
+          range_start: 0.2294240778922086
+          range_end: 0.26266389196821927
+        '{ChildRuns}':
+          probability: 0.015368946293209229
+          range_start: 0.26266389196821927
+          range_end: 0.2780328382614285
+        '{CivilianShrieks}':
+          probability: 0.030510765301297205
+          range_start: 0.2780328382614285
+          range_end: 0.3085436035627257
+        '{DogBarks}':
+          probability: 0.03889284368077439
+          range_start: 0.3085436035627257
+          range_end: 0.3474364472435001
+        '{DogSniffGround}':
+          probability: 0.05104685733101644
+          range_start: 0.3474364472435001
+          range_end: 0.39848330457451653
+        '{GuardInvestigatesNoise}':
+          probability: 0.060991050317578066
+          range_start: 0.39848330457451653
+          range_end: 0.4594743548920946
+        '{GuardShiftsWeight}':
+          probability: 0.010746706806529782
+          range_start: 0.4594743548920946
+          range_end: 0.4702210616986244
+        '{HiddenInscriptionRevealed}':
+          probability: 0.00014303132245258032
+          range_start: 0.4702210616986244
+          range_end: 0.47036409302107696
+        '{IntimidationSuccess}':
+          probability: 0.11991960134905444
+          range_start: 0.47036409302107696
+          range_end: 0.5902836943701314
+        '{KnockOverTankard}':
+          probability: 0.010746706806529782
+          range_start: 0.5902836943701314
+          range_end: 0.6010304011766612
+        '{MerchantCountsCoins}':
+          probability: 0.044821630827233894
+          range_start: 0.6010304011766612
+          range_end: 0.6458520320038951
+        '{MinorSelfCut}':
+          probability: 0.0014393877193036309
+          range_start: 0.6458520320038951
+          range_end: 0.6472914197231987
+        '{RopeSway}':
+          probability: 0.0024800092630453685
+          range_start: 0.6472914197231987
+          range_end: 0.6497714289862441
+        '{SparkIgnition}':
+          probability: 0.00040919324513843947
+          range_start: 0.6497714289862441
+          range_end: 0.6501806222313825
+        '{SparrowDivesForCrumbs}':
+          probability: 0.02019436114194051
+          range_start: 0.6501806222313825
+          range_end: 0.670374983373323
+        '{TavernKeeperShouts}':
+          probability: 0.025236648568142894
+          range_start: 0.670374983373323
+          range_end: 0.6956116319414659
+        '{WeaponGlint}':
+          probability: 0.07940622251491447
+          range_start: 0.6956116319414659
+          range_end: 0.7750178544563804
+        '{WeaponHum}':
+          probability: 0.001232519694109091
+          range_start: 0.7750178544563804
+          range_end: 0.7762503741504895
+        '{BeggarApproaches, CivilianShrieks}':
+          probability: 0.0037709934642052856
+          range_start: 0.7762503741504895
+          range_end: 0.7800213676146948
+        '{BeggarApproaches, IntimidationSuccess}':
+          probability: 0.014821523762242661
+          range_start: 0.7800213676146948
+          range_end: 0.7948428913769374
+        '{CatChasesRat, DogBarks}':
+          probability: 0.00633139315733533
+          range_start: 0.7948428913769374
+          range_end: 0.8011742845342728
+        '{CatChasesRat, DogSniffGround}':
+          probability: 0.008309953519002655
+          range_start: 0.8011742845342728
+          range_end: 0.8094842380532754
+        '{CatChasesRat, HiddenInscriptionRevealed}':
+          probability: 2.328416877139805e-05
+          range_start: 0.8094842380532754
+          range_end: 0.8095075222220468
+        '{CatChasesRat, SparrowDivesForCrumbs}':
+          probability: 0.0032874541393856926
+          range_start: 0.8095075222220468
+          range_end: 0.8127949763614325
+        '{CatChasesRat, WeaponGlint}':
+          probability: 0.012926594362893007
+          range_start: 0.8127949763614325
+          range_end: 0.8257215707243255
+        '{ChildRuns, CivilianShrieks}':
+          probability: 0.0022965092162267053
+          range_start: 0.8257215707243255
+          range_end: 0.8280180799405522
+        '{CivilianShrieks, DogBarks}':
+          probability: 0.005811574343104198
+          range_start: 0.8280180799405522
+          range_end: 0.8338296542836564
+        '{CivilianShrieks, DogSniffGround}':
+          probability: 0.0076276913253242595
+          range_start: 0.8338296542836564
+          range_end: 0.8414573456089807
+        '{CivilianShrieks, IntimidationSuccess}':
+          probability: 0.01791902089123798
+          range_start: 0.8414573456089807
+          range_end: 0.8593763665002186
+        '{CivilianShrieks, MinorSelfCut}':
+          probability: 0.00021508092357414021
+          range_start: 0.8593763665002186
+          range_end: 0.8595914474237928
+        '{CivilianShrieks, SparkIgnition}':
+          probability: 6.114381823907333e-05
+          range_start: 0.8595914474237928
+          range_end: 0.8596525912420319
+        '{DogBarks, GuardInvestigatesNoise}':
+          probability: 0.011617342917633944
+          range_start: 0.8596525912420319
+          range_end: 0.8712699341596658
+        '{DogBarks, GuardShiftsWeight}':
+          probability: 0.002046991772672313
+          range_start: 0.8712699341596658
+          range_end: 0.8733169259323381
+        '{DogBarks, KnockOverTankard}':
+          probability: 0.002046991772672313
+          range_start: 0.8733169259323381
+          range_end: 0.8753639177050104
+        '{DogBarks, MinorSelfCut}':
+          probability: 0.0002741690893911519
+          range_start: 0.8753639177050104
+          range_end: 0.8756380867944016
+        '{GuardInvestigatesNoise, GuardShiftsWeight}':
+          probability: 0.0032100552798725035
+          range_start: 0.8756380867944016
+          range_end: 0.8788481420742741
+        '{GuardInvestigatesNoise, IntimidationSuccess}':
+          probability: 0.03582014066270456
+          range_start: 0.8788481420742741
+          range_end: 0.9146682827369786
+        '{GuardInvestigatesNoise, MerchantCountsCoins}':
+          probability: 0.013388279338004905
+          range_start: 0.9146682827369786
+          range_end: 0.9280565620749835
+        '{GuardInvestigatesNoise, SparkIgnition}':
+          probability: 0.00012222655374261038
+          range_start: 0.9280565620749835
+          range_end: 0.9281787886287262
+        '{GuardInvestigatesNoise, WeaponGlint}':
+          probability: 0.023718741790169307
+          range_start: 0.9281787886287262
+          range_end: 0.9518975304188955
+        '{GuardInvestigatesNoise, WeaponHum}':
+          probability: 0.00036815523330524513
+          range_start: 0.9518975304188955
+          range_end: 0.9522656856522007
+        '{GuardShiftsWeight, RopeSway}':
+          probability: 0.00013052680331815392
+          range_start: 0.9522656856522007
+          range_end: 0.9523962124555189
+        '{HiddenInscriptionRevealed, IntimidationSuccess}':
+          probability: 8.40025227102359e-05
+          range_start: 0.9523962124555189
+          range_end: 0.9524802149782291
+        '{HiddenInscriptionRevealed, WeaponHum}':
+          probability: 8.633681435332718e-07
+          range_start: 0.9524802149782291
+          range_end: 0.9524810783463726
+        '{IntimidationSuccess, MerchantCountsCoins}':
+          probability: 0.026323814930280243
+          range_start: 0.9524810783463726
+          range_end: 0.9788048932766529
+        '{KnockOverTankard, TavernKeeperShouts}':
+          probability: 0.0013282446614811816
+          range_start: 0.9788048932766529
+          range_end: 0.9801331379381341
+        '{RopeSway, SparkIgnition}':
+          probability: 4.969958443012956e-06
+          range_start: 0.9801331379381341
+          range_end: 0.9801381078965771
+        '{SparrowDivesForCrumbs, WeaponGlint}':
+          probability: 0.007853362666310204
+          range_start: 0.9801381078965771
+          range_end: 0.9879914705628873
+        '{BeggarApproaches, CivilianShrieks, IntimidationSuccess}':
+          probability: 0.0022147104472316492
+          range_start: 0.9879914705628873
+          range_end: 0.9902061810101189
+        '{CatChasesRat, SparrowDivesForCrumbs, WeaponGlint}':
+          probability: 0.0012784543875388188
+          range_start: 0.9902061810101189
+          range_end: 0.9914846353976577
+        '{CivilianShrieks, DogBarks, MinorSelfCut}':
+          probability: 4.0967794966539905e-05
+          range_start: 0.9914846353976577
+          range_end: 0.9915256031926243
+        '{DogBarks, GuardInvestigatesNoise, GuardShiftsWeight}':
+          probability: 0.0006114391009280906
+          range_start: 0.9915256031926243
+          range_end: 0.9921370422935524
+        '{GuardInvestigatesNoise, IntimidationSuccess, MerchantCountsCoins}':
+          probability: 0.007862957706447293
+          range_start: 0.9921370422935524
+          range_end: 0.9999999999999997
+characters:
+  cli-user: TestHero3
+saved_at: '2025-07-19T20:27:35.643631'

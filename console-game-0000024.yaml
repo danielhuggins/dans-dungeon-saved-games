@@ -1,0 +1,282 @@
+channel_id: console-game-0000024
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I make noise by dropping a coin
+  dm: |-
+    **TestHero5**:
+    The coin strikes a hard surface, producing a sharp metallic clink clearly audible within several paces.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Analyzing GM Instructions**
+
+    I need to respond to the Game Master's request about determining the next character for the spotlight. They've asked for a thorough step-by-step analysis but want the final output strictly in JSON format. They emphasize that each character ID must appear at least three times in a specific array for comprehensive probability relationships. However, I'm noticing an inconsistency — the final format doesn’t include this required array. I’ll need to clarify that it might have been an oversight and address it accordingly in my response.
+    **Creating the JSON Structure**
+
+    I need to adapt the response by including a new key for 'spotlight_probability_comparisons.' This means that my final JSON will have two keys: 'next_actor' and the new array. The comparisons must include various actors, ensuring that each appears at least three times. The actors I've identified include Aethelwynn, Aethelflaed, Osric, and TestHero5. Given the context, it seems logical to designate TestHero5 as the next actor since they have agency in this exploration. I’ll need to create pairwise probability ratios for each actor and format it correctly as valid JSON without any additional comments.
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero5
+    action_taken: I make noise by dropping a coin
+    consequence_response:
+      potential_consequences:
+      - id: CoinClinkNoise
+        description: |-
+          The coin strikes a hard surface, producing a sharp metallic clink clearly audible within several paces.
+        marginal_probability: 0.99999
+        joint_probabilities:
+          and GuardInvestigatesNoise: 0.22
+          and CatPouncesCoin: 0.06
+      - id: CoinRollsAway
+        description: |-
+          The coin lands on its edge and rolls into a crack between floor-planks, momentarily out of sight.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and BeggarScramblesForCoin: 0.05
+          and PickpocketSpotsCoin: 0.01
+          and GuardInvestigatesNoise: 0.04
+      - id: StartledBird
+        description: |-
+          A small sparrow perched on a nearby rafter flutters upward in alarm at the sudden sound.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and ResonantEcho: 0.02
+          and PebbleCascade: 0.005
+          and CatStalksMoth: 0.03
+      - id: ResonantEcho
+        description: |-
+          The metallic ping resonates through a corroded ventilation duct, amplifying the noise unexpectedly.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and StartledBird: 0.02
+          and SparkIgnition: 0.0005
+      - id: AI_DiagnosticPing
+        description: |-
+          A dormant audio sensor tied to an ancient AI registers the sound and emits a brief diagnostic tone.
+        marginal_probability: 0.0008
+        joint_probabilities:
+          and ScholarLooksUp: 0.0005
+      - id: PebbleCascade
+        description: |-
+          The vibration loosens a few grit-sized stones from an overhead ledge, showering the area lightly.
+        marginal_probability: 0.01
+        joint_probabilities:
+          and StartledBird: 0.005
+      - id: PickpocketSpotsCoin
+        description: |-
+          An opportunistic urchin notices the dropped coin and eyes it greedily, planning a quick snatch.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and CoinRollsAway: 0.01
+          and BeggarScramblesForCoin: 0.02
+      - id: SparkIgnition
+        description: |-
+          The coin strikes a stray shard of flint, producing a tiny spark that could ignite loose straw nearby.
+        marginal_probability: 0.002
+        joint_probabilities:
+          and ResonantEcho: 0.0005
+      npc_proactive_actions:
+      - id: GuardShiftPosition
+        description: |-
+          A bored guard decides to adjust his stance and take three slow steps along his patrol route.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and CatStalksMoth: 0.02
+      - id: CatStalksMoth
+        description: A stray cat silently tracks a fluttering moth across the floorboards.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and GuardShiftPosition: 0.02
+          and StartledBird: 0.03
+      - id: MerchantRearrangesStall
+        description: |-
+          A nearby merchant idly rearranges the trinkets on his makeshift stall to appear more enticing.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and DrunkStartsSong: 0.04
+      - id: DrunkStartsSong
+        description: |-
+          A tipsy patron begins humming a half-forgotten tavern tune, gradually increasing in volume.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and MerchantRearrangesStall: 0.04
+      - id: DogScratchesFlea
+        description: |-
+          A mangy dog pauses to vigorously scratch behind its ear, oblivious to surrounding events.
+        marginal_probability: 0.13
+        joint_probabilities: {}
+      npc_reactions:
+      - id: GuardInvestigatesNoise
+        description: |-
+          Hearing the clang, the nearest guard turns his head and takes a step toward the source, hand on weapon-hilt.
+        marginal_probability: 0.24
+        joint_probabilities:
+          and CoinClinkNoise: 0.22
+          and CoinRollsAway: 0.04
+      - id: CatPouncesCoin
+        description: |-
+          The stalking cat abruptly leaps toward the glittering coin, batting at it with a paw.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and CoinClinkNoise: 0.06
+      - id: BeggarScramblesForCoin
+        description: |-
+          A nearby beggar lunges forward on hands and knees, attempting to claim the fallen coin for himself.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and CoinRollsAway: 0.05
+          and PickpocketSpotsCoin: 0.02
+      - id: ScholarLooksUp
+        description: |-
+          An elderly scholar copying notes pauses, quill in mid-air, glancing around to locate the unexpected sound.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and AI_DiagnosticPing: 0.0005
+    actual_consequences:
+    - id: CoinClinkNoise
+      description: |-
+        The coin strikes a hard surface, producing a sharp metallic clink clearly audible within several paces.
+      marginal_probability: 0.99999
+    probability_debug_info:
+      random_value: 0.5699399815815097
+      selected_outcome: '{CoinClinkNoise}'
+      probability_ranges:
+        '{}':
+          probability: 7.128815080891757e-06
+          range_start: 0.0
+          range_end: 7.128815080891757e-06
+        '{AI_DiagnosticPing}':
+          probability: 5.70761815924061e-09
+          range_start: 7.128815080891757e-06
+          range_end: 7.134522699050998e-06
+        '{BeggarScramblesForCoin}':
+          probability: 5.365774792069067e-07
+          range_start: 7.134522699050998e-06
+          range_end: 7.671100178257904e-06
+        '{CatPouncesCoin}':
+          probability: 6.198969635558051e-07
+          range_start: 7.671100178257904e-06
+          range_end: 8.29099714181371e-06
+        '{CatStalksMoth}':
+          probability: 1.2580261907456041e-06
+          range_start: 8.29099714181371e-06
+          range_end: 9.549023332559314e-06
+        '{CoinClinkNoise}':
+          probability: 0.7128743792773392
+          range_start: 9.549023332559314e-06
+          range_end: 0.7128839283006718
+        '{CoinRollsAway}':
+          probability: 9.721111473570687e-07
+          range_start: 0.7128839283006718
+          range_end: 0.7128849004118192
+        '{DogScratchesFlea}':
+          probability: 1.065225242014023e-06
+          range_start: 0.7128849004118192
+          range_end: 0.7128859656370612
+        '{DrunkStartsSong}':
+          probability: 7.050476453773769e-07
+          range_start: 0.7128859656370612
+          range_end: 0.7128866706847066
+        '{GuardInvestigatesNoise}':
+          probability: 2.251204762382386e-06
+          range_start: 0.7128866706847066
+          range_end: 0.712888921889469
+        '{GuardShiftPosition}':
+          probability: 6.198969635384799e-07
+          range_start: 0.712888921889469
+          range_end: 0.7128895417864325
+        '{MerchantRearrangesStall}':
+          probability: 8.810895043565026e-07
+          range_start: 0.7128895417864325
+          range_end: 0.7128904228759368
+        '{PebbleCascade}':
+          probability: 7.20082331540084e-08
+          range_start: 0.7128904228759368
+          range_end: 0.71289049488417
+        '{PickpocketSpotsCoin}':
+          probability: 2.970339616492623e-07
+          range_start: 0.71289049488417
+          range_end: 0.7128907919181316
+        '{ResonantEcho}':
+          probability: 2.2047881698128435e-07
+          range_start: 0.7128907919181316
+          range_end: 0.7128910123969486
+        '{ScholarLooksUp}':
+          probability: 3.752007937674051e-07
+          range_start: 0.7128910123969486
+          range_end: 0.7128913875977424
+        '{SparkIgnition}':
+          probability: 1.4286202554281147e-08
+          range_start: 0.7128913875977424
+          range_end: 0.712891401883945
+        '{StartledBird}':
+          probability: 5.365774792265299e-07
+          range_start: 0.712891401883945
+          range_end: 0.7128919384614242
+        '{AI_DiagnosticPing, ScholarLooksUp}':
+          probability: 3.0040092635630344e-10
+          range_start: 0.7128919384614242
+          range_end: 0.7128919387618251
+        '{BeggarScramblesForCoin, CoinRollsAway}':
+          probability: 7.316965622283789e-08
+          range_start: 0.7128919387618251
+          range_end: 0.7128920119314813
+        '{BeggarScramblesForCoin, PickpocketSpotsCoin}':
+          probability: 2.2357394935390573e-08
+          range_start: 0.7128920119314813
+          range_end: 0.7128920342888763
+        '{CatPouncesCoin, CoinClinkNoise}':
+          probability: 0.06198907645889906
+          range_start: 0.7128920342888763
+          range_end: 0.7748811107477753
+        '{CatStalksMoth, GuardShiftPosition}':
+          probability: 1.0939358174866243e-07
+          range_start: 0.7748811107477753
+          range_end: 0.7748812201413571
+        '{CatStalksMoth, StartledBird}':
+          probability: 9.469014339291704e-08
+          range_start: 0.7748812201413571
+          range_end: 0.7748813148315005
+        '{CoinClinkNoise, GuardInvestigatesNoise}':
+          probability: 0.22511822503494916
+          range_start: 0.7748813148315005
+          range_end: 0.9999995398664496
+        '{CoinRollsAway, GuardInvestigatesNoise}':
+          probability: 3.0698246755722636e-07
+          range_start: 0.9999995398664496
+          range_end: 0.9999998468489172
+        '{CoinRollsAway, PickpocketSpotsCoin}':
+          probability: 4.050463109361857e-08
+          range_start: 0.9999998468489172
+          range_end: 0.9999998873535483
+        '{DrunkStartsSong, MerchantRearrangesStall}':
+          probability: 8.714072019522234e-08
+          range_start: 0.9999998873535483
+          range_end: 0.9999999744942685
+        '{PebbleCascade, StartledBird}':
+          probability: 5.419974580256337e-09
+          range_start: 0.9999999744942685
+          range_end: 0.999999979914243
+        '{ResonantEcho, SparkIgnition}':
+          probability: 4.4184134129210406e-10
+          range_start: 0.999999979914243
+          range_end: 0.9999999803560844
+        '{ResonantEcho, StartledBird}':
+          probability: 1.6595179785916514e-08
+          range_start: 0.9999999803560844
+          range_end: 0.9999999969512642
+        '{BeggarScramblesForCoin, CoinRollsAway, PickpocketSpotsCoin}':
+          probability: 3.0487357083330835e-09
+          range_start: 0.9999999969512642
+          range_end: 0.9999999999999999
+characters:
+  cli-user: TestHero5
+saved_at: '2025-07-19T20:39:41.526635'

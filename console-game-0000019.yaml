@@ -1,0 +1,295 @@
+channel_id: console-game-0000019
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I look around the room carefully
+  dm: |-
+    **TestHero**:
+    TestHero gains an accurate mental map of all obvious furnishings, exits, and occupants in the room.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Examining user requirements**\n\nI need to really grasp the user's request. It sounds like they're\
+    \ a Game Master looking for a detailed, step-by-step process to identify who acts next. They mention producing a JSON\
+    \ with a \"next_actor\" field, which includes an ID and reasoning. However, they also referenced a \"spotlight_probability_comparisons\"\
+    \ array, which is missing in the final output. The expectation seems to be for that array to be included because it appears\
+    \ crucial for comprehensive probability relationships. This inconsistency needs attention.\n**Deciding on JSON output**\n\
+    \nI need to determine how to construct the output. The instructions clearly state to provide valid JSON in a specific\
+    \ format, strictly for the \"next_actor\" object. However, there's a conflicting note about including a \"spotlight_probability_comparisons\"\
+    \ array, which isn't part of the required format. This poses a challenge. Since they emphasized adhering to “exact format”\
+    \ strictly, I'm concerned about adding any extra keys. The probability comparisons might be contextually important, but\
+    \ I must prioritize the specified format. This decision is crucial.\n\n---\n\n**Exploring tavern scenarios**\n\nI'm considering\
+    \ crafting an environment, like \"an average tavern common room\" or an \"abandoned stone chamber.\" I want to identify\
+    \ potential consequences for the player's actions. One key consequence is the player succeeding in spotting ordinary details,\
+    \ with a high probability of around 0.95. \n\nThen there's noticing small hazards, such as a loose floorboard, with a\
+    \ probability of perhaps 0.2. Spotting a hidden observer could happen too, at a lower chance of 0.05. It seems important\
+    \ to include both the possibility of noticing and missing details, while aiming to create 6-12 distinct consequences overall.\n\
+    **Listing outcomes and actions**\n\nI’m organizing a list of possible outcomes for the player's exploration. For example,\
+    \ \"ClearAssessment\" allows for an accurate mapping of the room layout, with a high probability. On the other hand, \"\
+    OverlookThreat\" is about missing hidden traps, which might occur simultaneously but doesn't have to. \n\nI want to note\
+    \ probabilities for actions like \"NoticeHiddenCompartment\" or \"EyeStrain,\" along with proactive actions by NPCs, such\
+    \ as a cat grooming itself or a patron sipping from a mug. It seems I should also consider NPC reactions and create a\
+    \ few joint probabilities for different outcomes, ensuring they fit the time allocated for scanning."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero
+    action_taken: I look around the room carefully
+    consequence_response:
+      potential_consequences:
+      - id: RoomLayoutNoted
+        description: |-
+          TestHero gains an accurate mental map of all obvious furnishings, exits, and occupants in the room.
+        marginal_probability: 0.97
+        joint_probabilities:
+          and HazardSpotted: 0.18
+          and HiddenSeamSpotted: 0.018
+          and NPCFeelsStared: 0.09
+      - id: HazardSpotted
+        description: |-
+          A slick patch of spilled ale near a table leg is noticed, allowing TestHero to avoid a potential slip later.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and RoomLayoutNoted: 0.18
+      - id: NPCFeelsStared
+        description: At least one patron feels uncomfortably scrutinised by TestHero’s sweeping gaze.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and PatronGlare: 0.1
+      - id: HiddenSeamSpotted
+        description: |-
+          A barely visible hairline seam in the wall panelling hints at a concealed compartment.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and RoomLayoutNoted: 0.018
+      - id: EyeStrain
+        description: |-
+          The dim light forces TestHero to squint, causing brief eye strain that slightly blurs vision for a heartbeat.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and FireLogShift: 0.01
+      - id: SensorPanelGlows
+        description: |-
+          A dormant techno-relic behind the bar registers eye-movement as an activation cue, emitting a faint green glow for two seconds.
+        marginal_probability: 0.005
+        joint_probabilities:
+          and GuardTenses: 0.004
+          and DoorSwingsOpen: 0.001
+      - id: GobletBumped
+        description: |-
+          While turning, TestHero’s elbow lightly nudges a nearby goblet, sloshing ale onto the table but not spilling it entirely.
+        marginal_probability: 0.015
+        joint_probabilities:
+          and ServerAlmostTrips: 0.01
+      npc_proactive_actions:
+      - id: PatronDrinks
+        description: One of the seated patrons raises their mug and takes a hearty swallow.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and CatGrooms: 0.06
+          and BartenderWipes: 0.2
+      - id: BartenderWipes
+        description: The barkeep methodically wipes down a section of the counter with a damp cloth.
+        marginal_probability: 0.25
+        joint_probabilities:
+          and PatronDrinks: 0.2
+      - id: CatGrooms
+        description: The tavern’s scruffy cat hops onto a chair and begins grooming its paw.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and PatronDrinks: 0.06
+          and FireLogShift: 0.03
+      - id: FireLogShift
+        description: |-
+          A log in the hearth collapses inward, sending a brief spray of sparks up the chimney.
+        marginal_probability: 0.14
+        joint_probabilities:
+          and EyeStrain: 0.01
+      - id: DoorSwingsOpen
+        description: |-
+          The tavern door pushes inward as a chilly draft announces a potential newcomer (though their identity isn’t yet visible).
+        marginal_probability: 0.03
+        joint_probabilities:
+          and GuardTenses: 0.02
+          and SensorPanelGlows: 0.001
+      - id: ServerAlmostTrips
+        description: |-
+          A serving girl carrying plates catches her foot on a warped floorboard and windmills her arms to keep balance.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and GobletBumped: 0.01
+      npc_reactions:
+      - id: PatronGlare
+        description: The scrutinised patron scowls at TestHero, shifting uncomfortably on their bench.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and NPCFeelsStared: 0.1
+      - id: BartenderOffersHelp
+        description: |-
+          Noticing TestHero’s careful survey, the barkeep calls out to ask if anything is needed.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and RoomLayoutNoted: 0.12
+          and ServerSmiles: 0.1
+      - id: GuardTenses
+        description: |-
+          An off-duty militia guard straightens in his seat, hand drifting toward his belt as he notices odd activity.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and SensorPanelGlows: 0.004
+          and DoorSwingsOpen: 0.02
+      - id: ServerSmiles
+        description: |-
+          The serving girl flashes TestHero a quick, polite smile, mistaking the careful look for interest in ordering.
+        marginal_probability: 0.22
+        joint_probabilities:
+          and BartenderOffersHelp: 0.1
+    actual_consequences:
+    - id: RoomLayoutNoted
+      description: |-
+        TestHero gains an accurate mental map of all obvious furnishings, exits, and occupants in the room.
+      marginal_probability: 0.97
+    probability_debug_info:
+      random_value: 0.2378248908285323
+      selected_outcome: '{RoomLayoutNoted}'
+      probability_ranges:
+        '{}':
+          probability: 0.01843147804492018
+          range_start: 0.0
+          range_end: 0.01843147804492018
+        '{BartenderOffersHelp}':
+          probability: 0.003252613772632973
+          range_start: 0.01843147804492018
+          range_end: 0.021684091817553153
+        '{BartenderWipes}':
+          probability: 0.006143826014973392
+          range_start: 0.021684091817553153
+          range_end: 0.027827917832526545
+        '{CatGrooms}':
+          probability: 0.00404593420498248
+          range_start: 0.027827917832526545
+          range_end: 0.031873852037509025
+        '{DoorSwingsOpen}':
+          probability: 0.0005700457127294917
+          range_start: 0.031873852037509025
+          range_end: 0.032443897750238516
+        '{EyeStrain}':
+          probability: 0.001602737221297404
+          range_start: 0.032443897750238516
+          range_end: 0.03404663497153592
+        '{FireLogShift}':
+          probability: 0.003000473170103282
+          range_start: 0.03404663497153592
+          range_end: 0.0370471081416392
+        '{GobletBumped}':
+          probability: 0.0002806824067754371
+          range_start: 0.0370471081416392
+          range_end: 0.03732779054841464
+        '{GuardTenses}':
+          probability: 0.0013873155517681868
+          range_start: 0.03732779054841464
+          range_end: 0.038715106100182826
+        '{HazardSpotted}':
+          probability: 0.004607869511230045
+          range_start: 0.038715106100182826
+          range_end: 0.04332297561141287
+        '{HiddenSeamSpotted}':
+          probability: 0.00037615261316163717
+          range_start: 0.04332297561141287
+          range_end: 0.04369912822457451
+        '{NPCFeelsStared}':
+          probability: 0.0020479420049911295
+          range_start: 0.04369912822457451
+          range_end: 0.04574707022956564
+        '{PatronDrinks}':
+          probability: 0.009924642024187788
+          range_start: 0.04574707022956564
+          range_end: 0.055671712253753426
+        '{PatronGlare}':
+          probability: 0.00251338336976184
+          range_start: 0.055671712253753426
+          range_end: 0.058185095623515266
+        '{RoomLayoutNoted}':
+          probability: 0.5959511234524185
+          range_start: 0.058185095623515266
+          range_end: 0.6541362190759338
+        '{SensorPanelGlows}':
+          probability: 9.262049268798922e-05
+          range_start: 0.6541362190759338
+          range_end: 0.6542288395686218
+        '{ServerAlmostTrips}':
+          probability: 0.00037615261316159554
+          range_start: 0.6542288395686218
+          range_end: 0.6546049921817834
+        '{ServerSmiles}':
+          probability: 0.00519862201266974
+          range_start: 0.6546049921817834
+          range_end: 0.6598036141944531
+        '{BartenderOffersHelp, RoomLayoutNoted}':
+          probability: 0.10516784531513268
+          range_start: 0.6598036141944531
+          range_end: 0.7649714595095858
+        '{BartenderOffersHelp, ServerSmiles}':
+          probability: 0.0009174038845888299
+          range_start: 0.7649714595095858
+          range_end: 0.7658888633941746
+        '{BartenderWipes, PatronDrinks}':
+          probability: 0.003308214008062582
+          range_start: 0.7658888633941746
+          range_end: 0.7691970774022372
+        '{CatGrooms, FireLogShift}':
+          probability: 0.0006586404519739464
+          range_start: 0.7691970774022372
+          range_end: 0.7698557178542111
+        '{CatGrooms, PatronDrinks}':
+          probability: 0.0021785799565290365
+          range_start: 0.7698557178542111
+          range_end: 0.7720342978107402
+        '{DoorSwingsOpen, GuardTenses}':
+          probability: 4.290666654949149e-05
+          range_start: 0.7720342978107402
+          range_end: 0.7720772044772897
+        '{DoorSwingsOpen, SensorPanelGlows}':
+          probability: 2.864551320258535e-06
+          range_start: 0.7720772044772897
+          range_end: 0.7720800690286099
+        '{EyeStrain, FireLogShift}':
+          probability: 0.00026091071044376246
+          range_start: 0.7720800690286099
+          range_end: 0.7723409797390537
+        '{GobletBumped, ServerAlmostTrips}':
+          probability: 5.728212383204756e-06
+          range_start: 0.7723409797390537
+          range_end: 0.7723467079514369
+        '{GuardTenses, SensorPanelGlows}':
+          probability: 6.971434933555898e-06
+          range_start: 0.7723467079514369
+          range_end: 0.7723536793863705
+        '{HazardSpotted, RoomLayoutNoted}':
+          probability: 0.1489877808631046
+          range_start: 0.7723536793863705
+          range_end: 0.921341460249475
+        '{HiddenSeamSpotted, RoomLayoutNoted}':
+          probability: 0.012162267825559514
+          range_start: 0.921341460249475
+          range_end: 0.9335037280750346
+        '{NPCFeelsStared, PatronGlare}':
+          probability: 0.0002792648188624236
+          range_start: 0.9335037280750346
+          range_end: 0.933782992893897
+        '{NPCFeelsStared, RoomLayoutNoted}':
+          probability: 0.06621679149471316
+          range_start: 0.933782992893897
+          range_end: 0.9999997843886101
+        '{DoorSwingsOpen, GuardTenses, SensorPanelGlows}':
+          probability: 2.1561138974224292e-07
+          range_start: 0.9999997843886101
+          range_end: 0.9999999999999999
+characters:
+  cli-user: TestHero
+saved_at: '2025-07-19T20:13:31.942940'

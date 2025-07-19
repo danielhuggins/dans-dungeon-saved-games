@@ -1,0 +1,164 @@
+channel_id: console-game-0000018
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I examine the newly sharpened blade for quality
+  dm: |-
+    **TestHero**:
+    TestHero judges the blade to be exceptionally well-forged, with uniform grind lines and a flawless mirror edge.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Considering probability comparisons**
+
+    The user wants me to perform a detailed probability comparison of potential next actions, emphasizing a step-by-step process but only outputting the final result. The story context is minimal — just "Game Master: You find yourself in the world of Avertayn." There’s ambiguity since I lack specific scene details, but I know the current spotlight is on TestHero. I should consider possible actors like the Game Master, TestHero, ambient world events, and perhaps random NPCs, even without further specifics.
+    **Calculating probabilities for actors**
+
+    I need to calculate relative probabilities for the actors and an environment hazard in the story. I’m renaming the hazard to "SuddenDownpour" and choosing five actors: Aethelwynn, Aethelflaed, Osric, TestHero, and SuddenDownpour, with IDs that are simple.
+
+    I’ll set Aethelwynn as the baseline at 1.0, then make relative probability estimates for the others. After calculations, I find: Aethelflaed at 0.85, Osric at 0.51, TestHero at 0.765, and SuddenDownpour at 0.2295. Now, I will present comparisons like "Aethelwynn is X times as likely as Aethelflaed."
+    **Generating actor comparisons and descriptions**
+
+    I'm preparing strings for comparisons among the actors based on their relative probabilities. For example, I'll say "Aethelwynn is 1.176x as likely as Aethelflaed," and similar comparisons for the others, totaling 20 strings.
+
+    Next, I’ll create descriptions for each character like Aethelwynn, who is near TestHero and motivated to help. I’ll ensure to format this as a valid JSON output, taking care to avoid any trailing commas. Let's finalize that!
+
+    ---
+
+    **Considering inspection consequences**
+
+    I need to create a JSON outlining potential consequences related to a player inspecting a newly sharpened blade. This involves defining clear descriptions and probabilities for various outcomes, like seeing quality, finding flaws, or starting with magical anomalies. I should propose around 6 to 12 unique consequences, including creative twists like the blade resonating with artifacts or causing unexpected effects. For marginal probabilities, I’ll estimate realistic risks, such as a 5% chance of cutting oneself or a 20% chance of spotting a micro fracture.
+    **Estimating consequences and probabilities**
+
+    I’m defining potential consequences from inspecting a blade and calculating their probabilities. For instance, I'd like to assign probabilities for finding flaws or experiencing magical phenomena. I’ll outline about 8 unique results without duplicates. These could include discovering a tiny edge flaw or feeling a sense of satisfaction from the blade’s quality. I also want to ensure that some outcomes are mutually exclusive. For example, if I determine high quality, I can’t find a flaw. I’ll calculate base rates for these scenarios.
+    **Defining consequences and joint probabilities**
+
+    I’m organizing potential consequences from inspecting a blade while also considering realistic joint probabilities. I’ll define about seven unique outcomes including things like spotting a pristine edge or noticing a micro flaw. Important to note is that while “Nothing Notable” may represent not finding anything unusual, it won’t share a probability with other detections. I’ll compute probabilities for each outcome and ensure joint probabilities align accurately, ultimately crafting a clear JSON structure to represent this information.
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero
+    action_taken: I examine the newly sharpened blade for quality
+    consequence_response:
+      potential_consequences:
+      - id: PristineEdgeConfirmed
+        description: |-
+          TestHero judges the blade to be exceptionally well-forged, with uniform grind lines and a flawless mirror edge.
+        marginal_probability: 0.62
+        joint_probabilities:
+          and MinorSelfCut: 0.012
+          and ReflectionReveal: 0.006
+      - id: MicroFlawSeen
+        description: |-
+          A barely visible chip or hairline fracture is spotted along the edge, indicating the weapon will need re-grinding before combat use.
+        marginal_probability: 0.25
+        joint_probabilities:
+          and MinorSelfCut: 0.006
+          and ReflectionReveal: 0.003
+      - id: MinorSelfCut
+        description: |-
+          While running a thumb across the edge, TestHero nicks the skin, drawing a thin line of blood and mild stinging pain.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and PristineEdgeConfirmed: 0.012
+          and MicroFlawSeen: 0.006
+          and BladeSlipDrop: 0.001
+      - id: BladeSlipDrop
+        description: |-
+          A momentary loss of grip sends the blade clattering to the floor, risking a bent tip or marred edge.
+        marginal_probability: 0.004
+        joint_probabilities:
+          and MinorSelfCut: 0.001
+      - id: ReflectionReveal
+        description: |-
+          In the blade’s polish, TestHero glimpses a reflected movement behind—perhaps an onlooker, an approaching NPC, or something skulking in the doorway.
+        marginal_probability: 0.012
+        joint_probabilities:
+          and PristineEdgeConfirmed: 0.006
+          and MicroFlawSeen: 0.003
+      - id: HiddenMakerMark
+        description: |-
+          A nearly invisible maker’s rune or serial glyph catches the light, hinting at the sword’s provenance or latent properties.
+        marginal_probability: 0.001
+        joint_probabilities:
+          and SubtleResonance: 0.0002
+      - id: SubtleResonance
+        description: |-
+          The blade emits a brief, almost imperceptible harmonic vibration—possibly a sign of residual power-field charging or exotic alloy behavior.
+        marginal_probability: 0.0005
+        joint_probabilities:
+          and HiddenMakerMark: 0.0002
+    actual_consequences:
+    - id: PristineEdgeConfirmed
+      description: |-
+        TestHero judges the blade to be exceptionally well-forged, with uniform grind lines and a flawless mirror edge.
+      marginal_probability: 0.62
+    probability_debug_info:
+      random_value: 0.7052874796870706
+      selected_outcome: '{PristineEdgeConfirmed}'
+      probability_ranges:
+        '{}':
+          probability: 0.3227614224491621
+          range_start: 0.0
+          range_end: 0.3227614224491621
+        '{BladeSlipDrop}':
+          probability: 0.0012962306122456524
+          range_start: 0.3227614224491621
+          range_end: 0.32405765306140777
+        '{HiddenMakerMark}':
+          probability: 0.00032308450695611723
+          range_start: 0.32405765306140777
+          range_end: 0.3243807375683639
+        '{MicroFlawSeen}':
+          probability: 0.10758714081638737
+          range_start: 0.3243807375683639
+          range_end: 0.43196787838475126
+        '{MinorSelfCut}':
+          probability: 0.009982312034510166
+          range_start: 0.43196787838475126
+          range_end: 0.4419501904192614
+        '{PristineEdgeConfirmed}':
+          probability: 0.5266107418907381
+          range_start: 0.4419501904192614
+          range_end: 0.9685609323099995
+        '{ReflectionReveal}':
+          probability: 0.003920179220030295
+          range_start: 0.9685609323099995
+          range_end: 0.9724811115300298
+        '{SubtleResonance}':
+          probability: 0.0001614614419455096
+          range_start: 0.9724811115300298
+          range_end: 0.9726425729719753
+        '{BladeSlipDrop, MinorSelfCut}':
+          probability: 4.00896065643197e-05
+          range_start: 0.9726425729719753
+          range_end: 0.9726826625785396
+        '{HiddenMakerMark, SubtleResonance}':
+          probability: 1.6162306504252655e-07
+          range_start: 0.9726826625785396
+          range_end: 0.9726828242016047
+        '{MicroFlawSeen, MinorSelfCut}':
+          probability: 0.003327437344836759
+          range_start: 0.9726828242016047
+          range_end: 0.9760102615464414
+        '{MicroFlawSeen, ReflectionReveal}':
+          probability: 0.0013067264066767281
+          range_start: 0.9760102615464414
+          range_end: 0.9773169879531182
+        '{MinorSelfCut, PristineEdgeConfirmed}':
+          probability: 0.016286930161569235
+          range_start: 0.9773169879531182
+          range_end: 0.9936039181146874
+        '{PristineEdgeConfirmed, ReflectionReveal}':
+          probability: 0.006396081885312599
+          range_start: 0.9936039181146874
+          range_end: 1.0
+characters:
+  cli-user: TestHero
+saved_at: '2025-07-19T19:23:38.769860'

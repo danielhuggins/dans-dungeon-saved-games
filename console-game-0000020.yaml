@@ -1,0 +1,280 @@
+channel_id: console-game-0000020
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I loudly shout a greeting to anyone nearby
+  dm: |-
+    **TestHero2**:
+    Birds or small animals startle and burst from cover at the sudden loud voice. The shout vibrates loose dust or debris from overhead beams, sending a light shower downward.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Proposing audio effects**\n\nI'm considering how the audio situation unfolds in a scene. It's a bit\
+    \ awkward when the player realizes they're alone in silence. I’m thinking we should have concrete, measurable effects\
+    \ from that sound. For instance, local villagers could respond, or hidden scouts might overhear and mark the player’s\
+    \ presence. There could be wildlife that startles, or maybe an artifact reacts with a hum. A sore throat from shouting\
+    \ could add humor, and we could even attract insects. Altogether, I want to develop around eight possible consequences.\n\
+    **Defining consequences and actions**\n\nI'm outlining the joint probabilities for various outcomes. It's important to\
+    \ ensure that combinations make sense and that joint probabilities don’t exceed the minimum marginals. For example, I\
+    \ see that a friendly response can happen alongside wildlife flushing, and specific alerts can trigger dog barks. \n\n\
+    As I refine the list of consequences, I’ve settled on eight outcomes, like FriendlyReply and WildlifeFlush, along with\
+    \ NPC reactions such as GuardInvestigates and MerchantLooksUp. I’ll ensure to categorize everything clearly and avoid\
+    \ duplications where possible."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero2
+    action_taken: I loudly shout a greeting to anyone nearby
+    consequence_response:
+      potential_consequences:
+      - id: FriendlyReply
+        description: |-
+          A person within ear-shot (traveller, villager, or guard) calls back in greeting, revealing their presence.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and WildlifeFlush: 0.08
+          and MerchantLooksUp: 0.1
+      - id: HiddenScoutAlert
+        description: |-
+          An unseen watcher (bandit or sentry) hears the shout and quietly notes the hero’s location.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and GuardInvestigates: 0.04
+          and BanditStalks: 0.02
+      - id: WildlifeFlush
+        description: Birds or small animals startle and burst from cover at the sudden loud voice.
+        marginal_probability: 0.25
+        joint_probabilities:
+          and CatStalks: 0.05
+          and DustFall: 0.03
+      - id: ArtifactHum
+        description: A dormant voice-activated relic in the vicinity emits a faint, momentary hum.
+        marginal_probability: 0.003
+        joint_probabilities:
+          and FriendlyReply: 0.002
+      - id: ThroatStrain
+        description: |-
+          The hero’s throat feels raspy, giving a mild penalty to further loud speech for a short while.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and NoReplySilence: 0.06
+      - id: NoReplySilence
+        description: The call echoes back unanswered, emphasising the emptiness of the surroundings.
+        marginal_probability: 0.5
+        joint_probabilities:
+          and ThroatStrain: 0.06
+      - id: DustFall
+        description: |-
+          The shout vibrates loose dust or debris from overhead beams, sending a light shower downward.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and WildlifeFlush: 0.03
+      - id: InsectSwarm
+        description: |-
+          A cluster of midges or gnats, disturbed by the vibration, swirls briefly around the hero.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and WildlifeFlush: 0.01
+      npc_proactive_actions:
+      - id: MerchantCounts
+        description: A nearby merchant absent-mindedly tallies his goods and coins.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and MilitiaPolishSpear: 0.025
+      - id: CatStalks
+        description: A half-feral cat begins stalking a mouse along a wall or hedge.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and ChildChasesBall: 0.01
+      - id: FarmerHaulsWater
+        description: |-
+          A farmer lifts a sloshing bucket from the village well and trudges toward his field.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and DogBarks: 0.03
+      - id: MilitiaPolishSpear
+        description: |-
+          An off-duty militia woman methodically polishes the head of her spear while watching the road.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and MerchantCounts: 0.025
+      - id: ChildChasesBall
+        description: A child darts after a battered leather ball that rolls across the commons.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and CatStalks: 0.01
+      npc_reactions:
+      - id: GuardInvestigates
+        description: |-
+          A nearby guard pivots toward the sound, hand resting on weapon, and starts to investigate.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and DogBarks: 0.09
+          and MerchantLooksUp: 0.12
+          and HiddenScoutAlert: 0.04
+      - id: MerchantLooksUp
+        description: The ledger-absorbed merchant glances up, momentarily distracted by the shout.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and GuardInvestigates: 0.12
+          and FriendlyReply: 0.1
+      - id: DogBarks
+        description: A tethered dog or watch hound reacts to the sudden noise with sharp barking.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and GuardInvestigates: 0.09
+          and FarmerHaulsWater: 0.03
+      - id: BanditStalks
+        description: |-
+          A lurking bandit begins to shadow the hero from concealment after hearing the shout.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and HiddenScoutAlert: 0.02
+    actual_consequences:
+    - id: WildlifeFlush
+      description: Birds or small animals startle and burst from cover at the sudden loud voice.
+      marginal_probability: 0.25
+    - id: DustFall
+      description: |-
+        The shout vibrates loose dust or debris from overhead beams, sending a light shower downward.
+      marginal_probability: 0.12
+    probability_debug_info:
+      random_value: 0.8988157296209766
+      selected_outcome: '{DustFall, WildlifeFlush}'
+      probability_ranges:
+        '{}':
+          probability: 0.19263243362548377
+          range_start: 0.0
+          range_end: 0.19263243362548377
+        '{ArtifactHum}':
+          probability: 0.0005796362095049634
+          range_start: 0.19263243362548377
+          range_end: 0.19321206983498873
+        '{BanditStalks}':
+          probability: 0.012295687252690451
+          range_start: 0.19321206983498873
+          range_end: 0.20550775708767918
+        '{CatStalks}':
+          probability: 0.033993958875085356
+          range_start: 0.20550775708767918
+          range_end: 0.23950171596276454
+        '{ChildChasesBall}':
+          probability: 0.01013854913818335
+          range_start: 0.23950171596276454
+          range_end: 0.2496402651009479
+        '{DogBarks}':
+          probability: 0.033993958875085384
+          range_start: 0.2496402651009479
+          range_end: 0.2836342239760333
+        '{DustFall}':
+          probability: 0.026268059130747756
+          range_start: 0.2836342239760333
+          range_end: 0.30990228310678103
+        '{FarmerHaulsWater}':
+          probability: 0.021403603736164845
+          range_start: 0.30990228310678103
+          range_end: 0.3313058868429459
+        '{FriendlyReply}':
+          probability: 0.10372515656756814
+          range_start: 0.3313058868429459
+          range_end: 0.435031043410514
+        '{GuardInvestigates}':
+          probability: 0.048158108406370914
+          range_start: 0.435031043410514
+          range_end: 0.48318915181688493
+        '{HiddenScoutAlert}':
+          probability: 0.014499215434176205
+          range_start: 0.48318915181688493
+          range_end: 0.49768836725106114
+        '{InsectSwarm}':
+          probability: 0.008026351401061782
+          range_start: 0.49768836725106114
+          range_end: 0.5057147186521229
+        '{MerchantCounts}':
+          probability: 0.026268059130747812
+          range_start: 0.5057147186521229
+          range_end: 0.5319827777828707
+        '{MerchantLooksUp}':
+          probability: 0.04228516835681351
+          range_start: 0.5319827777828707
+          range_end: 0.5742679461396842
+        '{MilitiaPolishSpear}':
+          probability: 0.014499215434176205
+          range_start: 0.5742679461396842
+          range_end: 0.5887671615738604
+        '{NoReplySilence}':
+          probability: 0.19263243362548377
+          range_start: 0.5887671615738604
+          range_end: 0.7813995951993442
+        '{ThroatStrain}':
+          probability: 0.0214036037361649
+          range_start: 0.7813995951993442
+          range_end: 0.8028031989355091
+        '{WildlifeFlush}':
+          probability: 0.06421081120849459
+          range_start: 0.8028031989355091
+          range_end: 0.8670140101440037
+        '{ArtifactHum, FriendlyReply}':
+          probability: 0.0003121118051180316
+          range_start: 0.8670140101440037
+          range_end: 0.8673261219491217
+        '{BanditStalks, HiddenScoutAlert}':
+          probability: 0.0009254818362239847
+          range_start: 0.8673261219491217
+          range_end: 0.8682516037853457
+        '{CatStalks, ChildChasesBall}':
+          probability: 0.0017891557302676109
+          range_start: 0.8682516037853457
+          range_end: 0.8700407595156133
+        '{CatStalks, WildlifeFlush}':
+          probability: 0.011331319625028424
+          range_start: 0.8700407595156133
+          range_end: 0.8813720791406418
+        '{DogBarks, FarmerHaulsWater}':
+          probability: 0.0037771065416761784
+          range_start: 0.8813720791406418
+          range_end: 0.8851491856823179
+        '{DogBarks, GuardInvestigates}':
+          probability: 0.008498489718771318
+          range_start: 0.8851491856823179
+          range_end: 0.8936476754010892
+        '{DustFall, WildlifeFlush}':
+          probability: 0.008756019710249308
+          range_start: 0.8936476754010892
+          range_end: 0.9024036951113386
+        '{FriendlyReply, MerchantLooksUp}':
+          probability: 0.022768936807514906
+          range_start: 0.9024036951113386
+          range_end: 0.9251726319188535
+        '{FriendlyReply, WildlifeFlush}':
+          probability: 0.03457505218918944
+          range_start: 0.9251726319188535
+          range_end: 0.9597476841080429
+        '{GuardInvestigates, HiddenScoutAlert}':
+          probability: 0.0036248038585440234
+          range_start: 0.9597476841080429
+          range_end: 0.9633724879665869
+        '{GuardInvestigates, MerchantLooksUp}':
+          probability: 0.010571292089203377
+          range_start: 0.9633724879665869
+          range_end: 0.9739437800557903
+        '{InsectSwarm, WildlifeFlush}':
+          probability: 0.002675450467020557
+          range_start: 0.9739437800557903
+          range_end: 0.9766192305228109
+        '{MerchantCounts, MilitiaPolishSpear}':
+          probability: 0.001977165741024023
+          range_start: 0.9766192305228109
+          range_end: 0.9785963962638349
+        '{NoReplySilence, ThroatStrain}':
+          probability: 0.0214036037361649
+          range_start: 0.9785963962638349
+          range_end: 0.9999999999999998
+characters:
+  cli-user: TestHero2
+saved_at: '2025-07-19T20:17:17.791352'

@@ -1,0 +1,271 @@
+channel_id: console-game-0000023
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I sit down quietly and meditate
+  dm: |-
+    **TestHero4**:
+    The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Exploring creative consequences**\n\nI’m brainstorming various consequences for actions taken in a\
+    \ game scenario. Ideas include noticing distant AI, triggering a dormant device, or feeling goosebumps from a temperature\
+    \ drop. I want to craft eight unique consequences. \n\nAlso, I’m considering proactive NPC actions like those from guards\
+    \ or merchants, aiming to produce six relevant actions unrelated to the player's position. Additionally, I want to explore\
+    \ NPC reactions to meditation and calculate probabilities for events like an insect bite or an AI surge. Let’s refine\
+    \ this!\n**Calculating probabilities and actions**\n\nI'm weighing chances for various occurrences in this scenario. For\
+    \ example, I estimate a 25% chance of noticing a distant sound and 10% for a twig cracking. I want to generate proactive\
+    \ NPC actions like a guard yawning or a merchant counting coins, aiming for six in total. \n\nI also need to consider\
+    \ reactive NPC reactions, like a kid shushing gossip. For consequences, I’m crafting probabilities for situations like\
+    \ \"DeepFocus\" or \"InsectBite\" and their joint probabilities. It's all about creating an engaging experience!"
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero4
+    action_taken: I sit down quietly and meditate
+    consequence_response:
+      potential_consequences:
+      - id: DeepFocus
+        description: |-
+          The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
+        marginal_probability: 0.63
+        joint_probabilities:
+          and AromaticScent: 0.07
+          and AmbientPowerFlicker: 0.0006
+      - id: FootAsleep
+        description: |-
+          Reduced circulation causes pins-and-needles in one leg, creating mild discomfort on standing.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and LooseItemFallen: 0.003
+      - id: StartledByNoise
+        description: A sudden nearby rustle momentarily disrupts the hero’s concentration.
+        marginal_probability: 0.23
+        joint_probabilities:
+          and BirdTakesFlight: 0.11
+      - id: InsectBite
+        description: A small gnat or midge bites the hero, leaving an itchy welt.
+        marginal_probability: 0.005
+        joint_probabilities:
+          and DogApproachesSniffing: 0.0001
+      - id: LooseItemFallen
+        description: A minor personal item slips from the hero’s pouch onto the ground unnoticed.
+        marginal_probability: 0.019
+        joint_probabilities:
+          and FootAsleep: 0.003
+          and DogApproachesSniffing: 0.004
+      - id: AmbientPowerFlicker
+        description: |-
+          A faint hum and shimmer pass through the area as a distant Power Field momentarily fluctuates.
+        marginal_probability: 0.0008
+        joint_probabilities:
+          and AcolytePrays: 0.0003
+          and DeepFocus: 0.0006
+      - id: AromaticScent
+        description: |-
+          The hero notices a subtle herbal fragrance on the breeze, hinting at nearby plants or alchemical residues.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and DeepFocus: 0.07
+      - id: TemperatureDrop
+        description: |-
+          A thin cloud briefly obscures the sun, causing a noticeable chill and goose-bumps.
+        marginal_probability: 0.14
+        joint_probabilities:
+          and WindGustRattlesLeaves: 0.08
+      npc_proactive_actions:
+      - id: GuardAdjustsHelmet
+        description: |-
+          A nearby guard absent-mindedly tightens his helmet strap while continuing his watch.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and GuardGlancesAtMeditator: 0.05
+      - id: MerchantCountsCoins
+        description: A traveling merchant quietly tallies the contents of his coin pouch.
+        marginal_probability: 0.15
+        joint_probabilities: {}
+      - id: BirdTakesFlight
+        description: |-
+          A black crow launches from its perch, flapping overhead toward new scavenging ground.
+        marginal_probability: 0.27
+        joint_probabilities:
+          and StartledByNoise: 0.11
+          and CatStalksMouse: 0.02
+      - id: CatStalksMouse
+        description: A tavern cat slinks low, intent on pouncing upon a scurrying mouse.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and BirdTakesFlight: 0.02
+      - id: AcolytePrays
+        description: A young acolyte begins a quiet litany to the local deity, oblivious to others.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and AmbientPowerFlicker: 0.0003
+      - id: WindGustRattlesLeaves
+        description: A brief gust stirs branches and scatters dry leaves across the ground.
+        marginal_probability: 0.32
+        joint_probabilities:
+          and TemperatureDrop: 0.08
+      npc_reactions:
+      - id: GuardGlancesAtMeditator
+        description: |-
+          Noticing the hero’s sudden stillness, the guard casts a curious glance before resuming his watch.
+        marginal_probability: 0.13
+        joint_probabilities:
+          and GuardAdjustsHelmet: 0.05
+          and MerchantLooksUp: 0.04
+      - id: ChildQuietlyWatches
+        description: |-
+          A local child pauses play and stares at the meditating stranger in silent fascination.
+        marginal_probability: 0.06
+        joint_probabilities: {}
+      - id: DogApproachesSniffing
+        description: A village dog pads over to sniff the seated hero and the surrounding ground.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and LooseItemFallen: 0.004
+          and InsectBite: 0.0001
+      - id: MerchantLooksUp
+        description: |-
+          Hearing the slight shift, the merchant raises his eyes from his coins toward the meditating figure.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and GuardGlancesAtMeditator: 0.04
+    actual_consequences:
+    - id: DeepFocus
+      description: |-
+        The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
+      marginal_probability: 0.63
+    probability_debug_info:
+      random_value: 0.4419942685044965
+      selected_outcome: '{DeepFocus}'
+      probability_ranges:
+        '{}':
+          probability: 0.17727436954767714
+          range_start: 0.0
+          range_end: 0.17727436954767714
+        '{AcolytePrays}':
+          probability: 0.009330229976193538
+          range_start: 0.17727436954767714
+          range_end: 0.18660459952387068
+        '{AmbientPowerFlicker}':
+          probability: 0.00014193304207180124
+          range_start: 0.18660459952387068
+          range_end: 0.18674653256594248
+        '{AromaticScent}':
+          probability: 0.02417377766559234
+          range_start: 0.18674653256594248
+          range_end: 0.21092031023153482
+        '{BirdTakesFlight}':
+          probability: 0.06556723257242855
+          range_start: 0.21092031023153482
+          range_end: 0.27648754280396337
+        '{CatStalksMouse}':
+          probability: 0.021910315337353325
+          range_start: 0.27648754280396337
+          range_end: 0.2983978581413167
+        '{ChildQuietlyWatches}':
+          probability: 0.011315385290277258
+          range_start: 0.2983978581413167
+          range_end: 0.30971324343159395
+        '{DeepFocus}':
+          probability: 0.3018455481487477
+          range_start: 0.30971324343159395
+          range_end: 0.6115587915803417
+        '{DogApproachesSniffing}':
+          probability: 0.015415162569363261
+          range_start: 0.6115587915803417
+          range_end: 0.6269739541497049
+        '{FootAsleep}':
+          probability: 0.021910315337353325
+          range_start: 0.6269739541497049
+          range_end: 0.6488842694870582
+        '{GuardAdjustsHelmet}':
+          probability: 0.017532629955264722
+          range_start: 0.6488842694870582
+          range_end: 0.666416899442323
+        '{GuardGlancesAtMeditator}':
+          probability: 0.026489273610572406
+          range_start: 0.666416899442323
+          range_end: 0.6929061730528954
+        '{InsectBite}':
+          probability: 0.0008908259776264638
+          range_start: 0.6929061730528954
+          range_end: 0.6937969990305218
+        '{LooseItemFallen}':
+          probability: 0.003433448543736839
+          range_start: 0.6937969990305218
+          range_end: 0.6972304475742587
+        '{MerchantCountsCoins}':
+          probability: 0.031283712273119546
+          range_start: 0.6972304475742587
+          range_end: 0.7285141598473782
+        '{MerchantLooksUp}':
+          probability: 0.017532629955264722
+          range_start: 0.7285141598473782
+          range_end: 0.7460467898026429
+        '{StartledByNoise}':
+          probability: 0.05295208441034516
+          range_start: 0.7460467898026429
+          range_end: 0.7989988742129881
+        '{TemperatureDrop}':
+          probability: 0.028858618298459038
+          range_start: 0.7989988742129881
+          range_end: 0.8278574925114471
+        '{WindGustRattlesLeaves}':
+          probability: 0.08342323272831864
+          range_start: 0.8278574925114471
+          range_end: 0.9112807252397658
+        '{AcolytePrays, AmbientPowerFlicker}':
+          probability: 7.470160109046553e-06
+          range_start: 0.9112807252397658
+          range_end: 0.9112881953998748
+        '{AmbientPowerFlicker, DeepFocus}':
+          probability: 0.00024166977433848214
+          range_start: 0.9112881953998748
+          range_end: 0.9115298651742133
+        '{AromaticScent, DeepFocus}':
+          probability: 0.041160756565738366
+          range_start: 0.9115298651742133
+          range_end: 0.9526906217399517
+        '{BirdTakesFlight, CatStalksMouse}':
+          probability: 0.00810381526176085
+          range_start: 0.9526906217399517
+          range_end: 0.9607944370017125
+        '{BirdTakesFlight, StartledByNoise}':
+          probability: 0.01958501752163455
+          range_start: 0.9607944370017125
+          range_end: 0.9803794545233471
+        '{DogApproachesSniffing, InsectBite}':
+          probability: 7.74631284892191e-05
+          range_start: 0.9803794545233471
+          range_end: 0.9804569176518363
+        '{DogApproachesSniffing, LooseItemFallen}':
+          probability: 0.0002985607429336623
+          range_start: 0.9804569176518363
+          range_end: 0.98075547839477
+        '{FootAsleep, LooseItemFallen}':
+          probability: 0.00042435880877644827
+          range_start: 0.98075547839477
+          range_end: 0.9811798372035464
+        '{GuardAdjustsHelmet, GuardGlancesAtMeditator}':
+          probability: 0.002619818269177454
+          range_start: 0.9811798372035464
+          range_end: 0.9837996554727239
+        '{GuardGlancesAtMeditator, MerchantLooksUp}':
+          probability: 0.002619818269177454
+          range_start: 0.9837996554727239
+          range_end: 0.9864194737419013
+        '{TemperatureDrop, WindGustRattlesLeaves}':
+          probability: 0.013580526258098358
+          range_start: 0.9864194737419013
+          range_end: 0.9999999999999997
+characters:
+  cli-user: TestHero4
+saved_at: '2025-07-19T20:36:35.188814'

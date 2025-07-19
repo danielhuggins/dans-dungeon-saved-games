@@ -1,0 +1,280 @@
+channel_id: console-game-0000022
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I sit down quietly and wait
+  dm: |-
+    **TestHero4**:
+    The player settles in without incident; their presence remains unobtrusive.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Exploring potential consequences**\n\nI’m considering some potential consequences for the player's\
+    \ action of sitting quietly. I have a mix of simple outcomes like CalmSitting, where nothing happens, and more dynamic\
+    \ results like CreekOfBench that could create noise. Other consequences include stirring up dust, losing a coin, or feeling\
+    \ fatigue. More interestingly, there’s a chance to notice surroundings better, encounter an insect bite, or experience\
+    \ a magical sensation from stillness. I’ll choose eight consequences from this list.\n**Defining proactive actions and\
+    \ probabilities**\n\nI’m brainstorming proactive NPC or creature actions that occur without player influence. Options\
+    \ include BarkerDogRoams, TiredGuardYawns, MerchantCountsCoins, and more. I’ll narrow it down to 4-8 actions. \n\nFor\
+    \ NPC reactions, I’m thinking about watchers reacting to the player’s quiet sitting. Some specific reactions could be\
+    \ a nearby guard glancing over or a bored child staring. I also need to outline probabilities for these consequences and\
+    \ actions, determining how likely they are to occur. \n\nJoint probabilities will be calculated too, allowing combinations\
+    \ like CalmSitting with SilentCreaks, showing how different actions may overlap."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero4
+    action_taken: I sit down quietly and wait
+    consequence_response:
+      potential_consequences:
+      - id: CalmWait
+        description: The player settles in without incident; their presence remains unobtrusive.
+        marginal_probability: 0.97
+        joint_probabilities:
+          and CreakNoise: 0.14
+          and ObservantGaze: 0.38
+          and DustPuff: 0.045
+      - id: CreakNoise
+        description: |-
+          The bench or floorboards emit a soft creak as the player sits, audible within a few paces.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and TestHero4Acknowledges: 0.07
+      - id: DustPuff
+        description: A small cloud of dust or pollen puffs up, slightly tickling noses nearby.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and ChildStaresCuriously: 0.02
+      - id: CoinClink
+        description: A loose coin slips from the player’s pouch and clinks faintly on the ground.
+        marginal_probability: 0.007
+        joint_probabilities:
+          and GuardEases: 0.004
+      - id: ObservantGaze
+        description: |-
+          With nothing else to do, the player quietly studies their surroundings, noticing minor details others miss.
+        marginal_probability: 0.42
+        joint_probabilities:
+          and EthericFlutter: 0.0008
+          and TestHero4Acknowledges: 0.35
+      - id: InsectNibble
+        description: An unseen gnat or flea bites the player, causing a momentary itch.
+        marginal_probability: 0.004
+        joint_probabilities: {}
+      - id: EthericFlutter
+        description: |-
+          A faint, momentary fluctuation in the local Power Field tingles across the player’s skin.
+        marginal_probability: 0.001
+        joint_probabilities:
+          and ObservantGaze: 0.0008
+      - id: SeatCrack
+        description: |-
+          A hidden crack in the seating surface worsens, giving a sharp snap but not yet collapsing.
+        marginal_probability: 0.0002
+        joint_probabilities:
+          and SeatlessPasserGrumbles: 0.00015
+      npc_proactive_actions:
+      - id: GuardStrolls
+        description: A nearby guard casually walks the perimeter of the area on his regular round.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and BreezeSways: 0.05
+          and GuardEases: 0.04
+      - id: CatProwls
+        description: A scrawny cat begins stalking a mouse along the shadows.
+        marginal_probability: 0.16
+        joint_probabilities:
+          and BreezeSways: 0.07
+          and ChildStaresCuriously: 0.03
+      - id: MerchantBookkeep
+        description: |-
+          A merchant seated at a nearby stall quietly tallies today’s sales in a worn ledger.
+        marginal_probability: 0.21
+        joint_probabilities:
+          and CoinClink: 0.002
+      - id: DogSniffsAir
+        description: A village dog raises its nose, sniffing the breeze for interesting scents.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and CatProwls: 0.01
+      - id: BreezeSways
+        description: A gentle breeze stirs loose leaves and hanging signs for a few seconds.
+        marginal_probability: 0.31
+        joint_probabilities:
+          and GuardStrolls: 0.05
+          and CatProwls: 0.07
+      npc_reactions:
+      - id: TestHero4Acknowledges
+        description: |-
+          TestHero4 glances sideways, giving a brief nod or slight shift in posture on noticing the player sit.
+        marginal_probability: 0.46
+        joint_probabilities:
+          and CreakNoise: 0.07
+          and ObservantGaze: 0.35
+      - id: GuardEases
+        description: |-
+          Seeing the player simply sit, the guard relaxes slightly, lowering his hand from his weapon hilt.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and GuardStrolls: 0.04
+          and CoinClink: 0.004
+      - id: ChildStaresCuriously
+        description: A bored child nearby fixes curious eyes on the seated player for a moment.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and DustPuff: 0.02
+          and CatProwls: 0.03
+      - id: SeatlessPasserGrumbles
+        description: |-
+          A passer-by who had hoped to sit mutters under their breath at finding the spot taken.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and SeatCrack: 0.00015
+    actual_consequences:
+    - id: CalmWait
+      description: The player settles in without incident; their presence remains unobtrusive.
+      marginal_probability: 0.97
+    probability_debug_info:
+      random_value: 0.06831456779839706
+      selected_outcome: '{CalmWait}'
+      probability_ranges:
+        '{}':
+          probability: 0.014650325441198956
+          range_start: 0.0
+          range_end: 0.014650325441198956
+        '{BreezeSways}':
+          probability: 0.006582030270683591
+          range_start: 0.014650325441198956
+          range_end: 0.021232355711882547
+        '{CalmWait}':
+          probability: 0.47369385593209934
+          range_start: 0.021232355711882547
+          range_end: 0.4949262116439819
+        '{CatProwls}':
+          probability: 0.002790538179275992
+          range_start: 0.4949262116439819
+          range_end: 0.49771674982325786
+        '{ChildStaresCuriously}':
+          probability: 0.0007710697600630811
+          range_start: 0.49771674982325786
+          range_end: 0.49848781958332095
+        '{CoinClink}':
+          probability: 0.00010327520452002581
+          range_start: 0.49848781958332095
+          range_end: 0.49859109478784097
+        '{CreakNoise}':
+          probability: 0.0025853515484469125
+          range_start: 0.49859109478784097
+          range_end: 0.5011764463362879
+        '{DogSniffsAir}':
+          probability: 0.0014489332853933057
+          range_start: 0.5011764463362879
+          range_end: 0.5026253796216812
+        '{DustPuff}':
+          probability: 0.0007710697600631367
+          range_start: 0.5026253796216812
+          range_end: 0.5033964493817443
+        '{EthericFlutter}':
+          probability: 1.4664990431678682e-05
+          range_start: 0.5033964493817443
+          range_end: 0.503411114372176
+        '{GuardEases}':
+          probability: 0.0014489332853933057
+          range_start: 0.503411114372176
+          range_end: 0.5048600476575693
+        '{GuardStrolls}':
+          probability: 0.0019977716510726218
+          range_start: 0.5048600476575693
+          range_end: 0.5068578193086419
+        '{InsectNibble}':
+          probability: 5.883664835826252e-05
+          range_start: 0.5068578193086419
+          range_end: 0.5069166559570002
+        '{MerchantBookkeep}':
+          probability: 0.0038943903071541053
+          range_start: 0.5069166559570002
+          range_end: 0.5108110462641543
+        '{ObservantGaze}':
+          probability: 0.010608856353971685
+          range_start: 0.5108110462641543
+          range_end: 0.521419902618126
+        '{SeatCrack}':
+          probability: 2.9306512184801292e-06
+          range_start: 0.521419902618126
+          range_end: 0.5214228332693445
+        '{SeatlessPasserGrumbles}':
+          probability: 0.00045310284869692907
+          range_start: 0.5214228332693445
+          range_end: 0.5218759361180414
+        '{TestHero4Acknowledges}':
+          probability: 0.01247990685731759
+          range_start: 0.5218759361180414
+          range_end: 0.534355842975359
+        '{BreezeSways, CatProwls}':
+          probability: 0.001253720051558771
+          range_start: 0.534355842975359
+          range_end: 0.5356095630269178
+        '{BreezeSways, GuardStrolls}':
+          probability: 0.0008975495823659863
+          range_start: 0.5356095630269178
+          range_end: 0.5365071126092837
+        '{CalmWait, CreakNoise}':
+          probability: 0.08359303339978219
+          range_start: 0.5365071126092837
+          range_end: 0.6201001460090659
+        '{CalmWait, DustPuff}':
+          probability: 0.02493125557537368
+          range_start: 0.6201001460090659
+          range_end: 0.6450314015844396
+        '{CalmWait, ObservantGaze}':
+          probability: 0.3430196887784167
+          range_start: 0.6450314015844396
+          range_end: 0.9880510903628563
+        '{CatProwls, ChildStaresCuriously}':
+          probability: 0.0001468704304882218
+          range_start: 0.9880510903628563
+          range_end: 0.9881979607933445
+        '{CatProwls, DogSniffsAir}':
+          probability: 0.0002759872924558149
+          range_start: 0.9881979607933445
+          range_end: 0.9884739480858004
+        '{ChildStaresCuriously, DustPuff}':
+          probability: 4.0582618950679716e-05
+          range_start: 0.9884739480858004
+          range_end: 0.988514530704751
+        '{CoinClink, GuardEases}':
+          probability: 1.0214031216260189e-05
+          range_start: 0.988514530704751
+          range_end: 0.9885247447359673
+        '{CoinClink, MerchantBookkeep}':
+          probability: 2.7452902467306473e-05
+          range_start: 0.9885247447359673
+          range_end: 0.9885521976384346
+        '{CreakNoise, TestHero4Acknowledges}':
+          probability: 0.002202336504232516
+          range_start: 0.9885521976384346
+          range_end: 0.9907545341426671
+        '{EthericFlutter, ObservantGaze}':
+          probability: 1.0619475829809488e-05
+          range_start: 0.9907545341426671
+          range_end: 0.9907651536184969
+        '{GuardEases, GuardStrolls}':
+          probability: 0.0001975818116445316
+          range_start: 0.9907651536184969
+          range_end: 0.9909627354301415
+        '{ObservantGaze, TestHero4Acknowledges}':
+          probability: 0.009037173931160991
+          range_start: 0.9909627354301415
+          range_end: 0.9999999093613025
+        '{SeatCrack, SeatlessPasserGrumbles}':
+          probability: 9.063869743641817e-08
+          range_start: 0.9999999093613025
+          range_end: 0.9999999999999999
+characters:
+  cli-user: TestHero4
+saved_at: '2025-07-19T20:31:03.471873'

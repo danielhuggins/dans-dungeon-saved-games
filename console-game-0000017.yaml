@@ -1,0 +1,231 @@
+channel_id: console-game-0000017
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I carefully sharpen my sword on a whetstone
+  dm: |-
+    **TestHero**:
+    The blade gains a noticeably keener edge, increasing its cutting effectiveness in later use.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Considering character presence**\n\nAt the start, I’m identifying environmental elements like a merchant\
+    \ or a bird, but I'm realizing that we need at least four characters to meet the probability comparisons requirement since\
+    \ each must appear at least three times. This leads me to consider characters like TestHero, Aethelwynn, Aethelflaed,\
+    \ and Osric. However, I notice that our story hasn’t placed them yet. They need to be present in the scene. I'm thinking\
+    \ about setting the location at a crossroads near Thornwick. Alternatively, I wonder if I should focus on character selection\
+    \ based on the broader context instead.\n**Crafting character paths**\n\nLet's start by setting the scene — a moment of\
+    \ arrival where there's no combat or urgency, just exploration. I want to identify potential characters around the hero,\
+    \ which includes introducing a Town Crier, a Merchant, a Guard, or even a Bird. However, specific names in context are\
+    \ Aethelwynn, Aethelflaed, Osric, and TestHero, so I'll gather them together. \n\nIt seems plausible for our hero to be\
+    \ near the village of Ricthorp. I could create new IDs like Local Crier, but I’ll go with the established characters.\
+    \ Each character must appear multiple times in comparisons, so I’ll aim for around six pairwise comparisons using TestHero,\
+    \ Aethelflaed, Osric, and Aethelwynn."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero
+    action_taken: I carefully sharpen my sword on a whetstone
+    consequence_response:
+      potential_consequences:
+      - id: EdgeImproved
+        description: |-
+          The blade gains a noticeably keener edge, increasing its cutting effectiveness in later use.
+        marginal_probability: 0.9
+        joint_probabilities:
+          and SelfCut: 0.05
+          and HiddenFlawRevealed: 0.02
+          and NoiseAlert: 0.08
+          and MomentOfReflection: 0.13
+      - id: MinorEdgeDamage
+        description: |-
+          An imprecise stroke nicks the edge, leaving a small chip that slightly reduces durability.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and SelfCut: 0.02
+          and WhetstoneCracked: 0.005
+      - id: SelfCut
+        description: TestHero’s grip slips, causing a shallow cut on a fingertip and light bleeding.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and EdgeImproved: 0.05
+          and MinorEdgeDamage: 0.02
+          and WhetstoneCracked: 0.003
+          and NoiseAlert: 0.02
+          and MetalDustInhalation: 0.01
+      - id: WhetstoneCracked
+        description: |-
+          A hairline fracture forms in the whetstone, lowering its future effectiveness and risking complete breakage.
+        marginal_probability: 0.01
+        joint_probabilities:
+          and MinorEdgeDamage: 0.005
+          and SelfCut: 0.003
+          and BriefSparkIgnition: 0.0008
+      - id: HiddenFlawRevealed
+        description: |-
+          Close inspection during sharpening reveals a faint stress crack near the hilt that could worsen under combat strain.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and EdgeImproved: 0.02
+          and MomentOfReflection: 0.03
+      - id: NoiseAlert
+        description: |-
+          The scraping sound carries farther than expected, drawing the attention of a nearby person or creature.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and EdgeImproved: 0.08
+          and SelfCut: 0.02
+          and MetalDustInhalation: 0.03
+          and BriefSparkIgnition: 0.001
+      - id: MetalDustInhalation
+        description: |-
+          Fine metal filings irritate TestHero’s throat, provoking a brief cough and discomfort.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and NoiseAlert: 0.03
+          and SelfCut: 0.01
+          and MomentOfReflection: 0.02
+      - id: BriefSparkIgnition
+        description: |-
+          A stray spark lands on a nearby dry fibre or oil-stained rag, beginning a tiny smoulder that could spread if ignored.
+        marginal_probability: 0.002
+        joint_probabilities:
+          and NoiseAlert: 0.001
+          and WhetstoneCracked: 0.0008
+      - id: MomentOfReflection
+        description: |-
+          The rhythmic motion induces a flash of mental clarity, surfacing a useful memory or insight for TestHero.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and EdgeImproved: 0.13
+          and HiddenFlawRevealed: 0.03
+          and MetalDustInhalation: 0.02
+    actual_consequences:
+    - id: EdgeImproved
+      description: |-
+        The blade gains a noticeably keener edge, increasing its cutting effectiveness in later use.
+      marginal_probability: 0.9
+    probability_debug_info:
+      random_value: 0.09967965334508622
+      selected_outcome: '{EdgeImproved}'
+      probability_ranges:
+        '{}':
+          probability: 0.06896116130570815
+          range_start: 0.0
+          range_end: 0.06896116130570815
+        '{BriefSparkIgnition}':
+          probability: 0.00013819872005152445
+          range_start: 0.06896116130570815
+          range_end: 0.06909936002575967
+        '{EdgeImproved}':
+          probability: 0.6206504517513735
+          range_start: 0.06909936002575967
+          range_end: 0.6897498117771331
+        '{HiddenFlawRevealed}':
+          probability: 0.002873381721071211
+          range_start: 0.6897498117771331
+          range_end: 0.6926231934982043
+        '{MetalDustInhalation}':
+          probability: 0.0036295348055636056
+          range_start: 0.6926231934982043
+          range_end: 0.6962527283037679
+        '{MinorEdgeDamage}':
+          probability: 0.005190625044515618
+          range_start: 0.6962527283037679
+          range_end: 0.7014433533482836
+        '{MomentOfReflection}':
+          probability: 0.012169616701007357
+          range_start: 0.7014433533482836
+          range_end: 0.7136129700492909
+        '{NoiseAlert}':
+          probability: 0.007662351256189748
+          range_start: 0.7136129700492909
+          range_end: 0.7212753213054807
+        '{SelfCut}':
+          probability: 0.005996622722235445
+          range_start: 0.7212753213054807
+          range_end: 0.7272719440277161
+        '{WhetstoneCracked}':
+          probability: 0.0006965773869263003
+          range_start: 0.7272719440277161
+          range_end: 0.7279685214146424
+        '{BriefSparkIgnition, NoiseAlert}':
+          probability: 1.535541333907986e-05
+          range_start: 0.7279685214146424
+          range_end: 0.7279838768279815
+        '{BriefSparkIgnition, WhetstoneCracked}':
+          probability: 1.3959466671487064e-06
+          range_start: 0.7279838768279815
+          range_end: 0.7279852727746486
+        '{EdgeImproved, HiddenFlawRevealed}':
+          probability: 0.025860435489640565
+          range_start: 0.7279852727746486
+          range_end: 0.7538457082642892
+        '{EdgeImproved, MomentOfReflection}':
+          probability: 0.10952655030906588
+          range_start: 0.7538457082642892
+          range_end: 0.8633722585733551
+        '{EdgeImproved, NoiseAlert}':
+          probability: 0.06896116130570817
+          range_start: 0.8633722585733551
+          range_end: 0.9323334198790633
+        '{EdgeImproved, SelfCut}':
+          probability: 0.05396960450011945
+          range_start: 0.9323334198790633
+          range_end: 0.9863030243791827
+        '{HiddenFlawRevealed, MomentOfReflection}':
+          probability: 0.0005070673625420241
+          range_start: 0.9863030243791827
+          range_end: 0.9868100917417247
+        '{MetalDustInhalation, MomentOfReflection}':
+          probability: 0.0006405061421582703
+          range_start: 0.9868100917417247
+          range_end: 0.987450597883883
+        '{MetalDustInhalation, NoiseAlert}':
+          probability: 0.0004032816450626475
+          range_start: 0.987450597883883
+          range_end: 0.9878538795289457
+        '{MetalDustInhalation, SelfCut}':
+          probability: 0.00031561172222294154
+          range_start: 0.9878538795289457
+          range_end: 0.9881694912511686
+        '{MinorEdgeDamage, SelfCut}':
+          probability: 0.0004513586995230634
+          range_start: 0.9881694912511686
+          range_end: 0.9886208499506917
+        '{MinorEdgeDamage, WhetstoneCracked}':
+          probability: 5.243055600523405e-05
+          range_start: 0.9886208499506917
+          range_end: 0.9886732805066969
+        '{NoiseAlert, SelfCut}':
+          probability: 0.0006662914135817655
+          range_start: 0.9886732805066969
+          range_end: 0.9893395719202787
+        '{SelfCut, WhetstoneCracked}':
+          probability: 6.057194668929178e-05
+          range_start: 0.9893395719202787
+          range_end: 0.989400143866968
+        '{EdgeImproved, HiddenFlawRevealed, MomentOfReflection}':
+          probability: 0.004563606262877773
+          range_start: 0.989400143866968
+          range_end: 0.9939637501298457
+        '{EdgeImproved, NoiseAlert, SelfCut}':
+          probability: 0.005996622722235445
+          range_start: 0.9939637501298457
+          range_end: 0.9999603728520812
+        '{MetalDustInhalation, NoiseAlert, SelfCut}':
+          probability: 3.506796913588239e-05
+          range_start: 0.9999603728520812
+          range_end: 0.999995440821217
+        '{MinorEdgeDamage, SelfCut, WhetstoneCracked}':
+          probability: 4.559178783170026e-06
+          range_start: 0.999995440821217
+          range_end: 1.0000000000000002
+characters:
+  cli-user: TestHero
+saved_at: '2025-07-19T19:17:45.887582'

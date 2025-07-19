@@ -1,0 +1,334 @@
+channel_id: console-game-0000025
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I wait and watch quietly
+  dm: |-
+    **TestHero6**:
+    No one in the vicinity notices TestHero6 as they stay motionless and silent. Nothing notable happens for the moment; time simply passes.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Analyzing player observation**\n\nI'm focusing on crafting a JSON for the action \"wait and watch\
+    \ quietly.\" In this scenario, the player is observing without acting, which opens up various consequences. They could\
+    \ remain unnoticed, detect subtle details, or overhear conversations. I need to think about NPC actions—like proactive\
+    \ behaviors they might exhibit—and how they respond to the player's quiet presence. Also, I’ll assign probabilities for\
+    \ each outcome, considering that some events are very unlikely. I’m picturing a small village street for context.\n**Defining\
+    \ player interactions**\n\nThe player may lose track of their target as time passes, or ambient noises like a creaking\
+    \ floor might inadvertently reveal their position. I need to outline several discrete effects, like experiencing a suppressed\
+    \ sneeze or getting bitten by bugs. For proactive NPC actions, I envision things like a guard patrolling, a merchant counting\
+    \ inventory, or a cat stalking prey. \n\nI should also establish probabilities, reflecting the likelihood of different\
+    \ outcomes, based on the player’s quiet observation."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero6
+    action_taken: I wait and watch quietly
+    consequence_response:
+      potential_consequences:
+      - id: RemainUnnoticed
+        description: No one in the vicinity notices TestHero6 as they stay motionless and silent.
+        marginal_probability: 0.87
+        joint_probabilities:
+          and NoticeSubtleDetail: 0.26
+          and OverhearConversation: 0.13
+          and GuardShiftsPosition: 0.35
+          and UnremarkablePassage: 0.18
+      - id: NoticeSubtleDetail
+        description: |-
+          By observing carefully, TestHero6 spots a small but important clue (e.g., a hidden sigil or loose floorboard).
+        marginal_probability: 0.3
+        joint_probabilities:
+          and OverhearConversation: 0.12
+          and GuardShiftsPosition: 0.1
+          and BugBite: 0.02
+          and OwlTakesFlight: 0.03
+      - id: OverhearConversation
+        description: Faint voices carry to the hero, revealing useful snippets of information.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and ConversationHushes: 0.03
+          and RemainUnnoticed: 0.13
+      - id: DetectedByGuard
+        description: |-
+          A nearby guard catches movement or sound and becomes aware of TestHero6’s presence.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and GuardGlances: 0.035
+          and AccidentalNoise: 0.02
+      - id: UnremarkablePassage
+        description: Nothing notable happens for the moment; time simply passes.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and RemainUnnoticed: 0.18
+      - id: AccidentalNoise
+        description: |-
+          A creaking board or snapping twig betrays a faint sound from the hero’s position.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and GuardGlances: 0.06
+          and CatPauses: 0.03
+          and DetectedByGuard: 0.02
+          and ChildChasesBall: 0.015
+          and SuppressedSneeze: 0.02
+      - id: SuppressedSneeze
+        description: The hero nearly sneezes but manages to stifle it just in time.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and AccidentalNoise: 0.02
+          and BugBite: 0.004
+      - id: BugBite
+        description: An insect bites the hero, causing minor itching and distraction.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and CatStalksMouse: 0.01
+          and NoticeSubtleDetail: 0.02
+          and SuppressedSneeze: 0.004
+      npc_proactive_actions:
+      - id: GuardShiftsPosition
+        description: |-
+          A patrolling guard adjusts stance and slowly paces a few steps to relieve stiffness.
+        marginal_probability: 0.42
+        joint_probabilities:
+          and GuardGlances: 0.04
+          and RemainUnnoticed: 0.35
+          and NoticeSubtleDetail: 0.1
+      - id: CatStalksMouse
+        description: A half-wild cat slinks after a mouse along the shadows.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and CatPauses: 0.04
+          and BugBite: 0.01
+      - id: DrunkardSings
+        description: A tipsy passer-by begins humming a loud, off-key tune nearby.
+        marginal_probability: 0.025
+        joint_probabilities:
+          and DrunkardWaves: 0.008
+      - id: ChildChasesBall
+        description: A village child darts after a rolling ball, entering the immediate area.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and AccidentalNoise: 0.015
+      - id: OwlTakesFlight
+        description: An owl, disturbed by subtle motion, launches from a perch and glides overhead.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and NoticeSubtleDetail: 0.03
+      - id: RaiderScoutSpotsCamp
+        description: |-
+          Far off, an opportunistic Scraelingas scout surveys the settlement’s edge for weaknesses (unrelated to the hero).
+        marginal_probability: 0.0001
+        joint_probabilities: {}
+      npc_reactions:
+      - id: GuardGlances
+        description: |-
+          Hearing or sensing something, the guard briefly looks toward the hero’s location.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and DetectedByGuard: 0.035
+          and AccidentalNoise: 0.06
+          and GuardShiftsPosition: 0.04
+      - id: CatPauses
+        description: The stalking cat freezes, ears twitching toward the faint noise.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and AccidentalNoise: 0.03
+          and CatStalksMouse: 0.04
+      - id: ConversationHushes
+        description: Voices in the distance drop to a murmur, wary of being overheard.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and OverhearConversation: 0.03
+      - id: DrunkardWaves
+        description: |-
+          The singing drunk notices a figure in the shadows and offers an unsteady greeting wave.
+        marginal_probability: 0.01
+        joint_probabilities:
+          and DrunkardSings: 0.008
+    actual_consequences:
+    - id: RemainUnnoticed
+      description: No one in the vicinity notices TestHero6 as they stay motionless and silent.
+      marginal_probability: 0.87
+    - id: UnremarkablePassage
+      description: Nothing notable happens for the moment; time simply passes.
+      marginal_probability: 0.2
+    probability_debug_info:
+      random_value: 0.8662514856499075
+      selected_outcome: '{RemainUnnoticed, UnremarkablePassage}'
+      probability_ranges:
+        '{}':
+          probability: 0.042119924613752316
+          range_start: 0.0
+          range_end: 0.042119924613752316
+        '{AccidentalNoise}':
+          probability: 0.004679991623750254
+          range_start: 0.042119924613752316
+          range_end: 0.04679991623750257
+        '{BugBite}':
+          probability: 0.0036626021403262862
+          range_start: 0.04679991623750257
+          range_end: 0.050462518377828856
+        '{CatPauses}':
+          probability: 0.002216838137565909
+          range_start: 0.050462518377828856
+          range_end: 0.052679356515394765
+        '{CatStalksMouse}':
+          probability: 0.005743626083693498
+          range_start: 0.052679356515394765
+          range_end: 0.05842298259908826
+        '{ChildChasesBall}':
+          probability: 0.0013026780808376992
+          range_start: 0.05842298259908826
+          range_end: 0.05972566067992596
+        '{ConversationHushes}':
+          probability: 0.0017549968589063436
+          range_start: 0.05972566067992596
+          range_end: 0.061480657538832306
+        '{DetectedByGuard}':
+          probability: 0.0017549968589063436
+          range_start: 0.061480657538832306
+          range_end: 0.06323565439773865
+        '{DrunkardSings}':
+          probability: 0.0010799980670192916
+          range_start: 0.06323565439773865
+          range_end: 0.06431565246475794
+        '{DrunkardWaves}':
+          probability: 0.00042545378397729205
+          range_start: 0.06431565246475794
+          range_end: 0.06474110624873523
+        '{GuardGlances}':
+          probability: 0.003662602140326293
+          range_start: 0.06474110624873523
+          range_end: 0.06840370838906153
+        '{GuardShiftsPosition}':
+          probability: 0.030500635065130968
+          range_start: 0.06840370838906153
+          range_end: 0.0989043434541925
+        '{NoticeSubtleDetail}':
+          probability: 0.0180513962630367
+          range_start: 0.0989043434541925
+          range_end: 0.1169557397172292
+        '{OverhearConversation}':
+          probability: 0.0074329278730151105
+          range_start: 0.1169557397172292
+          range_end: 0.1243886675902443
+        '{OwlTakesFlight}':
+          probability: 0.002688505826409726
+          range_start: 0.1243886675902443
+          range_end: 0.12707717341665403
+        '{RaiderScoutSpotsCamp}':
+          probability: 4.212413702742168e-06
+          range_start: 0.12707717341665403
+          range_end: 0.12708138583035677
+        '{RemainUnnoticed}':
+          probability: 0.2818794954920347
+          range_start: 0.12708138583035677
+          range_end: 0.4089608813223915
+        '{SuppressedSneeze}':
+          probability: 0.002216838137565902
+          range_start: 0.4089608813223915
+          range_end: 0.4111777194599574
+        '{UnremarkablePassage}':
+          probability: 0.010529981153438062
+          range_start: 0.4111777194599574
+          range_end: 0.42170770061339546
+        '{AccidentalNoise, CatPauses}':
+          probability: 0.00024631534861840887
+          range_start: 0.42170770061339546
+          range_end: 0.4219540159620139
+        '{AccidentalNoise, ChildChasesBall}':
+          probability: 0.00014474200898195733
+          range_start: 0.4219540159620139
+          range_end: 0.42209875797099583
+        '{AccidentalNoise, DetectedByGuard}':
+          probability: 0.00019499965098956906
+          range_start: 0.42209875797099583
+          range_end: 0.4222937576219854
+        '{AccidentalNoise, GuardGlances}':
+          probability: 0.0004069557933695789
+          range_start: 0.4222937576219854
+          range_end: 0.422700713415355
+        '{AccidentalNoise, SuppressedSneeze}':
+          probability: 0.00024631534861840887
+          range_start: 0.422700713415355
+          range_end: 0.4229470287639734
+        '{BugBite, CatStalksMouse}':
+          probability: 0.0004994457464081448
+          range_start: 0.4229470287639734
+          range_end: 0.42344647451038153
+        '{BugBite, NoticeSubtleDetail}':
+          probability: 0.0015696866315684233
+          range_start: 0.42344647451038153
+          range_end: 0.42501616114194996
+        '{BugBite, SuppressedSneeze}':
+          probability: 0.0001927685337013707
+          range_start: 0.42501616114194996
+          range_end: 0.4252089296756513
+        '{CatPauses, CatStalksMouse}':
+          probability: 0.0003022961096680876
+          range_start: 0.4252089296756513
+          range_end: 0.4255112257853194
+        '{ConversationHushes, OverhearConversation}':
+          probability: 0.000309705328042309
+          range_start: 0.4255112257853194
+          range_end: 0.4258209311133617
+        '{DetectedByGuard, GuardGlances}':
+          probability: 0.0001526084225135782
+          range_start: 0.4258209311133617
+          range_end: 0.4259735395358753
+        '{DrunkardSings, DrunkardWaves}':
+          probability: 1.0909071384013203e-05
+          range_start: 0.4259735395358753
+          range_end: 0.4259844486072593
+        '{GuardGlances, GuardShiftsPosition}':
+          probability: 0.0026522291360983608
+          range_start: 0.4259844486072593
+          range_end: 0.4286366777433577
+        '{GuardShiftsPosition, NoticeSubtleDetail}':
+          probability: 0.013071700742198988
+          range_start: 0.4286366777433577
+          range_end: 0.44170837848555666
+        '{GuardShiftsPosition, RemainUnnoticed}':
+          probability: 0.20411963466664573
+          range_start: 0.44170837848555666
+          range_end: 0.6458280131522024
+        '{NoticeSubtleDetail, OverhearConversation}':
+          probability: 0.00318554051700648
+          range_start: 0.6458280131522024
+          range_end: 0.6490135536692089
+        '{NoticeSubtleDetail, OwlTakesFlight}':
+          probability: 0.0011522167827470176
+          range_start: 0.6490135536692089
+          range_end: 0.6501657704519559
+        '{NoticeSubtleDetail, RemainUnnoticed}':
+          probability: 0.12080549806801488
+          range_start: 0.6501657704519559
+          range_end: 0.7709712685199708
+        '{OverhearConversation, RemainUnnoticed}':
+          probability: 0.04974344038094736
+          range_start: 0.7709712685199708
+          range_end: 0.8207147089009181
+        '{RemainUnnoticed, UnremarkablePassage}':
+          probability: 0.07046987387300874
+          range_start: 0.8207147089009181
+          range_end: 0.8911845827739269
+        '{AccidentalNoise, DetectedByGuard, GuardGlances}':
+          probability: 1.6956491390440753e-05
+          range_start: 0.8911845827739269
+          range_end: 0.8912015392653173
+        '{GuardShiftsPosition, NoticeSubtleDetail, RemainUnnoticed}':
+          probability: 0.08747984342856252
+          range_start: 0.8912015392653173
+          range_end: 0.9786813826938798
+        '{NoticeSubtleDetail, OverhearConversation, RemainUnnoticed}':
+          probability: 0.02131861730612017
+          range_start: 0.9786813826938798
+          range_end: 1.0
+characters:
+  cli-user: TestHero6
+saved_at: '2025-07-19T20:43:23.052623'
