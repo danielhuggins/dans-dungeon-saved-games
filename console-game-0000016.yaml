@@ -1,0 +1,337 @@
+channel_id: console-game-0000016
+log:
+- user: ''
+  dm: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  ai_response: null
+  reasoning_summary: null
+- user: I practice sword swings in the yard
+  dm: |-
+    **TestHero**:
+    Repetition slightly refines TestHero's muscle memory, yielding a minute but genuine improvement in blade control. Micro-chipping and friction shave the keen edge, leaving the sword perceptibly duller.
+  metrics: 'Parts completed: 1'
+  ai_response: |-
+    ```json
+    {
+      "potential_next_actors": [
+        {
+          "id": "TestHero",
+          "description": "The player-character, standing alert at the very start of the journey, is fully aware of the surroundings, has no wounds, and carries the immediate motivation to decide where to go first."
+        },
+        {
+          "id": "ScraelingasScout",
+          "description": "A lone bandit scout concealed along the nearby trade path; healthy, keen-eyed, and urgently looking for targets, giving him strong reason to make the next move if travellers appear."
+        },
+        {
+          "id": "Aethelwynn",
+          "description": "The river-healer from a hamlet less than a mile away; currently on foot gathering herbs, moderately fatigued but aware of movements on the road and likely to investigate unusual sounds."
+        },
+        {
+          "id": "Osric",
+          "description": "The village blacksmith working at his forge within earshot of the road; focused on his craft, moderately encumbered by tools, yet able to react if trouble threatens his community."
+        },
+        {
+          "id": "Aethelflaed",
+          "description": "A Torfaeth initiate midwife preparing supplies in Ricthorp several miles off; occupied and burdened by a limp, only faintly aware of distant commotion, giving her the lowest immediacy to act."
+        }
+      ],
+      "spotlight_probability_comparisons": [
+        "TestHero is 1.333x as likely as ScraelingasScout",
+        "TestHero is 1.818x as likely as Aethelwynn",
+        "TestHero is 3.030x as likely as Osric",
+        "TestHero is 5.000x as likely as Aethelflaed",
+        "ScraelingasScout is 1.364x as likely as Aethelwynn",
+        "ScraelingasScout is 2.273x as likely as Osric",
+        "ScraelingasScout is 3.750x as likely as Aethelflaed",
+        "Aethelwynn is 1.667x as likely as Osric",
+        "Aethelwynn is 2.750x as likely as Aethelflaed",
+        "Osric is 1.650x as likely as Aethelflaed",
+        "ScraelingasScout is 0.750x as likely as TestHero",
+        "Aethelwynn is 0.550x as likely as TestHero",
+        "Osric is 0.330x as likely as TestHero",
+        "Aethelflaed is 0.200x as likely as TestHero",
+        "Aethelwynn is 0.733x as likely as ScraelingasScout",
+        "Osric is 0.440x as likely as ScraelingasScout",
+        "Aethelflaed is 0.267x as likely as ScraelingasScout",
+        "Osric is 0.600x as likely as Aethelwynn",
+        "Aethelflaed is 0.364x as likely as Aethelwynn",
+        "Aethelflaed is 0.606x as likely as Osric"
+      ]
+    }
+    ```
+
+    ---
+
+    ```json
+    {
+      "potential_consequences": [
+        {
+          "id": "SkillRefined",
+          "description": "Repetition slightly refines TestHero's muscle memory, yielding a minute but genuine improvement in blade control.",
+          "marginal_probability": 0.65,
+          "joint_probabilities": {
+            "and EdgeDulled": 0.05,
+            "and SpectatorNotices": 0.10,
+            "and ShoulderStrain": 0.009,
+            "and HiddenObjectUnearthed": 0.0000002
+          }
+        },
+        {
+          "id": "EdgeDulled",
+          "description": "Micro-chipping and friction shave the keen edge, leaving the sword perceptibly duller.",
+          "marginal_probability": 0.12,
+          "joint_probabilities": {
+            "and SkillRefined": 0.05,
+            "and WeaponDropped": 0.004,
+            "and MinorSelfCut": 0.002
+          }
+        },
+        {
+          "id": "SpectatorNotices",
+          "description": "A passing farm-hand pauses to observe, forming an impression of TestHero’s prowess.",
+          "marginal_probability": 0.15,
+          "joint_probabilities": {
+            "and SkillRefined": 0.10,
+            "and StartleAnimal": 0.04,
+            "and AlarmRaised": 0.003
+          }
+        },
+        {
+          "id": "StartleAnimal",
+          "description": "A nearby chicken or dog is spooked by the sudden motion, scattering noisily across the yard.",
+          "marginal_probability": 0.08,
+          "joint_probabilities": {
+            "and SpectatorNotices": 0.04
+          }
+        },
+        {
+          "id": "GripSlip",
+          "description": "Sweaty palms let the hilt shift unexpectedly, jarring TestHero’s wrists.",
+          "marginal_probability": 0.02,
+          "joint_probabilities": {
+            "and WeaponDropped": 0.003,
+            "and MinorSelfCut": 0.001
+          }
+        },
+        {
+          "id": "MinorSelfCut",
+          "description": "The blade nicks TestHero’s forearm, opening a shallow, bleeding scratch.",
+          "marginal_probability": 0.003,
+          "joint_probabilities": {
+            "and GripSlip": 0.001,
+            "and WeaponDropped": 0.001,
+            "and EdgeDulled": 0.002
+          }
+        },
+        {
+          "id": "WeaponDropped",
+          "description": "The sword slips completely and clatters onto the packed earth.",
+          "marginal_probability": 0.005,
+          "joint_probabilities": {
+            "and GripSlip": 0.003,
+            "and MinorSelfCut": 0.001,
+            "and EdgeDulled": 0.004
+          }
+        },
+        {
+          "id": "ShoulderStrain",
+          "description": "An overextended swing tweaks the shoulder muscles, causing an ache that will linger for hours.",
+          "marginal_probability": 0.015,
+          "joint_probabilities": {
+            "and SkillRefined": 0.009
+          }
+        },
+        {
+          "id": "AlarmRaised",
+          "description": "A nervous neighbour mistakes the drill for violence and shouts an alert toward the main house.",
+          "marginal_probability": 0.004,
+          "joint_probabilities": {
+            "and SpectatorNotices": 0.003
+          }
+        },
+        {
+          "id": "HiddenObjectUnearthed",
+          "description": "A mis-placed step scuffs the soil, exposing a tiny, unfamiliar metal shard glinting beneath the dirt.",
+          "marginal_probability": 0.0000005,
+          "joint_probabilities": {
+            "and SkillRefined": 0.0000002
+          }
+        }
+      ]
+    }
+    ```
+  reasoning_summary: "**Calculating actor probabilities**\n\nI'm thinking about how to set relative probabilities for actors\
+    \ in a scenario, starting with a baseline actor like TestHero. I want to compare them through various pairwise combinations.\
+    \ It seems important for each ID to appear multiple times across these comparisons to ensure accuracy. \n\nI’ll factor\
+    \ in urgency and context—it’s early in the exploration, not combat, so players will likely act first. I’ll assign TestHero\
+    \ a probability weight of 1.0, while Aethelwynn could be around 0.6. Osric will have a lower relevance due to their focus.\n\
+    **Setting up probability ratios**\n\nI'm working on assigning probabilities for characters relative to one another. I’ve\
+    \ established TestHero as the baseline at 1.0 and set ScraelingasScout at approximately 0.85, followed by Aethelwynn at\
+    \ 0.70, Osric at 0.60, and Aethelflaed at 0.55. \n\nNow I need to create pairwise ratios for each comparison. I'll focus\
+    \ on ensuring every character appears frequently enough and also provide reverse ratios to keep the comparisons aligned.\
+    \ It’s a bit of a puzzle, but I’m getting there!\n\n---\n\n**Analyzing practice probabilities**\n\nI'm considering the\
+    \ potential probabilities during a short practice session of about six swings. The chance of a minor self-injury might\
+    \ be around 0.01, especially with rare events like dropping the sword. For some defined outcomes, I suggest:  \n\n1. Refined\
+    \ technique with a 0.65 probability for skills gain.  \n2. A sword grip slip occurring at a 0.02 probability.  \n3. A\
+    \ minor self-cut possibility at 0.003.  \n4. Dulling of the sword edge at 0.12.  \n5. A nearby observer’s notice at 0.15,\
+    \ potentially overlapping with improved technique.\n**Evaluating joint probabilities**\n\nI'm analyzing several potential\
+    \ outcomes during practice. For example, an observer might misinterpret the action as a threat, leading to a call for\
+    \ guards at a low probability of 0.004. Other events include startling an animal (0.08) and dropping the weapon (0.005).\
+    \ I need to consider joint probabilities for events that can logically happen together. Each probability should remain\
+    \ within limits of the individual events. I’ll assign these carefully to ensure they make sense within the established\
+    \ margins."
+- user: I examine my surroundings carefully
+  dm: |-
+    **TestHero**:
+    TestHero notices that the sword’s edge has dulled and chipped slightly from recent practice. A loose paving stone on the yard surface is spotted, revealing a potential tripping hazard or tactical feature.
+  metrics: 'Parts completed: 1'
+  ai_response: |-
+    ```json
+    {
+      "potential_next_actors": [
+        {
+          "id": "TestHero",
+          "description": "Player-character still holding the sword after practice, fully aware and physically ready; most immediate opportunity to continue acting."
+        },
+        {
+          "id": "StableHandRiann",
+          "description": "Young stable hand within the yard, watching TestHero’s drills; alert, unencumbered, and likely to step forward to comment or assist."
+        },
+        {
+          "id": "YardGoose",
+          "description": "Territorial goose prowling the practice ground; close proximity and unpredictable temperament give it a real chance to honk, charge, or disrupt."
+        },
+        {
+          "id": "OsricBlacksmith",
+          "description": "Village blacksmith working at a nearby forge; aware that repeated swings can dull blades and may approach to offer grinding or commentary, though he must cover some distance first."
+        },
+        {
+          "id": "Aethelwynn",
+          "description": "Travelling healer passing along the outer lane; low immediate urgency but could intervene if she notices the sword’s edge damage or any injury."
+        }
+      ],
+      "spotlight_probability_comparisons": [
+        "TestHero is 4.000x as likely as StableHandRiann",
+        "TestHero is 6.667x as likely as YardGoose",
+        "TestHero is 10.000x as likely as OsricBlacksmith",
+        "TestHero is 20.000x as likely as Aethelwynn",
+        "StableHandRiann is 0.250x as likely as TestHero",
+        "StableHandRiann is 1.667x as likely as YardGoose",
+        "StableHandRiann is 2.500x as likely as OsricBlacksmith",
+        "StableHandRiann is 5.000x as likely as Aethelwynn",
+        "YardGoose is 0.150x as likely as TestHero",
+        "YardGoose is 0.600x as likely as StableHandRiann",
+        "YardGoose is 1.500x as likely as OsricBlacksmith",
+        "YardGoose is 3.000x as likely as Aethelwynn",
+        "OsricBlacksmith is 0.100x as likely as TestHero",
+        "OsricBlacksmith is 0.400x as likely as StableHandRiann",
+        "OsricBlacksmith is 0.667x as likely as YardGoose",
+        "OsricBlacksmith is 2.000x as likely as Aethelwynn",
+        "Aethelwynn is 0.050x as likely as TestHero",
+        "Aethelwynn is 0.200x as likely as StableHandRiann",
+        "Aethelwynn is 0.333x as likely as YardGoose",
+        "Aethelwynn is 0.500x as likely as OsricBlacksmith"
+      ]
+    }
+    ```
+
+    ---
+
+    {
+      "potential_consequences": [
+        {
+          "id": "EdgeWearNoted",
+          "description": "TestHero notices that the sword’s edge has dulled and chipped slightly from recent practice.",
+          "marginal_probability": 0.48,
+          "joint_probabilities": {
+            "and LooseStone": 0.07,
+            "and ScurryingRodent": 0.03,
+            "and EyeIrritation": 0.01,
+            "and DistantWatcher": 0.0001
+          }
+        },
+        {
+          "id": "LooseStone",
+          "description": "A loose paving stone on the yard surface is spotted, revealing a potential tripping hazard or tactical feature.",
+          "marginal_probability": 0.12,
+          "joint_probabilities": {
+            "and EdgeWearNoted": 0.07,
+            "and EyeIrritation": 0.005,
+            "and ScurryingRodent": 0.015
+          }
+        },
+        {
+          "id": "DistantWatcher",
+          "description": "A faint silhouette at the edge of the training yard appears to be observing TestHero’s movements.",
+          "marginal_probability": 0.0005,
+          "joint_probabilities": {
+            "and EdgeWearNoted": 0.0001,
+            "and StormApproach": 0.00005
+          }
+        },
+        {
+          "id": "NothingUnusual",
+          "description": "Despite the careful survey, nothing out of the ordinary is perceived.",
+          "marginal_probability": 0.40,
+          "joint_probabilities": {}
+        },
+        {
+          "id": "StormApproach",
+          "description": "Dark clouds on the horizon hint at an approaching storm that could soon affect outdoor activity.",
+          "marginal_probability": 0.04,
+          "joint_probabilities": {
+            "and EyeIrritation": 0.008,
+            "and DistantWatcher": 0.00005
+          }
+        },
+        {
+          "id": "EyeIrritation",
+          "description": "A sudden swirl of dust or pollen catches in TestHero’s eyes, causing brief watering and blurred vision.",
+          "marginal_probability": 0.02,
+          "joint_probabilities": {
+            "and LooseStone": 0.005,
+            "and EdgeWearNoted": 0.01,
+            "and StormApproach": 0.008
+          }
+        },
+        {
+          "id": "MetallicGlimmer",
+          "description": "A tiny metallic glint partly buried in the soil draws attention—perhaps a coin, nail, or other small object.",
+          "marginal_probability": 0.002,
+          "joint_probabilities": {
+            "and ScurryingRodent": 0.0007
+          }
+        },
+        {
+          "id": "ScurryingRodent",
+          "description": "A small rodent darts across the yard before disappearing into a crevice, evidence of local pests.",
+          "marginal_probability": 0.08,
+          "joint_probabilities": {
+            "and EdgeWearNoted": 0.03,
+            "and LooseStone": 0.015,
+            "and MetallicGlimmer": 0.0007
+          }
+        }
+      ]
+    }
+  reasoning_summary: "**Computing actor descriptions and ratios**\n\nI have an array of potential next actors with their IDs\
+    \ and descriptions. I need to use the exact ID values for a unified approach. The actors include a player hero, a stable\
+    \ hand observing, an aggressive goose, a village blacksmith, and a traveling healer. \n\nNext, I’ll compute their ratios\
+    \ based on given values, ensuring to output numbers with three decimal precision. For instance, the ratio of the player\
+    \ hero to the stable hand is 4.0, while the ratio to the goose is approximately 6.667.\n\n---\n\n**Analyzing action consequences**\n\
+    \nI’m parsing the instruction about the player, TestHero, who’s practicing sword swings. Now, he’s examining his surroundings\
+    \ carefully, and that’s a new action. I need to come up with 6-12 possible consequences. Some ideas include: noticing\
+    \ something subtle, realizing the sword is dull, or even finding someone watching. Perhaps there could also be an unexpected\
+    \ movement that scares him or uncovering a hidden item. I'll select about 8 and estimate probabilities for each.\n**Assessing\
+    \ probabilities in action**\n\nI'm considering an actuary approach for TestHero's observation in the yard while practicing\
+    \ sword swings. Given the usual scenario, I think the probability of noticing something significant is pretty low. For\
+    \ example, seeing something like a dull blade has a moderate likelihood of about 0.35, while concluding that there’s nothing\
+    \ new is much higher, around 0.6. I'll need to outline 6-12 possible consequences, combining a few plausible scenarios\
+    \ while ensuring they can coexist logically. Let’s get creative with the combinations!"
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+adventure_name: core-game
+characters:
+  cli-user: TestHero
