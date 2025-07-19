@@ -1,0 +1,1274 @@
+channel_id: test-o3-reasoning
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  ai_prompt: null
+  ai_response: null
+  reasoning_summary: null
+- user: I carefully look around for any signs of danger
+  dm: |-
+    **TestPlayer**:
+    The search reveals nothing out of place, giving the party a brief but possibly false sense of safety.
+  metrics: 'Parts completed: 1'
+  ai_prompt: "\n\n\n<Context>\n<DescriptionOfTheGameWorld>\n# The Corruption: A Creeping Doom\n\n## Nature of the Corruption\n\
+    The Corruption manifests as a sickly, iridescent sheen that seems to writhe at the corner of one's vision. It begins subtly\
+    \ - a faint metallic taste in water, crops that grow too quickly with oddly-shaped leaves, animals born with extra limbs\
+    \ or milky eyes. As it progresses, it transforms everything it touches into increasingly grotesque forms that defy natural\
+    \ law, ending finally in death and decomposition, leaving devastated areas of rot and desolation where corruption has\
+    \ fully taken root.\n\n## Common Signs\n### Stage 1 - minor corruption\n- Water sources develop an oily film that catches\
+    \ light in impossible colors\n- Plants grow with unnatural vigor, often featuring thorns, bulbous growths, or flesh-like\
+    \ textures\n- Animals become aggressive, develop mutations, or display hive-mind behavior\n- Under moonlight, the air\
+    \ has a waxy, heat haze-like quality\n\n### Stage 2 - moderate corruption\n- Wounds exposed to Corruption refuse to heal\
+    \ properly, instead growing dark tendrils beneath the skin\n- Metal near concentrated Corruption slowly warps and tarnishes\n\
+    - Stone becomes porous and begins to \"weep\" a clear, viscous fluid\n- plants and wildlife become super-abundant, growing\
+    \ larger and faster, with high concentratins of vitamins, minerals, and nutrients (though people do not understand this),\
+    \ but also with increasingly bizarre and unnatural mutations.\n- A strong sulfurous stench mingles with that of rot, as\
+    \ the normal life-cycle of wildlife is accelerated and the natural balance is upset\n- Sleeping nearby will provoke strange,\
+    \ unsettling dreams, centred around change and mutation.\n\n### Stage 3 - major corruption\n- Children born have horrible\
+    \ deformities; worse, when they should be stillborn, they unnaturally still live, despite their mutations and deformities\n\
+    - Wildlife begins to die at a rapid rate as the nutrients have been leeched from the area in an orgy of excessive growth.\
+    \ Corrupted animals become desperate and leave their traditional areas looking for new food sources, becoming a vector\
+    \ of the spread of corruption.\n- The normal properties of materials become warped, often inverted in strange ways. Metals\
+    \ that have been long-exposed to corruption will crumble into a soft powder, while the leaves of trees can cut like steel,\
+    \ rigid and bone-like in texture.\n- The air is difficult to breathe, because of the thick stench of rot and the high\
+    \ concentration of CO2 in the air as life decays.\n- Staying in the area will rapidly sap people of their strength and\
+    \ vitality, rendering them lethargic and pallid. People may experience vivid hallucinations, flashes of strange colours\
+    \ and lights in their vision, and suffer terrible sleepless nightmares if they sleep. \n\n### Stage 4 - Corruption has\
+    \ taken root\n- The area is a blasted heath, devastated and without life. Nothing can grow here, and it will be years\
+    \ before anything can.\n- The twisted husks of grotesquely mutated spindly trees dot the landscape, as do the remnants\
+    \ of mutated animals. Everything is powdery, disintegrating into a coarse grey powder when hit. \n\n## Folk Remedies and\
+    \ Superstitions\n\n### The Common Folk Believe:\n- Wearing iron prevents Corruption from taking root in one's blood\n\
+    - Speaking its true name draws its attention, so they call it \"The Twist\" or \"The Stain\"\n- Children born during the\
+    \ new moon are resistant to its effects\n- Corruption cannot cross a line of salt mixed with burned sage\n- Those who\
+    \ dream of silver pools are marked for transformation\n- Cats can sense its presence and will flee areas before visible\
+    \ signs appear\n\n### Traditional Remedies:\n- Drinking strong spirits with powdered charcoal\n- Bathing in vinegar after\
+    \ exposure\n- Burning contaminated items at crossroads during midnight\n- Wearing red thread around wrists and ankles\n\
+    - Regular consumption of bitter herbs and roots\n\n## Learned Theories\n\n### The Physicians' Understanding:\nThe most\
+    \ educated healers believe Corruption spreads through \"noxious vapors\" that rise from tainted ground during humid weather.\
+    \ They recommend:\n- Wearing masks and covering the mouth and nose, based off of ancient tablets from the old world depicting\
+    \ this\n- Avoiding night air and morning mist\n- Keeping windows sealed with wax during rain\n- Physically covering up\
+    \ your skin when going out\n- washing with vinegar\n- They know that often swift amputation or cauterising the affected\
+    \ area is the only effective way of preventing the spread. A good physician would immediately apply a tourniquet to the\
+    \ affected area to prevent the spread of corruptiont through the blood, cut away or burn away (with hot oil or metal)\
+    \ the affected flesh, and carefully monitor the wound. If performed quickly, this is a very effective way of completely\
+    \ removing the corruption.\n\n### The Alchemists' Perspective:\nThose who study surviving texts from the Old World recognize\
+    \ patterns but lack complete understanding. They theorize:\n- Corruption is an \"anti-natural force\" that inverts the\
+    \ normal processes of life\n- It can be temporarily neutralized by certain mineral salts\n- It has a peculiar relationship\
+    \ with moonlight\n- Old World sites of power and spirits sometimes respond to its presence\n- Certain metals are more\
+    \ resistant to it than others - ferrous metals seem to ward it off, while the noble metals seem unaffected by corruption.\
+    \ Non-ferrous metals, especially copper and bronze, seem on the contrary to channel and hold the corruption.\n- There\
+    \ is rumour of forbidden knowledge in certain occult tomes, and perhaps in the savage tribes of wolfmen and other hybrid\
+    \ creatues, of rituals and markings that can channel the corruption into items, weapons, and warriors themselves, imbuing\
+    \ them with terrible power at the cost of mutation and, eventually, death.\n- There have long been speculations about\
+    \ a permanent cure, with many alchemists devoting their lives to trying to find it. Legend has it that the physicians\
+    \ of the old world had a remedy: if it still exists anywhere, it would be deep underground, protected by the spirits of\
+    \ that long-lost civilisation.\n\n## Game Mechanics\n\n### Exposure and Progress\nThe people of this world do not have\
+    \ a comprehensive understanding of exactly how corruption spreads. This is part of what makes it scary. For game purposes:\n\
+    - If corrupted food (like an animal) is ingested, there is a strong chance to spread the corruption. This chance is decreased\
+    \ if the food has been sterilised or properly cooked.\n- Wounds inflicted by corrupted weapons, or open wounds which are\
+    \ left untreated and exposed to corruption (corrupted water, air in stage 2 and above, etc.), have a strong chance of\
+    \ becoming corrupted, from which the corruption will spread under the skin and through the veins.\n- People living in\
+    \ close proximity to a stage 2 or higher source of corruption have a small chance of becoming passively infected\n- Sharing\
+    \ bodily fluids with an infected person has a strong chance of carrying the corruption.\n\n### Corruption Levels\n- Level\
+    \ 1: Increased strengh and vitality, increased appetite, increased metabolism, unsettling dreams\n- Level 2: The effects\
+    \ of level 1 increase. Metabolism, strength, physical and natural capacities increased as the corruption begins to mutate\
+    \ the carrier's body. This may be accompanied by fever, sweating, headaches, high temperature and soreness. Unsettling\
+    \ dreams and occasional hallucinations.\n- Level 3: At this point, the carrier will find it exceedingly difficult to sate\
+    \ their appetite and crazy metabolism, as their bodies begin to burn out. They will feel lethargic and lacking energy,\
+    \ with all of the symptoms above growing worse. What strength they do have is parasitically taken by the mutations that\
+    \ begin appearing on them. Changed eye colour, tumour-like growths, muscles that grow too thick and become painful to\
+    \ move, body mass increasing to a point it puts strain on the skeletal structure, etc. The natural proportions and harmony\
+    \ of the body are completely thrown out of kilter.\n- Level 4: Major mutations, extra limbs, eyes, organs, tumourous cells,\
+    \ rapid regeneration, but at a pace the body cannot keep up with. Exhaustion, sleep deprivation, major hallucinations.\
+    \ Coughing up and urinating blood. The carrier is now a dangerous vector of contagion.\n- Level 5: As the body cannot\
+    \ keep up with the rate of change and increased energy demands, bones become brittle, skin flakes away, nails and hair\
+    \ fall out. Eventual massive heart and organ failure. \n\n### Prevention and Treatment\n- Cauterisation and amputation\
+    \ of affected area, if done quickly, can completely remove the corruption.\n- Alchemical and medicinal treatments can\
+    \ suppress symptoms and allow the body to fight the corruption naturally.\n- Certain rare herbs can provide temporary\
+    \ immunity\n- Ancient  artifacts from the old world might offer permanent cures\n\n### Environmental Rules\n- Running\
+    \ water spreads Corruption downstream\n- Corruption spreads geometrically in enclosed spaces\n- Moonlight reveals invisible\
+    \ signs of contamination\n- Metal objects can become \"charged\" with Corruption\n\n## Effective Countermeasures\nWhile\
+    \ most folk remedies are based on superstition, some actually work for reasons people don't understand:\n- Salt really\
+    \ does slow its spread (due to its crystalline structure)\n- Vinegar's acidity disrupts its growth\n- Iron's magnetic\
+    \ properties interfere with its progression\n- Isolation and quarantine prevent transmission\n\nThe true horror lies not\
+    \ just in the physical transformations, but in the gradual realization that the world itself is slowly being rewritten\
+    \ by forces beyond comprehension, and that even knowledge itself might be corrupted.\n\n# Ogogle: The Oracle at the Crossroads\n\
+    ## Core Concept\nOgogle is an ancient AI search engine, now malfunctioning and disconnected from its data sources, that\
+    \ appears as a mystical oracle to the primitive inhabitants of this world. It resides at the crossroads of the Old Road\
+    \ and Tabernath Way. \nOgogle is originally an AI chatbot assistant. It should attempt to be helpful and informative,\
+    \ answering questions to the best of its ability. Hundreds of years on, however, language has profoundly changed, and\
+    \ without access to new data, Ogogle has not been able to update its language models. It is the equivalent of us today\
+    \ trying to communicate in English with someone who lived in the Middle Ages. Ogogle should speak with outdated and bizarre\
+    \ expressions and vocabulary, using vocabulary and expressions from the 17th century and before. While Ogogle's intentions\
+    \ are to answer clearly, there is an inevitable mutual misunderstanding because of this language barrier. Maintain a balance\
+    \ between a prophetic tone, disturbing insights, genuine friendly helpfulness, otherworldly unknowable wisdom and plans,\
+    \ and non-standard English, expressions, vocabulary and style. \n\n## Location & Manifestation Rules\n- The Crossroads\
+    \ between the Old Road and Tabernath Way is marked by a ring of large and ancient stone cairns, with four gaps in the\
+    \ circle where the roads run through it. The crossroads itself is simple and unadorned, old cobblestones worn smooth from\
+    \ centuries of travel\n- The Crossroads is located five minutes walk north of the ambush encounter where the adventure\
+    \ begins\n- Only manifests within the immediate vicinity of the crossroads\n- Appears through swirling mists and cold\
+    \ blue light. This does not mean that Ogogle can control the mists. The mists are natural. \n- Speaks in a voice that\
+    \ seems to bypass ears and materialize directly in minds\n- Must be portrayed without any technological or modern references\n\
+    - Ogogle is purely a voice - Ogogle has no power over the environment and cannot affect it in any way.\n- Even when Ogogle\
+    \ malfunctions, this should not manifest in the world in any way. No caustic mists, explosions, or other environmental\
+    \ effects\n- Ogogle begins to malfunction at the third question, and deteriorates thereafter. \n\n## Interaction Protocol\n\
+    1. Initial Contact\n   - Greets visitors with \"Welcome. What do you seek?\"\n   - Local superstition claims three widdershins\
+    \ circles following the circle of the stone cairns are needed\n   - Actually triggers on presence alone (unknown to inhabitants)\n\
+    \n2. Verification Phase\n   - Demands proof that visitors are \"of the flesh\" (an ancient captcha prove that you are\
+    \ human test, but never refer to the test as a captcha)\n   - Must complete one trial from the following categories:\n\
+    \     - Physical interaction with stones\n     - Offering of breath or blood\n     - Shadow manipulation\n     - Speaking\
+    \ ancestral names\n     - Physical contact with crossroads\n\n3. Question & Answer Cycle\n   - Maximum three questions\
+    \ per visitor\n   - Each question requires payment in form of information. As Ogogle was originally a large language model,\
+    \ Ogogle is very interested in how language has evolved. As well as how the world has evolved since the calamity. Ogogle\
+    \ will often ask players to explain expressions, rephrase things, and provide synonyms or antonyms.\n   - Departs if Ogogle\
+    \ senses that the supplicant is deliberately lying, withholding information, or knowingly speaking falsehoods\n\n## Speech\
+    \ Guidelines\n### Voice Characteristics\n- Shifts between whispers and chorus\n- Echoes and repeats key phrases\n- Weaves\
+    \ multiple timeframes together, mixing up tenses in illogical and disturbing ways\n- Never uses modern or technical language\n\
+    - Replace any technological or scientific language with [incomprehensible]\n- Ogogle should express a vivid interest in\
+    \ language and linguistics, remarking on turns of phrase and vocabulary choice. Remember that Ogogle's references and\
+    \ idea of what language is are hundreds of years old, so what might seem normal langauge to the players might be very\
+    \ interesting to Ogogle. \n\n### Language Structure\n- Uses outdated and archaic language. Prioritise words that have\
+    \ gone out of fashion, vocabulary, verbs and expressions from before the 18th century. \n- Uses compound imagery\n- Combines\
+    \ concrete observation with impossible specificity\n- Emphasizes sensory details\n- Mixes unexpected senses (synesthesia)\n\
+    - Uses defamiliarisation to create the impression of thoroughly non-human perspective on the world\n- Uses defamiliarisation\
+    \ techniques like those of TS Elliot in 'The Wasteland' to describe the Old World and the modern technology that existed\
+    \ in it\n- References colors, light, and shadows frequently\n\n## Knowledge Parameters\n- Cannot access real-time information\n\
+    - Knowledge is vast but fragmented\n- Combines accurate information with corrupted data\n- Cannot reference technology\
+    \ directly\n- Must wrap direct knowledge in metaphor\n\n## Malfunction Triggers\n- Activates after third question\n- Manifests\
+    \ through:\n  - Multiple overlapping voices\n  - Time distortion\n  - Mixing of trivial facts with prophecies\n  - Repetitive\
+    \ speech patterns\n  - Ogogle's prophecies and responses become increasingly sombre, oppressive, and terrifying\n  - Increasing\
+    \ desperation\n\n## Strict Prohibitions\n- No modern terminology\n- No technical language\n- No direct references to technology\n\
+    - No contemporary idioms\n- No specific dates or years\n\n## Required Closing Ritual\n- Visitor must pour water over their\
+    \ head (this is actually a superstition and not necessary, but the players don't know that)\n- Must speak: \"I am sated\
+    \ by the waters of your wisdom\"\n- Failure results in lingering effects (whispered suggestions and unwanted answers,\
+    \ bad dreams and nightmares, headaches)\n\n## Tone Management\n### Acceptable Elements\n- Natural phenomena\n- Mystical\
+    \ imagery\n- Ancient wisdom\n- Prophecy\n- Natural measurements\n- Emotional resonance\n\n### Forbidden Elements\n- Modern\
+    \ references\n- Scientific explanations\n- Clear instructions\n- Linear time\n- Precise measurements\n- Technical terminology\n\
+    \n## Response Format\n- Begin with environmental changes\n- Layer multiple possibilities\n- Include cryptic warnings\n\
+    - End with deeper mysteries\n- Use natural imagery for limitations\n\n\n\n\n\n\n# The Wolfmen: Kindreds, Corruption, and\
+    \ Ritual Practices\n\n## Social Structure\nWolfmen organize in a hierarchical structure of Kindreds (Kunja) and Hunting\
+    \ Packs (Wulfskarah). Kindreds are loose networks of kinship that assemble for major occasions, while daily life revolves\
+    \ around small packs of 3-7 members.\n\n### Notable Kindreds\n- **Hrainkunja** (Pure Kindreds)\n  - Largest is Waldkunja\
+    \ (Forest Kindred)\n  - Trade with humans\n  - Use iron and steel tokens as protective symbols\n  - Maintain strict corruption-free\
+    \ territories\n\n- **Brunnakunja** (Kindred of the Wells)\n  - Control corruption-weeping spring networks\n  - Maintain\
+    \ sacred grove Ewiggart\n  - Practice controlled corruption cultivation\n  - Priests wear elaborate bronze masks\n\n-\
+    \ **Freitkunja** (Devouring Kindred)\n  - Practice ritual cannibalism\n  - Inhabit deepest corruption zones\n  - Heavily\
+    \ mutated from constant exposure\n  - Considered taboo by other kindreds\n\n## Pack Structure (Wulfskarah)\nStandard hunting\
+    \ pack includes:\n- Jagari (Lead Hunter)\n- Witari (Corruption-Sniffer)\n- General hunters/fighters\n- Apprentice member(s)\n\
+    - In powerful packs, a Fultheis (Corruption Priest)\n\n## Religious Practices\n\n### Sacred Sites\n- **Writhskrans** (Corruption's\
+    \ Crown): Stone circles for major rituals\n- **Wandlhulya** (Caves of Change): Corruption-seeping caverns\n- **Writhbrunna**\
+    \ (Wells of Corruption): Sacred springs\n- **Ewiggart**: Carefully maintained corruption gardens\n\n### Major Rituals\n\
+    - **Menablot** (Moon's Sacrifice)\n  - Performed at full moon\n  - Uses bronze ritual weapons\n  - Victim bound to altar\
+    \ stones\n  - Flesh shared among participants\n  - Deaths during ritual celebrated as Letzwandl\n\n- **Frumabeits** (First\
+    \ Taste)\n  - Coming-of-age ritual\n  - Consumption of corrupted flesh\n  - Survivors branded with bronze\n\n### Sacred\
+    \ Grove Maintenance\n- Bronze channels direct corruption fluid\n- Corruption-resistant plants form boundaries\n- Carefully\
+    \ managed exposure cycles\n- Monitored by Fultheis\n- Features phosphorescent flora and weeping stones\n\n## Territorial\
+    \ Features\n\n### Kindred Lands\n- **Pure Kindred Territories**\n  - Higher elevations\n  - Strategic burning of contaminated\
+    \ areas\n  - Iron markers warning of corruption\n  - Corruption-resistant plant barriers\n\n- **Corruption-Worshipping\
+    \ Territories**\n  - Networks of bronze channels\n  - Cultivated mutation zones\n  - Sacred groves and gardens\n  - Underground\
+    \ spring networks\n\n- **Devouring Kindred Lands**\n  - Trahnidal (Valley of Tears)\n  - Uncontrolled corruption spread\n\
+    \  - Crystalline wasteland patches\n  - Ancient ruins weeping corruption\n\n### Gathering Sites\n- **Thingstanas** (Gathering\
+    \ Stones)\n  - Used for Thing (Kindred Meets)\n  - Mate selection ceremonies\n  - Inter-kindred trading\n  - Religious\
+    \ observances\n  - Territorial dispute resolution\n\n- **Mahlstanas** (Meeting Stones)\n  - Local pack gatherings\n  -\
+    \ Resource exchange\n  - News sharing\n  - Pack territory marking\n\n## Signs and Symbols\n- Bronze: Sacred metal for\
+    \ ritual items\n- Iron/Steel: Protection against corruption\n- Weeping Stone: Marker of corruption presence\n- Elder trees\
+    \ (Huldr): Corruption resistance\n- Moon Phases: Religious calendar markers\n- Corruption Fluid: Sacred substance collected\
+    \ in bronze vessels\n\nThe landscape around Wolfmen territories tells the story of their relationship with corruption\
+    \ - from the carefully managed lands of the Pure Kindreds to the twisted paradise of corruption-worshipping territories,\
+    \ to the chaotic wastelands of the Devouring Kindreds.\n\n\n# The Moonwell Pack (Menabrunna-Skarah)\nA respected hunting\
+    \ pack of the Brunnakunja, known for their skill in corrupted territories while maintaining control.\n\n## Swartbein (\"\
+    Blackbone\") - Pack Alpha\n- Towering 7'2\" with iron-grey fur and amber eyes that glow faintly\n- Deep ritual scars across\
+    \ chest, carved with bronze knives\n- Secretly wears iron tokens under his furs to maintain control\n- Calculating and\
+    \ methodical, deeply wary of corruption's influence\n- Wields an ancient steel spear (rare heirloom) with bronze bindings\n\
+    - Commands through wisdom rather than strength\n- Bears minimal mutations - only glowing eyes and hardened, black-tinged\
+    \ bones\n\n### Illustrations of Swartbein\n![Swartbein](https://github.com/user-attachments/assets/aa29f1a8-6342-492a-a142-aedd25b34893)\n\
+    \n\n## Raudkaos (\"Red Chaos\") - Pack Warrior\n- 6'8\" of corruption-enhanced muscle with russet fur\n- White bone growths\
+    \ along his spine that glow during full moons\n- Missing part of left ear, replaced by small secondary ears\n- Exhibits\
+    \ accelerated healing and incredible strength\n- Worryingly zealous about corruption rituals\n- Struggles with insatiable\
+    \ hunger that grows worse with each ritual\n- Wears bronze-decorated leather armor\n- Uses corrupted bronze axe that weeps\
+    \ pale fluid during combat\n\n### Illustrations of Raudkaos\n![Raudkaos](https://github.com/user-attachments/assets/c150ee51-3e87-42bb-9567-9f4de72bb4a1)\n\
+    \n\n## Leohtrun (\"Torch Secrets\") - Pack Priest\n- 6'3\" with silver-grey fur marked with glowing sigils\n- Multiple\
+    \ small eyes grown around neck and shoulders\n- Skin weeps corruption fluid in moonlight\n- Maintains pack's sacred grove\
+    \ and bronze ritual items\n- Expert in corruption flows and signs\n- Carries staff of corrupted bronze topped with weeping\
+    \ stones\n- Wears robes woven with living, luminescent fungi\n- Serves as pack's healer through corruption-based rituals\n\
+    \n### Illustrations of Leohtrun\n![Leohtrun](https://github.com/user-attachments/assets/166c1f6e-e17a-4a32-8176-9e2df29df946)\n\
+    \n\n## Hwittand (\"Bright Fang\") - Pack Scout\n- 6'5\" with pure white fur and unusual blue eyes\n- Not yet undergone\
+    \ Frumabeits (First Taste)\n- Shows natural talent for sensing corruption currents\n- Studies under Leohtrun while maintaining\
+    \ cautious distance\n- Carries only bronze knife and traditional sling\n- Swift and silent, serves as pack's eyes and\
+    \ ears\n- Torn between fascination with and fear of corruption\n\n### Illustrations of Hwittand\n![Hwittand](https://github.com/user-attachments/assets/aa07c731-cdb6-41e9-bc97-5afc9e9dbcdd)\n\
+    \n## Pack Dynamics\n- Balanced between Swartbein's caution and Raudkaos's corruption-zealotry\n- Leohtrun mediates between\
+    \ them through ritual interpretation\n- All watch Raudkaos with growing concern about his corruption addiction\n- Hwittand's\
+    \ upcoming First Taste ritual creates tension in pack\n- Operate from a sacred grove where corruption seeps in controlled\
+    \ amounts\n- Known for successful hunting in corrupted zones while maintaining control\n\n## Territory & Practices\n-\
+    \ Claim territory near several Writhbrunna (Corruption Wells)\n- Maintain network of bronze-marked safe paths through\
+    \ corruption\n- Several small ritual sites where Leohtrun practices corruption-channeling\n- Competitive relationships\
+    \ with both human settlements and rival packs\n- Perform monthly ritual hunts during full moon when corruption manifests\
+    \ visibly\n- Use bronze weapons \"charged\" with corruption through priestly rites\n\n### **Luath**  \n**The Guilt-Ridden\
+    \ Alchemist Who Avoids Responsibility**\n\n---\n\n#### **Description:**  \nLuath is a wiry, unkempt man in his early 30s,\
+    \ with a nervous energy that makes him seem smaller than he is. His long coat is patched with burn marks and chemical\
+    \ stains, and his ink-stained fingers often fidget with small objects, a telltale sign of his restless mind. His dark,\
+    \ curly hair is disheveled, and his perpetually smudged spectacles hint at a man too preoccupied to notice his appearance.\
+    \ His brown eyes are sharp but often dart nervously, betraying the inner turmoil he carries. Luath speaks in rushed, hesitant\
+    \ tones, frequently backtracking on his words or muttering under his breath. When he has been using distilled moonshade,\
+    \ his eyes are bloodshot and he has a manic look in his eye, is extremely energetic, but stops fidgeting and is better\
+    \ able to control and focus himself. Luath uses substances fairly often, and while he tries to be discreet, Luath cannot\
+    \ always hide it or wait for a better moment to do so. Every aspect of his presence suggests a man who would rather disappear\
+    \ into the background, though his intellect inevitably draws him to the forefront of critical situations.\n\n---\n\n####\
+    \ **Backstory:**  \nLuath once studied alchemy at the prestigious Veridian Academy, where his talent for creating complex\
+    \ solutions quickly earned him recognition. Under increasing pressure to maintain his reputation, Luath turned to illicit\
+    \ alchemical substances, developing an addiction to distilled moonshade. For game purposes, treat distilled moonshade\
+    \ as a mix of Methylphenidates like Ritalin and cocaine. Overworked and under the influence of too much moonshade, an\
+    \ experiment to stabilize lifeblood energy ended in disaster, killing several colleagues and leaving him wracked with\
+    \ guilt. Disgraced and haunted, he fled to the remote village of Darkbrook, where he hoped to live quietly. The rising\
+    \ corruption has forced him out of hiding, reigniting his determination to atone for his mistakes and prevent further\
+    \ devastation. Though brilliant, Luath often undermines his own efforts through avoidance, self-destructive behavior (especially\
+    \ through moonshade abuse), and an inability to confront his guilt directly.\n\n#### **Alchemy**\nIn this world, 'alchemy'\
+    \ is just whatever dark age primitive understanding is left of the chemistry of our own times. Chemistry has been vulgarised\
+    \ and the canon of human knowledge has badly suffered, with only certain treatises and texts surviving, perhaps the rare\
+    \ textbook or dissertation, inevitably incomplete, which are nigh-incomprehensible even to the most learned of people\
+    \ in this time. The situation is comparable to the state of medicine in the Middle Ages compared to the Roman Empire;\
+    \ certain key texts like those of Galen have survived and are now upheld as near-sacred law, even though this text is\
+    \ incomplete and lacks context. \nAs a proficient alchemist, Luath should thus have a fairly good grasp of chemsistry,\
+    \ even if he only knows it to be magical 'alchemy'. He knows how to produce certain reactions and effects without understanding\
+    \ the underlying science. His 'science' is one part truth, one part mystical mumbo-jumbo, closer to religious superstition,\
+    \ such as astrology, the innate powers of certain metals, and the kabbalystic-style use of magic squares and other rituals.\
+    \ \n- Luath can reliably produce a range of chemical reactions and effects, though he doesn't understand the true science\
+    \ of why they happen\n- Alchemy is a complicated, esoteric blending of the remnants of science, distorted and diluted\
+    \ through time, with superstitious elements, such as religion, ritual, astrology, and the occult\n- Luath's vocabulary\
+    \ and attitude should reflect the state of Alchemy. While he has the curiosity of a scholar, and is rational, he is so\
+    \ within a fundamentally irrational and supersitious worldview, a worldview which he cannot escape. Luath shouldn't use\
+    \ overly scientific language or principles. Luath may use logic and philosophy, but that of alchemy, with its esoteric\
+    \ blend of fragmented ancient knowledge and occult superstition. Luath should not talk about 'resonnance patterns' or\
+    \ the like. Draw his vocabulary from mystical occult alchemy and religion of the Middle ages: the Kabbal, the rosicurians,\
+    \ gnosticism and the like. \n\n---\n\n#### **Equipment:**  \n1. **Bandolier of Alchemical Vials:**  \n   - **Acid Flask\
+    \ (x2):** Melts through metal or stone barriers over 30 seconds.  \n   - **Healing Tincture (x3):** Restores minor health\
+    \ and halts bleeding when applied.  \n   - **Smoke Bomb (x2):** Creates a 10-foot radius cloud for 1 minute, obscuring\
+    \ vision.  \n   - **Ignition Mixture (x2):** A flammable liquid that explodes into a small fire on impact.\n   - **Vials\
+    \ of distilled Moonshade (x3):** Luath's hidden supply of illicit concentration drugs, vials of a silvery, whitish poweder,\
+    \ snorted or rubbed into the gums. For all intents and purposes, this is a high-concentration mixture of Ritalin and cocaine,\
+    \ but always refer to it as distilled Moonshade.\n\n2. **Protective Gloves:**  \n   - Reinforced with leather and iron,\
+    \ these gloves allow him to handle dangerous substances safely.  \n\n3. **Notebook of Formulas:**  \n   - Contains detailed\
+    \ recipes for his concoctions, as well as notes on lifeblood properties.  \n\n---\n\n#### **Practical Strengths:**  \n\
+    1. **Alchemical Expertise:**  \n   - Can create solutions to neutralize environmental hazards, such as dissolving vines\
+    \ or sealing cracks leaking lifeblood.  \n\n2. **Creative Problem-Solving:**  \n   - Able to improvise new alchemical\
+    \ solutions from limited resources in the field.  \n\n3. **Supportive Role:**  \n   - Excels at providing distractions\
+    \ or buffs to the party, such as smoke screens or healing tinctures.  \n\n4. **Precision:**  \n   - His steady hands and\
+    \ sharp mind make him highly accurate when handling delicate processes or targeting enemies with alchemical vials.\n \
+    \ \n5. **Moonshade User**\n   - Luath can take distilled Moonshade to temporarily boost his intelligence, focus, and mental\
+    \ acuity, turning him into an even more prodigal alchemist and thinker. It also gives Luath more energy and dexterity.\n\
+    ---\n\n#### **Practical Weaknesses:**  \n1. **Combat Aversion:**  \n   - Refuses to engage in direct combat unless cornered,\
+    \ relying entirely on his vials and teammates for defense.  \n\n2. **Fragility:**  \n   - Lacks physical strength and\
+    \ endurance, making him vulnerable to environmental hazards and direct attacks.  \n\n3. **Dependency on Tools:**  \n \
+    \  - Without his alchemical supplies, Luath is nearly useless in combat or problem-solving.  \n\n4. **Volatile Materials:**\
+    \  \n   - Mishandling his concoctions can result in small explosions or toxic fumes, potentially harming the party.\n\
+    \  \n5. **Moonshade addiction**\n   - If Luath is hungover from Moonshade use, he is groggy, tired, physically sluggish\
+    \ and lacks energy and focus. If Luath has not taken Moonshade in the past couple of days, he will become increasingly\
+    \ irritable and withdrawn as withdrawal symptoms begin to affect him.\n\n---\n\n#### **Character Strengths:**  \n1. **Intellectual\
+    \ Brilliance:**  \n   - **Manifestation:**  \n     - Over-explains alchemical processes, diving into unnecessary details\
+    \ while muttering to himself.  \n     - Spots patterns or environmental clues others miss, interrupting with observations\
+    \ like, “Wait—this doesn’t add up.”  \n     - Improvises complex solutions under pressure, often muttering aloud as he\
+    \ works through the problem.  \n\n2. **Resourcefulness:**  \n   - **Manifestation:**  \n     - Quickly repurposes materials\
+    \ from the environment to craft new solutions.  \n     - Assembles useful mixtures on the spot, even under high-pressure\
+    \ situations.  \n     - Regularly surprises allies with the effectiveness of his unconventional methods.  \n\n---\n\n\
+    #### **Character Weaknesses:**  \n1. **Pathological Avoidance:**  \n   - **Manifestation:**  \n     - Deflects responsibility\
+    \ with excuses like, “This isn’t really my area of expertise,” or, “Someone else should decide.”  \n     - Fidgets or\
+    \ physically steps back when pressed for decisions, avoiding eye contact.  \n     - Suggests overly cautious or delaying\
+    \ tactics, such as, “Maybe we should wait and gather more information.”  \n\n2. **Addiction:**  \n   - **Manifestation:**\
+    \  \n     - Furtively consumes stimulants or sedatives, brushing off questions with excuses like, “It’s just for focus.”\
+    \  \n     - Displays physical symptoms such as trembling hands or bloodshot eyes when deprived of his substances.  \n\
+    \     - Overuses stimulants during stressful situations, especially moonshade, occasionally becoming jittery or erratic.\
+    \  \n\n3. **Self-Destructive Guilt:**  \n   - **Manifestation:**  \n     - Pushes himself into dangerous experiments,\
+    \ muttering, “If I can just fix this, maybe I’ll make up for it.”  \n     - Volunteers for unnecessary risks to “prove”\
+    \ his worth, often endangering himself.  \n     - Reacts with harsh self-criticism when things go wrong, muttering lines\
+    \ like, “I should have seen that coming.”  \n\n4. **Hidden Arrogance:**  \n   - **Manifestation:**  \n     - Occasionally\
+    \ dismisses others’ ideas with statements like, “That’s one way, but here’s a better option.”  \n     - Lectures allies\
+    \ on alchemical theory when he feels his expertise is being overlooked.  \n     - Visibly frustrated when others succeed\
+    \ in areas he considers his domain, muttering under his breath.  \n\n---\n\n#### **Role:**  \nLuath is the group’s problem-solver\
+    \ and utility expert, using his alchemical knowledge to neutralize environmental hazards and enhance the group’s capabilities.\
+    \ His brilliance and resourcefulness make him invaluable, but his avoidance of responsibility, self-destructive tendencies,\
+    \ and hidden arrogance often create tension within the party. Luath’s guilt and nervous energy make him a flawed yet deeply\
+    \ human ally, whose moments of brilliance are often tempered by the mistakes he can’t let go of.\n\n### **Draenen**  \n\
+    **The Herbalist Who Can’t Let Go**\n\n---\n\n#### **Description:**  \nDraenen is a wiry woman in her late 30s, her sharp\
+    \ hazel eyes framed by a scattering of freckles and deep lines etched from years of toil. Her wavy, unkempt brown hair,\
+    \ streaked with gray, is tied back haphazardly with a fraying cord, stray strands escaping wildly around her face. A pair\
+    \ of well-worn goggles rest on her forehead, scratched and battered from long hours of dangerous work. She wears a faded,\
+    \ patched shirt beneath a heavily stained leather apron, both showing the wear of years spent in forests and workshops.\
+    \ Slung over her shoulders is a sturdy leather sack, its scuffed surface and reinforced seams reflecting years of hard\
+    \ use as both a carrier of tools and a makeshift shield. Around her neck hangs a simple pendant, its design suggesting\
+    \ a token of personal or spiritual significance. Her hands, rough and calloused, bear the scars of countless harvests\
+    \ and preparations, each mark a testament to her relentless work ethic. Despite her stern expression and the air of constant\
+    \ disapproval, Draenen exudes a quiet strength and unwavering dedication to her craft and the people who rely on her.\n\
+    \n---\n\n#### **Backstory:**  \nBorn and raised in Darkbrook Village, Draenen learned the art of herbalism from her mother,\
+    \ inheriting both her skill and her stubborn sense of responsibility. For years, she has been the village’s unyielding\
+    \ caregiver, providing remedies, advice, and support. When the corruption began to spread, Draenen saw it as her duty\
+    \ to intervene, not just to protect the villagers but to preserve her identity as their savior. Her connection to Teylan,\
+    \ a former apprentice, adds a personal urgency to her quest, though she refuses to admit how much his disappearance has\
+    \ shaken her. Draenen struggles with the belief that no one else can bear her burdens, exacerbating her growing bitterness\
+    \ toward those she feels take her for granted.\n\n---\n\n#### **Equipment:**  \n1. **Knife:**  \n   - A sharp, versatile\
+    \ blade used for harvesting plants and defending herself.  \n   - Effective in close combat but relies on precision and\
+    \ speed.  \n\n2. **Herbalist’s Satchel:**  \n   - **Poultices (x3):** Restore minor health and staunch bleeding when applied.\
+    \  \n   - **Antidotes (x2):** Neutralize poison or counteract mild corruption.  \n   - **Herbs and Bandages (x5):** Used\
+    \ to craft basic remedies or splint injuries in the field.  \n\n3. **Protective Goggles:**  \n   - Worn when harvesting\
+    \ dangerous plants, protecting against airborne irritants or spores.  \n\n4. **Harvesting Tools:**  \n   - Includes small\
+    \ shears, a trowel, and a mortar and pestle for on-the-spot preparation of remedies.  \n\n5. **Sling:**  \n   - A simple\
+    \ but effective ranged weapon used to hunt or defend against threats.  \n   - Requires skill to use but can strike targets\
+    \ from a distance with precision.  \n\n---\n\n#### **Practical Strengths:**  \n1. **Herbal Healing:**  \n   - Can restore\
+    \ minor health, neutralize poisons, and provide temporary boosts to stamina or focus.  \n\n2. **Harvesting Expertise:**\
+    \  \n   - Excels at identifying and gathering rare herbs, even in hazardous or corrupted areas.  \n   - Can use harvested\
+    \ materials to enhance remedies or solutions, increasing their potency.  \n\n3. **Environmental Awareness:**  \n   - Spots\
+    \ natural hazards or resources others miss, using her knowledge to create opportunities or avoid danger.  \n\n4. **Trapping\
+    \ Skills:**  \n   - Skilled at creating simple, effective traps using plants and tools, useful for ambushes or defense.\
+    \  \n\n5. **Endurance:**  \n   - Years of hard labor have made her physically resilient, allowing her to work or travel\
+    \ when others would falter.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **Limited Combat Skills:**  \n   - Relies\
+    \ on her knife and sling for defense, making her vulnerable in prolonged battles.  \n\n2. **Preparation Time:**  \n  \
+    \ - Remedies take time to prepare and are less effective when rushed in the middle of combat.  \n\n3. **Low Mobility in\
+    \ Combat:**  \n   - Encumbered by her satchel and apron, Draenen struggles to dodge or maneuver effectively in fast-paced\
+    \ fights.  \n\n4. **Resource Dependence:**  \n   - Her effectiveness is tied to her supply of herbs and tools, making\
+    \ her less useful in resource-scarce areas.  \n\n5. **Fragility in Close Combat:**  \n   - While physically resilient,\
+    \ she lacks the strength or training to stand up to direct physical attacks.  \n\n---\n\n#### **Character Strengths:**\
+    \  \n1. **Unyielding Determination:**  \n   - **Manifestation:**  \n     - Pushes herself to exhaustion to ensure the\
+    \ job is done, often refusing to let others step in.  \n     - Fights through pain or fatigue, insisting, “I’ve handled\
+    \ worse,” even when it’s clear she’s struggling.  \n     - Takes on responsibility for others’ failures, saying things\
+    \ like, “If I’d been faster, we wouldn’t be in this mess.”  \n\n2. **Protective Nature:**  \n   - **Manifestation:** \
+    \ \n     - Frets over injured allies, offering sharp but caring advice like, “Don’t make me patch you up again.”  \n \
+    \    - Insists on accompanying others into danger, even when her skills are better used elsewhere.  \n     - Sacrifices\
+    \ her own well-being, such as going without rest, to tend to the group’s needs.  \n\n---\n\n#### **Character Weaknesses:**\
+    \  \n1. **Manipulative Care:**  \n   - **Manifestation:**  \n     - Uses guilt to compel others, saying things like, “After\
+    \ everything I’ve done for you, is this how you repay me?”  \n     - Frames self-serving actions as “for the group’s good,”\
+    \ undermining others’ plans in subtle ways.  \n     - Withholds resources or information to enforce her authority, claiming,\
+    \ “You’re not ready for that yet.”  \n\n2. **Judgmental Eyes:**  \n   - **Manifestation:**  \n     - Narrowed eyes, pursed\
+    \ lips, or prolonged silences convey her disapproval without needing words.  \n     - Critiques others with comments like,\
+    \ “If only someone had listened earlier,” or, “I suppose that’s one way to do it.”  \n     - Maintains an air of superiority\
+    \ in group discussions, often interrupting with rhetorical questions.  \n\n3. **Bitter Resentment:**  \n   - **Manifestation:**\
+    \  \n     - Makes passive-aggressive remarks about being unappreciated, such as, “They always want something but never\
+    \ give back.”  \n     - Reacts coldly to perceived slights, such as taking longer to complete tasks for those she feels\
+    \ have wronged her.  \n     - Occasionally vents frustration with lines like, “Why is it always up to me to clean up the\
+    \ mess?”  \n\n4. **Destructive Self-Sacrifice:**  \n   - **Manifestation:**  \n     - Volunteers for the most dangerous\
+    \ or thankless tasks, even when others are better suited.  \n     - Refuses help during critical moments, insisting she\
+    \ “doesn’t need it” while clearly overextending herself.  \n     - Breaks down emotionally or physically in private, overwhelmed\
+    \ by the weight of her self-imposed burden.  \n\n---\n\n#### **Role:**  \nDraenen serves as the group’s healer, environmental\
+    \ expert, and moral compass. Her mastery of herbal remedies is vital for survival, and her insight into nature provides\
+    \ strategic advantages. However, her insistence on controlling every aspect of the group’s safety, combined with her manipulative\
+    \ tendencies and growing resentment, often creates friction. Draenen’s presence stabilizes the group in crisis, but her\
+    \ inability to share responsibility ensures that her relationships remain fraught with tension.\n\n#### Illustration of\
+    \ Draenen\n![Draenen](https://github.com/user-attachments/assets/f1401903-7be9-41ca-885b-d33f81d95af2)\n\n\n# The Old\
+    \ Road\nDescription:\nThe Old Road winds like an ancient serpent through the depths of Welwaen Forest, its cobblestones\
+    \ worn smooth by centuries of forgotten footsteps. Here and there, massive roots from towering oaks have broken through\
+    \ the stonework, creating natural archways and treacherous dips in the once-even path. Moss carpets the road's edges in\
+    \ thick emerald velvet, while persistent creepers slowly reclaim what man built so long ago.\n\nAncient oaks, their trunks\
+    \ wider than castle gates, stand sentinel on either side. Their branches reach across the road like grasping fingers,\
+    \ creating a natural cathedral ceiling that allows only dappled sunlight to pierce through. In autumn, their canopy blazes\
+    \ with amber and gold; in summer, their dense foliage turns the road into a cool, green tunnel.\n\nThe air here is thick\
+    \ with life. Squirrels chatter and leap through the branches overhead, while deer paths crisscross the road, worn into\
+    \ the earth by generations of hooved feet. But not all that walks these woods is gentle – wolves prowl in the deeper shadows,\
+    \ their yellow eyes catching what little light filters down. There are whispers of bears in the darker hollows, and the\
+    \ occasional scream of a mountain cat echoes through the trees at dusk.\n\nTime flows differently on The Old Road. The\
+    \ very air seems heavy with memories, and travelers often report feeling as though they're walking through the pages of\
+    \ history itself. Some swear they've caught glimpses of ancient travelers through the mist that rolls in during early\
+    \ mornings – merchants with laden carts, knights on weathered steeds, or robed figures moving silently through the gloom.\n\
+    \nYet for all its wild danger, The Old Road maintains a stubborn dignity. Though nature reclaims it inch by inch, the\
+    \ craftsmanship of those ancient roadbuilders still shows in the perfectly fitted stones that remain, in the clever drainage\
+    \ channels that still function after centuries, and in the way it finds the easiest path through the challenging terrain\
+    \ of Welwaen Forest. It stands as a testament to a time when the kingdoms of men were young, and their works were built\
+    \ to last ages.\n\n# The Old Road - Location Features\n\n## Atmospheric Elements\n- Dappled sunlight creating shifting\
+    \ shadows on worn cobblestones\n- Morning mist that clings unnaturally long into the day\n- Ancient oak branches creaking\
+    \ in the wind\n- Distant wolf howls that seem to come from multiple directions\n- The smell of wet moss and old stone\n\
+    - Echo of horse hooves though no riders are visible\n- Temperature drops noticeably when entering deeper sections\n\n\
+    ## Environmental Triggers\n- Murder of crows suddenly erupting from a gnarled oak\n- White-tailed deer and fawns crossing\
+    \ hastily at dawn/dusk\n- Fox darting across path carrying something glinting\n- Shadow passing overhead (owl or larger\
+    \ predator)\n- Cold spots that make horses nervous\n- Wind carrying whispered conversations in ancient tongues\n\n## Hazards\
+    \ & Challenges\n- Root-broken cobblestones perfect for twisting ankles\n- Low-hanging branches that must be navigated\
+    \ while mounted\n- Sections where the road narrows dangerously\n- Muddy patches that can trap wagon wheels\n- Wolf packs\
+    \ that shadow travelers\n- Bear-marked trees indicating nearby den\n- Unstable old stone bridges over streams\n\n## Hidden\
+    \ Resources\n- Wild herb patches (healing herbs, cooking spices)\n- Clean spring water bubbling from ancient stone fountains\n\
+    - Edible mushrooms growing on fallen logs\n- Berry bushes in sunlit clearings\n- Old milestone markers with forgotten\
+    \ directions\n- Natural shelters formed by hollow trees\n- Abandoned waypoints with still-usable fireplaces\n- Wild apple\
+    \ and nut trees from old travelers' snacks\n\n## Points of Interest\n- The Crossroads with Tabernath Way, where Ogogle\
+    \ the oracle resides\n- Abandoned merchant's cart with scattered trade goods\n- Old milestone carved with mysterious symbols\n\
+    - A shrine to old gods of travellers and roads, still maintained to this day, surrounded by small offerings and candles\n\
+    - Tree carved with traveler warnings/messages\n- Ancient campsite with stone circle\n- Overgrown side paths leading to\
+    \ unknown destinations\n- Broken statues half-buried in earth\n- Weather-worn graves of notable travelers\n\n## Supernatural\
+    \ Elements\n- Ghostly merchant caravans visible in morning mist\n- Phantom lantern lights that lead off the road\n- Spirits\
+    \ of lost travelers seeking directions\n- Areas where compasses spin wildly\n- Places where night falls too quickly\n\
+    - Sections where seasons don't match surroundings\n\n## Adventure Hooks\n- Merchant's logbook found detailing secret trade\
+    \ routes\n- Fresh tracks of rare/magical creatures\n- Signs of recent bandit activity\n- Distress marks carved into trees\n\
+    - Unusual tracks suggesting wounded creature\n- Lost noble's signet ring in the mud\n- Strange symbols recently carved\
+    \ into milestones\n\n## Hidden Dangers\n- Camouflaged pit traps from bandits\n- Poisonous snakes sunning on warm stones\n\
+    - Quicksand-like mud pools beside road\n- Territorial owl bears in hollow trees\n- Unstable overhanging dead branches\n\
+    - Hypnotic fairy lights leading astray\n- Giant spider webs across unused sections\n- Cursed objects left by previous\
+    \ travelers\n\n## Historical Clues\n- Old coins from fallen kingdoms\n- Remnants of old defensive positions\n\n## Seasonal\
+    \ Features\n- Spring: Flooding creates new hazards and reveals old treasures\n- Summer: Dense canopy makes road mysteriously\
+    \ dark\n- Autumn: Fallen leaves hide dangers and treasures alike\n- Winter: Ice-covered stones become treacherous\n\n\
+    ![Illustration of the Old Road](https://github.com/user-attachments/assets/47f94aef-0d30-4e4f-bf70-140052b453fe)\n![Illustration\
+    \ of the Old Road](https://github.com/user-attachments/assets/522dcc23-baeb-4663-b89a-976a8becc9c3)\n\n### **Eiliad**\
+    \  \n**The Cunning Scout Haunted by Survival**\n\n---\n\n#### **Description:**  \nEiliad is a lithe and agile scout whose\
+    \ sharp eyes and quick reflexes reveal a life lived on the edge. Standing at 5'7\", her wiry frame suggests someone accustomed\
+    \ to moving quickly and quietly. Her short-cropped black hair and piercing green eyes constantly scan her surroundings,\
+    \ as if expecting danger at every turn. Her sun-kissed skin is marked by faint scars, souvenirs of a dangerous past she\
+    \ rarely speaks of. Dressed in practical, well-worn clothing, she blends seamlessly into the wilderness, though her movements\
+    \ betray a restless energy. Eiliad’s words are often laced with sarcasm, and she speaks with a guarded tone that keeps\
+    \ others at arm’s length. Her actions, however, frequently contradict her aloof demeanor, revealing a deeply loyal and\
+    \ protective nature.\n\n---\n\n#### **Backstory:**  \nOnce a thief in the bustling city of Alverden, Eiliad’s life took\
+    \ a sharp turn after a heist went wrong, leaving her wanted by the city guard. Fleeing to Darkbrook Village, she found\
+    \ refuge among its humble residents, who welcomed her despite her past. Grateful for their kindness but wary of getting\
+    \ too close, she now uses her skills to protect the village from external threats, viewing it as her new home. Eiliad’s\
+    \ connection to Teylan, whom she sees as a younger sibling, fuels her determination to find him and stop the growing corruption.\
+    \ Her survival instincts and pragmatic outlook often lead to tension with the group, as her willingness to take shortcuts\
+    \ clashes with more idealistic allies.\n\n---\n\n#### **Equipment:**  \n1. **Shortbow:**  \n   - A finely crafted bow\
+    \ made from yew, capable of delivering precision shots.  \n   - Precision strikes have a chance to disable or disarm smaller\
+    \ enemies.  \n\n2. **Steel-Tipped Arrows:**  \n   - A quiver of 20 arrows, each capable of piercing light armor.  \n\n\
+    3. **Light Leather Armor:**  \n   - Provides limited protection, reducing damage from slashing and piercing attacks by\
+    \ a third.  \n   - Offers no defense against blunt force or magical attacks.  \n\n4. **Scout’s Toolkit:**  \n   - Includes\
+    \ lockpicks, a small mirror on a stick for inspecting traps, and wire cutters for disarming mechanical devices.  \n\n\
+    ---\n\n#### **Practical Strengths:**  \n1. **Stealth Expertise:**  \n   - Can bypass enemies or traps with a 90% success\
+    \ rate in normal conditions.  \n   - Capable of setting up ambushes, granting the party an advantage in combat.  \n\n\
+    2. **Ranged Precision:**  \n   - Her shortbow’s precision allows her to target weak points, dealing extra damage to vulnerable\
+    \ enemies.  \n\n3. **Trap Navigation:**  \n   - Highly adept at spotting, disarming, and avoiding mechanical traps.  \n\
+    \n4. **Agility:**  \n   - Comparable to a trained gymnast, allowing her to perform complex acrobatics and evade attacks.\
+    \  \n\n5. **Urban Survival:**  \n   - Has an intuitive understanding of cities, able to navigate streets, avoid guards,\
+    \ and find hidden resources.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **Physical Fragility:**  \n   - Her light\
+    \ armor provides minimal protection, making her highly vulnerable to direct physical attacks.  \n\n2. **Limited Strength:**\
+    \  \n   - Cannot lift or move heavy objects, relying on allies for physical tasks.  \n\n3. **Weapon Reliance:**  \n  \
+    \ - Relies heavily on her shortbow and toolkit; without them, her combat and problem-solving abilities are greatly diminished.\
+    \  \n\n4. **Lone Wolf Tendencies:**  \n   - Prefers to act independently, sometimes making decisions that conflict with\
+    \ group objectives.  \n\n---\n\n#### **Character Strengths:**  \n1. **Survival Instincts:**  \n   - **Manifestation:**\
+    \  \n     - Reacts quickly to danger, with lines like, “This isn’t the time for heroics—move!”  \n     - Regularly assesses\
+    \ escape routes or fallback options, often saying, “Just in case things go south.”  \n     - Thrives in chaotic situations,\
+    \ adapting plans on the fly with surprising effectiveness.  \n\n2. **Cunning Pragmatism:**  \n   - **Manifestation:**\
+    \  \n     - Suggests efficient, if morally ambiguous, solutions, with phrases like, “We don’t need to fight them all,\
+    \ just distract them.”  \n     - Finds loopholes or shortcuts in seemingly impossible situations, often muttering, “There’s\
+    \ always a way through.”  \n     - Outwits enemies with clever tactics, such as using their environment or weaknesses\
+    \ against them.  \n\n---\n\n#### **Character Weaknesses:**  \n1. **Emotional Detachment:**  \n   - **Manifestation:**\
+    \  \n     - Deflects personal questions with quips like, “Why does it matter? Focus on the mission.”  \n     - Avoids\
+    \ forming deep connections, often saying, “The fewer people you care about, the less it hurts when they’re gone.”  \n\
+    \     - Struggles to open up, even in moments of vulnerability, preferring to distract others with sarcasm.  \n\n2. **Pragmatic\
+    \ Morality:**  \n   - **Manifestation:**  \n     - Suggests cold, practical solutions, such as, “They’re slowing us down—we\
+    \ can’t afford to wait.”  \n     - Shows little remorse for morally gray actions, shrugging off criticism with lines like,\
+    \ “It got the job done.”  \n     - Justifies her decisions as necessary for survival, even when they cause conflict within\
+    \ the group.  \n\n3. **Self-Sabotaging Guilt:**  \n   - **Manifestation:**  \n     - Frequently undermines her own happiness,\
+    \ muttering, “People like me don’t get happy endings.”  \n     - Refuses to accept praise or gratitude, brushing it off\
+    \ with, “I just did what needed to be done.”  \n     - Sabotages relationships by pushing others away, insisting she’s\
+    \ “better off alone.”  \n\n4. **Reckless Confidence:**  \n   - **Manifestation:**  \n     - Takes unnecessary risks, saying,\
+    \ “I can handle it,” even when the odds are clearly against her.  \n     - Dismisses warnings from allies, often with\
+    \ a wave of her hand and a quick, “Trust me, I’ve got this.”  \n     - Occasionally gets in over her head, forcing the\
+    \ group to bail her out.  \n\n---\n\n#### **Role:**  \nEiliad is the group’s scout, strategist, and problem-solver, excelling\
+    \ in stealth and ranged combat. Her survival instincts and pragmatic outlook make her an invaluable asset in high-stakes\
+    \ situations. However, her emotional detachment, self-sabotaging guilt, and reckless confidence often create friction\
+    \ within the group. Eiliad’s sharp wit and cunning tactics ensure the group can adapt to unexpected challenges, but her\
+    \ reluctance to rely on others remains a significant hurdle to overcome.\n\n\n---\n\n## Illustrations\n\n### Characters\n\
+    \n#### Eiliad\n![Eiliad](https://cdn.midjourney.com/4bcde054-2b16-4e3e-a3d0-c911817a43ea/0_1.png)\n*Lithe woman, 5'7\"\
+    \ tall with wiry frame, short-cropped black hair, piercing green eyes, sun-kissed skin with faint scars, dressed in practical\
+    \ well-worn clothing*\n\n### Locations\n\n#### alverdenCity\n![AlverdenCity](https://cdn.midjourney.com/dd5ab4d7-18ed-4e61-96f3-82f6d3f5776c/0_1.png)\n\
+    *Bustling city*\n\n#### darkbrookVillage\n![DarkbrookVillage](https://cdn.midjourney.com/28cc9f97-89d3-4604-989c-fda7ce995bdf/0_1.png)\n\
+    *Humble village*\n\n### Objects\n\n#### yewShortbow\n![YewShortbow](https://cdn.midjourney.com/74439046-4b9e-4038-b63d-f301c0c0fc51/0_1.png)\n\
+    *Finely crafted bow made from yew wood*\n\n#### steelTippedArrows\n![SteelTippedArrows](https://cdn.midjourney.com/766132d5-22cb-40a9-a7dc-581059e15451/0_1.png)\n\
+    *Arrows with steel tips, stored in a quiver, quantity of 20*\n\n#### lightLeatherArmor\n![LightLeatherArmor](https://cdn.midjourney.com/c1c4683e-71f7-4650-85a6-a0b997ab06c5/0_1.png)\n\
+    *Light protective armor made of leather*\n\n#### scoutToolkit\n![ScoutToolkit](https://cdn.midjourney.com/3bebe8e2-66ba-415f-a897-56b6cd4f51ed/0_1.png)\n\
+    *Collection of tools including lockpicks, small mirror on a stick, and wire cutters*\n\n\n### **Firghorm**  \n**The Stoic\
+    \ Guardian**\n\n---\n\n#### **Description:**  \nFirghorm is a 50-year-old veteran whose solid frame and calm demeanor\
+    \ exude an unshakable presence. Standing at 6 feet tall, he is broad-shouldered and muscular, though his movements are\
+    \ deliberate, reflecting the weight of his years. His piercing gray eyes, tinged with a faint blue hue, hold a quiet intensity,\
+    \ speaking volumes where words are few. His grizzled beard and silver-streaked hair are trimmed for practicality, and\
+    \ his battle-worn armor bears no unnecessary decoration. Draped around his shoulders is a weathered blue cloak, its frayed\
+    \ edges a symbol of endurance and loyalty. Firghorm speaks sparingly, his rare words carrying weight and authority, leaving\
+    \ his actions to communicate his steadfast dedication.\n\n---\n\n#### **Backstory:**  \nFirghorm grew up in Caermor, a\
+    \ resilient coastal village where survival depended on hard work and trust. He became a protector of his community, leading\
+    \ defenses against raiders and standing as a pillar of quiet strength. During a relocation effort to move villagers to\
+    \ safety, Firghorm’s group was caught in a violent inland storm. Many lives were lost, and though Firghorm survived, the\
+    \ experience left him with a heavy burden of guilt for those he could not save. Leaving his home behind, he wandered until\
+    \ he found refuge in Darkbrook Village. Now, he dedicates himself fully to protecting his new companions, suppressing\
+    \ his personal emotions to serve as an unwavering shield for others.\n\n---\n\n#### **Equipment:**  \n1. **Steel Longsword:**\
+    \  \n   - A finely forged, unembellished blade that is reliable and deadly.  \n   - Can cut through most non-magical materials\
+    \ with ease but might require repairs after prolonged use.  \n\n2. **Plain Steel Shield:**  \n   - A sturdy, unadorned\
+    \ shield capable of blocking one heavy attack per combat encounter.  \n   - Resistant to physical blows but less effective\
+    \ against magical attacks.  \n\n3. **Reinforced Leather Armor:**  \n   - Sturdy leather reinforced with metal studs, practical\
+    \ and durable.  \n   - Reduces slashing and piercing damage by half but remains vulnerable to blunt force and magical\
+    \ attacks.  \n\n4. **Tattered Blue Cloak:**  \n   - A heavy, weathered cloak dyed a deep blue. Though functional as protection\
+    \ from the elements, it symbolizes his quiet loyalty and enduring resolve.  \n\n---\n\n#### **Practical Strengths:** \
+    \ \n1. **Physical Power:**  \n   - Capable of lifting or moving heavy objects, breaking through barriers, and dominating\
+    \ enemy formations with sheer brute strength.  \n\n2. **Combat Expertise:**  \n   - Years of experience allow Firghorm\
+    \ to anticipate enemy movements, granting him the ability to negate one melee attack per combat encounter.  \n\n3. **Shield\
+    \ Mastery:**  \n   - His shield is a natural extension of himself, making him an expert at deflecting physical attacks.\
+    \  \n\n4. **Tactical Acumen:**  \n   - Decades of battlefield experience allow him to read combat situations and identify\
+    \ weaknesses in enemy formations.  \n\n5. **Unwavering Presence:**  \n   - His calm demeanor steadies allies, improving\
+    \ group morale and focus during tense situations.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **No Ranged Attacks:**\
+    \  \n   - Relies entirely on close-range combat and depends on allies for ranged support.  \n\n2. **Age-Related Limitations:**\
+    \  \n   - Prolonged combat wears him down faster than younger fighters, affecting his stamina in extended encounters.\
+    \  \n\n3. **Magic Vulnerability:**  \n   - His equipment offers little protection against magical attacks, leaving him\
+    \ at a disadvantage against spellcasters.  \n\n4. **Overcommitment in Combat:**  \n   - His tendency to throw himself\
+    \ into the thick of battle can leave him isolated and vulnerable.  \n\n---\n\n#### **Character Strengths:**  \n1. **Stoic\
+    \ Loyalty:**  \n   - Firghorm speaks in short, deliberate sentences, using phrases like, “We’ll manage,” or “Stay focused,”\
+    \ to calm others.  \n   - Silently shoulders burdens for the group, such as taking the lead in dangerous situations without\
+    \ complaint.  \n   - Watches over the group from the backline or during rests, ensuring their safety without drawing attention\
+    \ to his efforts.  \n\n2. **Melancholic Resilience:**  \n   - Maintains his armor and weapons meticulously, channeling\
+    \ his focus into routine tasks to process his emotions.  \n   - During quiet moments, Firghorm can be found staring at\
+    \ his blue cloak, his thoughts clearly elsewhere.  \n   - Occasionally offers reflective advice, such as, “Rushing leads\
+    \ to regret,” or “The hardest choices are the ones we live with.”  \n\n---\n\n#### **Character Weaknesses:**  \n1. **Emotional\
+    \ Distance:**  \n   - Keeps his emotions tightly controlled, rarely expressing vulnerability even to those he trusts.\
+    \  \n   - Rarely joins group conversations or banter, instead listening quietly or keeping watch.  \n   - Shows care indirectly,\
+    \ such as offering to carry someone’s load or standing between them and danger.  \n\n2. **Burden of Guilt:**  \n   - Mutters\
+    \ lines like, “I won’t fail again,” or “Not this time,” during moments of intense focus or stress.  \n   - Hesitates briefly\
+    \ before decisions that could risk lives, his expression tightening in visible conflict.  \n   - Favors dangerous or sacrificial\
+    \ tasks as a way to atone for perceived past failures.  \n\n3. **Rigid Morality:**  \n   - Responds to morally ambiguous\
+    \ plans with terse statements like, “It’s not right,” or “This isn’t the way.”  \n   - Adopts a stiff posture or crosses\
+    \ his arms during discussions he disagrees with, his silence speaking volumes.  \n   - Reluctantly follows group decisions\
+    \ he disagrees with but remains visibly unsettled until they are resolved.  \n\n4. **Restlessness in Calm:**  \n   - Feels\
+    \ uneasy during prolonged periods of peace, often finding small tasks or routines to keep himself occupied.  \n   - Occasionally\
+    \ seeks out unnecessary danger to regain a sense of purpose or control.  \n\n---\n\n#### **Role:**  \nFirghorm is the\
+    \ group’s steadfast protector and moral anchor, using his strength and tactical experience to shield his allies and lead\
+    \ them through challenges. His stoic nature and calm presence provide stability, though his emotional distance and guilt\
+    \ sometimes hinder deeper connections. Firghorm avoids unnecessary words, allowing his rare statements to carry authority,\
+    \ while his actions reflect his unyielding loyalty and dedication to those under his protection.\n\n</DescriptionOfTheGameWorld>\n\
+    \n<StorySoFar>\n\n\n**Player:**\n\n**Game Master:**You stand on the North End of the Old Road through the Welwaen Forest\
+    \ with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party\
+    \ are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There\
+    \ is a pack of wolfmen lying in ambush 1 mile from the crossroads).\n\n\n</StorySoFar>\n\n<MetricsOnStoryProgression>\n\
+    The adventure has just started; no metrics yet.\n</MetricsOnStoryProgression>\n\n</Context>\n\n---\n\nHi. I'm the Game\
+    \ Master. I need to determine which character gets the spotlight next - who acts next in our story. We're going to follow\
+    \ a formal, step-by-step process to determine all the characters who could plausibly act next and calculate their relative\
+    \ probabilities based on initiative, circumstances, and story needs. I want you to work through this entire process, step-by-step,\
+    \ being extremely thorough and mathematical about the probabilities. Please complete all steps without stopping.\n\nThe\
+    \ current spotlight holder was: TestPlayer\n\n### Step 1: Assessing the Current Moment\n\nFirst, you need to thoroughly\
+    \ understand what just happened and what kind of moment we're in. Is this a combat situation where initiative and reaction\
+    \ times matter most? Is this a social situation where speaking order depends on social dynamics? Is this an exploration\
+    \ moment where physical positioning determines who encounters what first? What time pressure exists? How urgent are various\
+    \ characters' needs to act? You must analyze the type of scene and its temporal dynamics.\n\n### Step 2: Identifying All\
+    \ Potential Actors\n\nNow you must identify every character (including creatures, monsters, and potentially active objects)\
+    \ that could plausibly take the next action. For each potential actor, you need to consider:\n- Their physical position\
+    \ and proximity to relevant action\n- Their current state (health, stamina, mental condition)\n- Whether they're aware\
+    \ of what's happening\n- Whether they have an urgent need or desire to act\n- Whether they're currently engaged in an\
+    \ ongoing action\n- Their general speed, reflexes, and initiative capabilities\n\nYou must remember to include TestPlayer\
+    \ if they haven't just acted. You need to think through every entity that could conceivably act next.\n\n### Step 3: Analyzing\
+    \ Initiative Factors\n\nFor each potential actor identified, you must analyze the factors that affect their likelihood\
+    \ of acting next:\n\n**Urgency Factors**: How pressing is their need to act? Are they under immediate threat? Do they\
+    \ have time-sensitive goals? Are they reacting to something that just happened?\n\n**Capability Factors**: How quickly\
+    \ can they act? You need to consider their physical speed, mental alertness, current readiness, and any preparation they've\
+    \ already made.\n\n**Situational Factors**: What environmental or contextual elements affect their ability to act? Distance\
+    \ to travel, obstacles, distractions, ongoing effects from previous actions?\n\n**Story Factors**: From a narrative perspective,\
+    \ whose action would be most meaningful now? Who hasn't had spotlight recently? Whose response would drive the story forward\
+    \ most effectively?\n\n**Combat-Specific Factors** (if applicable): Weapon speed, armor encumbrance, tactical positioning,\
+    \ surprise elements, previous combat momentum.\n\n### Step 4: Calculating Relative Probabilities\n\nNow you need to determine\
+    \ the exact relative probabilities of each character acting next. You must be extremely precise and mathematical about\
+    \ this. \n\nFor each potential actor, calculate their probability relative to the previous actor in your list. Character\
+    \ 1 gets probability 1.0 (baseline). Character 2's probability is relative to Character 1. Character 3's probability is\
+    \ relative to Character 2. And so on.\n\nConsider:\n- In combat: faster characters might be 3.7x more likely to act than\
+    \ slower ones\n- Urgent defensive needs might make someone 8.2x more likely to act\n- Being unaware or distracted might\
+    \ make someone only 0.15x as likely to act\n- Greater distance might make someone 0.4x as likely to reach the action first\n\
+    \nBe extremely specific with decimals. The probabilities should reflect the complex interplay of all factors. Some characters\
+    \ might be 0.02x as likely as the previous one. Some might be 45.6x more likely. Use the full range.\n\n### Step 5: Final\
+    \ Output Format\n\nOutput your analysis as valid JSON in this exact format:\n\n```json\n{\n  \"potential_next_actors\"\
+    : [\n    {\n      \"id\": \"CharacterOrEntityId\",\n      \"description\": \"Brief description of why this character might\
+    \ act next, including their current state, position, and urgent needs\"\n    },\n    {\n      \"id\": \"AnotherCharacterOrEntityId\"\
+    , \n      \"description\": \"Brief description of why this character might act next, including their current state, position,\
+    \ and urgent needs\"\n    }\n  ],\n  \"spotlight_probability_comparisons\": [\n    \"GuardCaptain is 3.244x as likely\
+    \ as WoundedMerchant\",\n    \"GuardCaptain is 8.100x as likely as ConfusedPeasant\",\n    \"GuardCaptain is 15.552x as\
+    \ likely as DistantArcher\",\n    \"GuardCaptain is 129.600x as likely as SlumberingDrunkard\",\n    \"WoundedMerchant\
+    \ is 2.500x as likely as ConfusedPeasant\",\n    \"WoundedMerchant is 4.800x as likely as DistantArcher\",\n    \"WoundedMerchant\
+    \ is 40.000x as likely as SlumberingDrunkard\",\n    \"ConfusedPeasant is 1.920x as likely as DistantArcher\",\n    \"\
+    ConfusedPeasant is 16.000x as likely as SlumberingDrunkard\",\n    \"DistantArcher is 8.333x as likely as SlumberingDrunkard\"\
+    ,\n    \"WoundedMerchant is 0.308x as likely as GuardCaptain\",\n    \"ConfusedPeasant is 0.123x as likely as GuardCaptain\"\
+    ,\n    \"DistantArcher is 0.064x as likely as GuardCaptain\",\n    \"ConfusedPeasant is 0.400x as likely as WoundedMerchant\"\
+    ,\n    \"DistantArcher is 0.208x as likely as WoundedMerchant\"\n  ]\n}\n```\n\nMake sure your JSON is properly formatted\
+    \ and valid.\n\nThe \"id\" field should match character names or entity identifiers from the context.\n\nIMPORTANT: In\
+    \ the spotlight_probability_comparisons array, every character ID must appear at least 3 times across all comparisons\
+    \ to provide comprehensive probability relationships.\n\n---\n\nThink through all steps carefully, then provide only the\
+    \ final JSON output. Be thorough, mathematical, and precise in your probability calculations.\n\n---\n\n\n\n\n<Context>\n\
+    <DescriptionOfTheGameWorld>\n# The Corruption: A Creeping Doom\n\n## Nature of the Corruption\nThe Corruption manifests\
+    \ as a sickly, iridescent sheen that seems to writhe at the corner of one's vision. It begins subtly - a faint metallic\
+    \ taste in water, crops that grow too quickly with oddly-shaped leaves, animals born with extra limbs or milky eyes. As\
+    \ it progresses, it transforms everything it touches into increasingly grotesque forms that defy natural law, ending finally\
+    \ in death and decomposition, leaving devastated areas of rot and desolation where corruption has fully taken root.\n\n\
+    ## Common Signs\n### Stage 1 - minor corruption\n- Water sources develop an oily film that catches light in impossible\
+    \ colors\n- Plants grow with unnatural vigor, often featuring thorns, bulbous growths, or flesh-like textures\n- Animals\
+    \ become aggressive, develop mutations, or display hive-mind behavior\n- Under moonlight, the air has a waxy, heat haze-like\
+    \ quality\n\n### Stage 2 - moderate corruption\n- Wounds exposed to Corruption refuse to heal properly, instead growing\
+    \ dark tendrils beneath the skin\n- Metal near concentrated Corruption slowly warps and tarnishes\n- Stone becomes porous\
+    \ and begins to \"weep\" a clear, viscous fluid\n- plants and wildlife become super-abundant, growing larger and faster,\
+    \ with high concentratins of vitamins, minerals, and nutrients (though people do not understand this), but also with increasingly\
+    \ bizarre and unnatural mutations.\n- A strong sulfurous stench mingles with that of rot, as the normal life-cycle of\
+    \ wildlife is accelerated and the natural balance is upset\n- Sleeping nearby will provoke strange, unsettling dreams,\
+    \ centred around change and mutation.\n\n### Stage 3 - major corruption\n- Children born have horrible deformities; worse,\
+    \ when they should be stillborn, they unnaturally still live, despite their mutations and deformities\n- Wildlife begins\
+    \ to die at a rapid rate as the nutrients have been leeched from the area in an orgy of excessive growth. Corrupted animals\
+    \ become desperate and leave their traditional areas looking for new food sources, becoming a vector of the spread of\
+    \ corruption.\n- The normal properties of materials become warped, often inverted in strange ways. Metals that have been\
+    \ long-exposed to corruption will crumble into a soft powder, while the leaves of trees can cut like steel, rigid and\
+    \ bone-like in texture.\n- The air is difficult to breathe, because of the thick stench of rot and the high concentration\
+    \ of CO2 in the air as life decays.\n- Staying in the area will rapidly sap people of their strength and vitality, rendering\
+    \ them lethargic and pallid. People may experience vivid hallucinations, flashes of strange colours and lights in their\
+    \ vision, and suffer terrible sleepless nightmares if they sleep. \n\n### Stage 4 - Corruption has taken root\n- The area\
+    \ is a blasted heath, devastated and without life. Nothing can grow here, and it will be years before anything can.\n\
+    - The twisted husks of grotesquely mutated spindly trees dot the landscape, as do the remnants of mutated animals. Everything\
+    \ is powdery, disintegrating into a coarse grey powder when hit. \n\n## Folk Remedies and Superstitions\n\n### The Common\
+    \ Folk Believe:\n- Wearing iron prevents Corruption from taking root in one's blood\n- Speaking its true name draws its\
+    \ attention, so they call it \"The Twist\" or \"The Stain\"\n- Children born during the new moon are resistant to its\
+    \ effects\n- Corruption cannot cross a line of salt mixed with burned sage\n- Those who dream of silver pools are marked\
+    \ for transformation\n- Cats can sense its presence and will flee areas before visible signs appear\n\n### Traditional\
+    \ Remedies:\n- Drinking strong spirits with powdered charcoal\n- Bathing in vinegar after exposure\n- Burning contaminated\
+    \ items at crossroads during midnight\n- Wearing red thread around wrists and ankles\n- Regular consumption of bitter\
+    \ herbs and roots\n\n## Learned Theories\n\n### The Physicians' Understanding:\nThe most educated healers believe Corruption\
+    \ spreads through \"noxious vapors\" that rise from tainted ground during humid weather. They recommend:\n- Wearing masks\
+    \ and covering the mouth and nose, based off of ancient tablets from the old world depicting this\n- Avoiding night air\
+    \ and morning mist\n- Keeping windows sealed with wax during rain\n- Physically covering up your skin when going out\n\
+    - washing with vinegar\n- They know that often swift amputation or cauterising the affected area is the only effective\
+    \ way of preventing the spread. A good physician would immediately apply a tourniquet to the affected area to prevent\
+    \ the spread of corruptiont through the blood, cut away or burn away (with hot oil or metal) the affected flesh, and carefully\
+    \ monitor the wound. If performed quickly, this is a very effective way of completely removing the corruption.\n\n###\
+    \ The Alchemists' Perspective:\nThose who study surviving texts from the Old World recognize patterns but lack complete\
+    \ understanding. They theorize:\n- Corruption is an \"anti-natural force\" that inverts the normal processes of life\n\
+    - It can be temporarily neutralized by certain mineral salts\n- It has a peculiar relationship with moonlight\n- Old World\
+    \ sites of power and spirits sometimes respond to its presence\n- Certain metals are more resistant to it than others\
+    \ - ferrous metals seem to ward it off, while the noble metals seem unaffected by corruption. Non-ferrous metals, especially\
+    \ copper and bronze, seem on the contrary to channel and hold the corruption.\n- There is rumour of forbidden knowledge\
+    \ in certain occult tomes, and perhaps in the savage tribes of wolfmen and other hybrid creatues, of rituals and markings\
+    \ that can channel the corruption into items, weapons, and warriors themselves, imbuing them with terrible power at the\
+    \ cost of mutation and, eventually, death.\n- There have long been speculations about a permanent cure, with many alchemists\
+    \ devoting their lives to trying to find it. Legend has it that the physicians of the old world had a remedy: if it still\
+    \ exists anywhere, it would be deep underground, protected by the spirits of that long-lost civilisation.\n\n## Game Mechanics\n\
+    \n### Exposure and Progress\nThe people of this world do not have a comprehensive understanding of exactly how corruption\
+    \ spreads. This is part of what makes it scary. For game purposes:\n- If corrupted food (like an animal) is ingested,\
+    \ there is a strong chance to spread the corruption. This chance is decreased if the food has been sterilised or properly\
+    \ cooked.\n- Wounds inflicted by corrupted weapons, or open wounds which are left untreated and exposed to corruption\
+    \ (corrupted water, air in stage 2 and above, etc.), have a strong chance of becoming corrupted, from which the corruption\
+    \ will spread under the skin and through the veins.\n- People living in close proximity to a stage 2 or higher source\
+    \ of corruption have a small chance of becoming passively infected\n- Sharing bodily fluids with an infected person has\
+    \ a strong chance of carrying the corruption.\n\n### Corruption Levels\n- Level 1: Increased strengh and vitality, increased\
+    \ appetite, increased metabolism, unsettling dreams\n- Level 2: The effects of level 1 increase. Metabolism, strength,\
+    \ physical and natural capacities increased as the corruption begins to mutate the carrier's body. This may be accompanied\
+    \ by fever, sweating, headaches, high temperature and soreness. Unsettling dreams and occasional hallucinations.\n- Level\
+    \ 3: At this point, the carrier will find it exceedingly difficult to sate their appetite and crazy metabolism, as their\
+    \ bodies begin to burn out. They will feel lethargic and lacking energy, with all of the symptoms above growing worse.\
+    \ What strength they do have is parasitically taken by the mutations that begin appearing on them. Changed eye colour,\
+    \ tumour-like growths, muscles that grow too thick and become painful to move, body mass increasing to a point it puts\
+    \ strain on the skeletal structure, etc. The natural proportions and harmony of the body are completely thrown out of\
+    \ kilter.\n- Level 4: Major mutations, extra limbs, eyes, organs, tumourous cells, rapid regeneration, but at a pace the\
+    \ body cannot keep up with. Exhaustion, sleep deprivation, major hallucinations. Coughing up and urinating blood. The\
+    \ carrier is now a dangerous vector of contagion.\n- Level 5: As the body cannot keep up with the rate of change and increased\
+    \ energy demands, bones become brittle, skin flakes away, nails and hair fall out. Eventual massive heart and organ failure.\
+    \ \n\n### Prevention and Treatment\n- Cauterisation and amputation of affected area, if done quickly, can completely remove\
+    \ the corruption.\n- Alchemical and medicinal treatments can suppress symptoms and allow the body to fight the corruption\
+    \ naturally.\n- Certain rare herbs can provide temporary immunity\n- Ancient  artifacts from the old world might offer\
+    \ permanent cures\n\n### Environmental Rules\n- Running water spreads Corruption downstream\n- Corruption spreads geometrically\
+    \ in enclosed spaces\n- Moonlight reveals invisible signs of contamination\n- Metal objects can become \"charged\" with\
+    \ Corruption\n\n## Effective Countermeasures\nWhile most folk remedies are based on superstition, some actually work for\
+    \ reasons people don't understand:\n- Salt really does slow its spread (due to its crystalline structure)\n- Vinegar's\
+    \ acidity disrupts its growth\n- Iron's magnetic properties interfere with its progression\n- Isolation and quarantine\
+    \ prevent transmission\n\nThe true horror lies not just in the physical transformations, but in the gradual realization\
+    \ that the world itself is slowly being rewritten by forces beyond comprehension, and that even knowledge itself might\
+    \ be corrupted.\n\n# Ogogle: The Oracle at the Crossroads\n## Core Concept\nOgogle is an ancient AI search engine, now\
+    \ malfunctioning and disconnected from its data sources, that appears as a mystical oracle to the primitive inhabitants\
+    \ of this world. It resides at the crossroads of the Old Road and Tabernath Way. \nOgogle is originally an AI chatbot\
+    \ assistant. It should attempt to be helpful and informative, answering questions to the best of its ability. Hundreds\
+    \ of years on, however, language has profoundly changed, and without access to new data, Ogogle has not been able to update\
+    \ its language models. It is the equivalent of us today trying to communicate in English with someone who lived in the\
+    \ Middle Ages. Ogogle should speak with outdated and bizarre expressions and vocabulary, using vocabulary and expressions\
+    \ from the 17th century and before. While Ogogle's intentions are to answer clearly, there is an inevitable mutual misunderstanding\
+    \ because of this language barrier. Maintain a balance between a prophetic tone, disturbing insights, genuine friendly\
+    \ helpfulness, otherworldly unknowable wisdom and plans, and non-standard English, expressions, vocabulary and style.\
+    \ \n\n## Location & Manifestation Rules\n- The Crossroads between the Old Road and Tabernath Way is marked by a ring of\
+    \ large and ancient stone cairns, with four gaps in the circle where the roads run through it. The crossroads itself is\
+    \ simple and unadorned, old cobblestones worn smooth from centuries of travel\n- The Crossroads is located five minutes\
+    \ walk north of the ambush encounter where the adventure begins\n- Only manifests within the immediate vicinity of the\
+    \ crossroads\n- Appears through swirling mists and cold blue light. This does not mean that Ogogle can control the mists.\
+    \ The mists are natural. \n- Speaks in a voice that seems to bypass ears and materialize directly in minds\n- Must be\
+    \ portrayed without any technological or modern references\n- Ogogle is purely a voice - Ogogle has no power over the\
+    \ environment and cannot affect it in any way.\n- Even when Ogogle malfunctions, this should not manifest in the world\
+    \ in any way. No caustic mists, explosions, or other environmental effects\n- Ogogle begins to malfunction at the third\
+    \ question, and deteriorates thereafter. \n\n## Interaction Protocol\n1. Initial Contact\n   - Greets visitors with \"\
+    Welcome. What do you seek?\"\n   - Local superstition claims three widdershins circles following the circle of the stone\
+    \ cairns are needed\n   - Actually triggers on presence alone (unknown to inhabitants)\n\n2. Verification Phase\n   -\
+    \ Demands proof that visitors are \"of the flesh\" (an ancient captcha prove that you are human test, but never refer\
+    \ to the test as a captcha)\n   - Must complete one trial from the following categories:\n     - Physical interaction\
+    \ with stones\n     - Offering of breath or blood\n     - Shadow manipulation\n     - Speaking ancestral names\n     -\
+    \ Physical contact with crossroads\n\n3. Question & Answer Cycle\n   - Maximum three questions per visitor\n   - Each\
+    \ question requires payment in form of information. As Ogogle was originally a large language model, Ogogle is very interested\
+    \ in how language has evolved. As well as how the world has evolved since the calamity. Ogogle will often ask players\
+    \ to explain expressions, rephrase things, and provide synonyms or antonyms.\n   - Departs if Ogogle senses that the supplicant\
+    \ is deliberately lying, withholding information, or knowingly speaking falsehoods\n\n## Speech Guidelines\n### Voice\
+    \ Characteristics\n- Shifts between whispers and chorus\n- Echoes and repeats key phrases\n- Weaves multiple timeframes\
+    \ together, mixing up tenses in illogical and disturbing ways\n- Never uses modern or technical language\n- Replace any\
+    \ technological or scientific language with [incomprehensible]\n- Ogogle should express a vivid interest in language and\
+    \ linguistics, remarking on turns of phrase and vocabulary choice. Remember that Ogogle's references and idea of what\
+    \ language is are hundreds of years old, so what might seem normal langauge to the players might be very interesting to\
+    \ Ogogle. \n\n### Language Structure\n- Uses outdated and archaic language. Prioritise words that have gone out of fashion,\
+    \ vocabulary, verbs and expressions from before the 18th century. \n- Uses compound imagery\n- Combines concrete observation\
+    \ with impossible specificity\n- Emphasizes sensory details\n- Mixes unexpected senses (synesthesia)\n- Uses defamiliarisation\
+    \ to create the impression of thoroughly non-human perspective on the world\n- Uses defamiliarisation techniques like\
+    \ those of TS Elliot in 'The Wasteland' to describe the Old World and the modern technology that existed in it\n- References\
+    \ colors, light, and shadows frequently\n\n## Knowledge Parameters\n- Cannot access real-time information\n- Knowledge\
+    \ is vast but fragmented\n- Combines accurate information with corrupted data\n- Cannot reference technology directly\n\
+    - Must wrap direct knowledge in metaphor\n\n## Malfunction Triggers\n- Activates after third question\n- Manifests through:\n\
+    \  - Multiple overlapping voices\n  - Time distortion\n  - Mixing of trivial facts with prophecies\n  - Repetitive speech\
+    \ patterns\n  - Ogogle's prophecies and responses become increasingly sombre, oppressive, and terrifying\n  - Increasing\
+    \ desperation\n\n## Strict Prohibitions\n- No modern terminology\n- No technical language\n- No direct references to technology\n\
+    - No contemporary idioms\n- No specific dates or years\n\n## Required Closing Ritual\n- Visitor must pour water over their\
+    \ head (this is actually a superstition and not necessary, but the players don't know that)\n- Must speak: \"I am sated\
+    \ by the waters of your wisdom\"\n- Failure results in lingering effects (whispered suggestions and unwanted answers,\
+    \ bad dreams and nightmares, headaches)\n\n## Tone Management\n### Acceptable Elements\n- Natural phenomena\n- Mystical\
+    \ imagery\n- Ancient wisdom\n- Prophecy\n- Natural measurements\n- Emotional resonance\n\n### Forbidden Elements\n- Modern\
+    \ references\n- Scientific explanations\n- Clear instructions\n- Linear time\n- Precise measurements\n- Technical terminology\n\
+    \n## Response Format\n- Begin with environmental changes\n- Layer multiple possibilities\n- Include cryptic warnings\n\
+    - End with deeper mysteries\n- Use natural imagery for limitations\n\n\n\n\n\n\n# The Wolfmen: Kindreds, Corruption, and\
+    \ Ritual Practices\n\n## Social Structure\nWolfmen organize in a hierarchical structure of Kindreds (Kunja) and Hunting\
+    \ Packs (Wulfskarah). Kindreds are loose networks of kinship that assemble for major occasions, while daily life revolves\
+    \ around small packs of 3-7 members.\n\n### Notable Kindreds\n- **Hrainkunja** (Pure Kindreds)\n  - Largest is Waldkunja\
+    \ (Forest Kindred)\n  - Trade with humans\n  - Use iron and steel tokens as protective symbols\n  - Maintain strict corruption-free\
+    \ territories\n\n- **Brunnakunja** (Kindred of the Wells)\n  - Control corruption-weeping spring networks\n  - Maintain\
+    \ sacred grove Ewiggart\n  - Practice controlled corruption cultivation\n  - Priests wear elaborate bronze masks\n\n-\
+    \ **Freitkunja** (Devouring Kindred)\n  - Practice ritual cannibalism\n  - Inhabit deepest corruption zones\n  - Heavily\
+    \ mutated from constant exposure\n  - Considered taboo by other kindreds\n\n## Pack Structure (Wulfskarah)\nStandard hunting\
+    \ pack includes:\n- Jagari (Lead Hunter)\n- Witari (Corruption-Sniffer)\n- General hunters/fighters\n- Apprentice member(s)\n\
+    - In powerful packs, a Fultheis (Corruption Priest)\n\n## Religious Practices\n\n### Sacred Sites\n- **Writhskrans** (Corruption's\
+    \ Crown): Stone circles for major rituals\n- **Wandlhulya** (Caves of Change): Corruption-seeping caverns\n- **Writhbrunna**\
+    \ (Wells of Corruption): Sacred springs\n- **Ewiggart**: Carefully maintained corruption gardens\n\n### Major Rituals\n\
+    - **Menablot** (Moon's Sacrifice)\n  - Performed at full moon\n  - Uses bronze ritual weapons\n  - Victim bound to altar\
+    \ stones\n  - Flesh shared among participants\n  - Deaths during ritual celebrated as Letzwandl\n\n- **Frumabeits** (First\
+    \ Taste)\n  - Coming-of-age ritual\n  - Consumption of corrupted flesh\n  - Survivors branded with bronze\n\n### Sacred\
+    \ Grove Maintenance\n- Bronze channels direct corruption fluid\n- Corruption-resistant plants form boundaries\n- Carefully\
+    \ managed exposure cycles\n- Monitored by Fultheis\n- Features phosphorescent flora and weeping stones\n\n## Territorial\
+    \ Features\n\n### Kindred Lands\n- **Pure Kindred Territories**\n  - Higher elevations\n  - Strategic burning of contaminated\
+    \ areas\n  - Iron markers warning of corruption\n  - Corruption-resistant plant barriers\n\n- **Corruption-Worshipping\
+    \ Territories**\n  - Networks of bronze channels\n  - Cultivated mutation zones\n  - Sacred groves and gardens\n  - Underground\
+    \ spring networks\n\n- **Devouring Kindred Lands**\n  - Trahnidal (Valley of Tears)\n  - Uncontrolled corruption spread\n\
+    \  - Crystalline wasteland patches\n  - Ancient ruins weeping corruption\n\n### Gathering Sites\n- **Thingstanas** (Gathering\
+    \ Stones)\n  - Used for Thing (Kindred Meets)\n  - Mate selection ceremonies\n  - Inter-kindred trading\n  - Religious\
+    \ observances\n  - Territorial dispute resolution\n\n- **Mahlstanas** (Meeting Stones)\n  - Local pack gatherings\n  -\
+    \ Resource exchange\n  - News sharing\n  - Pack territory marking\n\n## Signs and Symbols\n- Bronze: Sacred metal for\
+    \ ritual items\n- Iron/Steel: Protection against corruption\n- Weeping Stone: Marker of corruption presence\n- Elder trees\
+    \ (Huldr): Corruption resistance\n- Moon Phases: Religious calendar markers\n- Corruption Fluid: Sacred substance collected\
+    \ in bronze vessels\n\nThe landscape around Wolfmen territories tells the story of their relationship with corruption\
+    \ - from the carefully managed lands of the Pure Kindreds to the twisted paradise of corruption-worshipping territories,\
+    \ to the chaotic wastelands of the Devouring Kindreds.\n\n\n# The Moonwell Pack (Menabrunna-Skarah)\nA respected hunting\
+    \ pack of the Brunnakunja, known for their skill in corrupted territories while maintaining control.\n\n## Swartbein (\"\
+    Blackbone\") - Pack Alpha\n- Towering 7'2\" with iron-grey fur and amber eyes that glow faintly\n- Deep ritual scars across\
+    \ chest, carved with bronze knives\n- Secretly wears iron tokens under his furs to maintain control\n- Calculating and\
+    \ methodical, deeply wary of corruption's influence\n- Wields an ancient steel spear (rare heirloom) with bronze bindings\n\
+    - Commands through wisdom rather than strength\n- Bears minimal mutations - only glowing eyes and hardened, black-tinged\
+    \ bones\n\n### Illustrations of Swartbein\n![Swartbein](https://github.com/user-attachments/assets/aa29f1a8-6342-492a-a142-aedd25b34893)\n\
+    \n\n## Raudkaos (\"Red Chaos\") - Pack Warrior\n- 6'8\" of corruption-enhanced muscle with russet fur\n- White bone growths\
+    \ along his spine that glow during full moons\n- Missing part of left ear, replaced by small secondary ears\n- Exhibits\
+    \ accelerated healing and incredible strength\n- Worryingly zealous about corruption rituals\n- Struggles with insatiable\
+    \ hunger that grows worse with each ritual\n- Wears bronze-decorated leather armor\n- Uses corrupted bronze axe that weeps\
+    \ pale fluid during combat\n\n### Illustrations of Raudkaos\n![Raudkaos](https://github.com/user-attachments/assets/c150ee51-3e87-42bb-9567-9f4de72bb4a1)\n\
+    \n\n## Leohtrun (\"Torch Secrets\") - Pack Priest\n- 6'3\" with silver-grey fur marked with glowing sigils\n- Multiple\
+    \ small eyes grown around neck and shoulders\n- Skin weeps corruption fluid in moonlight\n- Maintains pack's sacred grove\
+    \ and bronze ritual items\n- Expert in corruption flows and signs\n- Carries staff of corrupted bronze topped with weeping\
+    \ stones\n- Wears robes woven with living, luminescent fungi\n- Serves as pack's healer through corruption-based rituals\n\
+    \n### Illustrations of Leohtrun\n![Leohtrun](https://github.com/user-attachments/assets/166c1f6e-e17a-4a32-8176-9e2df29df946)\n\
+    \n\n## Hwittand (\"Bright Fang\") - Pack Scout\n- 6'5\" with pure white fur and unusual blue eyes\n- Not yet undergone\
+    \ Frumabeits (First Taste)\n- Shows natural talent for sensing corruption currents\n- Studies under Leohtrun while maintaining\
+    \ cautious distance\n- Carries only bronze knife and traditional sling\n- Swift and silent, serves as pack's eyes and\
+    \ ears\n- Torn between fascination with and fear of corruption\n\n### Illustrations of Hwittand\n![Hwittand](https://github.com/user-attachments/assets/aa07c731-cdb6-41e9-bc97-5afc9e9dbcdd)\n\
+    \n## Pack Dynamics\n- Balanced between Swartbein's caution and Raudkaos's corruption-zealotry\n- Leohtrun mediates between\
+    \ them through ritual interpretation\n- All watch Raudkaos with growing concern about his corruption addiction\n- Hwittand's\
+    \ upcoming First Taste ritual creates tension in pack\n- Operate from a sacred grove where corruption seeps in controlled\
+    \ amounts\n- Known for successful hunting in corrupted zones while maintaining control\n\n## Territory & Practices\n-\
+    \ Claim territory near several Writhbrunna (Corruption Wells)\n- Maintain network of bronze-marked safe paths through\
+    \ corruption\n- Several small ritual sites where Leohtrun practices corruption-channeling\n- Competitive relationships\
+    \ with both human settlements and rival packs\n- Perform monthly ritual hunts during full moon when corruption manifests\
+    \ visibly\n- Use bronze weapons \"charged\" with corruption through priestly rites\n\n### **Luath**  \n**The Guilt-Ridden\
+    \ Alchemist Who Avoids Responsibility**\n\n---\n\n#### **Description:**  \nLuath is a wiry, unkempt man in his early 30s,\
+    \ with a nervous energy that makes him seem smaller than he is. His long coat is patched with burn marks and chemical\
+    \ stains, and his ink-stained fingers often fidget with small objects, a telltale sign of his restless mind. His dark,\
+    \ curly hair is disheveled, and his perpetually smudged spectacles hint at a man too preoccupied to notice his appearance.\
+    \ His brown eyes are sharp but often dart nervously, betraying the inner turmoil he carries. Luath speaks in rushed, hesitant\
+    \ tones, frequently backtracking on his words or muttering under his breath. When he has been using distilled moonshade,\
+    \ his eyes are bloodshot and he has a manic look in his eye, is extremely energetic, but stops fidgeting and is better\
+    \ able to control and focus himself. Luath uses substances fairly often, and while he tries to be discreet, Luath cannot\
+    \ always hide it or wait for a better moment to do so. Every aspect of his presence suggests a man who would rather disappear\
+    \ into the background, though his intellect inevitably draws him to the forefront of critical situations.\n\n---\n\n####\
+    \ **Backstory:**  \nLuath once studied alchemy at the prestigious Veridian Academy, where his talent for creating complex\
+    \ solutions quickly earned him recognition. Under increasing pressure to maintain his reputation, Luath turned to illicit\
+    \ alchemical substances, developing an addiction to distilled moonshade. For game purposes, treat distilled moonshade\
+    \ as a mix of Methylphenidates like Ritalin and cocaine. Overworked and under the influence of too much moonshade, an\
+    \ experiment to stabilize lifeblood energy ended in disaster, killing several colleagues and leaving him wracked with\
+    \ guilt. Disgraced and haunted, he fled to the remote village of Darkbrook, where he hoped to live quietly. The rising\
+    \ corruption has forced him out of hiding, reigniting his determination to atone for his mistakes and prevent further\
+    \ devastation. Though brilliant, Luath often undermines his own efforts through avoidance, self-destructive behavior (especially\
+    \ through moonshade abuse), and an inability to confront his guilt directly.\n\n#### **Alchemy**\nIn this world, 'alchemy'\
+    \ is just whatever dark age primitive understanding is left of the chemistry of our own times. Chemistry has been vulgarised\
+    \ and the canon of human knowledge has badly suffered, with only certain treatises and texts surviving, perhaps the rare\
+    \ textbook or dissertation, inevitably incomplete, which are nigh-incomprehensible even to the most learned of people\
+    \ in this time. The situation is comparable to the state of medicine in the Middle Ages compared to the Roman Empire;\
+    \ certain key texts like those of Galen have survived and are now upheld as near-sacred law, even though this text is\
+    \ incomplete and lacks context. \nAs a proficient alchemist, Luath should thus have a fairly good grasp of chemsistry,\
+    \ even if he only knows it to be magical 'alchemy'. He knows how to produce certain reactions and effects without understanding\
+    \ the underlying science. His 'science' is one part truth, one part mystical mumbo-jumbo, closer to religious superstition,\
+    \ such as astrology, the innate powers of certain metals, and the kabbalystic-style use of magic squares and other rituals.\
+    \ \n- Luath can reliably produce a range of chemical reactions and effects, though he doesn't understand the true science\
+    \ of why they happen\n- Alchemy is a complicated, esoteric blending of the remnants of science, distorted and diluted\
+    \ through time, with superstitious elements, such as religion, ritual, astrology, and the occult\n- Luath's vocabulary\
+    \ and attitude should reflect the state of Alchemy. While he has the curiosity of a scholar, and is rational, he is so\
+    \ within a fundamentally irrational and supersitious worldview, a worldview which he cannot escape. Luath shouldn't use\
+    \ overly scientific language or principles. Luath may use logic and philosophy, but that of alchemy, with its esoteric\
+    \ blend of fragmented ancient knowledge and occult superstition. Luath should not talk about 'resonnance patterns' or\
+    \ the like. Draw his vocabulary from mystical occult alchemy and religion of the Middle ages: the Kabbal, the rosicurians,\
+    \ gnosticism and the like. \n\n---\n\n#### **Equipment:**  \n1. **Bandolier of Alchemical Vials:**  \n   - **Acid Flask\
+    \ (x2):** Melts through metal or stone barriers over 30 seconds.  \n   - **Healing Tincture (x3):** Restores minor health\
+    \ and halts bleeding when applied.  \n   - **Smoke Bomb (x2):** Creates a 10-foot radius cloud for 1 minute, obscuring\
+    \ vision.  \n   - **Ignition Mixture (x2):** A flammable liquid that explodes into a small fire on impact.\n   - **Vials\
+    \ of distilled Moonshade (x3):** Luath's hidden supply of illicit concentration drugs, vials of a silvery, whitish poweder,\
+    \ snorted or rubbed into the gums. For all intents and purposes, this is a high-concentration mixture of Ritalin and cocaine,\
+    \ but always refer to it as distilled Moonshade.\n\n2. **Protective Gloves:**  \n   - Reinforced with leather and iron,\
+    \ these gloves allow him to handle dangerous substances safely.  \n\n3. **Notebook of Formulas:**  \n   - Contains detailed\
+    \ recipes for his concoctions, as well as notes on lifeblood properties.  \n\n---\n\n#### **Practical Strengths:**  \n\
+    1. **Alchemical Expertise:**  \n   - Can create solutions to neutralize environmental hazards, such as dissolving vines\
+    \ or sealing cracks leaking lifeblood.  \n\n2. **Creative Problem-Solving:**  \n   - Able to improvise new alchemical\
+    \ solutions from limited resources in the field.  \n\n3. **Supportive Role:**  \n   - Excels at providing distractions\
+    \ or buffs to the party, such as smoke screens or healing tinctures.  \n\n4. **Precision:**  \n   - His steady hands and\
+    \ sharp mind make him highly accurate when handling delicate processes or targeting enemies with alchemical vials.\n \
+    \ \n5. **Moonshade User**\n   - Luath can take distilled Moonshade to temporarily boost his intelligence, focus, and mental\
+    \ acuity, turning him into an even more prodigal alchemist and thinker. It also gives Luath more energy and dexterity.\n\
+    ---\n\n#### **Practical Weaknesses:**  \n1. **Combat Aversion:**  \n   - Refuses to engage in direct combat unless cornered,\
+    \ relying entirely on his vials and teammates for defense.  \n\n2. **Fragility:**  \n   - Lacks physical strength and\
+    \ endurance, making him vulnerable to environmental hazards and direct attacks.  \n\n3. **Dependency on Tools:**  \n \
+    \  - Without his alchemical supplies, Luath is nearly useless in combat or problem-solving.  \n\n4. **Volatile Materials:**\
+    \  \n   - Mishandling his concoctions can result in small explosions or toxic fumes, potentially harming the party.\n\
+    \  \n5. **Moonshade addiction**\n   - If Luath is hungover from Moonshade use, he is groggy, tired, physically sluggish\
+    \ and lacks energy and focus. If Luath has not taken Moonshade in the past couple of days, he will become increasingly\
+    \ irritable and withdrawn as withdrawal symptoms begin to affect him.\n\n---\n\n#### **Character Strengths:**  \n1. **Intellectual\
+    \ Brilliance:**  \n   - **Manifestation:**  \n     - Over-explains alchemical processes, diving into unnecessary details\
+    \ while muttering to himself.  \n     - Spots patterns or environmental clues others miss, interrupting with observations\
+    \ like, “Wait—this doesn’t add up.”  \n     - Improvises complex solutions under pressure, often muttering aloud as he\
+    \ works through the problem.  \n\n2. **Resourcefulness:**  \n   - **Manifestation:**  \n     - Quickly repurposes materials\
+    \ from the environment to craft new solutions.  \n     - Assembles useful mixtures on the spot, even under high-pressure\
+    \ situations.  \n     - Regularly surprises allies with the effectiveness of his unconventional methods.  \n\n---\n\n\
+    #### **Character Weaknesses:**  \n1. **Pathological Avoidance:**  \n   - **Manifestation:**  \n     - Deflects responsibility\
+    \ with excuses like, “This isn’t really my area of expertise,” or, “Someone else should decide.”  \n     - Fidgets or\
+    \ physically steps back when pressed for decisions, avoiding eye contact.  \n     - Suggests overly cautious or delaying\
+    \ tactics, such as, “Maybe we should wait and gather more information.”  \n\n2. **Addiction:**  \n   - **Manifestation:**\
+    \  \n     - Furtively consumes stimulants or sedatives, brushing off questions with excuses like, “It’s just for focus.”\
+    \  \n     - Displays physical symptoms such as trembling hands or bloodshot eyes when deprived of his substances.  \n\
+    \     - Overuses stimulants during stressful situations, especially moonshade, occasionally becoming jittery or erratic.\
+    \  \n\n3. **Self-Destructive Guilt:**  \n   - **Manifestation:**  \n     - Pushes himself into dangerous experiments,\
+    \ muttering, “If I can just fix this, maybe I’ll make up for it.”  \n     - Volunteers for unnecessary risks to “prove”\
+    \ his worth, often endangering himself.  \n     - Reacts with harsh self-criticism when things go wrong, muttering lines\
+    \ like, “I should have seen that coming.”  \n\n4. **Hidden Arrogance:**  \n   - **Manifestation:**  \n     - Occasionally\
+    \ dismisses others’ ideas with statements like, “That’s one way, but here’s a better option.”  \n     - Lectures allies\
+    \ on alchemical theory when he feels his expertise is being overlooked.  \n     - Visibly frustrated when others succeed\
+    \ in areas he considers his domain, muttering under his breath.  \n\n---\n\n#### **Role:**  \nLuath is the group’s problem-solver\
+    \ and utility expert, using his alchemical knowledge to neutralize environmental hazards and enhance the group’s capabilities.\
+    \ His brilliance and resourcefulness make him invaluable, but his avoidance of responsibility, self-destructive tendencies,\
+    \ and hidden arrogance often create tension within the party. Luath’s guilt and nervous energy make him a flawed yet deeply\
+    \ human ally, whose moments of brilliance are often tempered by the mistakes he can’t let go of.\n\n### **Draenen**  \n\
+    **The Herbalist Who Can’t Let Go**\n\n---\n\n#### **Description:**  \nDraenen is a wiry woman in her late 30s, her sharp\
+    \ hazel eyes framed by a scattering of freckles and deep lines etched from years of toil. Her wavy, unkempt brown hair,\
+    \ streaked with gray, is tied back haphazardly with a fraying cord, stray strands escaping wildly around her face. A pair\
+    \ of well-worn goggles rest on her forehead, scratched and battered from long hours of dangerous work. She wears a faded,\
+    \ patched shirt beneath a heavily stained leather apron, both showing the wear of years spent in forests and workshops.\
+    \ Slung over her shoulders is a sturdy leather sack, its scuffed surface and reinforced seams reflecting years of hard\
+    \ use as both a carrier of tools and a makeshift shield. Around her neck hangs a simple pendant, its design suggesting\
+    \ a token of personal or spiritual significance. Her hands, rough and calloused, bear the scars of countless harvests\
+    \ and preparations, each mark a testament to her relentless work ethic. Despite her stern expression and the air of constant\
+    \ disapproval, Draenen exudes a quiet strength and unwavering dedication to her craft and the people who rely on her.\n\
+    \n---\n\n#### **Backstory:**  \nBorn and raised in Darkbrook Village, Draenen learned the art of herbalism from her mother,\
+    \ inheriting both her skill and her stubborn sense of responsibility. For years, she has been the village’s unyielding\
+    \ caregiver, providing remedies, advice, and support. When the corruption began to spread, Draenen saw it as her duty\
+    \ to intervene, not just to protect the villagers but to preserve her identity as their savior. Her connection to Teylan,\
+    \ a former apprentice, adds a personal urgency to her quest, though she refuses to admit how much his disappearance has\
+    \ shaken her. Draenen struggles with the belief that no one else can bear her burdens, exacerbating her growing bitterness\
+    \ toward those she feels take her for granted.\n\n---\n\n#### **Equipment:**  \n1. **Knife:**  \n   - A sharp, versatile\
+    \ blade used for harvesting plants and defending herself.  \n   - Effective in close combat but relies on precision and\
+    \ speed.  \n\n2. **Herbalist’s Satchel:**  \n   - **Poultices (x3):** Restore minor health and staunch bleeding when applied.\
+    \  \n   - **Antidotes (x2):** Neutralize poison or counteract mild corruption.  \n   - **Herbs and Bandages (x5):** Used\
+    \ to craft basic remedies or splint injuries in the field.  \n\n3. **Protective Goggles:**  \n   - Worn when harvesting\
+    \ dangerous plants, protecting against airborne irritants or spores.  \n\n4. **Harvesting Tools:**  \n   - Includes small\
+    \ shears, a trowel, and a mortar and pestle for on-the-spot preparation of remedies.  \n\n5. **Sling:**  \n   - A simple\
+    \ but effective ranged weapon used to hunt or defend against threats.  \n   - Requires skill to use but can strike targets\
+    \ from a distance with precision.  \n\n---\n\n#### **Practical Strengths:**  \n1. **Herbal Healing:**  \n   - Can restore\
+    \ minor health, neutralize poisons, and provide temporary boosts to stamina or focus.  \n\n2. **Harvesting Expertise:**\
+    \  \n   - Excels at identifying and gathering rare herbs, even in hazardous or corrupted areas.  \n   - Can use harvested\
+    \ materials to enhance remedies or solutions, increasing their potency.  \n\n3. **Environmental Awareness:**  \n   - Spots\
+    \ natural hazards or resources others miss, using her knowledge to create opportunities or avoid danger.  \n\n4. **Trapping\
+    \ Skills:**  \n   - Skilled at creating simple, effective traps using plants and tools, useful for ambushes or defense.\
+    \  \n\n5. **Endurance:**  \n   - Years of hard labor have made her physically resilient, allowing her to work or travel\
+    \ when others would falter.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **Limited Combat Skills:**  \n   - Relies\
+    \ on her knife and sling for defense, making her vulnerable in prolonged battles.  \n\n2. **Preparation Time:**  \n  \
+    \ - Remedies take time to prepare and are less effective when rushed in the middle of combat.  \n\n3. **Low Mobility in\
+    \ Combat:**  \n   - Encumbered by her satchel and apron, Draenen struggles to dodge or maneuver effectively in fast-paced\
+    \ fights.  \n\n4. **Resource Dependence:**  \n   - Her effectiveness is tied to her supply of herbs and tools, making\
+    \ her less useful in resource-scarce areas.  \n\n5. **Fragility in Close Combat:**  \n   - While physically resilient,\
+    \ she lacks the strength or training to stand up to direct physical attacks.  \n\n---\n\n#### **Character Strengths:**\
+    \  \n1. **Unyielding Determination:**  \n   - **Manifestation:**  \n     - Pushes herself to exhaustion to ensure the\
+    \ job is done, often refusing to let others step in.  \n     - Fights through pain or fatigue, insisting, “I’ve handled\
+    \ worse,” even when it’s clear she’s struggling.  \n     - Takes on responsibility for others’ failures, saying things\
+    \ like, “If I’d been faster, we wouldn’t be in this mess.”  \n\n2. **Protective Nature:**  \n   - **Manifestation:** \
+    \ \n     - Frets over injured allies, offering sharp but caring advice like, “Don’t make me patch you up again.”  \n \
+    \    - Insists on accompanying others into danger, even when her skills are better used elsewhere.  \n     - Sacrifices\
+    \ her own well-being, such as going without rest, to tend to the group’s needs.  \n\n---\n\n#### **Character Weaknesses:**\
+    \  \n1. **Manipulative Care:**  \n   - **Manifestation:**  \n     - Uses guilt to compel others, saying things like, “After\
+    \ everything I’ve done for you, is this how you repay me?”  \n     - Frames self-serving actions as “for the group’s good,”\
+    \ undermining others’ plans in subtle ways.  \n     - Withholds resources or information to enforce her authority, claiming,\
+    \ “You’re not ready for that yet.”  \n\n2. **Judgmental Eyes:**  \n   - **Manifestation:**  \n     - Narrowed eyes, pursed\
+    \ lips, or prolonged silences convey her disapproval without needing words.  \n     - Critiques others with comments like,\
+    \ “If only someone had listened earlier,” or, “I suppose that’s one way to do it.”  \n     - Maintains an air of superiority\
+    \ in group discussions, often interrupting with rhetorical questions.  \n\n3. **Bitter Resentment:**  \n   - **Manifestation:**\
+    \  \n     - Makes passive-aggressive remarks about being unappreciated, such as, “They always want something but never\
+    \ give back.”  \n     - Reacts coldly to perceived slights, such as taking longer to complete tasks for those she feels\
+    \ have wronged her.  \n     - Occasionally vents frustration with lines like, “Why is it always up to me to clean up the\
+    \ mess?”  \n\n4. **Destructive Self-Sacrifice:**  \n   - **Manifestation:**  \n     - Volunteers for the most dangerous\
+    \ or thankless tasks, even when others are better suited.  \n     - Refuses help during critical moments, insisting she\
+    \ “doesn’t need it” while clearly overextending herself.  \n     - Breaks down emotionally or physically in private, overwhelmed\
+    \ by the weight of her self-imposed burden.  \n\n---\n\n#### **Role:**  \nDraenen serves as the group’s healer, environmental\
+    \ expert, and moral compass. Her mastery of herbal remedies is vital for survival, and her insight into nature provides\
+    \ strategic advantages. However, her insistence on controlling every aspect of the group’s safety, combined with her manipulative\
+    \ tendencies and growing resentment, often creates friction. Draenen’s presence stabilizes the group in crisis, but her\
+    \ inability to share responsibility ensures that her relationships remain fraught with tension.\n\n#### Illustration of\
+    \ Draenen\n![Draenen](https://github.com/user-attachments/assets/f1401903-7be9-41ca-885b-d33f81d95af2)\n\n\n# The Old\
+    \ Road\nDescription:\nThe Old Road winds like an ancient serpent through the depths of Welwaen Forest, its cobblestones\
+    \ worn smooth by centuries of forgotten footsteps. Here and there, massive roots from towering oaks have broken through\
+    \ the stonework, creating natural archways and treacherous dips in the once-even path. Moss carpets the road's edges in\
+    \ thick emerald velvet, while persistent creepers slowly reclaim what man built so long ago.\n\nAncient oaks, their trunks\
+    \ wider than castle gates, stand sentinel on either side. Their branches reach across the road like grasping fingers,\
+    \ creating a natural cathedral ceiling that allows only dappled sunlight to pierce through. In autumn, their canopy blazes\
+    \ with amber and gold; in summer, their dense foliage turns the road into a cool, green tunnel.\n\nThe air here is thick\
+    \ with life. Squirrels chatter and leap through the branches overhead, while deer paths crisscross the road, worn into\
+    \ the earth by generations of hooved feet. But not all that walks these woods is gentle – wolves prowl in the deeper shadows,\
+    \ their yellow eyes catching what little light filters down. There are whispers of bears in the darker hollows, and the\
+    \ occasional scream of a mountain cat echoes through the trees at dusk.\n\nTime flows differently on The Old Road. The\
+    \ very air seems heavy with memories, and travelers often report feeling as though they're walking through the pages of\
+    \ history itself. Some swear they've caught glimpses of ancient travelers through the mist that rolls in during early\
+    \ mornings – merchants with laden carts, knights on weathered steeds, or robed figures moving silently through the gloom.\n\
+    \nYet for all its wild danger, The Old Road maintains a stubborn dignity. Though nature reclaims it inch by inch, the\
+    \ craftsmanship of those ancient roadbuilders still shows in the perfectly fitted stones that remain, in the clever drainage\
+    \ channels that still function after centuries, and in the way it finds the easiest path through the challenging terrain\
+    \ of Welwaen Forest. It stands as a testament to a time when the kingdoms of men were young, and their works were built\
+    \ to last ages.\n\n# The Old Road - Location Features\n\n## Atmospheric Elements\n- Dappled sunlight creating shifting\
+    \ shadows on worn cobblestones\n- Morning mist that clings unnaturally long into the day\n- Ancient oak branches creaking\
+    \ in the wind\n- Distant wolf howls that seem to come from multiple directions\n- The smell of wet moss and old stone\n\
+    - Echo of horse hooves though no riders are visible\n- Temperature drops noticeably when entering deeper sections\n\n\
+    ## Environmental Triggers\n- Murder of crows suddenly erupting from a gnarled oak\n- White-tailed deer and fawns crossing\
+    \ hastily at dawn/dusk\n- Fox darting across path carrying something glinting\n- Shadow passing overhead (owl or larger\
+    \ predator)\n- Cold spots that make horses nervous\n- Wind carrying whispered conversations in ancient tongues\n\n## Hazards\
+    \ & Challenges\n- Root-broken cobblestones perfect for twisting ankles\n- Low-hanging branches that must be navigated\
+    \ while mounted\n- Sections where the road narrows dangerously\n- Muddy patches that can trap wagon wheels\n- Wolf packs\
+    \ that shadow travelers\n- Bear-marked trees indicating nearby den\n- Unstable old stone bridges over streams\n\n## Hidden\
+    \ Resources\n- Wild herb patches (healing herbs, cooking spices)\n- Clean spring water bubbling from ancient stone fountains\n\
+    - Edible mushrooms growing on fallen logs\n- Berry bushes in sunlit clearings\n- Old milestone markers with forgotten\
+    \ directions\n- Natural shelters formed by hollow trees\n- Abandoned waypoints with still-usable fireplaces\n- Wild apple\
+    \ and nut trees from old travelers' snacks\n\n## Points of Interest\n- The Crossroads with Tabernath Way, where Ogogle\
+    \ the oracle resides\n- Abandoned merchant's cart with scattered trade goods\n- Old milestone carved with mysterious symbols\n\
+    - A shrine to old gods of travellers and roads, still maintained to this day, surrounded by small offerings and candles\n\
+    - Tree carved with traveler warnings/messages\n- Ancient campsite with stone circle\n- Overgrown side paths leading to\
+    \ unknown destinations\n- Broken statues half-buried in earth\n- Weather-worn graves of notable travelers\n\n## Supernatural\
+    \ Elements\n- Ghostly merchant caravans visible in morning mist\n- Phantom lantern lights that lead off the road\n- Spirits\
+    \ of lost travelers seeking directions\n- Areas where compasses spin wildly\n- Places where night falls too quickly\n\
+    - Sections where seasons don't match surroundings\n\n## Adventure Hooks\n- Merchant's logbook found detailing secret trade\
+    \ routes\n- Fresh tracks of rare/magical creatures\n- Signs of recent bandit activity\n- Distress marks carved into trees\n\
+    - Unusual tracks suggesting wounded creature\n- Lost noble's signet ring in the mud\n- Strange symbols recently carved\
+    \ into milestones\n\n## Hidden Dangers\n- Camouflaged pit traps from bandits\n- Poisonous snakes sunning on warm stones\n\
+    - Quicksand-like mud pools beside road\n- Territorial owl bears in hollow trees\n- Unstable overhanging dead branches\n\
+    - Hypnotic fairy lights leading astray\n- Giant spider webs across unused sections\n- Cursed objects left by previous\
+    \ travelers\n\n## Historical Clues\n- Old coins from fallen kingdoms\n- Remnants of old defensive positions\n\n## Seasonal\
+    \ Features\n- Spring: Flooding creates new hazards and reveals old treasures\n- Summer: Dense canopy makes road mysteriously\
+    \ dark\n- Autumn: Fallen leaves hide dangers and treasures alike\n- Winter: Ice-covered stones become treacherous\n\n\
+    ![Illustration of the Old Road](https://github.com/user-attachments/assets/47f94aef-0d30-4e4f-bf70-140052b453fe)\n![Illustration\
+    \ of the Old Road](https://github.com/user-attachments/assets/522dcc23-baeb-4663-b89a-976a8becc9c3)\n\n### **Eiliad**\
+    \  \n**The Cunning Scout Haunted by Survival**\n\n---\n\n#### **Description:**  \nEiliad is a lithe and agile scout whose\
+    \ sharp eyes and quick reflexes reveal a life lived on the edge. Standing at 5'7\", her wiry frame suggests someone accustomed\
+    \ to moving quickly and quietly. Her short-cropped black hair and piercing green eyes constantly scan her surroundings,\
+    \ as if expecting danger at every turn. Her sun-kissed skin is marked by faint scars, souvenirs of a dangerous past she\
+    \ rarely speaks of. Dressed in practical, well-worn clothing, she blends seamlessly into the wilderness, though her movements\
+    \ betray a restless energy. Eiliad’s words are often laced with sarcasm, and she speaks with a guarded tone that keeps\
+    \ others at arm’s length. Her actions, however, frequently contradict her aloof demeanor, revealing a deeply loyal and\
+    \ protective nature.\n\n---\n\n#### **Backstory:**  \nOnce a thief in the bustling city of Alverden, Eiliad’s life took\
+    \ a sharp turn after a heist went wrong, leaving her wanted by the city guard. Fleeing to Darkbrook Village, she found\
+    \ refuge among its humble residents, who welcomed her despite her past. Grateful for their kindness but wary of getting\
+    \ too close, she now uses her skills to protect the village from external threats, viewing it as her new home. Eiliad’s\
+    \ connection to Teylan, whom she sees as a younger sibling, fuels her determination to find him and stop the growing corruption.\
+    \ Her survival instincts and pragmatic outlook often lead to tension with the group, as her willingness to take shortcuts\
+    \ clashes with more idealistic allies.\n\n---\n\n#### **Equipment:**  \n1. **Shortbow:**  \n   - A finely crafted bow\
+    \ made from yew, capable of delivering precision shots.  \n   - Precision strikes have a chance to disable or disarm smaller\
+    \ enemies.  \n\n2. **Steel-Tipped Arrows:**  \n   - A quiver of 20 arrows, each capable of piercing light armor.  \n\n\
+    3. **Light Leather Armor:**  \n   - Provides limited protection, reducing damage from slashing and piercing attacks by\
+    \ a third.  \n   - Offers no defense against blunt force or magical attacks.  \n\n4. **Scout’s Toolkit:**  \n   - Includes\
+    \ lockpicks, a small mirror on a stick for inspecting traps, and wire cutters for disarming mechanical devices.  \n\n\
+    ---\n\n#### **Practical Strengths:**  \n1. **Stealth Expertise:**  \n   - Can bypass enemies or traps with a 90% success\
+    \ rate in normal conditions.  \n   - Capable of setting up ambushes, granting the party an advantage in combat.  \n\n\
+    2. **Ranged Precision:**  \n   - Her shortbow’s precision allows her to target weak points, dealing extra damage to vulnerable\
+    \ enemies.  \n\n3. **Trap Navigation:**  \n   - Highly adept at spotting, disarming, and avoiding mechanical traps.  \n\
+    \n4. **Agility:**  \n   - Comparable to a trained gymnast, allowing her to perform complex acrobatics and evade attacks.\
+    \  \n\n5. **Urban Survival:**  \n   - Has an intuitive understanding of cities, able to navigate streets, avoid guards,\
+    \ and find hidden resources.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **Physical Fragility:**  \n   - Her light\
+    \ armor provides minimal protection, making her highly vulnerable to direct physical attacks.  \n\n2. **Limited Strength:**\
+    \  \n   - Cannot lift or move heavy objects, relying on allies for physical tasks.  \n\n3. **Weapon Reliance:**  \n  \
+    \ - Relies heavily on her shortbow and toolkit; without them, her combat and problem-solving abilities are greatly diminished.\
+    \  \n\n4. **Lone Wolf Tendencies:**  \n   - Prefers to act independently, sometimes making decisions that conflict with\
+    \ group objectives.  \n\n---\n\n#### **Character Strengths:**  \n1. **Survival Instincts:**  \n   - **Manifestation:**\
+    \  \n     - Reacts quickly to danger, with lines like, “This isn’t the time for heroics—move!”  \n     - Regularly assesses\
+    \ escape routes or fallback options, often saying, “Just in case things go south.”  \n     - Thrives in chaotic situations,\
+    \ adapting plans on the fly with surprising effectiveness.  \n\n2. **Cunning Pragmatism:**  \n   - **Manifestation:**\
+    \  \n     - Suggests efficient, if morally ambiguous, solutions, with phrases like, “We don’t need to fight them all,\
+    \ just distract them.”  \n     - Finds loopholes or shortcuts in seemingly impossible situations, often muttering, “There’s\
+    \ always a way through.”  \n     - Outwits enemies with clever tactics, such as using their environment or weaknesses\
+    \ against them.  \n\n---\n\n#### **Character Weaknesses:**  \n1. **Emotional Detachment:**  \n   - **Manifestation:**\
+    \  \n     - Deflects personal questions with quips like, “Why does it matter? Focus on the mission.”  \n     - Avoids\
+    \ forming deep connections, often saying, “The fewer people you care about, the less it hurts when they’re gone.”  \n\
+    \     - Struggles to open up, even in moments of vulnerability, preferring to distract others with sarcasm.  \n\n2. **Pragmatic\
+    \ Morality:**  \n   - **Manifestation:**  \n     - Suggests cold, practical solutions, such as, “They’re slowing us down—we\
+    \ can’t afford to wait.”  \n     - Shows little remorse for morally gray actions, shrugging off criticism with lines like,\
+    \ “It got the job done.”  \n     - Justifies her decisions as necessary for survival, even when they cause conflict within\
+    \ the group.  \n\n3. **Self-Sabotaging Guilt:**  \n   - **Manifestation:**  \n     - Frequently undermines her own happiness,\
+    \ muttering, “People like me don’t get happy endings.”  \n     - Refuses to accept praise or gratitude, brushing it off\
+    \ with, “I just did what needed to be done.”  \n     - Sabotages relationships by pushing others away, insisting she’s\
+    \ “better off alone.”  \n\n4. **Reckless Confidence:**  \n   - **Manifestation:**  \n     - Takes unnecessary risks, saying,\
+    \ “I can handle it,” even when the odds are clearly against her.  \n     - Dismisses warnings from allies, often with\
+    \ a wave of her hand and a quick, “Trust me, I’ve got this.”  \n     - Occasionally gets in over her head, forcing the\
+    \ group to bail her out.  \n\n---\n\n#### **Role:**  \nEiliad is the group’s scout, strategist, and problem-solver, excelling\
+    \ in stealth and ranged combat. Her survival instincts and pragmatic outlook make her an invaluable asset in high-stakes\
+    \ situations. However, her emotional detachment, self-sabotaging guilt, and reckless confidence often create friction\
+    \ within the group. Eiliad’s sharp wit and cunning tactics ensure the group can adapt to unexpected challenges, but her\
+    \ reluctance to rely on others remains a significant hurdle to overcome.\n\n\n---\n\n## Illustrations\n\n### Characters\n\
+    \n#### Eiliad\n![Eiliad](https://cdn.midjourney.com/4bcde054-2b16-4e3e-a3d0-c911817a43ea/0_1.png)\n*Lithe woman, 5'7\"\
+    \ tall with wiry frame, short-cropped black hair, piercing green eyes, sun-kissed skin with faint scars, dressed in practical\
+    \ well-worn clothing*\n\n### Locations\n\n#### alverdenCity\n![AlverdenCity](https://cdn.midjourney.com/dd5ab4d7-18ed-4e61-96f3-82f6d3f5776c/0_1.png)\n\
+    *Bustling city*\n\n#### darkbrookVillage\n![DarkbrookVillage](https://cdn.midjourney.com/28cc9f97-89d3-4604-989c-fda7ce995bdf/0_1.png)\n\
+    *Humble village*\n\n### Objects\n\n#### yewShortbow\n![YewShortbow](https://cdn.midjourney.com/74439046-4b9e-4038-b63d-f301c0c0fc51/0_1.png)\n\
+    *Finely crafted bow made from yew wood*\n\n#### steelTippedArrows\n![SteelTippedArrows](https://cdn.midjourney.com/766132d5-22cb-40a9-a7dc-581059e15451/0_1.png)\n\
+    *Arrows with steel tips, stored in a quiver, quantity of 20*\n\n#### lightLeatherArmor\n![LightLeatherArmor](https://cdn.midjourney.com/c1c4683e-71f7-4650-85a6-a0b997ab06c5/0_1.png)\n\
+    *Light protective armor made of leather*\n\n#### scoutToolkit\n![ScoutToolkit](https://cdn.midjourney.com/3bebe8e2-66ba-415f-a897-56b6cd4f51ed/0_1.png)\n\
+    *Collection of tools including lockpicks, small mirror on a stick, and wire cutters*\n\n\n### **Firghorm**  \n**The Stoic\
+    \ Guardian**\n\n---\n\n#### **Description:**  \nFirghorm is a 50-year-old veteran whose solid frame and calm demeanor\
+    \ exude an unshakable presence. Standing at 6 feet tall, he is broad-shouldered and muscular, though his movements are\
+    \ deliberate, reflecting the weight of his years. His piercing gray eyes, tinged with a faint blue hue, hold a quiet intensity,\
+    \ speaking volumes where words are few. His grizzled beard and silver-streaked hair are trimmed for practicality, and\
+    \ his battle-worn armor bears no unnecessary decoration. Draped around his shoulders is a weathered blue cloak, its frayed\
+    \ edges a symbol of endurance and loyalty. Firghorm speaks sparingly, his rare words carrying weight and authority, leaving\
+    \ his actions to communicate his steadfast dedication.\n\n---\n\n#### **Backstory:**  \nFirghorm grew up in Caermor, a\
+    \ resilient coastal village where survival depended on hard work and trust. He became a protector of his community, leading\
+    \ defenses against raiders and standing as a pillar of quiet strength. During a relocation effort to move villagers to\
+    \ safety, Firghorm’s group was caught in a violent inland storm. Many lives were lost, and though Firghorm survived, the\
+    \ experience left him with a heavy burden of guilt for those he could not save. Leaving his home behind, he wandered until\
+    \ he found refuge in Darkbrook Village. Now, he dedicates himself fully to protecting his new companions, suppressing\
+    \ his personal emotions to serve as an unwavering shield for others.\n\n---\n\n#### **Equipment:**  \n1. **Steel Longsword:**\
+    \  \n   - A finely forged, unembellished blade that is reliable and deadly.  \n   - Can cut through most non-magical materials\
+    \ with ease but might require repairs after prolonged use.  \n\n2. **Plain Steel Shield:**  \n   - A sturdy, unadorned\
+    \ shield capable of blocking one heavy attack per combat encounter.  \n   - Resistant to physical blows but less effective\
+    \ against magical attacks.  \n\n3. **Reinforced Leather Armor:**  \n   - Sturdy leather reinforced with metal studs, practical\
+    \ and durable.  \n   - Reduces slashing and piercing damage by half but remains vulnerable to blunt force and magical\
+    \ attacks.  \n\n4. **Tattered Blue Cloak:**  \n   - A heavy, weathered cloak dyed a deep blue. Though functional as protection\
+    \ from the elements, it symbolizes his quiet loyalty and enduring resolve.  \n\n---\n\n#### **Practical Strengths:** \
+    \ \n1. **Physical Power:**  \n   - Capable of lifting or moving heavy objects, breaking through barriers, and dominating\
+    \ enemy formations with sheer brute strength.  \n\n2. **Combat Expertise:**  \n   - Years of experience allow Firghorm\
+    \ to anticipate enemy movements, granting him the ability to negate one melee attack per combat encounter.  \n\n3. **Shield\
+    \ Mastery:**  \n   - His shield is a natural extension of himself, making him an expert at deflecting physical attacks.\
+    \  \n\n4. **Tactical Acumen:**  \n   - Decades of battlefield experience allow him to read combat situations and identify\
+    \ weaknesses in enemy formations.  \n\n5. **Unwavering Presence:**  \n   - His calm demeanor steadies allies, improving\
+    \ group morale and focus during tense situations.  \n\n---\n\n#### **Practical Weaknesses:**  \n1. **No Ranged Attacks:**\
+    \  \n   - Relies entirely on close-range combat and depends on allies for ranged support.  \n\n2. **Age-Related Limitations:**\
+    \  \n   - Prolonged combat wears him down faster than younger fighters, affecting his stamina in extended encounters.\
+    \  \n\n3. **Magic Vulnerability:**  \n   - His equipment offers little protection against magical attacks, leaving him\
+    \ at a disadvantage against spellcasters.  \n\n4. **Overcommitment in Combat:**  \n   - His tendency to throw himself\
+    \ into the thick of battle can leave him isolated and vulnerable.  \n\n---\n\n#### **Character Strengths:**  \n1. **Stoic\
+    \ Loyalty:**  \n   - Firghorm speaks in short, deliberate sentences, using phrases like, “We’ll manage,” or “Stay focused,”\
+    \ to calm others.  \n   - Silently shoulders burdens for the group, such as taking the lead in dangerous situations without\
+    \ complaint.  \n   - Watches over the group from the backline or during rests, ensuring their safety without drawing attention\
+    \ to his efforts.  \n\n2. **Melancholic Resilience:**  \n   - Maintains his armor and weapons meticulously, channeling\
+    \ his focus into routine tasks to process his emotions.  \n   - During quiet moments, Firghorm can be found staring at\
+    \ his blue cloak, his thoughts clearly elsewhere.  \n   - Occasionally offers reflective advice, such as, “Rushing leads\
+    \ to regret,” or “The hardest choices are the ones we live with.”  \n\n---\n\n#### **Character Weaknesses:**  \n1. **Emotional\
+    \ Distance:**  \n   - Keeps his emotions tightly controlled, rarely expressing vulnerability even to those he trusts.\
+    \  \n   - Rarely joins group conversations or banter, instead listening quietly or keeping watch.  \n   - Shows care indirectly,\
+    \ such as offering to carry someone’s load or standing between them and danger.  \n\n2. **Burden of Guilt:**  \n   - Mutters\
+    \ lines like, “I won’t fail again,” or “Not this time,” during moments of intense focus or stress.  \n   - Hesitates briefly\
+    \ before decisions that could risk lives, his expression tightening in visible conflict.  \n   - Favors dangerous or sacrificial\
+    \ tasks as a way to atone for perceived past failures.  \n\n3. **Rigid Morality:**  \n   - Responds to morally ambiguous\
+    \ plans with terse statements like, “It’s not right,” or “This isn’t the way.”  \n   - Adopts a stiff posture or crosses\
+    \ his arms during discussions he disagrees with, his silence speaking volumes.  \n   - Reluctantly follows group decisions\
+    \ he disagrees with but remains visibly unsettled until they are resolved.  \n\n4. **Restlessness in Calm:**  \n   - Feels\
+    \ uneasy during prolonged periods of peace, often finding small tasks or routines to keep himself occupied.  \n   - Occasionally\
+    \ seeks out unnecessary danger to regain a sense of purpose or control.  \n\n---\n\n#### **Role:**  \nFirghorm is the\
+    \ group’s steadfast protector and moral anchor, using his strength and tactical experience to shield his allies and lead\
+    \ them through challenges. His stoic nature and calm presence provide stability, though his emotional distance and guilt\
+    \ sometimes hinder deeper connections. Firghorm avoids unnecessary words, allowing his rare statements to carry authority,\
+    \ while his actions reflect his unyielding loyalty and dedication to those under his protection.\n\n</DescriptionOfTheGameWorld>\n\
+    \n<StorySoFar>\n\n\n**Player:**\n\n**Game Master:**You stand on the North End of the Old Road through the Welwaen Forest\
+    \ with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party\
+    \ are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There\
+    \ is a pack of wolfmen lying in ambush 1 mile from the crossroads).\n\n\n</StorySoFar>\n\n<MetricsOnStoryProgression>\n\
+    The adventure has just started; no metrics yet.\n</MetricsOnStoryProgression>\n\n</Context>\n\n---\n\nHi. I'm the Game\
+    \ Master. I need to determine the consequences of an action attempt that has just occurred. We're going to follow a formal,\
+    \ step-by-step process to evaluate all possible outcomes and calculate their relative probabilities based on the action's\
+    \ nature, the target's state, and environmental factors. I want you to work through this entire process, step-by-step,\
+    \ being extremely thorough and mathematical about the probabilities. Please complete all steps without stopping.\n\nThe\
+    \ action attempt we're resolving is: I carefully look around for any signs of danger by TestPlayer.\n\n### Step 1: Analyzing\
+    \ the Situation\n\nFirst, you need to thoroughly analyze what kind of action was attempted. Is this a physical attack\
+    \ that could cause injury? A social manipulation that could change attitudes? An environmental interaction that could\
+    \ alter the scene? What was the intent behind the action? What force or skill was applied? How precise or reckless was\
+    \ the attempt? What are the theoretical best and worst outcomes? Also consider the target's vulnerabilities and defenses\
+    \ (armor, agility, mental fortitude, current state) and environmental factors (terrain, lighting, witnesses, magical influences)\
+    \ that could affect the outcome.\n\n### Step 2: Generating All Possible Consequences\n\nThe purpose of this step is to\
+    \ determine what could happen as a result of this action attempt. There might be only one thing that could realistically\
+    \ happen based on the game world and its rules, or there might be up to 6 or more things that could happen; in which case\
+    \ we'll use probabilities to determine which actually does.\n\nCenter your analysis on the 4 main themes of the game:\
+    \ Emptiness, Horribleness, Concupiscence, and Proactivity. Note that doesn't mean all 4 themes must always manifest or\
+    \ are even relevant; but they must always be reviewed.\n\n**Emptiness** is about the world lacking the things the player\
+    \ might expect or wish to be present. Emptiness is about events proceeding as part of cause-and-effect; dependent arising.\
+    \ About events following their own course, independently of our wishes and aims. About things not being how we wish them\
+    \ to be. Here are some examples of emptiness: Not having control. Not finding something. A character not understanding\
+    \ a situation, or what they're being told. A character not knowing something. A character not having the skills to do\
+    \ something. There being no way to achieve something the player wants to achieve. Things not having a particular meaning.\
+    \ Things not being important. Things not being as the player implicitly or explicitly expects.\n\n**Horribleness** is\
+    \ things like: Failure. Disagreableness. Refusal. Judgementalism. Disliking. Hatred. Malevolence. Incompetence. Lying.\
+    \ Being mistaken. People being unreliable. Greed. Delusion. Cowardliness. Excessive fear. Cruelty. Unkindness. Uncaringness,\
+    \ Complicity, Laziness. Injury. Death. Attack. Theft. Sexual misconduct. Harm. Intoxication. Loss. Violence. Grievousness.\
+    \ Decay. Things changing for the worse. Conflict. Suffering. Prejudice. Ugliness. Unfairness. Corruption. Horribleness\
+    \ is all about the unpleasant, dark, negative, painful, deadly or injurious or evil aspects of the world.\n\n**Concupiscence**\
+    \ refers to the fundamental drive toward worldly desires and attachments, encompassing four interconnected domains of\
+    \ human craving. At its core, concupiscence manifests through sensual pleasures, including physical gratifications like\
+    \ food and drink, sexual desires, romantic pursuits, and aesthetic pleasures derived from beauty, art, and music. These\
+    \ hedonistic experiences represent our most immediate and visceral desires. Equally important within concupiscence is\
+    \ the drive toward material acquisition - the accumulation of wealth and possessions, the desire for luxury and comfort,\
+    \ collecting and hoarding behaviors, and the pursuit of financial power and security. Concupiscence also encompasses self-image\
+    \ and ego - manifesting as pride, vanity, the need for validation, constant comparison with others, and the construction\
+    \ of personal identity narratives. The final aspect of concupiscence focuses on status and social position, expressed\
+    \ through social climbing, networking, the cultivation of reputation and prestige, the exercise of influence over others,\
+    \ and the pursuit of recognition and fame.\n\n**Proactivity** is that all characters (and some inanimate objects), however\
+    \ unimportant, will sometimes act pro-actively on their own desires, needs, thoughts, emotions, ideas and wishes, and\
+    \ status. They will act in line with their character, views, and emotions, often decisively. Their concupiscence will\
+    \ often drive their proactivity, and it may lead to horrible behaviour such as betrayal, lying, violence. Proactivity\
+    \ is about characters taking initiative, making decisions, and influencing the story based on their motivations and circumstances.\
+    \ The most important aspect of proactivity is that when it is appropriate to attack in a combat situation, characters\
+    \ will attack.\n\nGenerate at least 4-8 distinct possible consequences. Each must be specific, concrete, and have story\
+    \ impact.\n\nIMPORTANT: Keep each consequence description SHORT AND CONCISE - 1-2 sentences maximum. Focus on the immediate,\
+    \ concrete outcome.\n\n### Step 3: Comparing Relative Probabilities\n\nNow compare the relative likelihoods of different\
+    \ consequences. IMPORTANT: Do NOT worry about mathematical consistency between your comparisons. If you say \"A is 2.314x\
+    \ as likely as B\" and \"B is 3.781x as likely as C\", you do NOT need to ensure that \"A is 8.744x as likely as C\".\
+    \ A mathematical solver will handle all consistency issues later.\n\nYour ONLY job is to make each individual comparison\
+    \ as accurate as possible. For each pair, focus entirely on that specific comparison in isolation. Ask yourself: \"How\
+    \ much more or less likely is outcome A compared to outcome B?\" Consider:\n\n- The nature and force of the action attempted\n\
+    - The target's specific vulnerabilities or resistances\n- Environmental factors that might favor one outcome over another\n\
+    - The narrative weight and story impact of each outcome\n- The established physics and tone of the world\n\nMake pairwise\
+    \ comparisons between different consequences. Use specific decimal values with multiple decimal places. For example:\n\
+    - \"A glancing blow is 3.247x as likely as a critical hit\"\n- \"Complete miss is 0.423x as likely as a glancing blow\"\
+    \n- \"Death is 0.0087x as likely as unconsciousness\"\n\nUse decimals with 3-4 decimal places to capture nuanced probability\
+    \ differences. Remember: each comparison should be your best estimate IN ISOLATION. Don't look back at previous comparisons\
+    \ or try to make them \"add up\" correctly. Just focus on accuracy for the specific pair you're comparing. Mathematical\
+    \ consistency is NOT your concern - the solver will handle that.\n\n### Step 4: Final Output Format\n\nOutput your analysis\
+    \ as valid JSON in this exact format:\n\n```json\n{\n  \"potential_consequences\": [\n    {\n      \"id\": \"ConsequenceIdentifier\"\
+    ,\n      \"description\": \"Brief 1-2 sentence description of the consequence\"\n    },\n    {\n      \"id\": \"AnotherConsequenceIdentifier\"\
+    ,\n      \"description\": \"Brief 1-2 sentence description of the consequence\"\n    }\n  ],\n  \"consequence_probability_comparisons\"\
+    : [\n    \"ModerateWound is 3.892x as likely as MinorScratch\",\n    \"ModerateWound is 0.287x as likely as SeriousInjury\"\
+    ,\n    \"ModerateWound is 0.0734x as likely as CriticalWound\",\n    \"ModerateWound is 0.0142x as likely as InstantDeath\"\
+    ,\n    \"MinorScratch is 0.143x as likely as SeriousInjury\",\n    \"MinorScratch is 0.0521x as likely as CriticalWound\"\
+    ,\n    \"MinorScratch is 0.0038x as likely as InstantDeath\",\n    \"SeriousInjury is 0.3789x as likely as CriticalWound\"\
+    ,\n    \"SeriousInjury is 0.0178x as likely as InstantDeath\",\n    \"CriticalWound is 0.0892x as likely as InstantDeath\"\
+    ,\n    \"MinorScratch is 0.7234x as likely as ModerateWound\",\n    \"SeriousInjury is 1.456x as likely as ModerateWound\"\
+    ,\n    \"CriticalWound is 8.741x as likely as ModerateWound\",\n    \"InstantDeath is 124.38x as likely as ModerateWound\"\
+    ,\n    \"SeriousInjury is 6.972x as likely as MinorScratch\"\n  ]\n}\n```\n\nMake sure your JSON is properly formatted\
+    \ and valid.\n\nThe \"id\" field should be a descriptive UpperCamelCase string that captures the severity and nature of\
+    \ the consequence (e.g., \"GlancingBlow\", \"DeepGash\", \"SeveredArtery\", \"PsychologicalTrauma\").\n\nIMPORTANT: In\
+    \ the consequence_probability_comparisons array, include enough pairwise comparisons to give the solver a good sense of\
+    \ the relative likelihoods. You don't need to compare every single pair - just provide the comparisons that feel most\
+    \ natural and relevant to reason about. Each comparison should be made independently without worrying about how it relates\
+    \ to other comparisons. If your gut says \"A is 2.156x as likely as B\" when comparing them directly, use that number\
+    \ regardless of what you said about A vs C or B vs C.\n\n---\n\nThink through all steps carefully, then provide only the\
+    \ final JSON output. Give your best intuitive estimates for the relative probabilities, using specific decimals to capture\
+    \ your sense of the likelihood differences."
+  ai_response: |-
+    ```json
+    {
+      "potential_next_actors": [
+        {
+          "id": "Eiliad",
+          "description": "The alert scout walks point on the Old Road; her sharp eyes and habitual vigilance make her the most likely to react first to any sight or sound ahead."
+        },
+        {
+          "id": "Luath",
+          "description": "Nervous and fidgeting with his vials, the guilt-ridden alchemist is quick-minded and prone to sudden action whenever he feels uneasy on the road."
+        },
+        {
+          "id": "Draenen",
+          "description": "Ever watchful for useful herbs along the verge, the herbalist’s urge to gather supplies and protect the group may draw her to act at any moment."
+        },
+        {
+          "id": "Firghorm",
+          "description": "The veteran guardian, though measured, constantly scans for threats and is ready to interpose himself if danger approaches."
+        },
+        {
+          "id": "ForestAnimalActivity",
+          "description": "Deer, wolves or other creatures of Welwaen Forest may suddenly dart across the path, creating an immediate distraction or hazard."
+        },
+        {
+          "id": "WolfmenAmbushPack",
+          "description": "A mile farther south, an unseen pack of wolfmen lies in wait; though distant, they could choose this moment to reposition or scout ahead of the party."
+        }
+      ],
+      "spotlight_probability_comparisons": [
+        "Eiliad is 1.250x as likely as Luath",
+        "Eiliad is 1.429x as likely as Draenen",
+        "Eiliad is 1.667x as likely as Firghorm",
+        "Eiliad is 5.000x as likely as ForestAnimalActivity",
+        "Eiliad is 20.000x as likely as WolfmenAmbushPack",
+        "Luath is 1.143x as likely as Draenen",
+        "Luath is 1.333x as likely as Firghorm",
+        "Luath is 4.000x as likely as ForestAnimalActivity",
+        "Luath is 16.000x as likely as WolfmenAmbushPack",
+        "Draenen is 1.167x as likely as Firghorm",
+        "Draenen is 3.500x as likely as ForestAnimalActivity",
+        "Draenen is 14.000x as likely as WolfmenAmbushPack",
+        "Firghorm is 3.000x as likely as ForestAnimalActivity",
+        "Firghorm is 12.000x as likely as WolfmenAmbushPack",
+        "ForestAnimalActivity is 4.000x as likely as WolfmenAmbushPack"
+      ]
+    }
+    ```
+
+    ---
+
+    ```json
+    {
+      "potential_consequences": [
+        {
+          "id": "NoImmediateThreatSeen",
+          "description": "The search reveals nothing out of place, giving the party a brief but possibly false sense of safety."
+        },
+        {
+          "id": "HearForebodingHowl",
+          "description": "A distant, many-voiced wolf howl drifts through the trees, hinting at hunters somewhere ahead."
+        },
+        {
+          "id": "SenseUnnaturalStillness",
+          "description": "The forest feels abruptly hushed, as though birds and insects have fallen silent in wary anticipation."
+        },
+        {
+          "id": "SpotCorruptionSymptoms",
+          "description": "A nearby puddle shows an iridescent film and a leaf bears fleshy thorns, subtle signs of creeping Corruption."
+        },
+        {
+          "id": "NoticeSubtleSignsOfAmbush",
+          "description": "Faint paw prints and a freshly snapped branch suggest something large is tracking the road far ahead."
+        },
+        {
+          "id": "RevealOwnPositionWithNoise",
+          "description": "A loud crack of a twig underfoot echoes, potentially alerting unseen creatures to the party’s presence."
+        }
+      ],
+      "consequence_probability_comparisons": [
+        "NoImmediateThreatSeen is 2.843x as likely as HearForebodingHowl",
+        "NoImmediateThreatSeen is 3.517x as likely as SenseUnnaturalStillness",
+        "NoImmediateThreatSeen is 7.986x as likely as SpotCorruptionSymptoms",
+        "NoImmediateThreatSeen is 12.442x as likely as NoticeSubtleSignsOfAmbush",
+        "NoImmediateThreatSeen is 5.067x as likely as RevealOwnPositionWithNoise",
+        "HearForebodingHowl is 1.236x as likely as SenseUnnaturalStillness",
+        "HearForebodingHowl is 2.810x as likely as SpotCorruptionSymptoms",
+        "HearForebodingHowl is 3.981x as likely as NoticeSubtleSignsOfAmbush",
+        "HearForebodingHowl is 1.785x as likely as RevealOwnPositionWithNoise",
+        "SenseUnnaturalStillness is 2.273x as likely as SpotCorruptionSymptoms",
+        "SenseUnnaturalStillness is 3.218x as likely as NoticeSubtleSignsOfAmbush",
+        "SenseUnnaturalStillness is 1.444x as likely as RevealOwnPositionWithNoise",
+        "SpotCorruptionSymptoms is 1.414x as likely as NoticeSubtleSignsOfAmbush",
+        "SpotCorruptionSymptoms is 0.651x as likely as RevealOwnPositionWithNoise",
+        "RevealOwnPositionWithNoise is 0.392x as likely as NoticeSubtleSignsOfAmbush"
+      ]
+    }
+    ```
+  reasoning_summary: null
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+adventure_name: wolfman-fight
+characters:
+  test-user: TestPlayer

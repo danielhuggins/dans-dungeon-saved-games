@@ -1,0 +1,97 @@
+channel_id: console-game-e578c674
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  rotations: []
+- user: I carefully scan the area for any signs of danger
+  dm: |-
+    **Ragnar**:
+    ```json
+    {
+      "potential_consequences": [
+        {
+          "id": "FalseCalm",
+          "description": "Ragnar discerns naught amiss and the party proceeds, blissfully unaware of any lurking peril."
+        },
+        {
+          "id": "FaintUnease",
+          "description": "A hush of birds and restless mist prickle Ragnar’s nerves, sowing vague worry but no clear threat."
+        },
+        {
+          "id": "WarningTracks",
+          "description": "Fresh, outsized lupine prints and bent brush tell Ragnar that fearsome hunters range somewhere ahead."
+        },
+        {
+          "id": "MisguidedDetour",
+          "description": "Mistaking distant movement, Ragnar urges the party off-course, losing time and courting fresh dangers."
+        },
+        {
+          "id": "EarlyAmbushDetection",
+          "description": "A far glint of bronze and shifting shadows betray wolf-scout watchers, granting the party time to ready or withdraw."
+        },
+        {
+          "id": "PrematureEncounter",
+          "description": "Ragnar’s urgent cry carries on the still air, tipping off the hidden wolfmen who advance for an earlier clash."
+        }
+      ],
+      "consequence_probability_comparisons": [
+        "FaintUnease is 0.700x as likely as FalseCalm",
+        "WarningTracks is 0.400x as likely as FaintUnease",
+        "MisguidedDetour is 0.500x as likely as WarningTracks",
+        "EarlyAmbushDetection is 0.250x as likely as MisguidedDetour",
+        "PrematureEncounter is 0.600x as likely as EarlyAmbushDetection",
+        "WarningTracks is 0.280x as likely as FalseCalm",
+        "MisguidedDetour is 0.200x as likely as FaintUnease",
+        "EarlyAmbushDetection is 0.125x as likely as WarningTracks",
+        "PrematureEncounter is 0.150x as likely as MisguidedDetour",
+        "FalseCalm is 3.570x as likely as EarlyAmbushDetection",
+        "FalseCalm is 47.620x as likely as PrematureEncounter",
+        "FaintUnease is 20.000x as likely as EarlyAmbushDetection"
+      ]
+    }
+    ```
+  metrics: 'Parts completed: 1'
+  rotations:
+  - part_number: 1
+    spotlight_holder: Ragnar
+    action_taken: I carefully scan the area for any signs of danger
+    potential_consequences:
+      potential_consequences:
+      - id: FalseCalm
+        description: Ragnar discerns naught amiss and the party proceeds, blissfully unaware of any lurking peril.
+      - id: FaintUnease
+        description: A hush of birds and restless mist prickle Ragnar’s nerves, sowing vague worry but no clear threat.
+      - id: WarningTracks
+        description: |-
+          Fresh, outsized lupine prints and bent brush tell Ragnar that fearsome hunters range somewhere ahead.
+      - id: MisguidedDetour
+        description: |-
+          Mistaking distant movement, Ragnar urges the party off-course, losing time and courting fresh dangers.
+      - id: EarlyAmbushDetection
+        description: |-
+          A far glint of bronze and shifting shadows betray wolf-scout watchers, granting the party time to ready or withdraw.
+      - id: PrematureEncounter
+        description: |-
+          Ragnar’s urgent cry carries on the still air, tipping off the hidden wolfmen who advance for an earlier clash.
+      consequence_probability_comparisons:
+      - FaintUnease is 0.700x as likely as FalseCalm
+      - WarningTracks is 0.400x as likely as FaintUnease
+      - MisguidedDetour is 0.500x as likely as WarningTracks
+      - EarlyAmbushDetection is 0.250x as likely as MisguidedDetour
+      - PrematureEncounter is 0.600x as likely as EarlyAmbushDetection
+      - WarningTracks is 0.280x as likely as FalseCalm
+      - MisguidedDetour is 0.200x as likely as FaintUnease
+      - EarlyAmbushDetection is 0.125x as likely as WarningTracks
+      - PrematureEncounter is 0.150x as likely as MisguidedDetour
+      - FalseCalm is 3.570x as likely as EarlyAmbushDetection
+      - FalseCalm is 47.620x as likely as PrematureEncounter
+      - FaintUnease is 20.000x as likely as EarlyAmbushDetection
+characters:
+  cli-user: Ragnar
+saved_at: '2025-07-18T23:46:33.498402'

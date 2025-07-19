@@ -1,0 +1,56 @@
+channel_id: console-game-16baff69
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  rotations: []
+- user: I scan for danger
+  dm: |-
+    **TestPlayer**:
+    Subtle spoor and an unusual hush alert TestPlayer to impending danger, letting the party ready weapons and adjust tactics before reaching the ambush site.
+  metrics: 'Parts completed: 1'
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestPlayer
+    action_taken: I scan for danger
+    potential_consequences:
+      potential_consequences:
+      - id: NoThreatDetected
+        description: |-
+          TestPlayer sees and hears nothing amiss, so the party proceeds in ordinary formation, unaware of the hidden wolfmen.
+      - id: PartialDetection
+        description: |-
+          A vague rustle and distant shadow unsettle TestPlayer, prompting a cautious pace and slight vigilance but no clear idea of the danger ahead.
+      - &id001
+        id: EarlyWarning
+        description: |-
+          Subtle spoor and an unusual hush alert TestPlayer to impending danger, letting the party ready weapons and adjust tactics before reaching the ambush site.
+      - id: FalsePositive
+        description: |-
+          Misreading normal forest sounds, TestPlayer cries alarm, leading the party to waste time and energy preparing for a threat that never appears.
+      - id: AmbushTriggered
+        description: |-
+          The searching motions disturb local wildlife, whose sudden cries alert the wolfmen scouts, tightening their ambush and raising its eventual lethality.
+      consequence_probability_comparisons:
+      - PartialDetection is 0.550x as likely as NoThreatDetected
+      - EarlyWarning is 0.545x as likely as PartialDetection
+      - FalsePositive is 0.833x as likely as EarlyWarning
+      - AmbushTriggered is 0.480x as likely as FalsePositive
+      - EarlyWarning is 0.300x as likely as NoThreatDetected
+      - FalsePositive is 0.250x as likely as NoThreatDetected
+      - AmbushTriggered is 0.120x as likely as NoThreatDetected
+      - NoThreatDetected is 1.818x as likely as PartialDetection
+      - NoThreatDetected is 3.333x as likely as EarlyWarning
+      - PartialDetection is 2.000x as likely as AmbushTriggered
+      - EarlyWarning is 2.083x as likely as AmbushTriggered
+      - FalsePositive is 2.083x as likely as AmbushTriggered
+    actual_consequences:
+    - *id001
+characters:
+  cli-user: TestPlayer
+saved_at: '2025-07-19T09:51:52.101732'

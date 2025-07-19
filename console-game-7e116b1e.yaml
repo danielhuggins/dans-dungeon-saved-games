@@ -1,0 +1,69 @@
+channel_id: console-game-7e116b1e
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  rotations: []
+- user: I examine the forest edges
+  dm: |-
+    **TestPlayer4**:
+    The scout notices broken underbrush and an uncanny hush, hinting at watchers ahead but revealing no specifics.
+  metrics: 'Parts completed: 1'
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestPlayer4
+    action_taken: I examine the forest edges
+    potential_consequences:
+    - id: PartialClue
+      description: |-
+        The scout notices broken underbrush and an uncanny hush, hinting at watchers ahead but revealing no specifics.
+    - id: FalseSenseOfSecurity
+      description: |-
+        Nothing seems amiss; the party relaxes, unaware they have missed subtle tracks that mark the ambush’s reach.
+    - id: DrawAttention
+      description: |-
+        Crackling twigs and shifting shadows betray the watcher’s presence, prompting the hidden wolfmen to begin stalking sooner.
+    - id: ClearDetection
+      description: |-
+        Well-concealed tracks, odd pawprints, and clipped foliage are read correctly, exposing the nearby wolfmen ambush to the party.
+    - id: Misinterpretation
+      description: |-
+        Natural deer tracks are mistaken for a threat, steering the group toward a longer, riskier route and sowing doubt in decisions.
+    - id: HiddenResourceDiscovery
+      description: |-
+        While scanning the edge, the scout uncovers a patch of rare iron-rooted sage that can slow corruption when brewed.
+    actual_consequences:
+    - id: PartialClue
+      description: |-
+        The scout notices broken underbrush and an uncanny hush, hinting at watchers ahead but revealing no specifics.
+    consequence_probabilities:
+      PartialClue: 0.3309075842106578
+      FalseSenseOfSecurity: 0.2445195995926612
+      DrawAttention: 0.1530798012570623
+      ClearDetection: 0.11922606941658674
+      Misinterpretation: 0.09443043123510125
+      HiddenResourceDiscovery: 0.05783651428793076
+    consequence_probability_comparisons:
+    - PartialClue is 1.350x as likely as FalseSenseOfSecurity
+    - PartialClue is 2.200x as likely as DrawAttention
+    - PartialClue is 2.700x as likely as ClearDetection
+    - PartialClue is 3.500x as likely as Misinterpretation
+    - PartialClue is 5.800x as likely as HiddenResourceDiscovery
+    - FalseSenseOfSecurity is 1.600x as likely as DrawAttention
+    - FalseSenseOfSecurity is 2.000x as likely as ClearDetection
+    - FalseSenseOfSecurity is 2.600x as likely as Misinterpretation
+    - FalseSenseOfSecurity is 4.300x as likely as HiddenResourceDiscovery
+    - DrawAttention is 1.300x as likely as ClearDetection
+    - DrawAttention is 1.600x as likely as Misinterpretation
+    - DrawAttention is 2.700x as likely as HiddenResourceDiscovery
+    - ClearDetection is 1.250x as likely as Misinterpretation
+    - ClearDetection is 2.000x as likely as HiddenResourceDiscovery
+    - Misinterpretation is 1.600x as likely as HiddenResourceDiscovery
+characters:
+  cli-user: TestPlayer4
+saved_at: '2025-07-19T10:25:06.392600'

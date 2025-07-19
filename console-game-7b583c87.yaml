@@ -1,0 +1,90 @@
+channel_id: console-game-7b583c87
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  rotations: []
+- user: I scan for threats
+  dm: |-
+    **TestPlayer3**:
+    The scout cleanly discerns the hidden wolfmen and their positions, giving the party full tactical advantage.
+  metrics: 'Parts completed: 1'
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestPlayer3
+    action_taken: I scan for threats
+    potential_consequences:
+    - id: ClearDetection
+      description: |-
+        The scout cleanly discerns the hidden wolfmen and their positions, giving the party full tactical advantage.
+    - id: PartialClues
+      description: |-
+        Subtle tracks and broken foliage hint at danger ahead, granting the party a wary but incomplete warning.
+    - id: FalseSafe
+      description: Nothing suspicious is noticed, lulling the party into misplaced confidence as they press on.
+    - id: AmbushSpottedLate
+      description: Only moments before the strike, movement is glimpsed; the party gains scant seconds to react.
+    - id: StartledWildlifeAlertEnemies
+      description: |-
+        A mis-step startles nearby wildlife whose flight alerts the lurking wolfmen, hastening their assault.
+    - id: SelfExposedToThreat
+      description: |-
+        While scanning, the scout steps into view, revealing the party’s presence and drawing immediate hostile attention.
+    actual_consequences:
+    - id: ClearDetection
+      description: |-
+        The scout cleanly discerns the hidden wolfmen and their positions, giving the party full tactical advantage.
+    consequence_probabilities:
+      ClearDetection: 0.29851078949791837
+      PartialClues: 0.2388002661405418
+      FalseSafe: 0.1791192980412511
+      AmbushSpottedLate: 0.14924183564148982
+      StartledWildlifeAlertEnemies: 0.08955262430577074
+      SelfExposedToThreat: 0.04477518637302808
+- user: I carefully move forward along the road, watching for danger
+  dm: |-
+    **TestPlayer3**:
+    A louder misstep or cracking branch snaps the tension; the wolfmen charge before their chosen kill-zone, starting combat on open ground.
+  metrics: 'Parts completed: 1'
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestPlayer3
+    action_taken: I carefully move forward along the road, watching for danger
+    potential_consequences:
+    - id: UneventfulProgress
+      description: |-
+        The party advances a half-mile along the Old Road without incident, maintaining their cautious pace and remaining unseen.
+    - id: SpotWolfmenEarly
+      description: |-
+        Fresh spoor and snapped twigs betray the ambush well in advance, granting the party time to choose terrain or devise a counter-trap.
+    - id: MinorNoiseNoEffect
+      description: |-
+        A loose cobblestone clatters; a distant wolf-snarl pauses the group, but the hidden pack neither hears nor reacts, costing only a brief halt.
+    - id: AlertWolfmenPreparations
+      description: |-
+        The noise carries; the wolfmen stiffen and ready weapons, improving their ambush positioning though not yet attacking.
+    - id: SlipInjureAnkle
+      description: |-
+        The scout’s boot skids on moss, twisting an ankle; movement speed drops and a loud grunt risks drawing attention.
+    - id: TriggerEarlySkirmish
+      description: |-
+        A louder misstep or cracking branch snaps the tension; the wolfmen charge before their chosen kill-zone, starting combat on open ground.
+    actual_consequences:
+    - id: TriggerEarlySkirmish
+      description: |-
+        A louder misstep or cracking branch snaps the tension; the wolfmen charge before their chosen kill-zone, starting combat on open ground.
+    consequence_probabilities:
+      UneventfulProgress: 0.29801637385339147
+      SpotWolfmenEarly: 0.22719425781478758
+      MinorNoiseNoEffect: 0.18173948005155022
+      AlertWolfmenPreparations: 0.14631887065342664
+      SlipInjureAnkle: 0.08494292549815542
+      TriggerEarlySkirmish: 0.0617880921286887
+characters:
+  cli-user: TestPlayer3
+saved_at: '2025-07-19T10:21:13.405913'
