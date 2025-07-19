@@ -1,0 +1,137 @@
+channel_id: console-game-0000010
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: look around
+  dm: |-
+    **TestChar**:
+    The scan reveals only peaceful forest scenery with no immediate signs of danger or opportunity.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Evaluating potential actors**\n\nSo, actually, the crossroads are 5 miles away, which makes me think about what entities might be around. I wonder if there could be things like deer or other wildlife in the environment as I break it down.\n\nThe scene sets up the party traveling and exploring, but they’re not in combat yet. I want to consider my party members and also think about the wolfmen lurking 1 mile ahead. They could really impact the situation, even if the party isn’t aware of them yet.\n**Identifying potential actors**\n\nIn the old road environment, hazards are present but not considered actors. The list of characters includes Firghorm, Draenen, Eiliad, Luath, and the Wolfmen ambush pack, though TestChar might be a placeholder. I keep thinking about whether to include TestChar since the rules say to include them if they haven’t just acted. It seems they did take an action recently, so it’s probably best to exclude them this time. \n\nNow, I need to establish\
+    \ relative probabilities for each character's involvement in the scene, with Firghorm as the baseline. Eiliad, as a scout, might take action next, given the travel context.\n**Calculating probability ratios**\n\nI’m considering Firghorm as the baseline for characters involved. I’ve determined that the Wolfmen are actually 4 miles away from the party, which affects their likelihood of acting right now. \n\nNext, I need to define the order of probabilities starting with Eiliad, who might be the most likely to act, followed by Firghorm, Draenen, Luath, Wolfmen, and then TestChar as the least likely. \n\nNow, I’m calculating their absolute probabilities, starting with Eiliad at a baseline of 1.0, which would lead to a chain of reductions for the others, including comparisons between each character to ensure I meet the requirement for appearances."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestChar
+    action_taken: look around
+    consequence_response:
+      potential_consequences:
+      - id: NoticeWolfmenTracks
+        description: TestChar spots clawed footprints and tufts of grey fur on bark, hinting at wolfmen activity ahead.
+      - id: NothingUnusual
+        description: The scan reveals only peaceful forest scenery with no immediate signs of danger or opportunity.
+      - id: SpotHerbPatch
+        description: A small cluster of rare crimson thistle is discovered, useful for future healing poultices.
+      - id: StartleWildlife
+        description: A hidden deer bolts through the underbrush with a loud crash, momentarily disturbing the quiet.
+      - id: SenseBeingWatched
+        description: A shiver crawls over TestChar's neck as an uncanny feeling of unseen eyes settles in.
+      - id: CorruptionMirage
+        description: |-
+          For an instant, an oily rainbow sheen ripples across a puddle before vanishing, leaving uneasy doubt.
+      consequence_probability_comparisons:
+      - NothingUnusual is 2.667x as likely as NoticeWolfmenTracks
+      - NothingUnusual is 2.000x as likely as SpotHerbPatch
+      - NothingUnusual is 4.000x as likely as StartleWildlife
+      - NothingUnusual is 4.000x as likely as SenseBeingWatched
+      - NothingUnusual is 8.000x as likely as CorruptionMirage
+      - NoticeWolfmenTracks is 0.750x as likely as SpotHerbPatch
+      - NoticeWolfmenTracks is 1.500x as likely as StartleWildlife
+      - NoticeWolfmenTracks is 1.500x as likely as SenseBeingWatched
+      - NoticeWolfmenTracks is 3.000x as likely as CorruptionMirage
+      - SpotHerbPatch is 2.000x as likely as StartleWildlife
+      - SpotHerbPatch is 2.000x as likely as SenseBeingWatched
+      - SpotHerbPatch is 4.000x as likely as CorruptionMirage
+      - StartleWildlife is 1.000x as likely as SenseBeingWatched
+      - StartleWildlife is 2.000x as likely as CorruptionMirage
+      - SenseBeingWatched is 2.000x as likely as CorruptionMirage
+    actual_consequences:
+    - id: NothingUnusual
+      description: The scan reveals only peaceful forest scenery with no immediate signs of danger or opportunity.
+    consequence_probabilities:
+      NoticeWolfmenTracks: 0.14999611019082779
+      NothingUnusual: 0.4000062319223261
+      SpotHerbPatch: 0.19999894465785614
+      StartleWildlife: 0.09999948654763902
+      SenseBeingWatched: 0.09999948841187754
+      CorruptionMirage: 0.0499997382694734
+- user: action examine the road ahead
+  dm: |-
+    **TestChar**:
+    TestChar surveys the cobbled path and sees only serene forest, finding no immediate threats or notable features.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Analyzing character positions**
+
+    The player character, TestChar, has scanned the environment and found only peaceful forest scenery. Meanwhile, there's an ambush by the Wolfmen about a mile ahead, but they haven't engaged yet. The ambushers could be static, preparing or moving. The crossroads where Ogogle can manifest is still five miles away. Potential actors in this scenario include TestChar and the party members: Firghorm, Draenen, Eiliad, and Luath, but they won’t face the Wolfmen just yet, as they’re four miles away.
+    **Evaluating character actions**
+
+    The characters might decide to reposition themselves, but their ability to act next is limited. I’m considering environmental factors like a deer crossing, but I should include important creatures like Wolves in the forest. To meet the requirement of each character ID appearing three times in comparisons, I’ll focus on the main actors: the five player characters and the Wolfmen, totaling six. I see Eiliad, as the scout, being the most likely to act next, followed by Firghorm. The scene is exploratory with no immediate threat, so urgency isn’t a factor.
+
+    ---
+
+    **Analyzing observational outcomes**
+
+    In this TTRPG-like scenario, the player TestChar wants to examine the road ahead. The GM is focused on methodically assessing consequences while embracing the themes of Emptiness, Horribleness, Concupiscence, and Proactivity. I need to outline 4-8 short potential consequences for this observational action. Some possible outcomes might include: TestChar noticing clues, failing to see something important, misunderstanding what they see, detecting an ambush, unintentionally drawing attention, or startling wildlife. I'll define around six distinct outcomes.
+    **Generating outcome probabilities**
+
+    I’m outlining potential consequences for TestChar's examination of the road ahead. Identifying outcomes like observing disturbed foliage for an ambush, misinterpreting safety, startling wildlife, or noticing faint corruption helps establish distinct consequences. I’ll aim for around six outcomes, focusing on clear details. Next, I need to establish pairwise probability comparisons among these outcomes to highlight the likelihood of each occurring. For example, ClearView could be 4x as likely as SpotAmbushSigns. I’ll generate 15 comparisons systematically.
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestChar
+    action_taken: action examine the road ahead
+    consequence_response:
+      potential_consequences:
+      - id: ClearView
+        description: |-
+          TestChar surveys the cobbled path and sees only serene forest, finding no immediate threats or notable features.
+      - id: SpotAmbushSigns
+        description: |-
+          Subtle broken branches and faint tracks ahead hint at a possible ambush lying further up the Old Road.
+      - id: FalseReassurance
+        description: Misreading natural patterns, TestChar concludes the road is safe and unwatched.
+      - id: StartlesWildlife
+        description: |-
+          A crunch underfoot startles a deer that bolts through the brush, its panic echo carrying along the road.
+      - id: CorruptionGlimmer
+        description: |-
+          For an instant the road ahead seems to ripple with an oily sheen, leaving TestChar uneasy and unsure whether it was real.
+      - id: HiddenResource
+        description: TestChar notices an overgrown milestone and a patch of useful herbs growing beside it.
+      consequence_probability_comparisons:
+      - ClearView is 4.137x as likely as SpotAmbushSigns
+      - ClearView is 1.842x as likely as FalseReassurance
+      - ClearView is 3.579x as likely as StartlesWildlife
+      - ClearView is 5.266x as likely as CorruptionGlimmer
+      - ClearView is 2.204x as likely as HiddenResource
+      - SpotAmbushSigns is 0.709x as likely as FalseReassurance
+      - SpotAmbushSigns is 1.128x as likely as StartlesWildlife
+      - SpotAmbushSigns is 2.012x as likely as CorruptionGlimmer
+      - SpotAmbushSigns is 0.816x as likely as HiddenResource
+      - FalseReassurance is 1.589x as likely as StartlesWildlife
+      - FalseReassurance is 2.839x as likely as CorruptionGlimmer
+      - FalseReassurance is 1.151x as likely as HiddenResource
+      - StartlesWildlife is 1.786x as likely as CorruptionGlimmer
+      - StartlesWildlife is 0.726x as likely as HiddenResource
+      - HiddenResource is 1.561x as likely as CorruptionGlimmer
+    actual_consequences:
+    - id: ClearView
+      description: |-
+        TestChar surveys the cobbled path and sees only serene forest, finding no immediate threats or notable features.
+    consequence_probabilities:
+      ClearView: 0.37586511282073864
+      SpotAmbushSigns: 0.11891185832111904
+      FalseReassurance: 0.1812168694196346
+      StartlesWildlife: 0.11029717093114526
+      CorruptionGlimmer: 0.06881778941502949
+      HiddenResource: 0.14489119909233286
+characters:
+  cli-user: TestChar
+saved_at: '2025-07-19T15:00:29.970195'
