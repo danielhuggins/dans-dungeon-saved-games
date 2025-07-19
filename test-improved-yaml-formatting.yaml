@@ -1,0 +1,30 @@
+channel_id: console-game-0000016
+adventure_name: core-game
+config:
+  starter: You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+log:
+- user: ''
+  dm: You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I practice sword swings in the yard
+  dm: '**TestHero**:
+
+    Repetition slightly refines TestHero''s muscle memory, yielding a minute but genuine improvement in blade control. Micro-chipping and friction shave the keen edge, leaving the sword perceptibly duller.'
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Calculating actor probabilities**\n\nI'm thinking about how to set relative probabilities for actors in a scenario, starting with a baseline actor like TestHero. I want to compare them through various pairwise combinations. It seems important for each ID to appear multiple times across these comparisons to ensure accuracy. \n\nI’ll factor in urgency and context—it’s early in the exploration, not combat, so players will likely act first. I’ll assign TestHero a probability weight of 1.0, while Aethelwynn could be around 0.6. Osric will have a lower relevance due to their focus.\n**Setting up probability ratios**\n\nI'm working on assigning probabilities for characters relative to one another. I’ve established TestHero as the baseline at 1.0 and set ScraelingasScout at approximately 0.85, followed by Aethelwynn at 0.70, Osric at 0.60, and Aethelflaed at 0.55. \n\nNow I need to create pairwise ratios for each comparison. I'll focus on ensuring every character appears\
+    \ frequently enough and also provide reverse ratios to keep the comparisons aligned. It’s a bit of a puzzle, but I’m getting there!\n\n---\n\n**Analyzing practice probabilities**\n\nI'm considering the potential probabilities during a short practice session of about six swings. The chance of a minor self-injury might be around 0.01, especially with rare events like dropping the sword. For some defined outcomes, I suggest:  \n\n1. Refined technique with a 0.65 probability for skills gain.  \n2. A sword grip slip occurring at a 0.02 probability.  \n3. A minor self-cut possibility at 0.003.  \n4. Dulling of the sword edge at 0.12.  \n5. A nearby observer’s notice at 0.15, potentially overlapping with improved technique.\n**Evaluating joint probabilities**\n\nI'm analyzing several potential outcomes during practice. For example, an observer might misinterpret the action as a threat, leading to a call for guards at a low probability of 0.004. Other events include startling an animal (0.08)\
+    \ and dropping the weapon (0.005). I need to consider joint probabilities for events that can logically happen together. Each probability should remain within limits of the individual events. I’ll assign these carefully to ensure they make sense within the established margins."
+  rotations: []
+- user: I examine my surroundings carefully
+  dm: '**TestHero**:
+
+    TestHero notices that the sword’s edge has dulled and chipped slightly from recent practice. A loose paving stone on the yard surface is spotted, revealing a potential tripping hazard or tactical feature.'
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Computing actor descriptions and ratios**\n\nI have an array of potential next actors with their IDs and descriptions. I need to use the exact ID values for a unified approach. The actors include a player hero, a stable hand observing, an aggressive goose, a village blacksmith, and a traveling healer. \n\nNext, I’ll compute their ratios based on given values, ensuring to output numbers with three decimal precision. For instance, the ratio of the player hero to the stable hand is 4.0, while the ratio to the goose is approximately 6.667.\n\n---\n\n**Analyzing action consequences**\n\nI’m parsing the instruction about the player, TestHero, who’s practicing sword swings. Now, he’s examining his surroundings carefully, and that’s a new action. I need to come up with 6-12 possible consequences. Some ideas include: noticing something subtle, realizing the sword is dull, or even finding someone watching. Perhaps there could also be an unexpected movement that scares him or\
+    \ uncovering a hidden item. I'll select about 8 and estimate probabilities for each.\n**Assessing probabilities in action**\n\nI'm considering an actuary approach for TestHero's observation in the yard while practicing sword swings. Given the usual scenario, I think the probability of noticing something significant is pretty low. For example, seeing something like a dull blade has a moderate likelihood of about 0.35, while concluding that there’s nothing new is much higher, around 0.6. I'll need to outline 6-12 possible consequences, combining a few plausible scenarios while ensuring they can coexist logically. Let’s get creative with the combinations!"
+  rotations: []
+characters:
+  cli-user: TestHero
+saved_at: '2025-07-19T18:49:29.331438'

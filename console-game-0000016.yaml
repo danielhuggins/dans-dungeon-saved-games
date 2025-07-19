@@ -1,166 +1,20 @@
 channel_id: console-game-0000016
+adventure_name: core-game
+config:
+  starter: |-
+    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
 log:
 - user: ''
   dm: |-
     You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
   metrics: The adventure has just started; no metrics yet.
-  ai_response: null
   reasoning_summary: null
+  rotations: []
 - user: I practice sword swings in the yard
   dm: |-
     **TestHero**:
     Repetition slightly refines TestHero's muscle memory, yielding a minute but genuine improvement in blade control. Micro-chipping and friction shave the keen edge, leaving the sword perceptibly duller.
   metrics: 'Parts completed: 1'
-  ai_response: |-
-    ```json
-    {
-      "potential_next_actors": [
-        {
-          "id": "TestHero",
-          "description": "The player-character, standing alert at the very start of the journey, is fully aware of the surroundings, has no wounds, and carries the immediate motivation to decide where to go first."
-        },
-        {
-          "id": "ScraelingasScout",
-          "description": "A lone bandit scout concealed along the nearby trade path; healthy, keen-eyed, and urgently looking for targets, giving him strong reason to make the next move if travellers appear."
-        },
-        {
-          "id": "Aethelwynn",
-          "description": "The river-healer from a hamlet less than a mile away; currently on foot gathering herbs, moderately fatigued but aware of movements on the road and likely to investigate unusual sounds."
-        },
-        {
-          "id": "Osric",
-          "description": "The village blacksmith working at his forge within earshot of the road; focused on his craft, moderately encumbered by tools, yet able to react if trouble threatens his community."
-        },
-        {
-          "id": "Aethelflaed",
-          "description": "A Torfaeth initiate midwife preparing supplies in Ricthorp several miles off; occupied and burdened by a limp, only faintly aware of distant commotion, giving her the lowest immediacy to act."
-        }
-      ],
-      "spotlight_probability_comparisons": [
-        "TestHero is 1.333x as likely as ScraelingasScout",
-        "TestHero is 1.818x as likely as Aethelwynn",
-        "TestHero is 3.030x as likely as Osric",
-        "TestHero is 5.000x as likely as Aethelflaed",
-        "ScraelingasScout is 1.364x as likely as Aethelwynn",
-        "ScraelingasScout is 2.273x as likely as Osric",
-        "ScraelingasScout is 3.750x as likely as Aethelflaed",
-        "Aethelwynn is 1.667x as likely as Osric",
-        "Aethelwynn is 2.750x as likely as Aethelflaed",
-        "Osric is 1.650x as likely as Aethelflaed",
-        "ScraelingasScout is 0.750x as likely as TestHero",
-        "Aethelwynn is 0.550x as likely as TestHero",
-        "Osric is 0.330x as likely as TestHero",
-        "Aethelflaed is 0.200x as likely as TestHero",
-        "Aethelwynn is 0.733x as likely as ScraelingasScout",
-        "Osric is 0.440x as likely as ScraelingasScout",
-        "Aethelflaed is 0.267x as likely as ScraelingasScout",
-        "Osric is 0.600x as likely as Aethelwynn",
-        "Aethelflaed is 0.364x as likely as Aethelwynn",
-        "Aethelflaed is 0.606x as likely as Osric"
-      ]
-    }
-    ```
-
-    ---
-
-    ```json
-    {
-      "potential_consequences": [
-        {
-          "id": "SkillRefined",
-          "description": "Repetition slightly refines TestHero's muscle memory, yielding a minute but genuine improvement in blade control.",
-          "marginal_probability": 0.65,
-          "joint_probabilities": {
-            "and EdgeDulled": 0.05,
-            "and SpectatorNotices": 0.10,
-            "and ShoulderStrain": 0.009,
-            "and HiddenObjectUnearthed": 0.0000002
-          }
-        },
-        {
-          "id": "EdgeDulled",
-          "description": "Micro-chipping and friction shave the keen edge, leaving the sword perceptibly duller.",
-          "marginal_probability": 0.12,
-          "joint_probabilities": {
-            "and SkillRefined": 0.05,
-            "and WeaponDropped": 0.004,
-            "and MinorSelfCut": 0.002
-          }
-        },
-        {
-          "id": "SpectatorNotices",
-          "description": "A passing farm-hand pauses to observe, forming an impression of TestHero’s prowess.",
-          "marginal_probability": 0.15,
-          "joint_probabilities": {
-            "and SkillRefined": 0.10,
-            "and StartleAnimal": 0.04,
-            "and AlarmRaised": 0.003
-          }
-        },
-        {
-          "id": "StartleAnimal",
-          "description": "A nearby chicken or dog is spooked by the sudden motion, scattering noisily across the yard.",
-          "marginal_probability": 0.08,
-          "joint_probabilities": {
-            "and SpectatorNotices": 0.04
-          }
-        },
-        {
-          "id": "GripSlip",
-          "description": "Sweaty palms let the hilt shift unexpectedly, jarring TestHero’s wrists.",
-          "marginal_probability": 0.02,
-          "joint_probabilities": {
-            "and WeaponDropped": 0.003,
-            "and MinorSelfCut": 0.001
-          }
-        },
-        {
-          "id": "MinorSelfCut",
-          "description": "The blade nicks TestHero’s forearm, opening a shallow, bleeding scratch.",
-          "marginal_probability": 0.003,
-          "joint_probabilities": {
-            "and GripSlip": 0.001,
-            "and WeaponDropped": 0.001,
-            "and EdgeDulled": 0.002
-          }
-        },
-        {
-          "id": "WeaponDropped",
-          "description": "The sword slips completely and clatters onto the packed earth.",
-          "marginal_probability": 0.005,
-          "joint_probabilities": {
-            "and GripSlip": 0.003,
-            "and MinorSelfCut": 0.001,
-            "and EdgeDulled": 0.004
-          }
-        },
-        {
-          "id": "ShoulderStrain",
-          "description": "An overextended swing tweaks the shoulder muscles, causing an ache that will linger for hours.",
-          "marginal_probability": 0.015,
-          "joint_probabilities": {
-            "and SkillRefined": 0.009
-          }
-        },
-        {
-          "id": "AlarmRaised",
-          "description": "A nervous neighbour mistakes the drill for violence and shouts an alert toward the main house.",
-          "marginal_probability": 0.004,
-          "joint_probabilities": {
-            "and SpectatorNotices": 0.003
-          }
-        },
-        {
-          "id": "HiddenObjectUnearthed",
-          "description": "A mis-placed step scuffs the soil, exposing a tiny, unfamiliar metal shard glinting beneath the dirt.",
-          "marginal_probability": 0.0000005,
-          "joint_probabilities": {
-            "and SkillRefined": 0.0000002
-          }
-        }
-      ]
-    }
-    ```
   reasoning_summary: "**Calculating actor probabilities**\n\nI'm thinking about how to set relative probabilities for actors\
     \ in a scenario, starting with a baseline actor like TestHero. I want to compare them through various pairwise combinations.\
     \ It seems important for each ID to appear multiple times across these comparisons to ensure accuracy. \n\nI’ll factor\
@@ -181,140 +35,12 @@ log:
     \ I need to consider joint probabilities for events that can logically happen together. Each probability should remain\
     \ within limits of the individual events. I’ll assign these carefully to ensure they make sense within the established\
     \ margins."
+  rotations: []
 - user: I examine my surroundings carefully
   dm: |-
     **TestHero**:
     TestHero notices that the sword’s edge has dulled and chipped slightly from recent practice. A loose paving stone on the yard surface is spotted, revealing a potential tripping hazard or tactical feature.
   metrics: 'Parts completed: 1'
-  ai_response: |-
-    ```json
-    {
-      "potential_next_actors": [
-        {
-          "id": "TestHero",
-          "description": "Player-character still holding the sword after practice, fully aware and physically ready; most immediate opportunity to continue acting."
-        },
-        {
-          "id": "StableHandRiann",
-          "description": "Young stable hand within the yard, watching TestHero’s drills; alert, unencumbered, and likely to step forward to comment or assist."
-        },
-        {
-          "id": "YardGoose",
-          "description": "Territorial goose prowling the practice ground; close proximity and unpredictable temperament give it a real chance to honk, charge, or disrupt."
-        },
-        {
-          "id": "OsricBlacksmith",
-          "description": "Village blacksmith working at a nearby forge; aware that repeated swings can dull blades and may approach to offer grinding or commentary, though he must cover some distance first."
-        },
-        {
-          "id": "Aethelwynn",
-          "description": "Travelling healer passing along the outer lane; low immediate urgency but could intervene if she notices the sword’s edge damage or any injury."
-        }
-      ],
-      "spotlight_probability_comparisons": [
-        "TestHero is 4.000x as likely as StableHandRiann",
-        "TestHero is 6.667x as likely as YardGoose",
-        "TestHero is 10.000x as likely as OsricBlacksmith",
-        "TestHero is 20.000x as likely as Aethelwynn",
-        "StableHandRiann is 0.250x as likely as TestHero",
-        "StableHandRiann is 1.667x as likely as YardGoose",
-        "StableHandRiann is 2.500x as likely as OsricBlacksmith",
-        "StableHandRiann is 5.000x as likely as Aethelwynn",
-        "YardGoose is 0.150x as likely as TestHero",
-        "YardGoose is 0.600x as likely as StableHandRiann",
-        "YardGoose is 1.500x as likely as OsricBlacksmith",
-        "YardGoose is 3.000x as likely as Aethelwynn",
-        "OsricBlacksmith is 0.100x as likely as TestHero",
-        "OsricBlacksmith is 0.400x as likely as StableHandRiann",
-        "OsricBlacksmith is 0.667x as likely as YardGoose",
-        "OsricBlacksmith is 2.000x as likely as Aethelwynn",
-        "Aethelwynn is 0.050x as likely as TestHero",
-        "Aethelwynn is 0.200x as likely as StableHandRiann",
-        "Aethelwynn is 0.333x as likely as YardGoose",
-        "Aethelwynn is 0.500x as likely as OsricBlacksmith"
-      ]
-    }
-    ```
-
-    ---
-
-    {
-      "potential_consequences": [
-        {
-          "id": "EdgeWearNoted",
-          "description": "TestHero notices that the sword’s edge has dulled and chipped slightly from recent practice.",
-          "marginal_probability": 0.48,
-          "joint_probabilities": {
-            "and LooseStone": 0.07,
-            "and ScurryingRodent": 0.03,
-            "and EyeIrritation": 0.01,
-            "and DistantWatcher": 0.0001
-          }
-        },
-        {
-          "id": "LooseStone",
-          "description": "A loose paving stone on the yard surface is spotted, revealing a potential tripping hazard or tactical feature.",
-          "marginal_probability": 0.12,
-          "joint_probabilities": {
-            "and EdgeWearNoted": 0.07,
-            "and EyeIrritation": 0.005,
-            "and ScurryingRodent": 0.015
-          }
-        },
-        {
-          "id": "DistantWatcher",
-          "description": "A faint silhouette at the edge of the training yard appears to be observing TestHero’s movements.",
-          "marginal_probability": 0.0005,
-          "joint_probabilities": {
-            "and EdgeWearNoted": 0.0001,
-            "and StormApproach": 0.00005
-          }
-        },
-        {
-          "id": "NothingUnusual",
-          "description": "Despite the careful survey, nothing out of the ordinary is perceived.",
-          "marginal_probability": 0.40,
-          "joint_probabilities": {}
-        },
-        {
-          "id": "StormApproach",
-          "description": "Dark clouds on the horizon hint at an approaching storm that could soon affect outdoor activity.",
-          "marginal_probability": 0.04,
-          "joint_probabilities": {
-            "and EyeIrritation": 0.008,
-            "and DistantWatcher": 0.00005
-          }
-        },
-        {
-          "id": "EyeIrritation",
-          "description": "A sudden swirl of dust or pollen catches in TestHero’s eyes, causing brief watering and blurred vision.",
-          "marginal_probability": 0.02,
-          "joint_probabilities": {
-            "and LooseStone": 0.005,
-            "and EdgeWearNoted": 0.01,
-            "and StormApproach": 0.008
-          }
-        },
-        {
-          "id": "MetallicGlimmer",
-          "description": "A tiny metallic glint partly buried in the soil draws attention—perhaps a coin, nail, or other small object.",
-          "marginal_probability": 0.002,
-          "joint_probabilities": {
-            "and ScurryingRodent": 0.0007
-          }
-        },
-        {
-          "id": "ScurryingRodent",
-          "description": "A small rodent darts across the yard before disappearing into a crevice, evidence of local pests.",
-          "marginal_probability": 0.08,
-          "joint_probabilities": {
-            "and EdgeWearNoted": 0.03,
-            "and LooseStone": 0.015,
-            "and MetallicGlimmer": 0.0007
-          }
-        }
-      ]
-    }
   reasoning_summary: "**Computing actor descriptions and ratios**\n\nI have an array of potential next actors with their IDs\
     \ and descriptions. I need to use the exact ID values for a unified approach. The actors include a player hero, a stable\
     \ hand observing, an aggressive goose, a village blacksmith, and a traveling healer. \n\nNext, I’ll compute their ratios\
@@ -329,9 +55,169 @@ log:
     \ example, seeing something like a dull blade has a moderate likelihood of about 0.35, while concluding that there’s nothing\
     \ new is much higher, around 0.6. I'll need to outline 6-12 possible consequences, combining a few plausible scenarios\
     \ while ensuring they can coexist logically. Let’s get creative with the combinations!"
-config:
-  starter: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-adventure_name: core-game
+  rotations: []
+- user: I look for signs of other people in the area
+  dm: |-
+    **TestHero**:
+    TestHero scans the yard but sees no evidence of anyone else nearby, reinforcing the impression of solitude.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Identifying potential actors**\n\nI'm thinking about who could act next in the scenario. TestHero\
+    \ might be up again, or maybe a passerby like Osric notices something wrong with a dull sword. That loose paving stone\
+    \ could even act as an environmental hazard. It seems I need to have at least 4-5 actors to meet the requirement of having\
+    \ each character appear at least three times in comparisons. I can define a few: 1. TestHero (player), 2. Osric (blacksmith),\
+    \ and perhaps 3. Aethelwynn (local healer) as well.\n**Analyzing scene actors**\n\nI’m considering the involvement of\
+    \ various actors, like LoosePavingStone as an environmental hazard that could trip someone. Then there’s the possibility\
+    \ of having characters like Alyna or VillageChild, but they seem less relevant. Instead, I'll center on TestHero, Osric,\
+    \ Osric's Apprentice (Waldhere), and introduce WulfsceadScout as a potential threat. I need to ensure each appears at\
+    \ least three times in comparisons.  \n\nNext, I’ll outline how each character could interact based on the scene's context\
+    \ and urgency while creating a probability comparisons list.\n**Implementing probability comparisons**\n\nI’m focusing\
+    \ on how to present comparisons for actors in both directions. We need to ensure each actor appears at least three times\
+    \ across comparisons. I've defined five actors: TestHero, LoosePavingStone, Osric, Waldhere, and Aethelwynn.\n\nUsing\
+    \ TestHero as the baseline for probabilities, I’ll assign values for each actor relative to him and create a clear chain\
+    \ of comparisons. For instance, I'll compute how each is likely to act concerning the others, ensuring to produce all\
+    \ pairwise comparisons and address each direction. This way, each actor will be represented adequately.\n**Crafting actor\
+    \ details and comparisons**\n\nI'm putting together potential next actors with their descriptions, such as TestHero, Osric,\
+    \ and the environmental hazard LoosePavingStone. Each actor has a specific role, which makes the scene rich. \n\nNext,\
+    \ I'm laying out the probability comparisons between these actors. I need to ensure that the decimals are formatted consistently\
+    \ and that the JSON remains valid. I notice some naming conventions differ, but I'll stick with what I've defined. Now,\
+    \ I'll finalize this output!"
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestHero
+    action_taken: I look for signs of other people in the area
+    consequence_response:
+      potential_consequences:
+      - id: NoSignFound
+        description: |-
+          TestHero scans the yard but sees no evidence of anyone else nearby, reinforcing the impression of solitude.
+        marginal_probability: 0.72
+        joint_probabilities:
+          and EyeIrritation: 0.03
+      - id: TraceFound
+        description: |-
+          Faint footprints and a scuffed stone suggest someone passed through recently, though their current location is unknown.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and AnimalStartled: 0.04
+          and FindItem: 0.004
+      - id: SpySighted
+        description: |-
+          A fleeting silhouette or glint of eyes reveals that a concealed observer is watching from the shadows.
+        marginal_probability: 0.025
+        joint_probabilities:
+          and NoiseRevealsPosition: 0.015
+          and AnimalStartled: 0.005
+      - id: NoiseRevealsPosition
+        description: |-
+          A loose stone shifts underfoot, creating a sharp clack that could alert any hidden onlookers to TestHero’s presence.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and SpySighted: 0.015
+          and AnimalStartled: 0.01
+      - id: FindItem
+        description: |-
+          While searching, TestHero spots a small dropped object—a leather button pouch—hinting at recent human activity.
+        marginal_probability: 0.012
+        joint_probabilities:
+          and TraceFound: 0.004
+      - id: AnimalStartled
+        description: |-
+          A nesting bird or small rodent darts away with a sudden rustle, betraying both its presence and the quiet tension of the yard.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and TraceFound: 0.04
+          and SpySighted: 0.005
+          and NoiseRevealsPosition: 0.01
+      - id: EyeIrritation
+        description: |-
+          A gust of grit-laden wind forces TestHero to blink rapidly, momentarily blurring vision and risking a missed detail.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and NoSignFound: 0.03
+          and PowerFieldGlitch: 0.0002
+      - id: PowerFieldGlitch
+        description: |-
+          A faint, almost imperceptible ripple of pale light flickers over a nearby wall—evidence of a localized AI power-field fluctuation.
+        marginal_probability: 0.001
+        joint_probabilities:
+          and EyeIrritation: 0.0002
+    actual_consequences:
+    - id: NoSignFound
+      description: |-
+        TestHero scans the yard but sees no evidence of anyone else nearby, reinforcing the impression of solitude.
+      marginal_probability: 0.72
+    probability_debug_info:
+      random_value: 0.3958594708135088
+      selected_outcome: '{NoSignFound}'
+      probability_ranges:
+        '{}':
+          probability: 0.23250332550997174
+          range_start: 0.0
+          range_end: 0.23250332550997174
+        '{AnimalStartled}':
+          probability: 0.04102999861940679
+          range_start: 0.23250332550997174
+          range_end: 0.27353332412937853
+        '{EyeIrritation}':
+          probability: 0.012237017132103789
+          range_start: 0.27353332412937853
+          range_end: 0.2857703412614823
+        '{FindItem}':
+          probability: 0.002823927030485507
+          range_start: 0.2857703412614823
+          range_end: 0.2885942682919678
+        '{NoSignFound}':
+          probability: 0.5978656941684988
+          range_start: 0.2885942682919678
+          range_end: 0.8864599624604665
+        '{NoiseRevealsPosition}':
+          probability: 0.0047449658267341155
+          range_start: 0.8864599624604665
+          range_end: 0.8912049282872007
+        '{PowerFieldGlitch}':
+          probability: 0.00023273606157159232
+          range_start: 0.8912049282872007
+          range_end: 0.8914376643487723
+        '{SpySighted}':
+          probability: 0.005961623731024934
+          range_start: 0.8914376643487723
+          range_end: 0.8973992880797972
+        '{TraceFound}':
+          probability: 0.05812583137749294
+          range_start: 0.8973992880797972
+          range_end: 0.9555251194572901
+        '{AnimalStartled, NoiseRevealsPosition}':
+          probability: 0.0008373469106001119
+          range_start: 0.9555251194572901
+          range_end: 0.9563624663678902
+        '{AnimalStartled, SpySighted}':
+          probability: 0.0010520512466514198
+          range_start: 0.9563624663678902
+          range_end: 0.9574145176145417
+        '{AnimalStartled, TraceFound}':
+          probability: 0.010257499654851676
+          range_start: 0.9574145176145417
+          range_end: 0.9676720172693933
+        '{EyeIrritation, NoSignFound}':
+          probability: 0.031466615482552585
+          range_start: 0.9676720172693933
+          range_end: 0.9991386327519459
+        '{EyeIrritation, PowerFieldGlitch}':
+          probability: 1.2249266398534076e-05
+          range_start: 0.9991386327519459
+          range_end: 0.9991508820183445
+        '{FindItem, TraceFound}':
+          probability: 0.0007059817576213767
+          range_start: 0.9991508820183445
+          range_end: 0.9998568637759658
+        '{NoiseRevealsPosition, SpySighted}':
+          probability: 0.00012166579042904857
+          range_start: 0.9998568637759658
+          range_end: 0.9999785295663949
+        '{AnimalStartled, NoiseRevealsPosition, SpySighted}':
+          probability: 2.1470433605119688e-05
+          range_start: 0.9999785295663949
+          range_end: 1.0
 characters:
   cli-user: TestHero
+saved_at: '2025-07-19T18:54:06.913543'
