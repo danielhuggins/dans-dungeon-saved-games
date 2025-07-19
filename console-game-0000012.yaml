@@ -1,0 +1,266 @@
+channel_id: console-game-0000012
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: |-
+    I swing my sword wildly at a nearby tree to test its sharpness, shouting 'This blade thirsts for wolfman blood\!'
+  dm: |-
+    **TestFighter**:
+    The blade bites smoothly into the tree, carving a neat groove and showering small wood chips – clear proof of its keenness.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Identifying Next Character Spotlight**
+
+    The user wants to identify the next character who gets the spotlight in the story. I'll create a formal step-by-step process to evaluate potential actors and calculate their probabilities. This involves producing a JSON output with a list of potential actors, their descriptions, and pairwise probability comparisons. They specified that the first character has a baseline probability of 1.0, while subsequent characters will have relative probabilities based on earlier ones. I'll consider characters in the current scene and possible environmental elements too.
+    **Determining Character Probabilities**
+
+    I’m considering how to assign probabilities to characters for spotlighting in the story. Eiliad could start with a baseline probability of 1.0, as they are agile and quick to act. Firghorm might be about 0.7 times as likely due to being slower, and Draenen probably around 1.1 times Firghorm’s likelihood. I need to ensure I create pairwise comparisons among all characters as per the instructions since it’s critical to have a structured approach here. Characters will be ordered by likelihood: Eiliad, Firghorm, Draenen, Luath, and finally, Wolfmen.
+    **Finalizing Character Ratios**
+
+    I’m calculating precise ratios for the character probabilities to create a final JSON. I’ll ensure I use three decimal places where necessary. For example, Eiliad's ratios will show 1.25 against Firghorm and 11.574 against the Wolfmen. I also need to package the comparisons so that each character appears in at least three lines, aiming for around 20 comparison lines total. I’m crafting descriptions for each character, including Eiliad, Firghorm, Draenen, Luath, and the Wolfmen preparing ahead. Let's get this JSON produced!
+
+    ---
+
+    **Evaluating event probabilities**
+
+    I'm considering including CleanCut with a high probability, around 0.9, but I also want to mention other potential events. Each consequence needs to be distinct, so I’ll treat CleanCut as the default scenario while leaving room for variations. Now, regarding the environment: if a good sword cuts a standard matured tree, there's a chance of blade chipping, maybe around 3%. The probability of the sword getting stuck could be 1-2%. Splinter injuries seem improbable at 0.5%, while chances of a branch falling might be 0.0005%.
+    **Calculating event probabilities**
+
+    I’m figuring out the probabilities for different events. For example, no event should exceed a maximum of 0.03. If we look at scenarios like CleanCut and SwordStuck, the probability might be 0.01. For CleanCut and SplinterInjury, maybe around 0.004 sounds reasonable. FallingBranch could be 0.0004. As for CleanCut and NoiseAlertsCreatures, I’m thinking that could be about 0.018. I realize it's essential to specify joint probabilities for co-occurring events, so I’ll make sure to outline those clearly, but not exhaustively. Let's summarize!
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestFighter
+    action_taken: |-
+      I swing my sword wildly at a nearby tree to test its sharpness, shouting 'This blade thirsts for wolfman blood\!'
+    consequence_response:
+      potential_consequences:
+      - id: CleanCut
+        description: |-
+          The blade bites smoothly into the tree, carving a neat groove and showering small wood chips – clear proof of its keenness.
+        marginal_probability: 0.94
+        joint_probabilities:
+          and BladeEdgeNicked: 0.02
+          and SwordStuck: 0.01
+          and SplinterInjury: 0.004
+          and FallingBranch: 0.0004
+          and NoiseAlertsCreatures: 0.018
+      - id: BladeEdgeNicked
+        description: Striking at an awkward angle chips or slightly dulls the sword’s edge.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and CleanCut: 0.02
+          and SwordStuck: 0.005
+          and SplinterInjury: 0.002
+      - id: SwordStuck
+        description: The blade wedges in tough grain, momentarily trapping the weapon and requiring effort to free.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and CleanCut: 0.01
+          and BladeEdgeNicked: 0.005
+          and NoiseAlertsCreatures: 0.004
+      - id: SplinterInjury
+        description: A flying wood chip or splinter grazes the attacker’s hand or forearm, drawing a thin line of blood.
+        marginal_probability: 0.005
+        joint_probabilities:
+          and CleanCut: 0.004
+          and BladeEdgeNicked: 0.002
+          and FallingBranch: 0.0002
+      - id: FallingBranch
+        description: The blow jars a dead limb overhead, sending it crashing down; anyone beneath must dodge quickly.
+        marginal_probability: 0.0005
+        joint_probabilities:
+          and CleanCut: 0.0004
+          and SplinterInjury: 0.0002
+      - id: NoiseAlertsCreatures
+        description: |-
+          The loud shout and thud echo through the forest, potentially drawing the attention of unseen wildlife or distant scouts.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and CleanCut: 0.018
+          and SwordStuck: 0.004
+    actual_consequences:
+    - id: CleanCut
+      description: |-
+        The blade bites smoothly into the tree, carving a neat groove and showering small wood chips – clear proof of its keenness.
+      marginal_probability: 0.94
+    consequence_probabilities:
+      CleanCut: 0.94
+      BladeEdgeNicked: 0.03
+      SwordStuck: 0.02
+      SplinterInjury: 0.005
+      FallingBranch: 0.0005
+      NoiseAlertsCreatures: 0.02
+- user: |-
+    I attempt to juggle three of Luath's fire potions while walking, trying to impress Eiliad with my dexterity.
+  dm: |-
+    **TestFighter**:
+    The juggler keeps all three volatile vials aloft while strolling, ending with a flourish that visibly impresses Eiliad.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Analyzing roleplaying dynamics**\n\nI need to parse the scenario involving a roleplaying game with players: Firghorm, Draenen, Eiliad, Luath, and a 'player' controlling them. It seems 'TestFighter' is spotlighted as the current character who just swung a sword at a tree. I'm pondering if 'TestFighter' is a placeholder for the player's avatar or a specific character, which isn't fully described. I wonder about possible actors in this scenario, that could include various NPCs or creatures lurking in the environment.\n**Evaluating potential actors**\n\nActually, the wolfmen are 4 miles ahead of the party, which is currently 5 miles from the crossroads. While they're not an immediate threat, they could be preparing. Can we consider them as potential actors? Given the distance and timing, it's unlikely they'll act right after the sword strike, but they might be setting up a vantage point. The scene itself is more exploratory than combative, with characters like Firghorm,\
+    \ Draenen, Eiliad, Luath, and TestFighter potentially interacting. We might also include environmental elements, but let’s keep it focused.\n\n---\n\n**Analyzing player actions**\n\nI'm looking at the player's attempt to juggle Luath's fire potions while trying to impress Eiliad. This scenario could lead to several outcomes based on their juggling skills. I need to outline a few possible consequences, which include: \n\n1. Successful juggling that impresses Eiliad. \n2. Dropping a potion that doesn't break—embarrassing but harmless. \n3. Breaking a potion that ignites a small fire. \n4. Multiple potions breaking, resulting in an explosion and potential injuries. \n\nThere could be additional outcomes as well, like environmental damage or conflicts with other characters.\n**Outlining juggling consequences**\n\nI'm examining the scenario where the player attempts to juggle three fragile potions while walking through a forest path. Since juggling while walking poses moderate difficulty,\
+    \ I estimate there's about a 30% chance for success. \n\nThe possible outcomes include: \n\n1. Successfully juggling and impressing Eiliad. \n2. Dropping a potion but it stays intact, leading to embarrassment. \n3. Breaking one potion, causing a small fire. \n4. Multiple potions breaking, resulting in a larger explosion. \n5. Igniting the forest. \n6. Upsetting Luath due to losing potions. \n\nI'll aim to refine these down to six coherent ideas."
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestFighter
+    action_taken: |-
+      I attempt to juggle three of Luath's fire potions while walking, trying to impress Eiliad with my dexterity.
+    consequence_response:
+      potential_consequences:
+      - id: ImpressEiliad
+        description: |-
+          The juggler keeps all three volatile vials aloft while strolling, ending with a flourish that visibly impresses Eiliad.
+        marginal_probability: 0.35
+        joint_probabilities: {}
+      - id: DropIntact
+        description: |-
+          One or more vials slip from the juggler’s grasp, strike the cobbles, but miraculously remain unbroken, leaving only embarrassment and clattering glass.
+        marginal_probability: 0.325
+        joint_probabilities:
+          and LuathAnger: 0.26
+      - id: SmallFire
+        description: |-
+          A single vial shatters, its alchemical fluid igniting in a brief but dangerous burst of flame on the road.
+        marginal_probability: 0.2925
+        joint_probabilities:
+          and Burns: 0.1755
+          and LuathAnger: 0.2896
+          and ForestFire: 0.0146
+      - id: Explosion
+        description: |-
+          Two or three vials smash simultaneously, creating a loud flash-fire that scorches everything in a several-pace radius.
+        marginal_probability: 0.0325
+        joint_probabilities:
+          and Burns: 0.02925
+          and LuathAnger: 0.0325
+          and ForestFire: 0.0081
+      - id: Burns
+        description: |-
+          The juggler (and possibly nearby companions) suffer painful but non-fatal burns from the ignited alchemical fluid.
+        marginal_probability: 0.20475
+        joint_probabilities:
+          and SmallFire: 0.1755
+          and Explosion: 0.02925
+      - id: LuathAnger
+        description: |-
+          Seeing his precious fire potions imperiled or destroyed, Luath reacts with immediate anger and recrimination toward the juggler.
+        marginal_probability: 0.582075
+        joint_probabilities:
+          and DropIntact: 0.26
+          and SmallFire: 0.2896
+          and Explosion: 0.0325
+      - id: ForestFire
+        description: |-
+          Flames spread from the road into nearby dry underbrush, beginning a slow-building forest blaze that will demand swift action to contain.
+        marginal_probability: 0.02275
+        joint_probabilities:
+          and SmallFire: 0.0146
+          and Explosion: 0.0081
+    actual_consequences:
+    - id: ImpressEiliad
+      description: |-
+        The juggler keeps all three volatile vials aloft while strolling, ending with a flourish that visibly impresses Eiliad.
+      marginal_probability: 0.35
+    consequence_probabilities:
+      ImpressEiliad: 0.35
+      DropIntact: 0.325
+      SmallFire: 0.2925
+      Explosion: 0.0325
+      Burns: 0.20475
+      LuathAnger: 0.582075
+      ForestFire: 0.02275
+- user: status
+  dm: |-
+    **TestFighter**:
+    The smooth, confident juggling display earns visible admiration from Eiliad, boosting her respect and affinity toward TestFighter. A vial falls and cracks open, spilling volatile liquid that hisses and smokes but does not ignite, leaving a pungent chemical odor on the path.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Determining action probabilities**
+
+    I’m considering the next actions of the characters. Eiliad might scout ahead while Firghorm cautions, Draenen could scold, Luath is likely panicking about potions, and TestFighter might act again. For relative urgency: Luath’s retrieval is urgent, Eiliad’s caution is moderate, and Draenen’s scolding is less critical. I’ll assign probabilities, starting with Luath at 1.0 as the baseline, then Eiliad at 0.8, Draenen at 0.5, and Firghorm at 0.7 based on their actions.
+    **Calculating probabilities for actors**
+
+    I’m figuring out how to calculate the weighting among five actors for their likelihood of action. I'll use relative weights where, for instance, Luath has a weight of 1.0, Eiliad at 0.8, and so on. For comparisons, I'll produce ratios to show how Luath is, say, 1.25 times more likely to act than Eiliad. I'll need to ensure each character appears at least three times in the comparisons and create reverse lines for coverage. The goal is to generate clear, structured comparisons!
+
+    ---
+
+    **Determining action consequences**
+
+    I’m working through the latest action attempt involving the player juggling three fire potions while walking to impress Eiliad. The Game Master noted the successful outcome since the player managed to keep the potions aloft, which impressed Eiliad. Now, I need to determine the consequences of this action. The user mentioned they are the Game Master and requested steps to analyze this. I’ll clearly define what happens next based on this impressive juggling feat.
+    **Analyzing action consequences**
+
+    The user, as Game Master, needs to figure out the consequences of the player trying to juggle fire potions while walking to impress Eiliad. I'll analyze the action and list potential consequences considering the volatile nature of the potions. The possible outcomes could include impressing Eiliad, dropping a potion that ignites, or fumbling but recovering. I'll select six discrete consequences and assign probabilities for each one, ensuring the outcomes consider both effectiveness and potential hazards during this maneuver.
+  rotations:
+  - part_number: 1
+    spotlight_holder: TestFighter
+    action_taken: status
+    consequence_response:
+      potential_consequences:
+      - id: ImpressEiliad
+        description: |-
+          The smooth, confident juggling display earns visible admiration from Eiliad, boosting her respect and affinity toward TestFighter.
+        marginal_probability: 0.75
+        joint_probabilities:
+          and FumbleButRecover: 0.05
+          and GlassShatterNoIgnition: 0.005
+      - id: ExplosionFireburst
+        description: |-
+          One vial slips, shatters, and its contents ignite on contact with the air, producing a brief fireburst that scorches nearby flesh and singes surrounding underbrush.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and MinorAllyInjury: 0.012
+          and NoiseAlertsWolfmen: 0.018
+      - id: GlassShatterNoIgnition
+        description: |-
+          A vial falls and cracks open, spilling volatile liquid that hisses and smokes but does not ignite, leaving a pungent chemical odor on the path.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and MinorAllyInjury: 0.008
+          and NoiseAlertsWolfmen: 0.028
+          and ImpressEiliad: 0.005
+      - id: FumbleButRecover
+        description: |-
+          TestFighter momentarily loses control of a vial, snatching it back mid-air; the flourish still looks impressive but reveals a split-second of danger.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and ImpressEiliad: 0.05
+      - id: MinorAllyInjury
+        description: |-
+          Flying shards or a brief flare nick or burn a nearby companion (most likely Luath or Eiliad), causing light wounds that require immediate first aid but no lasting harm.
+        marginal_probability: 0.015
+        joint_probabilities:
+          and ExplosionFireburst: 0.012
+          and GlassShatterNoIgnition: 0.008
+      - id: NoiseAlertsWolfmen
+        description: |-
+          The sharp crack of breaking glass or sudden whoosh of flame carries through the forest, reaching the ears of the concealed wolfmen pack and putting them on heightened alert.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and ExplosionFireburst: 0.018
+          and GlassShatterNoIgnition: 0.028
+    actual_consequences:
+    - id: ImpressEiliad
+      description: |-
+        The smooth, confident juggling display earns visible admiration from Eiliad, boosting her respect and affinity toward TestFighter.
+      marginal_probability: 0.75
+    - id: GlassShatterNoIgnition
+      description: |-
+        A vial falls and cracks open, spilling volatile liquid that hisses and smokes but does not ignite, leaving a pungent chemical odor on the path.
+      marginal_probability: 0.04
+    consequence_probabilities:
+      ImpressEiliad: 0.75
+      ExplosionFireburst: 0.02
+      GlassShatterNoIgnition: 0.04
+      FumbleButRecover: 0.08
+      MinorAllyInjury: 0.015
+      NoiseAlertsWolfmen: 0.03
+characters:
+  cli-user: TestFighter
+saved_at: '2025-07-19T16:38:10.293245'
