@@ -1,0 +1,361 @@
+channel_id: console-game-0000026
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I look around carefully.
+  dm: |-
+    **Firghorm**:
+    Finding naught amiss at first glance, Firghorm feels a brief reassurance that the way ahead is clear.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Calculating probabilities for exploration**\n\nThe party is 5 miles from the crossroads, and the wolves\
+    \ are lying in ambush just 1 mile away. This means they're 4 miles from the party, so there's still time before an encounter.\
+    \ It makes sense to have Eiliad act as the scout and prepare the path. Now, I’ll assign weights for the probabilities\
+    \ of each character’s actions: Firghorm, Draenen, Eiliad, Luath, and consider environmental hazards. The total weight\
+    \ comes to 9.5, leading to various calculated probabilities for each character.\n**Preparing comparisons for characters**\n\
+    \nI’m laying out the spotlight probability comparisons for each character's actions. Eiliad stands out, appearing in five\
+    \ comparisons, highlighting his strong position. Draenen and Luath each show up in three, which is good, while Firghorm\
+    \ and the Wolfmen each appear four times. I should ensure every character is well represented. \n\nIn the JSON format,\
+    \ I’ll note Eiliad as the next actor, emphasizing his urgency as a scout. Now, I’ll double-check the final formatting\
+    \ to ensure it’s valid.\n\n---\n\n**Choosing character observations**\n\nI'm considering various observations for him.\
+    \ If he sees nothing, it sets a general sense of safety, and we might avoid complexities.\n\nI think options like \"QuietConfidence\"\
+    \ offer reassurance, while \"DistantHowl\" could suggest presence nearby. \"CorruptionSign\" shows a hint of something\
+    \ unusual, and \"AnimalTrackFind\" offers intrigue with fresh tracks. There are also subtler clues, like \"LooseCobbleSlip\"\
+    \ and \"GlimpseWolfShadow,\" which play on uncertainty. Lastly, \"MilestoneDiscovery\" and \"PhantomLanterns\" add an\
+    \ element of mystery. I’ll choose wisely!\n**Defining NPC actions and probabilities**\n\nI'm outlining some potential\
+    \ actions and reactions for the NPCs, focusing on the forest's eerie atmosphere. I have a set of 11 IDs to provide descriptions\
+    \ and probabilities, so I’ll narrow it down to 8 actions. Options include a Wolfmen scout moving quietly or a deer grazing\
+    \ ahead. \n\nAdditionally, there are reactions to Firghorm's scanning, like Eiliad signaling for silence or Wolfmen freezing\
+    \ to avoid detection. I plan to define probabilities realistically while considering likely supernatural moments—keeping\
+    \ illusions rare seems wise! I’ll finalize the list of potential events with descriptions."
+  rotations:
+  - part_number: 1
+    spotlight_holder: Firghorm
+    action_taken: I look around carefully.
+    consequence_response:
+      potential_consequences:
+      - id: QuietConfidence
+        description: |-
+          Finding naught amiss at first glance, Firghorm feels a brief reassurance that the way ahead is clear.
+        marginal_probability: 0.55
+        joint_probabilities:
+          and AnimalTrackFind: 0.1
+          and DraenenAsksSnide: 0.1
+      - id: AnimalTrackFind
+        description: He notices a fresh crossing of deer-prints in the soft moss beside the cobbles.
+        marginal_probability: 0.22
+        joint_probabilities:
+          and QuietConfidence: 0.1
+          and DistantHowl: 0.05
+      - id: DistantHowl
+        description: |-
+          A muted wolf-cry drifts through the trees from far ahead, hard to place but unsettling.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and AnimalTrackFind: 0.05
+      - id: CorruptionSign
+        description: |-
+          A puddle caught between stones bears a faint oily sheen of impossible colour, hinting at distant taint.
+        marginal_probability: 0.11
+        joint_probabilities:
+          and EerieSilence: 0.04
+          and PhantomLanterns: 0.0003
+      - id: EerieSilence
+        description: |-
+          For a heartbeat the forest hushes, birdsong dropping away as though the wood itself were holding breath.
+        marginal_probability: 0.16
+        joint_probabilities:
+          and GlimpseWolfShadow: 0.02
+          and EiliadSignalsQuiet: 0.08
+      - id: SuddenCrowBurst
+        description: |-
+          Firghorm’s shifting gaze startles a crow hidden overhead; it erupts into flight with a flurry of wings.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and LooseCobbleSlip: 0.03
+          and CrowCaws: 0.07
+          and DeerStartled: 0.03
+      - id: LooseCobbleSlip
+        description: |-
+          A root-upheaved cobble tilts under his boot, causing a small stumble and scuff of armour.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and SuddenCrowBurst: 0.03
+      - id: MilestoneDiscovery
+        description: |-
+          His eye catches a moss-swaddled milestone bearing half-erased runes of the Old Kingdom.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and CoinGlimmer: 0.003
+      - id: GlimpseWolfShadow
+        description: |-
+          Far down the green tunnel he thinks he sees a tall, lupine silhouette slip behind an oak before vanishing.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and EerieSilence: 0.02
+          and WolfmenHoldStill: 0.015
+      - id: CoinGlimmer
+        description: A tarnished coin, half-sunk in mud, winks briefly in a shaft of sun.
+        marginal_probability: 0.007
+        joint_probabilities:
+          and MilestoneDiscovery: 0.003
+      - id: PhantomLanterns
+        description: |-
+          For the barest instant pale lantern-lights flicker between the trunks, then fade as though they never were.
+        marginal_probability: 0.001
+        joint_probabilities:
+          and CorruptionSign: 0.0003
+      npc_proactive_actions:
+      - id: WolfmenScoutAdvance
+        description: |-
+          A hidden wolfman scout pads a few paces closer through underbrush, seeking a better view of the road.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and WolfmenSniffWind: 0.03
+      - id: WolfmenSniffWind
+        description: The pack’s Witari lifts its muzzle to taste the wind for human scent.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and WolfmenScoutAdvance: 0.03
+      - id: DeerGrazesRoadside
+        description: |-
+          Unaware of hunters, a young deer browses tender shoots a stone’s throw from the path.
+        marginal_probability: 0.09
+        joint_probabilities: {}
+      - id: SquirrelScampers
+        description: A squirrel darts along high branches, chattering as it leaps between oaks.
+        marginal_probability: 0.14
+        joint_probabilities: {}
+      - id: MistThickens
+        description: |-
+          Low morning vapour thickens across the road, curling around ankles like cool breath.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and DraenenHarvestHerb: 0.02
+      - id: DraenenHarvestHerb
+        description: Draenen stoops to clip a sprig of fever-leaf pushing through the stones.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and MistThickens: 0.02
+      - id: LuathFidgetsVial
+        description: |-
+          Luath nervously checks a stoppered vial, tapping its glass with an ink-stained fingernail.
+        marginal_probability: 0.11
+        joint_probabilities: {}
+      - id: EiliadEdgesAhead
+        description: |-
+          Eiliad glides a few yards forward, seeking higher ground for a clearer line of sight.
+        marginal_probability: 0.13
+        joint_probabilities: {}
+      npc_reactions:
+      - id: WolfmenHoldStill
+        description: |-
+          Sensing the warrior’s searching gaze, the distant ambushers freeze, slowing their breath to silence.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and GlimpseWolfShadow: 0.015
+      - id: EiliadSignalsQuiet
+        description: Noting Firghorm’s alert stance, Eiliad raises two fingers and gestures for hush.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and EerieSilence: 0.08
+      - id: DraenenAsksSnide
+        description: Draenen mutters, “See aught worth slowing for?” while never pausing in her work.
+        marginal_probability: 0.17
+        joint_probabilities:
+          and QuietConfidence: 0.1
+      - id: CrowCaws
+        description: The startled crow lets out a harsh caw that echoes through the canopy.
+        marginal_probability: 0.09
+        joint_probabilities:
+          and SuddenCrowBurst: 0.07
+      - id: DeerStartled
+        description: |-
+          At the ruckus, the grazing deer lifts its head, ears twitching, then bounds into thicker brush.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and SuddenCrowBurst: 0.03
+      - id: LuathStartles
+        description: |-
+          Luath jumps at the sudden bird-noise, nearly dropping a vial before steadying his hands.
+        marginal_probability: 0.1
+        joint_probabilities: {}
+    actual_consequences:
+    - id: QuietConfidence
+      description: |-
+        Finding naught amiss at first glance, Firghorm feels a brief reassurance that the way ahead is clear.
+      marginal_probability: 0.55
+    probability_debug_info:
+      random_value: 0.5742803721838511
+      selected_outcome: '{QuietConfidence}'
+      probability_ranges:
+        '{}':
+          probability: 0.17430564534668505
+          range_start: 0.0
+          range_end: 0.17430564534668505
+        '{AnimalTrackFind}':
+          probability: 0.0491631307388086
+          range_start: 0.17430564534668505
+          range_end: 0.22346877608549365
+        '{CoinGlimmer}':
+          probability: 0.0012287407023431896
+          range_start: 0.22346877608549365
+          range_end: 0.22469751678783684
+        '{CorruptionSign}':
+          probability: 0.021543394368691432
+          range_start: 0.22469751678783684
+          range_end: 0.24624091115652827
+        '{CrowCaws}':
+          probability: 0.017239019869452393
+          range_start: 0.24624091115652827
+          range_end: 0.26347993102598066
+        '{DeerGrazesRoadside}':
+          probability: 0.017239019869452366
+          range_start: 0.26347993102598066
+          range_end: 0.28071895089543303
+        '{DeerStartled}':
+          probability: 0.009173981334036074
+          range_start: 0.28071895089543303
+          range_end: 0.2898929322294691
+        '{DistantHowl}':
+          probability: 0.03826221483219916
+          range_start: 0.2898929322294691
+          range_end: 0.32815514706166826
+        '{DraenenAsksSnide}':
+          probability: 0.03570115627582704
+          range_start: 0.32815514706166826
+          range_end: 0.3638563033374953
+        '{DraenenHarvestHerb}':
+          probability: 0.01311977975727735
+          range_start: 0.3638563033374953
+          range_end: 0.37697608309477265
+        '{EerieSilence}':
+          probability: 0.03320107530413047
+          range_start: 0.37697608309477265
+          range_end: 0.4101771583989031
+        '{EiliadEdgesAhead}':
+          probability: 0.026045671143757554
+          range_start: 0.4101771583989031
+          range_end: 0.4362228295426607
+        '{EiliadSignalsQuiet}':
+          probability: 0.03826221483219916
+          range_start: 0.4362228295426607
+          range_end: 0.47448504437485983
+        '{GlimpseWolfShadow}':
+          probability: 0.007262735222778538
+          range_start: 0.47448504437485983
+          range_end: 0.48174777959763837
+        '{LooseCobbleSlip}':
+          probability: 0.011125892256171388
+          range_start: 0.48174777959763837
+          range_end: 0.49287367185380976
+        '{LuathFidgetsVial}':
+          probability: 0.021543394368691404
+          range_start: 0.49287367185380976
+          range_end: 0.5144170662225012
+        '{LuathStartles}':
+          probability: 0.019367293927409435
+          range_start: 0.5144170662225012
+          range_end: 0.5337843601499106
+        '{MilestoneDiscovery}':
+          probability: 0.01723901986945242
+          range_start: 0.5337843601499106
+          range_end: 0.551023380019363
+        '{MistThickens}':
+          probability: 0.015157012638842171
+          range_start: 0.551023380019363
+          range_end: 0.5661803926582052
+        '{PhantomLanterns}':
+          probability: 0.00017448012547216507
+          range_start: 0.5661803926582052
+          range_end: 0.5663548727836774
+        '{QuietConfidence}':
+          probability: 0.213040233201504
+          range_start: 0.5663548727836774
+          range_end: 0.7793951059851814
+        '{SquirrelScampers}':
+          probability: 0.028375337614576668
+          range_start: 0.7793951059851814
+          range_end: 0.807770443599758
+        '{SuddenCrowBurst}':
+          probability: 0.019367293927409435
+          range_start: 0.807770443599758
+          range_end: 0.8271377375271675
+        '{WolfmenHoldStill}':
+          probability: 0.0035572580682996513
+          range_start: 0.8271377375271675
+          range_end: 0.8306949955954671
+        '{WolfmenScoutAdvance}':
+          probability: 0.011125892256171332
+          range_start: 0.8306949955954671
+          range_end: 0.8418208878516384
+        '{WolfmenSniffWind}':
+          probability: 0.023768951638184377
+          range_start: 0.8418208878516384
+          range_end: 0.8655898394898228
+        '{AnimalTrackFind, DistantHowl}':
+          probability: 0.010791906747543378
+          range_start: 0.8655898394898228
+          range_end: 0.8763817462373662
+        '{AnimalTrackFind, QuietConfidence}':
+          probability: 0.060088270902988294
+          range_start: 0.8763817462373662
+          range_end: 0.9364700171403545
+        '{CoinGlimmer, MilestoneDiscovery}':
+          probability: 0.00012152380572627575
+          range_start: 0.9364700171403545
+          range_end: 0.9365915409460808
+        '{CorruptionSign, EerieSilence}':
+          probability: 0.00410350368927459
+          range_start: 0.9365915409460808
+          range_end: 0.9406950446353554
+        '{CorruptionSign, PhantomLanterns}':
+          probability: 2.156495932803537e-05
+          range_start: 0.9406950446353554
+          range_end: 0.9407166095946834
+        '{CrowCaws, SuddenCrowBurst}':
+          probability: 0.0019154466521613678
+          range_start: 0.9407166095946834
+          range_end: 0.9426320562468448
+        '{DeerStartled, SuddenCrowBurst}':
+          probability: 0.001019331259337286
+          range_start: 0.9426320562468448
+          range_end: 0.943651387506182
+        '{DraenenAsksSnide, QuietConfidence}':
+          probability: 0.043634746559344184
+          range_start: 0.943651387506182
+          range_end: 0.9872861340655262
+        '{DraenenHarvestHerb, MistThickens}':
+          probability: 0.0011408504136762865
+          range_start: 0.9872861340655262
+          range_end: 0.9884269844792025
+        '{EerieSilence, EiliadSignalsQuiet}':
+          probability: 0.007288040920418903
+          range_start: 0.9884269844792025
+          range_end: 0.9957150253996214
+        '{EerieSilence, GlimpseWolfShadow}':
+          probability: 0.0013833781376720866
+          range_start: 0.9957150253996214
+          range_end: 0.9970984035372935
+        '{GlimpseWolfShadow, WolfmenHoldStill}':
+          probability: 0.00014821908617912438
+          range_start: 0.9970984035372935
+          range_end: 0.9972466226234726
+        '{LooseCobbleSlip, SuddenCrowBurst}':
+          probability: 0.0012362102506857653
+          range_start: 0.9972466226234726
+          range_end: 0.9984828328741584
+        '{WolfmenScoutAdvance, WolfmenSniffWind}':
+          probability: 0.0015171671258416008
+          range_start: 0.9984828328741584
+          range_end: 1.0
+characters:
+  cli-user: Firghorm
+saved_at: '2025-07-19T21:50:50.237995'

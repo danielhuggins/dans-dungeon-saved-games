@@ -1,0 +1,506 @@
+channel_id: console-game-0000028
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I move forward cautiously.
+  dm: |-
+    **Firghorm**:
+    Firghorm steps over the moss-slick cobbles without noise or harm, gaining a pace along the Old Road.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Crafting JSON Format**
+
+    I'm noticing they request a "spotlight_probability_comparisons" array, which isn't detailed in the JSON example. It seems like they might expect a more extensive JSON format that includes this array. They mention that every character ID should appear at least three times for comprehensive probability relationships, indicating that both the "next_actor" and this comparisons array should be included in the final output. I’ll craft the JSON to reflect this requirement, ensuring it contains the necessary elements.
+    **Structuring JSON for Probability Comparisons**
+
+    I need to follow the required format closely while crafting the JSON output. It should include "next_actor" with their ID and reasoning, and a "spotlight_probability_comparisons" array that provides comparisons. I think a possible structure could have accumulated probabilities for each actor, reflecting their likelihood of acting next, along with pair-based comparisons for each character. I'm deciding to assign Eiliad a higher probability for scouting since they haven't been highlighted yet and have the right skills for the situation. Thus, I’m settling on the following probabilities to include in the JSON.
+  rotations:
+  - part_number: 1
+    spotlight_holder: Firghorm
+    action_taken: I move forward cautiously.
+    consequence_response:
+      potential_consequences:
+      - id: SafeAdvance
+        description: |-
+          Firghorm steps over the moss-slick cobbles without noise or harm, gaining a pace along the Old Road.
+        marginal_probability: 0.9
+        joint_probabilities:
+          and NoticeTracks: 0.06
+          and UneasyPremonition: 0.13
+          and EiliadScoutsAhead: 0.35
+          and RainDrip: 0.07
+      - id: RootStumble
+        description: |-
+          A damp root causes Firghorm to lose balance momentarily before regaining his footing.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and LuathFidgets: 0.013
+          and LuathStartle: 0.009
+      - id: TwistedAnkle
+        description: The uneven stones wrench his ankle, leaving a painful but minor sprain.
+        marginal_probability: 0.002
+        joint_probabilities:
+          and RootStumble: 0.0015
+      - id: SnapTwig
+        description: A dry twig cracks sharply beneath his boot, echoing through the still forest.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and EiliadHandSignal: 0.04
+          and FawnBolts: 0.02
+          and WolfScoutListen: 0.01
+      - id: NoticeTracks
+        description: |-
+          Firghorm spots fresh oversized wolf-prints pressed into the soft verge beside the road.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and UneasyPremonition: 0.03
+          and EiliadHandSignal: 0.02
+          and WolfScoutListen: 0.007
+      - id: SpotCorruptionSign
+        description: |-
+          A puddle nearby swirls with an iridescent, oily film—subtle evidence of creeping Corruption.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and UneasyPremonition: 0.02
+          and DraenenCollectsHerb: 0.005
+      - id: StartleFawn
+        description: |-
+          Hidden in the brush, a young deer bursts across the road at the party’s sudden approach.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and FawnBolts: 0.025
+          and SnapTwig: 0.02
+      - id: LooseStoneClatter
+        description: A dislodged cobble tumbles into the drainage ditch with a sharp clack.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and LuathStartle: 0.01
+      - id: LowBranchGraze
+        description: A low oak bough brushes Firghorm’s helm, scattering a few leaves onto the path.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and CrowCaw: 0.03
+          and CrowFlight: 0.03
+      - id: UneasyPremonition
+        description: A prickling at the nape of his neck hints at unseen eyes fixed upon the party.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and WolfScoutRepositions: 0.015
+          and DistantWolfHowl: 0.01
+      - id: InsectSwarm
+        description: A cloud of gnats rises from the roadside ditch, buzzing around Firghorm’s face.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and DraenenHush: 0.01
+      - id: RainDrip
+        description: A solitary cold raindrop slips from the canopy and splashes on Firghorm’s brow.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and WindGust: 0.015
+      npc_proactive_actions:
+      - id: EiliadScoutsAhead
+        description: Eiliad melts into the undergrowth to range a short distance ahead of the group.
+        marginal_probability: 0.4
+        joint_probabilities:
+          and NoticeTracks: 0.025
+          and SafeAdvance: 0.35
+      - id: DraenenCollectsHerb
+        description: |-
+          Draenen pauses to harvest a sprig of feverleaf growing against a moss-slick stone.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and SpotCorruptionSign: 0.005
+          and InsectSwarm: 0.01
+      - id: LuathFidgets
+        description: |-
+          Luath nervously checks the corks of his vials and pats his pockets for reassurance.
+        marginal_probability: 0.65
+        joint_probabilities:
+          and RootStumble: 0.013
+          and LuathStartle: 0.06
+      - id: SquirrelForage
+        description: A grey squirrel scampers along an overhanging branch, searching for early nuts.
+        marginal_probability: 0.25
+        joint_probabilities:
+          and SquirrelChatter: 0.07
+      - id: WolfScoutRepositions
+        description: |-
+          Far ahead, an unseen wolfman scout silently shifts to a new vantage among the trees.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and UneasyPremonition: 0.015
+          and WolfScoutListen: 0.01
+      - id: WindGust
+        description: A cool gust ripples the high canopy, setting leaves whispering overhead.
+        marginal_probability: 0.3
+        joint_probabilities:
+          and LowBranchGraze: 0.02
+          and CrowFlight: 0.02
+          and CrowCaw: 0.02
+      - id: CrowFlight
+        description: A murder of crows bursts from a nearby oak, wheeling noisily above the road.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and CrowCaw: 0.04
+          and LowBranchGraze: 0.03
+      - id: DistantWolfHowl
+        description: A faint, mournful howl drifts on the wind from deep within the forest.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and UneasyPremonition: 0.01
+          and WolfScoutListen: 0.01
+      npc_reactions:
+      - id: EiliadHandSignal
+        description: Eiliad raises a clenched fist, signaling the party to halt and listen.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and SnapTwig: 0.04
+          and NoticeTracks: 0.02
+      - id: DraenenHush
+        description: Draenen presses a finger to her lips, urging silence from the others.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and InsectSwarm: 0.01
+          and LuathFidgets: 0.03
+      - id: LuathStartle
+        description: Luath jolts, nearly dropping a vial as his eyes dart about the shadows.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and LooseStoneClatter: 0.01
+          and RootStumble: 0.009
+      - id: FawnBolts
+        description: |-
+          The startled fawn crashes deeper into the underbrush, leaves rustling in its wake.
+        marginal_probability: 0.03
+        joint_probabilities:
+          and StartleFawn: 0.025
+          and SnapTwig: 0.02
+      - id: SquirrelChatter
+        description: The foraging squirrel chatters irritably at the sudden disturbance.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and SquirrelForage: 0.07
+      - id: WolfScoutListen
+        description: |-
+          The distant wolfman scout pauses, ears perked toward the faint noise on the wind.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and SnapTwig: 0.01
+          and NoticeTracks: 0.007
+          and WolfScoutRepositions: 0.01
+          and DistantWolfHowl: 0.01
+      - id: CrowCaw
+        description: One crow lets out a harsh caw before settling back onto a high branch.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and CrowFlight: 0.04
+          and LowBranchGraze: 0.03
+          and WindGust: 0.02
+    actual_consequences:
+    - id: SafeAdvance
+      description: |-
+        Firghorm steps over the moss-slick cobbles without noise or harm, gaining a pace along the Old Road.
+      marginal_probability: 0.9
+    probability_debug_info:
+      random_value: 0.23926532161067116
+      selected_outcome: '{SafeAdvance}'
+      probability_ranges:
+        '{}':
+          probability: 0.03969670777882085
+          range_start: 0.0
+          range_end: 0.03969670777882085
+        '{CrowCaw}':
+          probability: 0.002533832411414097
+          range_start: 0.03969670777882085
+          range_end: 0.04223054019023495
+        '{CrowFlight}':
+          probability: 0.002089300409411625
+          range_start: 0.04223054019023495
+          range_end: 0.044319840599646575
+        '{DistantWolfHowl}':
+          probability: 0.0008101368934453207
+          range_start: 0.044319840599646575
+          range_end: 0.045129977493091895
+        '{DraenenCollectsHerb}':
+          probability: 0.007005301372733093
+          range_start: 0.045129977493091895
+          range_end: 0.05213527886582499
+        '{DraenenHush}':
+          probability: 0.0034518876329409434
+          range_start: 0.05213527886582499
+          range_end: 0.05558716649876593
+        '{EiliadHandSignal}':
+          probability: 0.004410745308757874
+          range_start: 0.05558716649876593
+          range_end: 0.059997911807523806
+        '{EiliadScoutsAhead}':
+          probability: 0.026464471852547224
+          range_start: 0.059997911807523806
+          range_end: 0.08646238366007103
+        '{FawnBolts}':
+          probability: 0.0012277332302728095
+          range_start: 0.08646238366007103
+          range_end: 0.08769011689034384
+        '{InsectSwarm}':
+          probability: 0.0016540294907842062
+          range_start: 0.08769011689034384
+          range_end: 0.08934414638112805
+        '{LooseStoneClatter}':
+          probability: 0.0008101368934453207
+          range_start: 0.08934414638112805
+          range_end: 0.09015428327457337
+        '{LowBranchGraze}':
+          probability: 0.002533832411414097
+          range_start: 0.09015428327457337
+          range_end: 0.09268811568598746
+        '{LuathFidgets}':
+          probability: 0.07372245730352443
+          range_start: 0.09268811568598746
+          range_end: 0.1664105729895119
+        '{LuathStartle}':
+          probability: 0.005413187424384652
+          range_start: 0.1664105729895119
+          range_end: 0.17182376041389655
+        '{NoticeTracks}':
+          probability: 0.002987924241416612
+          range_start: 0.17182376041389655
+          range_end: 0.17481168465531316
+        '{RainDrip}':
+          probability: 0.0034518876329409365
+          range_start: 0.17481168465531316
+          range_end: 0.1782635722882541
+        '{RootStumble}':
+          probability: 0.0008101368934453346
+          range_start: 0.1782635722882541
+          range_end: 0.17907370918169943
+        '{SafeAdvance}':
+          probability: 0.3572703700093879
+          range_start: 0.17907370918169943
+          range_end: 0.5363440791910873
+        '{SnapTwig}':
+          probability: 0.0020893004094115764
+          range_start: 0.5363440791910873
+          range_end: 0.5384333796004989
+        '{SpotCorruptionSign}':
+          probability: 0.0012277332302728095
+          range_start: 0.5384333796004989
+          range_end: 0.5396611128307717
+        '{SquirrelChatter}':
+          probability: 0.004410745308757846
+          range_start: 0.5396611128307717
+          range_end: 0.5440718581395295
+        '{SquirrelForage}':
+          probability: 0.01323223592627365
+          range_start: 0.5440718581395295
+          range_end: 0.5573040940658032
+        '{StartleFawn}':
+          probability: 0.0012277332302728095
+          range_start: 0.5573040940658032
+          range_end: 0.558531827296076
+        '{TwistedAnkle}':
+          probability: 7.955252059888007e-05
+          range_start: 0.558531827296076
+          range_end: 0.5586113798166749
+        '{UneasyPremonition}':
+          probability: 0.0070053013727331415
+          range_start: 0.5586113798166749
+          range_end: 0.565616681189408
+        '{WindGust}':
+          probability: 0.017012874762351804
+          range_start: 0.565616681189408
+          range_end: 0.5826295559517598
+        '{WolfScoutListen}':
+          probability: 0.0008101368934453346
+          range_start: 0.5826295559517598
+          range_end: 0.5834396928452051
+        '{WolfScoutRepositions}':
+          probability: 0.004410745308757846
+          range_start: 0.5834396928452051
+          range_end: 0.587850438153963
+        '{CrowCaw, CrowFlight}':
+          probability: 0.00013335960060079088
+          range_start: 0.587850438153963
+          range_end: 0.5879837977545638
+        '{CrowCaw, LowBranchGraze}':
+          probability: 0.00016173398370733505
+          range_start: 0.5879837977545638
+          range_end: 0.5881455317382711
+        '{CrowCaw, WindGust}':
+          probability: 0.001085928176320361
+          range_start: 0.5881455317382711
+          range_end: 0.5892314599145915
+        '{CrowFlight, LowBranchGraze}':
+          probability: 0.00013335960060079088
+          range_start: 0.5892314599145915
+          range_end: 0.5893648195151923
+        '{CrowFlight, WindGust}':
+          probability: 0.0008954144611763581
+          range_start: 0.5893648195151923
+          range_end: 0.5902602339763686
+        '{DistantWolfHowl, UneasyPremonition}':
+          probability: 0.00014296533413737933
+          range_start: 0.5902602339763686
+          range_end: 0.590403199310506
+        '{DistantWolfHowl, WolfScoutListen}':
+          probability: 1.653340598872788e-05
+          range_start: 0.590403199310506
+          range_end: 0.5904197327164947
+        '{DraenenCollectsHerb, InsectSwarm}':
+          probability: 0.0002918875571972235
+          range_start: 0.5904197327164947
+          range_end: 0.590711620273692
+        '{DraenenCollectsHerb, SpotCorruptionSign}':
+          probability: 0.00021665880534227355
+          range_start: 0.590711620273692
+          range_end: 0.5909282790790342
+        '{DraenenHush, InsectSwarm}':
+          probability: 0.00014382865137252399
+          range_start: 0.5909282790790342
+          range_end: 0.5910721077304067
+        '{DraenenHush, LuathFidgets}':
+          probability: 0.006410648461176005
+          range_start: 0.5910721077304067
+          range_end: 0.5974827561915828
+        '{EiliadHandSignal, NoticeTracks}':
+          probability: 0.00033199158237962045
+          range_start: 0.5974827561915828
+          range_end: 0.5978147477739624
+        '{EiliadHandSignal, SnapTwig}':
+          probability: 0.0002321444899345826
+          range_start: 0.5978147477739624
+          range_end: 0.598046892263897
+        '{EiliadScoutsAhead, NoticeTracks}':
+          probability: 0.0019919494942777227
+          range_start: 0.598046892263897
+          range_end: 0.6000388417581747
+        '{EiliadScoutsAhead, SafeAdvance}':
+          probability: 0.23818024667292514
+          range_start: 0.6000388417581747
+          range_end: 0.8382190884310998
+        '{FawnBolts, SnapTwig}':
+          probability: 6.461753843545193e-05
+          range_start: 0.8382190884310998
+          range_end: 0.8382837059695353
+        '{FawnBolts, StartleFawn}':
+          probability: 3.7971130833147626e-05
+          range_start: 0.8382837059695353
+          range_end: 0.8383216771003684
+        '{LooseStoneClatter, LuathStartle}':
+          probability: 0.00011047321274249011
+          range_start: 0.8383216771003684
+          range_end: 0.8384321503131109
+        '{LowBranchGraze, WindGust}':
+          probability: 0.001085928176320361
+          range_start: 0.8384321503131109
+          range_end: 0.8395180784894313
+        '{LuathFidgets, LuathStartle}':
+          probability: 0.010053062359571485
+          range_start: 0.8395180784894313
+          range_end: 0.8495711408490028
+        '{LuathFidgets, RootStumble}':
+          probability: 0.001504539944969907
+          range_start: 0.8495711408490028
+          range_end: 0.8510756807939727
+        '{LuathStartle, RootStumble}':
+          probability: 0.00011047321274249011
+          range_start: 0.8510756807939727
+          range_end: 0.8511861540067152
+        '{NoticeTracks, SafeAdvance}':
+          probability: 0.02689131817274959
+          range_start: 0.8511861540067152
+          range_end: 0.8780774721794647
+        '{NoticeTracks, UneasyPremonition}':
+          probability: 0.0005272807484852926
+          range_start: 0.8780774721794647
+          range_end: 0.87860475292795
+        '{NoticeTracks, WolfScoutListen}':
+          probability: 6.0978045743231846e-05
+          range_start: 0.87860475292795
+          range_end: 0.8786657309736933
+        '{RainDrip, SafeAdvance}':
+          probability: 0.03106698869646851
+          range_start: 0.8786657309736933
+          range_end: 0.9097327196701618
+        '{RainDrip, WindGust}':
+          probability: 0.0014793804141175482
+          range_start: 0.9097327196701618
+          range_end: 0.9112121000842793
+        '{RootStumble, TwistedAnkle}':
+          probability: 1.6235208285531044e-06
+          range_start: 0.9112121000842793
+          range_end: 0.9112137236051079
+        '{SafeAdvance, UneasyPremonition}':
+          probability: 0.06304771235459783
+          range_start: 0.9112137236051079
+          range_end: 0.9742614359597057
+        '{SnapTwig, StartleFawn}':
+          probability: 6.461753843545193e-05
+          range_start: 0.9742614359597057
+          range_end: 0.9743260534981412
+        '{SnapTwig, WolfScoutListen}':
+          probability: 4.26387838655673e-05
+          range_start: 0.9743260534981412
+          range_end: 0.9743686922820067
+        '{SpotCorruptionSign, UneasyPremonition}':
+          probability: 0.00021665880534227355
+          range_start: 0.9743686922820067
+          range_end: 0.974585351087349
+        '{SquirrelChatter, SquirrelForage}':
+          probability: 0.0014702484362526524
+          range_start: 0.974585351087349
+          range_end: 0.9760555995236017
+        '{UneasyPremonition, WolfScoutRepositions}':
+          probability: 0.0007783668191925219
+          range_start: 0.9760555995236017
+          range_end: 0.9768339663427942
+        '{WolfScoutListen, WolfScoutRepositions}':
+          probability: 9.001521038276561e-05
+          range_start: 0.9768339663427942
+          range_end: 0.976923981553177
+        '{CrowCaw, CrowFlight, LowBranchGraze}':
+          probability: 8.512314931929943e-06
+          range_start: 0.976923981553177
+          range_end: 0.9769324938681089
+        '{CrowCaw, CrowFlight, WindGust}':
+          probability: 5.7154114543211954e-05
+          range_start: 0.9769324938681089
+          range_end: 0.9769896479826521
+        '{CrowCaw, LowBranchGraze, WindGust}':
+          probability: 6.931456444603246e-05
+          range_start: 0.9769896479826521
+          range_end: 0.9770589625470981
+        '{CrowFlight, LowBranchGraze, WindGust}':
+          probability: 5.7154114543211954e-05
+          range_start: 0.9770589625470981
+          range_end: 0.9771161166616413
+        '{EiliadScoutsAhead, NoticeTracks, SafeAdvance}':
+          probability: 0.017927545448499727
+          range_start: 0.9771161166616413
+          range_end: 0.9950436621101411
+        '{FawnBolts, SnapTwig, StartleFawn}':
+          probability: 1.9984805701422914e-06
+          range_start: 0.9950436621101411
+          range_end: 0.9950456605907112
+        '{LuathFidgets, LuathStartle, RootStumble}':
+          probability: 0.00020516453795038636
+          range_start: 0.9950456605907112
+          range_end: 0.9952508251286616
+        '{NoticeTracks, SafeAdvance, UneasyPremonition}':
+          probability: 0.0047455267363676334
+          range_start: 0.9952508251286616
+          range_end: 0.9999963518650292
+        '{CrowCaw, CrowFlight, LowBranchGraze, WindGust}':
+          probability: 3.6481349707795374e-06
+          range_start: 0.9999963518650292
+          range_end: 1.0
+characters:
+  cli-user: Firghorm
+saved_at: '2025-07-19T23:19:58.586207'

@@ -1,0 +1,136 @@
+channel_id: console-game-0000030
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I advance north along the road.
+  dm: |-
+    **Firghorm**:
+    Nothing notable happens.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |-
+    **Considering exploration dynamics**
+
+    There's an ambush of wolfmen about a mile from the crossroads, so no immediate combat is happening — it's more of an exploration moment right now. Any player character could act next, and since it's not urgent, we might rotate among them to give everyone a chance to shine. Eiliad the scout may take the lead or maybe Draenen will pick herbs. I need to think about the probabilities and compute initiative to keep things moving smoothly!
+    **Computing next action probability**
+
+    I'm evaluating the probabilities for the next actions of the characters. Eiliad, as the scout, has the highest chance to act because she's exploring the area. Draenen and Luath have moderate chances, with Draenen looking for herbs and Luath observing the environment. Firghorm has a lower probability since he just acted. The wolfmen are too far away to act immediately, but I’ll still include them for completeness. I think the most likely next actor will be Eiliad due to her role and urgency to scout ahead.
+  rotations:
+  - part_number: 1
+    spotlight_holder: Firghorm
+    action_taken: I advance north along the road.
+    consequence_response:
+      potential_consequences:
+      - id: RootTrip
+        description: |-
+          Firghorm’s boot catches on a protruding oak root in the cracked cobblestones, causing a brief stumble that could twist his ankle if his footing fails.
+        marginal_probability: 0.02
+        joint_probabilities:
+          and ColdWhisper: 0.005
+          and SquirrelScold: 0.015
+          and ForestDeerCross: 0.0003
+      - id: ColdWhisper
+        description: |-
+          Passing beneath a tangle of overhanging branches, Firghorm walks through an abrupt pocket of icy air accompanied by a faint, unintelligible whisper on the wind.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and RootTrip: 0.005
+          and SquirrelScold: 0.02
+          and ForestDeerCross: 0.001
+      npc_proactive_actions:
+      - id: ForestDeerCross
+        description: |-
+          A white-tailed doe, trailed by a spindly fawn, chooses this moment to dart across the Old Road several paces ahead of the party, intent on reaching a berry patch.
+        marginal_probability: 0.01
+        joint_probabilities:
+          and SquirrelScold: 0.005
+          and ColdWhisper: 0.001
+          and RootTrip: 0.0003
+      npc_reactions:
+      - id: SquirrelScold
+        description: |-
+          Startled by Firghorm’s movement, a pair of squirrels chatter loudly from an overhead branch, sending a small shower of moss and bark flakes down onto the road.
+        marginal_probability: 0.3
+        joint_probabilities:
+          and RootTrip: 0.015
+          and ColdWhisper: 0.02
+          and ForestDeerCross: 0.005
+    actual_consequences: []
+    probability_debug_info:
+      random_value: 0.5401184309934427
+      selected_outcome: {}
+      probability_ranges:
+        '{}':
+          probability: 0.6519744
+          range_start: 0.0
+          range_end: 0.6519744
+        '{ColdWhisper}':
+          probability: 0.027165600000000012
+          range_start: 0.6519744
+          range_end: 0.67914
+        '{ForestDeerCross}':
+          probability: 0.006585599999999969
+          range_start: 0.67914
+          range_end: 0.6857255999999999
+        '{RootTrip}':
+          probability: 0.013305600000000029
+          range_start: 0.6857255999999999
+          range_end: 0.6990312
+        '{SquirrelScold}':
+          probability: 0.27941760000000004
+          range_start: 0.6990312
+          range_end: 0.9784488
+        '{ColdWhisper, ForestDeerCross}':
+          probability: 0.00027440000000000797
+          range_start: 0.9784488
+          range_end: 0.9787232
+        '{ColdWhisper, RootTrip}':
+          probability: 0.0005543999999999549
+          range_start: 0.9787232
+          range_end: 0.9792776
+        '{ColdWhisper, SquirrelScold}':
+          probability: 0.011642400000000053
+          range_start: 0.9792776
+          range_end: 0.99092
+        '{ForestDeerCross, RootTrip}':
+          probability: 0.00013439999999997898
+          range_start: 0.99092
+          range_end: 0.9910544
+        '{ForestDeerCross, SquirrelScold}':
+          probability: 0.0028224000000000027
+          range_start: 0.9910544
+          range_end: 0.9938768
+        '{RootTrip, SquirrelScold}':
+          probability: 0.005702399999999996
+          range_start: 0.9938768
+          range_end: 0.9995792
+        '{ColdWhisper, ForestDeerCross, RootTrip}':
+          probability: 5.600000000050009e-06
+          range_start: 0.9995792
+          range_end: 0.9995848
+        '{ColdWhisper, ForestDeerCross, SquirrelScold}':
+          probability: 0.000117600000000051
+          range_start: 0.9995848
+          range_end: 0.9997024000000001
+        '{ColdWhisper, RootTrip, SquirrelScold}':
+          probability: 0.00023759999999994896
+          range_start: 0.9997024000000001
+          range_end: 0.99994
+        '{ForestDeerCross, RootTrip, SquirrelScold}':
+          probability: 5.759999999999099e-05
+          range_start: 0.99994
+          range_end: 0.9999976
+        '{ColdWhisper, ForestDeerCross, RootTrip, SquirrelScold}':
+          probability: 2.3999999999579913e-06
+          range_start: 0.9999976
+          range_end: 1.0
+characters:
+  cli-user: Firghorm
+saved_at: '2025-07-19T23:09:21.974527'

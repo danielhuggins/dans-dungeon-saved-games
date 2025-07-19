@@ -1,0 +1,136 @@
+channel_id: console-game-0000029
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I move forward.
+  dm: |-
+    **Firghorm**:
+    A gray squirrel, startled by the sound of Firghorm’s step, darts across the cobbles and disappears up an oak trunk.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Analyzing character interactions**\n\nI'm thinking about the interactions between Eiliad, Draenen,\
+    \ and Luath as they journey. While there's no immediate urgency, Eiliad might want to scout their path ahead since they\
+    \ have about four miles to go along the road. The Wolfmen could launch an ambush, but we don’t need to reveal that to\
+    \ the party yet. I’ll list the actors and calculate their probabilities: Eiliad is likely next at 40%, followed by Draenen\
+    \ at 20%, and so on, with the environment at 5%. It looks like Eiliad will be the next character to focus on!\n**Creating\
+    \ comparison probabilities**\n\nI'm considering the requirement that each character ID needs to appear at least three\
+    \ times in all comparisons. I’ll create a list that reflects this by structuring spotlight probability comparisons. For\
+    \ example, Eiliad can be compared with Draenen, Luath, and Firghorm while also ensuring Draenen is compared with the others.\
+    \ \n\nI'll adjust to ensure Wolfmen also meet the appearance requirement by positioning them as \"less likely\" in some\
+    \ comparisons. This way, we've fulfilled the criteria while maintaining logical probabilities. Each character will be\
+    \ represented appropriately, so let's finalize this list!\n**Finalizing JSON output**\n\nI'm preparing the structured\
+    \ output now. Eiliad will be the next actor since she’s at the forefront, using her scouting skills to assess the road\
+    \ ahead. I’ll include the spotlight probability comparisons to satisfy all character appearances as required. Each character\
+    \ meets their necessary comparison count! \n\nThe environment isn’t included in the comparisons since it's not needed.\
+    \ I'm validating the JSON format and ensuring it's neatly presented. Now I’m ready to craft the final answer!\n\n---\n\
+    \n**Analyzing Firghorm's movement consequences**\n\nI need to create a final JSON to outline the consequences of Firghorm's\
+    \ action: \"I move forward.\" The scenario involves him moving along Old Road, northward, four miles from ambushing wolfmen\
+    \ and surrounded by potential hazards like uneven cobblestones and wildlife. Immediate consequences could include tripping,\
+    \ making noise, or spotting clues. Rare events like traps adding risk must be considered, but given the distance, the\
+    \ chance of detecting wolfmen is very low.\n**Defining consequences of Firghorm's actions**\n\nI think I might detect\
+    \ a faint howl, adding a probability of around 0.05. There could also be supernatural glimpses due to the morning mist\
+    \ on Old Road. I'll focus on crafting two distinct consequences for Firghorm. For the first, he could stumble on a root,\
+    \ with a chance of 0.025. The second consequence involves him noticing faint wolf tracks with a probability of about 0.07.\
+    \ Let’s finalize these consequences!"
+  rotations:
+  - part_number: 1
+    spotlight_holder: Firghorm
+    action_taken: I move forward.
+    consequence_response:
+      potential_consequences:
+      - id: UnevenStoneSlip
+        description: |-
+          Firghorm’s boot lands on a moss-slick, loosened cobblestone; he momentarily slips and the stone clacks loudly against its neighbors.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and SquirrelFlees: 0.1
+          and EiliadScansTrees: 0.05
+      - id: GlintingMilestone
+        description: |-
+          His forward step kicks aside damp leaves, revealing the weather-worn fragment of an ancient milestone carved with half-eroded runes.
+        marginal_probability: 0.04
+        joint_probabilities:
+          and EiliadScansTrees: 0.02
+          and SquirrelFlees: 0.01
+      npc_proactive_actions:
+      - id: EiliadScansTrees
+        description: |-
+          Without prompting, Eiliad slips a few paces off the road and peers up into the canopy, searching for vantage points and hidden threats.
+        marginal_probability: 0.28
+        joint_probabilities:
+          and SquirrelFlees: 0.07
+      npc_reactions:
+      - id: SquirrelFlees
+        description: |-
+          A gray squirrel, startled by the sound of Firghorm’s step, darts across the cobbles and disappears up an oak trunk.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and UnevenStoneSlip: 0.1
+          and GlintingMilestone: 0.01
+    actual_consequences:
+    - id: SquirrelFlees
+      description: |-
+        A gray squirrel, startled by the sound of Firghorm’s step, darts across the cobbles and disappears up an oak trunk.
+      marginal_probability: 0.2
+    probability_debug_info:
+      random_value: 0.7251912200997431
+      selected_outcome: '{SquirrelFlees}'
+      probability_ranges:
+        '{}':
+          probability: 0.48895176848874594
+          range_start: 0.0
+          range_end: 0.48895176848874594
+        '{EiliadScansTrees}':
+          probability: 0.19014790996784564
+          range_start: 0.48895176848874594
+          range_end: 0.6790996784565916
+        '{GlintingMilestone}':
+          probability: 0.020372990353697773
+          range_start: 0.6790996784565916
+          range_end: 0.6994726688102894
+        '{SquirrelFlees}':
+          probability: 0.12223794212218653
+          range_start: 0.6994726688102894
+          range_end: 0.8217106109324759
+        '{UnevenStoneSlip}':
+          probability: 0.0666752411575563
+          range_start: 0.8217106109324759
+          range_end: 0.8883858520900322
+        '{EiliadScansTrees, GlintingMilestone}':
+          probability: 0.007922829581993529
+          range_start: 0.8883858520900322
+          range_end: 0.8963086816720257
+        '{EiliadScansTrees, SquirrelFlees}':
+          probability: 0.047536977491961396
+          range_start: 0.8963086816720257
+          range_end: 0.9438456591639871
+        '{EiliadScansTrees, UnevenStoneSlip}':
+          probability: 0.02592926045016075
+          range_start: 0.9438456591639871
+          range_end: 0.9697749196141479
+        '{GlintingMilestone, SquirrelFlees}':
+          probability: 0.005093247588424443
+          range_start: 0.9697749196141479
+          range_end: 0.9748681672025723
+        '{SquirrelFlees, UnevenStoneSlip}':
+          probability: 0.016668810289389047
+          range_start: 0.9748681672025723
+          range_end: 0.9915369774919613
+        '{EiliadScansTrees, GlintingMilestone, SquirrelFlees}':
+          probability: 0.0019807073954983823
+          range_start: 0.9915369774919613
+          range_end: 0.9935176848874597
+        '{EiliadScansTrees, SquirrelFlees, UnevenStoneSlip}':
+          probability: 0.00648231511254016
+          range_start: 0.9935176848874597
+          range_end: 0.9999999999999999
+characters:
+  cli-user: Firghorm
+saved_at: '2025-07-19T23:07:17.733318'

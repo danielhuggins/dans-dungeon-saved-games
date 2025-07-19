@@ -1,0 +1,419 @@
+channel_id: console-game-0000027
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: |-
+    I suggest we advance carefully toward the crossroads, staying in formation. I'll take point and watch for any signs of danger ahead.
+  dm: |-
+    **Firghorm**:
+    Nothing notable happens.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: "**Analyzing potential actions**\n\nI think the Wolfmen might be getting ready but maybe not acting just\
+    \ yet. There’s a group called the \"Moonwell Pack\" to consider. I should calculate their potential involvement alongside\
+    \ our party members. Firghorm just finished his turn but can act again; the same goes for the others like Draenen, Eiliad,\
+    \ and Luath. There’s some urgency since they need a guide, and Eiliad seems likely to take the lead in scouting ahead.\
+    \ It’ll be interesting to see how this plays out!\n**Calculating probabilities and comparisons**\n\nI’m considering how\
+    \ to assign weights to characters: Eiliad gets 0.4, Firghorm 0.25, Draenen 0.2, Luath 0.1, and the Wolfmen 0.05 for their\
+    \ unseen prep. With these, I want to create pairwise comparisons that reflect the probabilities of each character against\
+    \ one another.\n\nI’ll start with comparisons like Eiliad vs. Firghorm, normalizing their weights to find the ratio. Each\
+    \ character needs to show up in at least three comparisons, so I’ll generate a set of ten comparisons to ensure fairness.\
+    \ Let's get started on that!\n\n---\n\n**Considering possible consequences**\n\nI'm thinking about the scenario where\
+    \ the party is about to start walking and may hear a distant howl, hinting at what's ahead. There could be wolfmen pack\
+    \ ambushing nearby, and the party's first steps will have various potential consequences. For instance, Firghorm might\
+    \ notice fresh tracks, which could be a danger sign, or he could stumble, causing noise. Other effects include the party\
+    \ establishing a tight formation for defense, visibility changes due to mist, and even a hidden bird startling them. Let’s\
+    \ explore those consequences further!\n**Identifying consequences and NPC actions**\n\nI’m outlining the consequences\
+    \ of the party's movements, focusing on potential outcomes like spotting fresh tracks or Firghorm tripping on cobblestones,\
+    \ which could create noise. Other events include the mist rolling in, reflecting sunlight off weapons, and a startled\
+    \ deer. That gives me ten consequences already, which is great! \n\nNow, I’ll think about NPC actions: maybe wolfmen scouts\
+    \ move closer, a distant wolf pack hunts, or a merchant caravan approaches. Let’s brainstorm some more options!"
+  rotations:
+  - part_number: 1
+    spotlight_holder: Firghorm
+    action_taken: |-
+      I suggest we advance carefully toward the crossroads, staying in formation. I'll take point and watch for any signs of danger ahead.
+    consequence_response:
+      potential_consequences:
+      - id: FreshTracksSpotted
+        description: |-
+          As Firghorm scans the ground he notices a set of unusually large wolf-like footprints pressed into the damp moss between cobbles.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and FormationAlert: 0.3
+          and WolfmanScoutAdvance: 0.12
+          and EiliadFlank: 0.25
+      - id: FirghormTrips
+        description: |-
+          A slick root catches Firghorm’s boot, causing him to stumble and his armour to clatter loudly for a heartbeat.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and StoneKicked: 0.04
+          and DraenenCaution: 0.03
+          and DeerStartle: 0.03
+      - id: FormationAlert
+        description: |-
+          The party tightens ranks and heightens vigilance, gaining a small edge against sudden threats.
+        marginal_probability: 0.8
+        joint_probabilities:
+          and EiliadFlank: 0.32
+          and LuathAdjust: 0.28
+          and SquirrelBranchFall: 0.05
+      - id: MistDrift
+        description: |-
+          A low, chill mist rolls across the road, swallowing the party’s ankles and reducing visibility.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and OgogleWhisper: 0.006
+          and DeerGrazing: 0.04
+      - id: BladeGlint
+        description: |-
+          A stray sunbeam flashes off Firghorm’s polished sword-edge, sending a bright glint into the trees.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and WolfmanListen: 0.05
+          and CrowGatherTwigs: 0.07
+      - id: DeerBound
+        description: |-
+          A young deer bursts from the underbrush and bounds across the road ahead of the party.
+        marginal_probability: 0.07
+        joint_probabilities:
+          and DeerGrazing: 0.04
+      - id: HerbPatchFound
+        description: |-
+          Draenen spots a small cluster of useful feverfew sprouting beside a fallen milestone.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and DraenenCaution: 0.06
+          and CatStalkMouse: 0.03
+      - id: AnkleStrain
+        description: |-
+          Firghorm’s foot lands badly on an uneven stone, causing a minor twisting pain that slows him very slightly.
+        marginal_probability: 0.01
+        joint_probabilities: {}
+      - id: DistantHowl
+        description: |-
+          A low, mournful howl echoes faintly through the forest from somewhere up the road.
+        marginal_probability: 0.15
+        joint_probabilities:
+          and WolfmanScoutAdvance: 0.08
+          and WolfmanListen: 0.07
+      - id: StoneKicked
+        description: |-
+          Firghorm’s boot dislodges a loose pebble that skitters noisily several yards ahead.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and WolfmanListen: 0.05
+      npc_proactive_actions:
+      - id: WolfmanScoutAdvance
+        description: |-
+          A lone wolfman scout creeps closer along a parallel ridge, adjusting his vantage for the coming ambush.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and WolfmanListen: 0.15
+          and MistDrift: 0.02
+      - id: DeerGrazing
+        description: Several deer continue nibbling at roadside shrubs a stone’s throw from the path.
+        marginal_probability: 0.5
+        joint_probabilities:
+          and DeerBound: 0.04
+          and MistDrift: 0.04
+      - id: BanditTrapSetting
+        description: |-
+          Far behind the party an unseen bandit quietly digs out a shallow pit, laying branches over it for the next traveller.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and CrowGatherTwigs: 0.01
+      - id: OgogleWhisper
+        description: |-
+          At the distant crossroads the ancient oracle stirs, releasing a faint, wordless whisper that brushes the edge of conscious thought.
+        marginal_probability: 0.01
+        joint_probabilities:
+          and MistDrift: 0.006
+      - id: CrowGatherTwigs
+        description: |-
+          An old crow flaps down to collect dry twigs for its nest, cawing once before it flies off.
+        marginal_probability: 0.4
+        joint_probabilities:
+          and BladeGlint: 0.07
+          and BanditTrapSetting: 0.01
+      - id: CaravanApproach
+        description: |-
+          A small merchant caravan turns onto Tabernath Way, slowly making its way toward the crossroads from the east.
+        marginal_probability: 0.1
+        joint_probabilities:
+          and MuleEarFlick: 0.04
+      - id: CatStalkMouse
+        description: |-
+          A feral cat pads through the undergrowth, stalking a field-mouse near the road’s edge.
+        marginal_probability: 0.25
+        joint_probabilities:
+          and HerbPatchFound: 0.03
+      - id: SquirrelBranchFall
+        description: |-
+          A squirrel scrambles along a dead limb above the road; the brittle branch snaps and thuds to the ground.
+        marginal_probability: 0.06
+        joint_probabilities:
+          and FormationAlert: 0.05
+      npc_reactions:
+      - id: DraenenCaution
+        description: |-
+          Draenen gives a sharp whisper for everyone to slow their pace and mind their footing.
+        marginal_probability: 0.3
+        joint_probabilities:
+          and FirghormTrips: 0.03
+          and HerbPatchFound: 0.06
+          and LuathAdjust: 0.1
+      - id: EiliadFlank
+        description: |-
+          Eiliad slips off the road’s edge, taking a shadowed flank position to watch the treeline.
+        marginal_probability: 0.4
+        joint_probabilities:
+          and FreshTracksSpotted: 0.25
+          and FormationAlert: 0.32
+      - id: LuathAdjust
+        description: |-
+          Luath hitches his satchel higher and mutters an anxious calculation under his breath.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and FormationAlert: 0.28
+          and DraenenCaution: 0.1
+      - id: DeerStartle
+        description: |-
+          The closest grazing deer jerks its head up, then bolts deeper into the forest at the sudden clatter.
+        marginal_probability: 0.12
+        joint_probabilities:
+          and FirghormTrips: 0.03
+      - id: WolfmanListen
+        description: |-
+          Hidden ears prick at distant metallic echoes; the scout pauses, testing the air for more sounds.
+        marginal_probability: 0.18
+        joint_probabilities:
+          and BladeGlint: 0.05
+          and StoneKicked: 0.05
+          and DistantHowl: 0.07
+      - id: MuleEarFlick
+        description: |-
+          One of the caravan’s lead mules twitches its ears and snorts at noises filtering through the trees.
+        marginal_probability: 0.05
+        joint_probabilities:
+          and CaravanApproach: 0.04
+    actual_consequences: []
+    probability_debug_info:
+      random_value: 0.017892495375199435
+      selected_outcome: {}
+      probability_ranges:
+        '{}':
+          probability: 0.047304468390702833
+          range_start: 0.0
+          range_end: 0.047304468390702833
+        '{AnkleStrain}':
+          probability: 0.00047782291303740537
+          range_start: 0.047304468390702833
+          range_end: 0.04778229130374024
+        '{BanditTrapSetting}':
+          probability: 0.0024897088626685687
+          range_start: 0.04778229130374024
+          range_end: 0.05027200016640881
+        '{BladeGlint}':
+          probability: 0.011826117097675705
+          range_start: 0.05027200016640881
+          range_end: 0.06209811726408451
+        '{CaravanApproach}':
+          probability: 0.005256052043411424
+          range_start: 0.06209811726408451
+          range_end: 0.06735416930749594
+        '{CatStalkMouse}':
+          probability: 0.015768156130234273
+          range_start: 0.06735416930749594
+          range_end: 0.08312232543773021
+        '{CrowGatherTwigs}':
+          probability: 0.031536312260468546
+          range_start: 0.08312232543773021
+          range_end: 0.11465863769819876
+        '{DeerBound}':
+          probability: 0.0035605513842464492
+          range_start: 0.11465863769819876
+          range_end: 0.1182191890824452
+        '{DeerGrazing}':
+          probability: 0.047304468390702833
+          range_start: 0.1182191890824452
+          range_end: 0.16552365747314804
+        '{DeerStartle}':
+          probability: 0.006450609326004941
+          range_start: 0.16552365747314804
+          range_end: 0.17197426679915298
+        '{DistantHowl}':
+          probability: 0.008347847363065208
+          range_start: 0.17197426679915298
+          range_end: 0.1803221141622182
+        '{DraenenCaution}':
+          probability: 0.020273343596015486
+          range_start: 0.1803221141622182
+          range_end: 0.20059545775823368
+        '{EiliadFlank}':
+          probability: 0.031536312260468546
+          range_start: 0.20059545775823368
+          range_end: 0.23213177001870222
+        '{FirghormTrips}':
+          probability: 0.0024897088626685826
+          range_start: 0.23213177001870222
+          range_end: 0.2346214788813708
+        '{FormationAlert}':
+          probability: 0.1892178735628114
+          range_start: 0.2346214788813708
+          range_end: 0.4238393524441822
+        '{FreshTracksSpotted}':
+          probability: 0.025471636825763033
+          range_start: 0.4238393524441822
+          range_end: 0.4493109892699452
+        '{HerbPatchFound}':
+          probability: 0.006450609326004941
+          range_start: 0.4493109892699452
+          range_end: 0.45576159859595017
+        '{LuathAdjust}':
+          probability: 0.02547163682576309
+          range_start: 0.45576159859595017
+          range_end: 0.48123323542171326
+        '{MistDrift}':
+          probability: 0.005256052043411452
+          range_start: 0.48123323542171326
+          range_end: 0.4864892874651247
+        '{MuleEarFlick}':
+          probability: 0.0024897088626685826
+          range_start: 0.4864892874651247
+          range_end: 0.4889789963277933
+        '{OgogleWhisper}':
+          probability: 0.00047782291303738456
+          range_start: 0.4889789963277933
+          range_end: 0.4894568192408307
+        '{SquirrelBranchFall}':
+          probability: 0.003019434152598033
+          range_start: 0.4894568192408307
+          range_end: 0.4924762533934287
+        '{StoneKicked}':
+          probability: 0.004113432033974185
+          range_start: 0.4924762533934287
+          range_end: 0.4965896854274029
+        '{WolfmanListen}':
+          probability: 0.010383907695520112
+          range_start: 0.4965896854274029
+          range_end: 0.506973593122923
+        '{WolfmanScoutAdvance}':
+          probability: 0.01182611709767567
+          range_start: 0.506973593122923
+          range_end: 0.5187997102205987
+        '{BanditTrapSetting, CrowGatherTwigs}':
+          probability: 0.0016598059084457217
+          range_start: 0.5187997102205987
+          range_end: 0.5204595161290444
+        '{BladeGlint, CrowGatherTwigs}':
+          probability: 0.00788407806511715
+          range_start: 0.5204595161290444
+          range_end: 0.5283435941941615
+        '{BladeGlint, WolfmanListen}':
+          probability: 0.002595976923880028
+          range_start: 0.5283435941941615
+          range_end: 0.5309395711180416
+        '{CaravanApproach, MuleEarFlick}':
+          probability: 0.00027663431807423144
+          range_start: 0.5309395711180416
+          range_end: 0.5312162054361158
+        '{CatStalkMouse, HerbPatchFound}':
+          probability: 0.0021502031086683138
+          range_start: 0.5312162054361158
+          range_end: 0.5333664085447841
+        '{DeerBound, DeerGrazing}':
+          probability: 0.003560551384246491
+          range_start: 0.5333664085447841
+          range_end: 0.5369269599290306
+        '{DeerGrazing, MistDrift}':
+          probability: 0.005256052043411397
+          range_start: 0.5369269599290306
+          range_end: 0.542183011972442
+        '{DeerStartle, FirghormTrips}':
+          probability: 0.0003395057540002133
+          range_start: 0.542183011972442
+          range_end: 0.5425225177264422
+        '{DistantHowl, WolfmanListen}':
+          probability: 0.0018324542992094184
+          range_start: 0.5425225177264422
+          range_end: 0.5443549720256516
+        '{DistantHowl, WolfmanScoutAdvance}':
+          probability: 0.002086961840766288
+          range_start: 0.5443549720256516
+          range_end: 0.5464419338664179
+        '{DraenenCaution, FirghormTrips}':
+          probability: 0.0010670180840007815
+          range_start: 0.5464419338664179
+          range_end: 0.5475089519504187
+        '{DraenenCaution, HerbPatchFound}':
+          probability: 0.00276454685400207
+          range_start: 0.5475089519504187
+          range_end: 0.5502734988044208
+        '{DraenenCaution, LuathAdjust}':
+          probability: 0.010916415782469935
+          range_start: 0.5502734988044208
+          range_end: 0.5611899145868907
+        '{EiliadFlank, FormationAlert}':
+          probability: 0.1261452490418743
+          range_start: 0.5611899145868907
+          range_end: 0.687335163628765
+        '{EiliadFlank, FreshTracksSpotted}':
+          probability: 0.016981091217175392
+          range_start: 0.687335163628765
+          range_end: 0.7043162548459404
+        '{FirghormTrips, StoneKicked}':
+          probability: 0.00021649642284071735
+          range_start: 0.7043162548459404
+          range_end: 0.7045327512687811
+        '{FormationAlert, FreshTracksSpotted}':
+          probability: 0.10188654730305224
+          range_start: 0.7045327512687811
+          range_end: 0.8064192985718334
+        '{FormationAlert, LuathAdjust}':
+          probability: 0.10188654730305224
+          range_start: 0.8064192985718334
+          range_end: 0.9083058458748856
+        '{FormationAlert, SquirrelBranchFall}':
+          probability: 0.012077736610392242
+          range_start: 0.9083058458748856
+          range_end: 0.9203835824852779
+        '{FreshTracksSpotted, WolfmanScoutAdvance}':
+          probability: 0.006367909206440814
+          range_start: 0.9203835824852779
+          range_end: 0.9267514916917187
+        '{MistDrift, OgogleWhisper}':
+          probability: 5.3091434781937785e-05
+          range_start: 0.9267514916917187
+          range_end: 0.9268045831265006
+        '{MistDrift, WolfmanScoutAdvance}':
+          probability: 0.001314013010852877
+          range_start: 0.9268045831265006
+          range_end: 0.9281185961373535
+        '{StoneKicked, WolfmanListen}':
+          probability: 0.0009029484952626232
+          range_start: 0.9281185961373535
+          range_end: 0.9290215446326161
+        '{WolfmanListen, WolfmanScoutAdvance}':
+          probability: 0.002595976923880028
+          range_start: 0.9290215446326161
+          range_end: 0.9316175215564961
+        '{DistantHowl, WolfmanListen, WolfmanScoutAdvance}':
+          probability: 0.0004581135748024101
+          range_start: 0.9316175215564961
+          range_end: 0.9320756351312985
+        '{EiliadFlank, FormationAlert, FreshTracksSpotted}':
+          probability: 0.06792436486870146
+          range_start: 0.9320756351312985
+          range_end: 1.0
+characters:
+  cli-user: Firghorm
+saved_at: '2025-07-19T21:54:41.219221'
