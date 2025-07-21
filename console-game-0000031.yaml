@@ -107,6 +107,83 @@ log:
           probability: 0.0014893617021276562
           range_start: 0.9985106382978723
           range_end: 1.0
+- user: |-
+    I cast a spell to detect magic and hidden traps, then carefully step through the entrance
+  dm: |-
+    **test wizard**:
+    The spell reveals a faint, fluctuating energy signature emanating from within the dungeon, indicating an active but unstable AI presence, rather than a clear magical aura or a simple trap.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: null
+  rotations:
+  - part_number: 1
+    spotlight_holder: test wizard
+    action_taken: |-
+      I cast a spell to detect magic and hidden traps, then carefully step through the entrance
+    consequence_response:
+      potential_consequences:
+      - id: AnomalousEnergySignature
+        description: |-
+          The spell reveals a faint, fluctuating energy signature emanating from within the dungeon, indicating an active but unstable AI presence, rather than a clear magical aura or a simple trap.
+        marginal_probability: 0.75
+        joint_probabilities:
+          and AncientSecurityActivates: 0.3
+      - id: AncientSecurityActivates
+        description: |-
+          A low, grinding hum emanates from deep within the dungeon walls as an ancient security system, dormant for millennia, partially reactivates, causing faint vibrations in the stone floor.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and AnomalousEnergySignature: 0.3
+          and LocalFaunaDisturbed: 0.18
+      npc_proactive_actions:
+      - id: ScraelingasScouting
+        description: |-
+          A small band of Scraelingas raiders, far off in the hills bordering this region, begins a routine patrol, their movements entirely unrelated to the player's immediate actions.
+        marginal_probability: 0.05
+        joint_probabilities: {}
+      npc_reactions:
+      - id: LocalFaunaDisturbed
+        description: |-
+          A nearby fox, startled by the faint vibrations and hum from the dungeon's depths, bolts from its hiding spot in the undergrowth and dashes away.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and AncientSecurityActivates: 0.18
+    actual_consequences:
+    - id: AnomalousEnergySignature
+      description: |-
+        The spell reveals a faint, fluctuating energy signature emanating from within the dungeon, indicating an active but unstable AI presence, rather than a clear magical aura or a simple trap.
+      marginal_probability: 0.75
+    probability_debug_info:
+      random_value: 0.4679821110118978
+      selected_outcome: '{AnomalousEnergySignature}'
+      probability_ranges:
+        '{}':
+          probability: 0.15171990171990174
+          range_start: 0.0
+          range_end: 0.15171990171990174
+        '{AncientSecurityActivates}':
+          probability: 0.08169533169533169
+          range_start: 0.15171990171990174
+          range_end: 0.23341523341523343
+        '{AnomalousEnergySignature}':
+          probability: 0.4551597051597053
+          range_start: 0.23341523341523343
+          range_end: 0.6885749385749387
+        '{LocalFaunaDisturbed}':
+          probability: 0.03792997542997545
+          range_start: 0.6885749385749387
+          range_end: 0.7265049140049141
+        '{ScraelingasScouting}':
+          probability: 0.007985257985257954
+          range_start: 0.7265049140049141
+          range_end: 0.7344901719901721
+        '{AncientSecurityActivates, AnomalousEnergySignature}':
+          probability: 0.24508599508599505
+          range_start: 0.7344901719901721
+          range_end: 0.9795761670761671
+        '{AncientSecurityActivates, LocalFaunaDisturbed}':
+          probability: 0.020423832923832874
+          range_start: 0.9795761670761671
+          range_end: 1.0
 characters:
   cli-user: test wizard
-saved_at: '2025-07-21T14:15:12.146656'
+saved_at: '2025-07-21T14:16:31.297127'

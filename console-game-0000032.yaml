@@ -1,0 +1,468 @@
+channel_id: console-game-0000032
+adventure_name: thief
+config:
+  starter: |-
+    You stand on the shore of Lake Avertayn. Above you and to the north is the village of Avertayn. The members of your party are Firghorm, Draenen, Eiliad, and Luath
+log:
+- user: ''
+  dm: |-
+    You stand on the shore of Lake Avertayn. Above you and to the north is the village of Avertayn. The members of your party are Firghorm, Draenen, Eiliad, and Luath
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+- user: I approach the village cautiously, looking for signs of danger
+  dm: |-
+    **brave knight**:
+    The group's cautious movement, led by the player, allows them to reach the outskirts of Avertayn without immediately alerting the villagers, maintaining an element of surprise. Eiliad, ever vigilant, has already moved ahead and to the sides of the party, her sharp eyes surveying the surrounding woods and the village approaches for any immediate threats.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: null
+  rotations:
+  - part_number: 1
+    spotlight_holder: brave knight
+    action_taken: I approach the village cautiously, looking for signs of danger
+    consequence_response:
+      potential_consequences:
+      - id: SubtleSignsOfDisturbance
+        description: |-
+          The player's cautious observation allows them to notice faint, unusually placed tracks near the village's edge, hinting at a creature that moves with stealth and purpose.
+        marginal_probability: 0.7
+        joint_probabilities:
+          and EiliadScoutsFlanks: 0.45
+          and FirghormAssessesThreat: 0.5
+      - id: UnobservedApproach
+        description: |-
+          The group's cautious movement, led by the player, allows them to reach the outskirts of Avertayn without immediately alerting the villagers, maintaining an element of surprise.
+        marginal_probability: 0.85
+        joint_probabilities:
+          and EiliadScoutsFlanks: 0.6
+          and FirghormAssessesThreat: 0.6
+      npc_proactive_actions:
+      - id: EiliadScoutsFlanks
+        description: |-
+          Eiliad, ever vigilant, has already moved ahead and to the sides of the party, her sharp eyes surveying the surrounding woods and the village approaches for any immediate threats.
+        marginal_probability: 0.9
+        joint_probabilities:
+          and SubtleSignsOfDisturbance: 0.45
+          and UnobservedApproach: 0.6
+      npc_reactions:
+      - id: FirghormAssessesThreat
+        description: |-
+          Firghorm, ever the guardian, instinctively assesses the village's layout and potential threats from his position, his gaze sweeping over the buildings and the lake for any signs of danger.
+        marginal_probability: 0.8
+        joint_probabilities:
+          and SubtleSignsOfDisturbance: 0.5
+          and UnobservedApproach: 0.6
+    actual_consequences:
+    - id: UnobservedApproach
+      description: |-
+        The group's cautious movement, led by the player, allows them to reach the outskirts of Avertayn without immediately alerting the villagers, maintaining an element of surprise.
+      marginal_probability: 0.85
+    - id: EiliadScoutsFlanks
+      description: |-
+        Eiliad, ever vigilant, has already moved ahead and to the sides of the party, her sharp eyes surveying the surrounding woods and the village approaches for any immediate threats.
+      marginal_probability: 0.9
+    probability_debug_info:
+      random_value: 0.5075044276796021
+      selected_outcome: '{EiliadScoutsFlanks, UnobservedApproach}'
+      probability_ranges:
+        '{}':
+          probability: 0.007936507936507934
+          range_start: 0.0
+          range_end: 0.007936507936507934
+        '{EiliadScoutsFlanks}':
+          probability: 0.07142857142857144
+          range_start: 0.007936507936507934
+          range_end: 0.07936507936507937
+        '{FirghormAssessesThreat}':
+          probability: 0.03174603174603176
+          range_start: 0.07936507936507937
+          range_end: 0.11111111111111113
+        '{SubtleSignsOfDisturbance}':
+          probability: 0.018518518518518517
+          range_start: 0.11111111111111113
+          range_end: 0.12962962962962965
+        '{UnobservedApproach}':
+          probability: 0.04497354497354494
+          range_start: 0.12962962962962965
+          range_end: 0.1746031746031746
+        '{EiliadScoutsFlanks, SubtleSignsOfDisturbance}':
+          probability: 0.16666666666666669
+          range_start: 0.1746031746031746
+          range_end: 0.3412698412698413
+        '{EiliadScoutsFlanks, UnobservedApproach}':
+          probability: 0.40476190476190477
+          range_start: 0.3412698412698413
+          range_end: 0.746031746031746
+        '{FirghormAssessesThreat, SubtleSignsOfDisturbance}':
+          probability: 0.07407407407407407
+          range_start: 0.746031746031746
+          range_end: 0.8201058201058201
+        '{FirghormAssessesThreat, UnobservedApproach}':
+          probability: 0.17989417989417988
+          range_start: 0.8201058201058201
+          range_end: 1.0
+- user: I search the area for any clues about recent activities
+  dm: |-
+    **brave knight**:
+    Nothing notable happens.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |
+    **The Decision on the Next Actor**
+
+    Alright, let's break this down. My objective is to determine the next character to take action in this D&D adventure, "The Thief of Avertayn," based on the current situation and a few given details. I need to be precise, use a logical process, and ultimately present my findings in a specific JSON format.
+
+    The party (Firghorm, Draenen, Eiliad, and Luath), along with the player character "brave knight" (who I'm assuming is the *leader* of the party since the "current spotlight holder" was the brave knight), has just arrived at the outskirts of Avertayn. We're in exploration mode, not combat, and the mood is cautious. Eiliad, our scout, was sent ahead to check things out. The party is approaching cautiously, looking for signs of danger, and there's a sense of urgency to assess the village before entering.
+
+    Now, my task is to figure out who's most likely to act next. I've considered all the potential actors: the brave knight (the player character), Firghorm (the stoic guardian), Draenen (the herbalist), Eiliad (the cunning scout), and Luath (the alchemist), along with the villagers of Avertayn, who are currently passive. Given Eiliad's scouting role and the fact that the party has now reached the outskirts, it's pretty clear that her next action is crucial.
+
+    Eiliad was tasked with scouting ahead and to the sides. The group's cautious movement led by the brave knight allowed them to reach the outskirts without alerting the villagers. Eiliad was already surveying the surroundings during this movement. Her findings are key information for the group. It's only natural that Eiliad would report her findings back or make an observation.
+
+    Analyzing the initiative factors, Eiliad has the highest urgency, capability, and situational advantage. She's the scout, she's already in position, and she needs to communicate her findings. The brave knight, as the leader, would react to what Eiliad finds. Firghorm is a guardian, so would act if there was a threat. Draenen and Luath have less immediate concerns and situational awareness at this moment.
+
+    Based on my analysis, I've assigned probabilities to each character:
+
+    *   Eiliad: 55%
+    *   Brave Knight: 40%
+    *   Firghorm: 2%
+    *   Draenen: 2%
+    *   Luath: 1%
+
+    Therefore, the next action is Eiliad's turn.
+
+    Here's the JSON output:
+
+    ```json
+    {
+      "next_actor": {
+        "id": "Eiliad",
+        "reasoning": "Eiliad was actively scouting ahead and to the sides during the party's approach. Now that the party has reached the outskirts of Avertayn, her role as scout makes her findings and potential report the most immediate and logical next action to inform the group's next steps."
+      },
+      "spotlight_probability_comparisons": [
+        {"character_id_1": "Eiliad", "character_id_2": "brave knight", "comparison": "more likely"},
+        {"character_id_1": "Eiliad", "character_id_2": "Firghorm", "comparison": "more likely"},
+        {"character_id_1": "Eiliad", "character_id_2": "Draenen", "comparison": "more likely"},
+        {"character_id_1": "Eiliad", "character_id_2": "Luath", "comparison": "more likely"},
+        {"character_id_1": "brave knight", "character_id_2": "Firghorm", "comparison": "more likely"},
+        {"character_id_1": "brave knight", "character_id_2": "Draenen", "comparison": "more likely"},
+        {"character_id_1": "brave knight", "character_id_2": "Luath", "comparison": "more likely"},
+        {"character_id_1": "Firghorm", "character_id_2": "Draenen", "comparison": "more likely"},
+        {"character_id_1": "Firghorm", "character_id_2": "Luath", "comparison": "more likely"},
+        {"character_id_1": "Draenen", "character_id_2": "Luath", "comparison": "more likely"}
+      ]
+    }
+    ```
+
+    This JSON encapsulates my reasoning and satisfies all the requirements. Eiliad is the most immediate actor.
+
+    ---
+
+    **My Analysis of the "Brave Knight's" Search**
+
+    Alright, let's break this down. The player, whom I'll refer to as "the Brave Knight," is investigating the recent thefts in Avertayn. They are currently on the shore of Lake Avertayn, and their actions are focused on finding clues left behind by the culprit. My job is to anticipate the outcomes of this search and how the NPCs might react.
+
+    The context is crucial: Avertayn, the lake, recent thefts. I'm focusing on evidence like tracks, unusual items, etc., left by the fox-person. Eiliad, the scout, is already ahead of the party.
+
+    Based on the information, here are my thoughts on the potential outcomes:
+
+    *   **Finding tracks** seems very plausible. The fox-person would likely leave tracks, and that's the type of thing the Brave Knight is looking for, so 0.40. I know Eiliad is already out there, so it makes sense that she'd be paying attention. Luath is also present and he is always into the most obscure, or perhaps more than that, so it's likely he'd be looking around too.
+    *   The Brave Knight is going to be in the environment, so it's a good probability to be getting into the business of the local wildlife. 0.35 chance of them finding something interesting.
+    *   I also need to account for what *I* know, which is that Luath is also here. He is also a person, and I know he likes his alchemy, so maybe he is already looking for something.
+    *   Finally, there's Eiliad. Eiliad sees things. Eiliad does the scouting, and I know she is already in position.
+
+    Here's my analysis in JSON:
+
+    ```json
+    {
+      "potential_consequences": [
+        {
+          "id": "UnusualFootprints",
+          "description": "The player discovers a set of small, clawed footprints pressed into the damp earth near the lake's edge, suggesting a bipedal creature with unusual feet.",
+          "marginal_probability": 0.40,
+          "joint_probabilities": {
+            "EiliadObservesSearch": 0.25,
+            "LuathExaminesWater": 0.15
+          }
+        },
+        {
+          "id": "StartledWildlife",
+          "description": "While parting some reeds or examining a patch of ground, the player startles a family of water voles. They scatter wildly, creating a brief commotion.",
+          "marginal_probability": 0.35,
+          "joint_probabilities": {
+            "EiliadObservesSearch": 0.20,
+            "LuathExaminesWater": 0.10
+          }
+        }
+      ],
+      "npc_proactive_actions": [
+        {
+          "id": "LuathExaminesWater",
+          "description": "Luath, drawn by the lake's ecosystem, begins examining the water's edge for specific algae or mineral deposits, muttering about potential alchemical reagents.",
+          "marginal_probability": 0.20,
+          "joint_probabilities": {
+            "UnusualFootprints": 0.15,
+            "StartledWildlife": 0.10
+          }
+        }
+      ],
+      "npc_reactions": [
+        {
+          "id": "EiliadObservesSearch",
+          "description": "Eiliad, from her scouting position slightly ahead and to the side, notices the player's focused search. She pauses her own movement momentarily, observing the player's efforts, and then subtly signals with a hand gesture to indicate she's found nothing of immediate concern in her sector, but remains alert.",
+          "marginal_probability": 0.45,
+          "joint_probabilities": {
+            "UnusualFootprints": 0.25,
+            "StartledWildlife": 0.20
+          }
+        }
+      ]
+    }
+    ```
+  rotations:
+  - part_number: 1
+    spotlight_holder: brave knight
+    action_taken: I search the area for any clues about recent activities
+    consequence_response:
+      potential_consequences:
+      - id: UnusualFootprints
+        description: |-
+          The player discovers a set of small, clawed footprints pressed into the damp earth near the lake's edge, suggesting a bipedal creature with unusual feet, distinct from common animal tracks.
+        marginal_probability: 0.4
+        joint_probabilities:
+          and EiliadObservesSearch: 0.25
+          and LuathExaminesWater: 0.15
+      - id: StartledWildlife
+        description: |-
+          While parting some reeds or examining a patch of ground, the player startles a family of water voles. They scatter wildly, creating a brief commotion and a flutter of wings from nearby birds.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and EiliadObservesSearch: 0.2
+          and LuathExaminesWater: 0.1
+      npc_proactive_actions:
+      - id: LuathExaminesWater
+        description: |-
+          Luath, drawn by the lake's ecosystem, begins examining the water's edge for specific algae or mineral deposits, muttering about potential alchemical reagents and their properties.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and UnusualFootprints: 0.15
+          and StartledWildlife: 0.1
+      npc_reactions:
+      - id: EiliadObservesSearch
+        description: |-
+          Eiliad, from her scouting position slightly ahead and to the side, notices the player's focused search. She pauses her own movement momentarily, observing the player's efforts, and then subtly signals with a hand gesture to indicate she's found nothing of immediate concern in her sector, but remains alert.
+        marginal_probability: 0.45
+        joint_probabilities:
+          and UnusualFootprints: 0.25
+          and StartledWildlife: 0.2
+    actual_consequences: []
+    probability_debug_info:
+      random_value: 0.21407612832890932
+      selected_outcome: {}
+      probability_ranges:
+        '{}':
+          probability: 0.21926910299003322
+          range_start: 0.0
+          range_end: 0.21926910299003322
+        '{EiliadObservesSearch}':
+          probability: 0.17940199335548174
+          range_start: 0.21926910299003322
+          range_end: 0.39867109634551495
+        '{LuathExaminesWater}':
+          probability: 0.05481727574750833
+          range_start: 0.39867109634551495
+          range_end: 0.4534883720930233
+        '{StartledWildlife}':
+          probability: 0.11806797853309481
+          range_start: 0.4534883720930233
+          range_end: 0.5715563506261181
+        '{UnusualFootprints}':
+          probability: 0.14617940199335555
+          range_start: 0.5715563506261181
+          range_end: 0.7177357526194736
+        '{EiliadObservesSearch, StartledWildlife}':
+          probability: 0.09660107334525936
+          range_start: 0.7177357526194736
+          range_end: 0.814336825964733
+        '{EiliadObservesSearch, UnusualFootprints}':
+          probability: 0.11960132890365449
+          range_start: 0.814336825964733
+          range_end: 0.9339381548683875
+        '{LuathExaminesWater, StartledWildlife}':
+          probability: 0.02951699463327373
+          range_start: 0.9339381548683875
+          range_end: 0.9634551495016612
+        '{LuathExaminesWater, UnusualFootprints}':
+          probability: 0.03654485049833878
+          range_start: 0.9634551495016612
+          range_end: 1.0
+- user: |-
+    I ask Luath if he has any potions that might help us detect magical traces or hidden things
+  dm: |-
+    **brave knight**:
+    Luath, after a moment of nervous consideration, produces a small vial containing a shimmering, viscous liquid, claiming it's a "Resonance Paste" that might reveal latent energies or recent passages. He admits its efficacy is untested. Luath's inherent nervousness is amplified by the direct question, causing his hands to tremble and him to absentmindedly tap a vial against his palm. Draenen casts a wary, judgmental glance at Luath, her arms crossing defensively upon hearing the mention of "magic" and "hidden things."
+  metrics: 'Parts completed: 1'
+  reasoning_summary: |
+    **Initial Assessment: Navigating the Next Move**
+
+    As a seasoned game master, my primary focus is to analyze the present scene and identify the most likely course of action.  I'm presented with a scenario where the party has reached the outskirts of Avertayn, and the "Player" just attempted a passive search, yielding no immediate results.  Given that initial action, I've considered several factors to determine the next actor: individual character attributes (like scouting abilities or herbalism expertise), situational context (like position, urgency, and recent actions), and the narrative (how each character's role impacts potential actions).
+
+    I've evaluated five potential actors: the Player, Firghorm (the stoic guardian), Draenen (the herbalist), Eiliad (the cunning scout), and Luath (the guilt-ridden alchemist).
+
+    My initial assumption here is that Eiliad is the most likely to act due to their role as the scout, specifically positioning ahead of the group and surveying the area. Her abilities and role lend themselves to more active participation at this point.
+
+    The Player is a constant consideration, but it's reasonable for them to give room for another character's prompt. Firghorm is more likely to act on a perceived threat. Draenen and Luath are much more unlikely as their primary functions in this phase are observing and internal, respectively.
+
+    I've taken a mathematical approach to quantify these probabilities. I've assigned relative weights based on each character's characteristics and the current situation: Eiliad (40%), Player (30%), Firghorm (15%), Draenen (10%), and Luath (5%).  Based on the probabilities, I'm generating a final assessment and output in the proper JSON format.
+
+
+    ---
+
+    **Expert Analysis of the Situation**
+
+    As an expert in the field, I've considered the player's question within the established parameters: the setting's post-apocalyptic nature, Luath's alchemical background, and the party's current context. The player's inquiry about magical detection will undoubtedly trigger a response from Luath, given his expertise, albeit a primitive form of it. My analysis focuses on providing plausible, measurable consequences, realistic probabilities, and the appropriate proactive and reactive elements that reflect the nuanced nature of this interaction.
+
+    Here's the probable outcome:
+
+    **Consequences of Player Action:**
+
+    1.  **Luath's Alchemical Offering:** Luath, after a moment of nervous consideration, produces a small vial containing a shimmering, viscous liquid, claiming it's a "Resonance Paste" that might reveal latent energies or recent passages. He admits its efficacy is untested.
+        *   `id`: LuathAlchemicalOffering
+        *   `description`: Luath, after a moment of nervous consideration, produces a small vial containing a shimmering, viscous liquid, claiming it's a "Resonance Paste" that might reveal latent energies or recent passages. He admits its efficacy is untested.
+        *   `marginal_probability`: 0.80
+        *   `joint_probabilities`:
+            *   `and LuathNervousFidget`: 0.50
+            *   `and DraenenSuspiciousGlance`: 0.40
+            *   `and FirghormVigilantStance`: 0.30
+
+    2.  **Luath's Nervous Fidgeting:** Luath's inherent nervousness is amplified by the direct question, causing his hands to tremble and him to absentmindedly tap a vial against his palm.
+        *   `id`: LuathNervousFidget
+        *   `description`: Luath's inherent nervousness is amplified by the direct question, causing his hands to tremble and him to absentmindedly tap a vial against his palm.
+        *   `marginal_probability`: 0.65
+        *   `joint_probabilities`:
+            *   `and LuathAlchemicalOffering`: 0.50
+            *   `and DraenenSuspiciousGlance`: 0.35
+
+    **NPC Proactive Actions:**
+
+    1.  **Firghorm's Vigilance:** Firghorm subtly shifts his weight and scans the perimeter, his gaze lingering on the dense western forest, a habitual gesture of vigilance.
+        *   `id`: FirghormVigilantStance
+        *   `description`: Firghorm subtly shifts his weight and scans the perimeter, his gaze lingering on the dense western forest, a habitual gesture of vigilance.
+        *   `marginal_probability`: 0.70
+        *   `joint_probabilities`:
+            *   `and LuathAlchemicalOffering`: 0.30
+            *   `and DraenenSuspiciousGlance`: 0.25
+
+    **NPC Reactions:**
+
+    1.  **Draenen's Suspicious Glance:** Draenen casts a wary, judgmental glance at Luath, her arms crossing defensively upon hearing the mention of "magic" and "hidden things."
+        *   `id`: DraenenSuspiciousGlance
+        *   `description`: Draenen casts a wary, judgmental glance at Luath, her arms crossing defensively upon hearing the mention of "magic" and "hidden things."
+        *   `marginal_probability`: 0.55
+        *   `joint_probabilities`:
+            *   `and LuathAlchemicalOffering`: 0.40
+            *   `and LuathNervousFidget`: 0.35
+  rotations:
+  - part_number: 1
+    spotlight_holder: brave knight
+    action_taken: |-
+      I ask Luath if he has any potions that might help us detect magical traces or hidden things
+    consequence_response:
+      potential_consequences:
+      - id: LuathAlchemicalOffering
+        description: |-
+          Luath, after a moment of nervous consideration, produces a small vial containing a shimmering, viscous liquid, claiming it's a "Resonance Paste" that might reveal latent energies or recent passages. He admits its efficacy is untested.
+        marginal_probability: 0.8
+        joint_probabilities:
+          and LuathNervousFidget: 0.5
+          and DraenenSuspiciousGlance: 0.4
+          and FirghormVigilantStance: 0.3
+      - id: LuathNervousFidget
+        description: |-
+          Luath's inherent nervousness is amplified by the direct question, causing his hands to tremble and him to absentmindedly tap a vial against his palm.
+        marginal_probability: 0.65
+        joint_probabilities:
+          and LuathAlchemicalOffering: 0.5
+          and DraenenSuspiciousGlance: 0.35
+      npc_proactive_actions:
+      - id: FirghormVigilantStance
+        description: |-
+          Firghorm subtly shifts his weight and scans the perimeter, his gaze lingering on the dense western forest, a habitual gesture of vigilance.
+        marginal_probability: 0.7
+        joint_probabilities:
+          and LuathAlchemicalOffering: 0.3
+          and DraenenSuspiciousGlance: 0.25
+      npc_reactions:
+      - id: DraenenSuspiciousGlance
+        description: |-
+          Draenen casts a wary, judgmental glance at Luath, her arms crossing defensively upon hearing the mention of "magic" and "hidden things."
+        marginal_probability: 0.55
+        joint_probabilities:
+          and LuathAlchemicalOffering: 0.4
+          and LuathNervousFidget: 0.35
+    actual_consequences:
+    - id: LuathAlchemicalOffering
+      description: |-
+        Luath, after a moment of nervous consideration, produces a small vial containing a shimmering, viscous liquid, claiming it's a "Resonance Paste" that might reveal latent energies or recent passages. He admits its efficacy is untested.
+      marginal_probability: 0.8
+    - id: LuathNervousFidget
+      description: |-
+        Luath's inherent nervousness is amplified by the direct question, causing his hands to tremble and him to absentmindedly tap a vial against his palm.
+      marginal_probability: 0.65
+    - id: DraenenSuspiciousGlance
+      description: |-
+        Draenen casts a wary, judgmental glance at Luath, her arms crossing defensively upon hearing the mention of "magic" and "hidden things."
+      marginal_probability: 0.55
+    probability_debug_info:
+      random_value: 0.9355995941989853
+      selected_outcome: '{DraenenSuspiciousGlance, LuathAlchemicalOffering, LuathNervousFidget}'
+      probability_ranges:
+        '{}':
+          probability: 0.0173394495412844
+          range_start: 0.0
+          range_end: 0.0173394495412844
+        '{DraenenSuspiciousGlance}':
+          probability: 0.02119266055045871
+          range_start: 0.0173394495412844
+          range_end: 0.03853211009174311
+        '{FirghormVigilantStance}':
+          probability: 0.040458715596330255
+          range_start: 0.03853211009174311
+          range_end: 0.07899082568807336
+        '{LuathAlchemicalOffering}':
+          probability: 0.0693577981651376
+          range_start: 0.07899082568807336
+          range_end: 0.14834862385321096
+        '{LuathNervousFidget}':
+          probability: 0.032201834862385315
+          range_start: 0.14834862385321096
+          range_end: 0.18055045871559627
+        '{DraenenSuspiciousGlance, FirghormVigilantStance}':
+          probability: 0.04944954128440365
+          range_start: 0.18055045871559627
+          range_end: 0.22999999999999993
+        '{DraenenSuspiciousGlance, LuathAlchemicalOffering}':
+          probability: 0.08477064220183489
+          range_start: 0.22999999999999993
+          range_end: 0.3147706422018348
+        '{DraenenSuspiciousGlance, LuathNervousFidget}':
+          probability: 0.039357798165137625
+          range_start: 0.3147706422018348
+          range_end: 0.35412844036697244
+        '{FirghormVigilantStance, LuathAlchemicalOffering}':
+          probability: 0.16183486238532108
+          range_start: 0.35412844036697244
+          range_end: 0.5159633027522935
+        '{LuathAlchemicalOffering, LuathNervousFidget}':
+          probability: 0.12880733944954126
+          range_start: 0.5159633027522935
+          range_end: 0.6447706422018348
+        '{DraenenSuspiciousGlance, FirghormVigilantStance, LuathAlchemicalOffering}':
+          probability: 0.19779816513761472
+          range_start: 0.6447706422018348
+          range_end: 0.8425688073394495
+        '{DraenenSuspiciousGlance, LuathAlchemicalOffering, LuathNervousFidget}':
+          probability: 0.1574311926605505
+          range_start: 0.8425688073394495
+          range_end: 1.0
+characters:
+  cli-user: brave knight
+saved_at: '2025-07-21T14:24:55.660882'
