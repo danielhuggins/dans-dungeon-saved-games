@@ -8,6 +8,105 @@ log:
   metrics: The adventure has just started; no metrics yet.
   reasoning_summary: null
   rotations: []
+- user: I look around and examine the dungeon entrance carefully
+  dm: |-
+    **test wizard**:
+    Faint, geometric patterns, almost imperceptible to the naked eye, are discovered etched into the stone around the entrance, hinting at a pre-collapse technological origin rather than mere decorative art.
+  metrics: 'Parts completed: 1'
+  reasoning_summary: null
+  rotations:
+  - part_number: 1
+    spotlight_holder: test wizard
+    action_taken: I look around and examine the dungeon entrance carefully
+    consequence_response:
+      potential_consequences:
+      - id: AncientMarkingsDiscovered
+        description: |-
+          Faint, geometric patterns, almost imperceptible to the naked eye, are discovered etched into the stone around the entrance, hinting at a pre-collapse technological origin rather than mere decorative art.
+        marginal_probability: 0.75
+        joint_probabilities:
+          and SubtlePowerFieldFluctuation: 0.25
+          and DormantSensorActivates: 0.15
+      - id: SubtlePowerFieldFluctuation
+        description: |-
+          A barely perceptible shimmer of light or a faint hum indicates a momentary fluctuation in the local Power Field, suggesting the ancient AI systems are unstable or reacting to an unknown input.
+        marginal_probability: 0.35
+        joint_probabilities:
+          and AncientMarkingsDiscovered: 0.25
+          and DormantSensorActivates: 0.1
+      npc_proactive_actions:
+      - id: DungeonCreatureStirs
+        description: |-
+          Deep within the dungeon, a small, blind scavenger creature, drawn by minute vibrations from the entrance, stirs from its slumber and begins to move slowly towards the surface.
+        marginal_probability: 0.08
+        joint_probabilities:
+          and SubtlePowerFieldFluctuation: 0.01
+          and DormantSensorActivates: 0.01
+      npc_reactions:
+      - id: DormantSensorActivates
+        description: |-
+          A tiny, almost inaudible click emanates from a hidden recess as a degraded ancient sensor, dormant for centuries, briefly activates in response to the player's prolonged presence and focused attention.
+        marginal_probability: 0.2
+        joint_probabilities:
+          and AncientMarkingsDiscovered: 0.15
+          and SubtlePowerFieldFluctuation: 0.1
+    actual_consequences:
+    - id: AncientMarkingsDiscovered
+      description: |-
+        Faint, geometric patterns, almost imperceptible to the naked eye, are discovered etched into the stone around the entrance, hinting at a pre-collapse technological origin rather than mere decorative art.
+      marginal_probability: 0.75
+    probability_debug_info:
+      random_value: 0.4065170257718018
+      selected_outcome: '{AncientMarkingsDiscovered}'
+      probability_ranges:
+        '{}':
+          probability: 0.12723404255319148
+          range_start: 0.0
+          range_end: 0.12723404255319148
+        '{AncientMarkingsDiscovered}':
+          probability: 0.38170212765957445
+          range_start: 0.12723404255319148
+          range_end: 0.5089361702127659
+        '{DormantSensorActivates}':
+          probability: 0.03180851063829793
+          range_start: 0.5089361702127659
+          range_end: 0.5407446808510639
+        '{DungeonCreatureStirs}':
+          probability: 0.01106382978723408
+          range_start: 0.5407446808510639
+          range_end: 0.5518085106382979
+        '{SubtlePowerFieldFluctuation}':
+          probability: 0.0685106382978723
+          range_start: 0.5518085106382979
+          range_end: 0.6203191489361702
+        '{AncientMarkingsDiscovered, DormantSensorActivates}':
+          probability: 0.09542553191489367
+          range_start: 0.6203191489361702
+          range_end: 0.7157446808510639
+        '{AncientMarkingsDiscovered, SubtlePowerFieldFluctuation}':
+          probability: 0.205531914893617
+          range_start: 0.7157446808510639
+          range_end: 0.9212765957446809
+        '{DormantSensorActivates, DungeonCreatureStirs}':
+          probability: 0.00276595744680852
+          range_start: 0.9212765957446809
+          range_end: 0.9240425531914894
+        '{DormantSensorActivates, SubtlePowerFieldFluctuation}':
+          probability: 0.017127659574468046
+          range_start: 0.9240425531914894
+          range_end: 0.9411702127659575
+        '{DungeonCreatureStirs, SubtlePowerFieldFluctuation}':
+          probability: 0.005957446808510625
+          range_start: 0.9411702127659575
+          range_end: 0.9471276595744681
+        '{AncientMarkingsDiscovered, DormantSensorActivates, SubtlePowerFieldFluctuation}':
+          probability: 0.05138297872340425
+          range_start: 0.9471276595744681
+          range_end: 0.9985106382978723
+        '{DormantSensorActivates, DungeonCreatureStirs, SubtlePowerFieldFluctuation}':
+          probability: 0.0014893617021276562
+          range_start: 0.9985106382978723
+          range_end: 1.0
 characters:
   cli-user: test wizard
-saved_at: '2025-07-21T14:14:02.649317'
+saved_at: '2025-07-21T14:15:12.146656'
