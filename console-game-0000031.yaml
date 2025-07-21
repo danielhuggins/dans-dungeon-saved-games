@@ -1,0 +1,13 @@
+channel_id: console-game-0000031
+adventure_name: core-game
+config:
+  starter: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+log:
+- user: ''
+  dm: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  rotations: []
+characters:
+  cli-user: test wizard
+saved_at: '2025-07-21T14:14:02.649317'

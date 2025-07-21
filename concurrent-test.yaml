@@ -1,0 +1,37 @@
+channel_id: concurrent-test
+log:
+- user: ''
+  dm: Welcome to the test adventure! You find yourself in a mysterious dungeon.
+  metrics: The adventure has just started; no metrics yet.
+  ai_response: null
+  reasoning_summary: null
+- user: action 0
+  dm: Response 0
+  metrics: Step 0
+  ai_response: ''
+  reasoning_summary: null
+- user: action 1
+  dm: Response 1
+  metrics: Step 1
+  ai_response: ''
+  reasoning_summary: null
+- user: action 2
+  dm: Response 2
+  metrics: Step 2
+  ai_response: ''
+  reasoning_summary: null
+- user: action 3
+  dm: Response 3
+  metrics: Step 3
+  ai_response: ''
+  reasoning_summary: null
+- user: action 4
+  dm: Response 4
+  metrics: Step 4
+  ai_response: ''
+  reasoning_summary: null
+config:
+  starter: Welcome to the test adventure! You find yourself in a mysterious dungeon.
+adventure_name: concurrent-adventure
+characters:
+  concurrent-user: Concurrent Tester

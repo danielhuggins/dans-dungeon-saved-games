@@ -1,0 +1,22 @@
+channel_id: rerun-test
+log:
+- user: ''
+  dm: Welcome to the test adventure! You find yourself in a mysterious dungeon.
+  metrics: The adventure has just started; no metrics yet.
+  ai_response: null
+  reasoning_summary: null
+- user: attack dragon
+  dm: You swing your sword at the dragon but miss!
+  metrics: 'Health: 90, Stamina: 70'
+  ai_response: Attack misses
+  reasoning_summary: null
+- user: attack dragon
+  dm: Your second attempt connects! The dragon roars in pain.
+  metrics: 'Health: 90, Stamina: 60, Dragon Health: 75'
+  ai_response: Attack hits this time
+  reasoning_summary: null
+config:
+  starter: Welcome to the test adventure! You find yourself in a mysterious dungeon.
+adventure_name: dragon-lair
+characters:
+  fighter: Dragon Slayer
