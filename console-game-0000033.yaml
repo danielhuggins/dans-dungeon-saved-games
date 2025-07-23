@@ -1,0 +1,1058 @@
+channel_id: console-game-0000033
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  metrics: The adventure has just started; no metrics yet.
+  reasoning_summary: null
+  debug_info: null
+  rotations: []
+- user: |-
+    I cautiously advance north along the road, keeping my hand on my sword hilt and scanning the forest for any signs of danger.
+  dm: |-
+    **dan**: Cautiously advance north along the road, keeping hand on sword hilt, scanning forest. Given the dense forest and dappled light, dan would normally scan the immediate surroundings and detect no immediate threats at this distance. However, with dan's slightly negative skills luck, dan might miss a very subtle sign, but there is nothing to detect at this range from the ambush. Thus, dan advances cautiously, scanning the forest. The dappled light and shifting shadows of the Welwaen Forest offer no immediate signs of danger at this distance.
+
+    **Firghorm**: Move with the group, maintaining defensive posture and scanning the surroundings. Given Firghorm's veteran vigilance, he would normally move with the group and sweep the forest with his gaze, detecting nothing out of the ordinary. However, with Firghorm's moderately positive initiative luck, he acts promptly after dan's initial movement, and his slightly negative defensive luck means he's fractionally less prepared for an immediate, unexpected threat should one appear. He detects no danger.
+
+    **Draenen**: Follow dan, scanning the immediate surroundings for useful plants and signs of danger. Given Draenen's focus on flora, she would normally move with the group and scan the undergrowth for herbs, detecting nothing out of the ordinary regarding the wolfmen threat. However, with Draenen's slightly positive initiative luck, she acts promptly, and her slightly negative skills luck means she overlooks a particularly rare herb that would have been just within her grasp. She notices nothing immediately alarming regarding the wolfmen.
+
+    **Luath**: Follow dan, remaining vigilant and perhaps showing nervousness. Given Luath's anxious nature, he would normally follow the group, perhaps fidgeting, and remain passive unless his anxiety peaked. However, with Luath's slightly positive initiative luck, he keeps pace with the group without lagging. His neutral skills luck means his actions are as expected. He feels the tension of the forest and the known threat, but does not yet feel compelled to use his moonshade.
+
+    **Eiliad**: Conduct parallel scouting, moving slightly ahead or to the sides of dan, observing for advantages and threats. Given Eiliad's scouting skills, she would normally move stealthily to the side, using her keen senses to observe the immediate terrain. At this distance, she would also see nothing related to the wolfmen. However, with Eiliad's moderately negative skills luck, a task she'd normally succeed at moderately will narrowly fail, causing her to miss a subtle detail. Thus, Eiliad, using her scouting skills, moves slightly ahead and to the side of dan's path. Her keen eyes scan the forest, but the moderately negative skills luck causes her to miss a faint deer trail that would have been obvious to her. She detects no immediate threats, as the wolfmen are too far away.
+  metrics: Event sequence system active
+  reasoning_summary: |
+    **My Assessment of the Party's Initial Movement**
+
+    As I contemplate the situation, my initial thought is on dan's cautious advance. It's the only logical starting point, considering his expressed intent. With the known threat of the wolfmen lurking ahead, I instinctively understand his need for vigilance. The dense forest and dappled sunlight of Welwaen Forest demand a careful approach, and it’s smart to keep a hand on the sword hilt.
+
+    Knowing my companions, I anticipate that Firghorm, Draenen, and Luath will instinctively react to dan's movement. Firghorm, with his veteran vigilance, will sweep the forest with his gaze, ever ready to defend. Draenen, attuned to the natural world, will likely be seeking useful plants or watching for signs of danger. Luath, I expect, will be feeling the tension and might be slightly more anxious, given the known threat.
+
+    Eiliad, being the scout, will instinctively take a parallel scouting route. Given the threat, she will want to be in a position to see things that Dan might miss.
+
+    Given Dan's advance, everyone else will follow and be on alert. It's the rational decision given the known threat.
+  debug_info:
+    parsed_npc_analysis:
+      npc_psychological_analyses:
+      - npc_name: Firghorm
+        emotional_state: Firghorm is a stoic, guilt-ridden veteran
+        immediate_objectives:
+        - s to ensure everyone's safety and find peace from his past trauma
+        concerns_or_fears:
+        - of failing again
+        attitude_towards_action: |-
+          He views dan's cautious advance and vigilance (hand on sword hilt, scanning the forest) as sensible and appropriate given the known threat of wolfmen. He feels reassured by dan's prudence and readiness to defend.
+        self_initiated_action: |-
+          Passive. He will observe dan's actions and maintain defensive readiness, his presence a silent anchor for the group.
+      - npc_name: Draenen
+        emotional_state: |-
+          Draenen is a stern, burdened herbalist who feels the weight of responsibility for the group's well-being
+        immediate_objectives:
+        - |-
+          s to be appreciated and in control of the group's safety, and is trying to achieve this by monitoring their progress and potential threats, ready to provide remedies and subtly assert her importance
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          She sees dan's cautious advance as a necessary, albeit potentially insufficient, measure. She approves of the vigilance but might internally critique if she feels it's not thorough enough or misses specific environmental cues she would notice. She will be assessing the situation for her own purposes, looking for useful plants or signs of danger.
+        self_initiated_action: |-
+          Passive. She will observe the environment for resources or threats and assess the group's needs, ready to act if a specific opportunity or danger arises.
+      - npc_name: Eiliad
+        emotional_state: Eiliad is a cunning, pragmatic scout
+        immediate_objectives:
+        - ing to be safe and secure while avoiding emotional pain
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          She sees dan's cautious advance as predictable and safe, but perhaps too slow. She approves of the vigilance but will be conducting her own, more active, scouting in parallel, looking for advantages dan might miss. She might mentally note dan's approach as 'safe but slow'.
+        self_initiated_action: |-
+          Passive. She will conduct her own parallel scouting and observation, assessing threats and escape routes, perhaps moving slightly ahead or to the sides of dan.
+      - npc_name: Luath
+        emotional_state: Luath is a nervous, guilt-ridden alchemist
+        immediate_objectives:
+        - |-
+          s to escape his guilt and find redemption, feeling competent and useful, while also trying to manage his addiction
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          He sees dan's caution as sensible. The vigilance might increase his own anxiety, making him more aware of his own vulnerabilities and perhaps more inclined to consider using moonshade for focus. He will likely remain passive but internally processing the risk and his own capabilities.
+        self_initiated_action: |-
+          Passive. He will remain with the group, perhaps fidgeting or glancing at his supplies, and might consider discreetly taking moonshade if his anxiety increases.
+      - npc_name: Wolfmen Pack (Ambush)
+        emotional_state: The Wolfmen pack is predatory, territorial, and focused on their ambush
+        immediate_objectives:
+        - Maintain current position
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          They view dan's cautious advance as typical prey behavior. The vigilance is noted as a sign of awareness but not seen as a significant threat to their ambush. They will continue to lie in wait, assuming their position is secure for now, and will only react when the party enters their kill zone.
+        self_initiated_action: |-
+          Passive (in terms of initiating new actions beyond the ambush). They are already in a state of readiness, waiting for the optimal moment to strike.
+    event_sequence:
+      event_sequence:
+      - actor: dan
+        attempt: |-
+          Cautiously advance north along the road, keeping hand on sword hilt, scanning forest.
+        how_attempt_plays_out: |-
+          Given the dense forest and dappled light, dan would normally scan the immediate surroundings and detect no immediate threats at this distance. However, with dan's slightly negative skills luck, dan might miss a very subtle sign, but there is nothing to detect at this range from the ambush. Thus, dan advances cautiously, scanning the forest. The dappled light and shifting shadows of the Welwaen Forest offer no immediate signs of danger at this distance.
+      - actor: Firghorm
+        attempt: Move with the group, maintaining defensive posture and scanning the surroundings.
+        how_attempt_plays_out: |-
+          Given Firghorm's veteran vigilance, he would normally move with the group and sweep the forest with his gaze, detecting nothing out of the ordinary. However, with Firghorm's moderately positive initiative luck, he acts promptly after dan's initial movement, and his slightly negative defensive luck means he's fractionally less prepared for an immediate, unexpected threat should one appear. He detects no danger.
+      - actor: Draenen
+        attempt: |-
+          Follow dan, scanning the immediate surroundings for useful plants and signs of danger.
+        how_attempt_plays_out: |-
+          Given Draenen's focus on flora, she would normally move with the group and scan the undergrowth for herbs, detecting nothing out of the ordinary regarding the wolfmen threat. However, with Draenen's slightly positive initiative luck, she acts promptly, and her slightly negative skills luck means she overlooks a particularly rare herb that would have been just within her grasp. She notices nothing immediately alarming regarding the wolfmen.
+      - actor: Luath
+        attempt: Follow dan, remaining vigilant and perhaps showing nervousness.
+        how_attempt_plays_out: |-
+          Given Luath's anxious nature, he would normally follow the group, perhaps fidgeting, and remain passive unless his anxiety peaked. However, with Luath's slightly positive initiative luck, he keeps pace with the group without lagging. His neutral skills luck means his actions are as expected. He feels the tension of the forest and the known threat, but does not yet feel compelled to use his moonshade.
+      - actor: Eiliad
+        attempt: |-
+          Conduct parallel scouting, moving slightly ahead or to the sides of dan, observing for advantages and threats.
+        how_attempt_plays_out: |-
+          Given Eiliad's scouting skills, she would normally move stealthily to the side, using her keen senses to observe the immediate terrain. At this distance, she would also see nothing related to the wolfmen. However, with Eiliad's moderately negative skills luck, a task she'd normally succeed at moderately will narrowly fail, causing her to miss a subtle detail. Thus, Eiliad, using her scouting skills, moves slightly ahead and to the side of dan's path. Her keen eyes scan the forest, but the moderately negative skills luck causes her to miss a faint deer trail that would have been obvious to her. She detects no immediate threats, as the wolfmen are too far away.
+    luck_dice:
+      dan:
+      - |
+        Social luck:
+        This round dan has slightly positive social luck; if you'd expect dan to narrowly fail in convincing or persuading an NPC, in this situation, dan would narrowly succeed.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly positively with social luck slightly on dan's side.
+
+        Social interactions will be slightly more positive towards dan than they would normally be.
+
+        dan's slightly improved social luck is just enough to overcome social challenges dan would find "moderately challenging", but if the social situation is "quite" or "very" challenging for dan, dan will fail.
+      - |
+        Attacking luck:
+        This round dan has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given dan's abilities and the situation.
+
+        dan's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        dan will succeed or fail at offensive maneuvers based entirely on whether those challenges match dan's combat capabilities.
+      - |
+        Defensive luck:
+        This round dan has slightly negative defensive luck; if you'd expect dan to be able to dodge, parry, or block an incoming attack, in this situation, dan would be unable to execute these defenses.
+
+        Likewise, attacks that would glance off instead find weak spots or vulnerable angles with defensive luck slightly against dan.
+
+        dan's defensive actions and positioning will be slightly less effective than they would normally be.
+
+        dan's slightly reduced defensive luck is just enough to fail against attacks dan would find mildly challenging, but if the incoming attack is easy or of normal difficulty for dan, dan's defense will still succeed, perhaps more narrowly.
+      - |
+        Skills luck:
+        This round dan has slightly negative skills luck; if you'd expect dan to narrowly succeed at a skilled task, in this situation, dan would narrowly fail.
+
+        Likewise, if a climbing hold would barely support dan's weight, it gives way, or if dan would just manage to move silently, they make a small noise with skills luck slightly against dan.
+
+        dan's skilled actions will be slightly less effective than they would normally be.
+
+        dan's slightly reduced skills luck is just enough to fail at tasks dan would find mildly challenging, but if the skilled task is easy or of normal difficulty for dan, dan will still succeed, perhaps more narrowly.
+      - |
+        Initiative luck:
+        This round dan has slightly positive initiative luck; if you'd expect dan to act just after another character, in this situation, dan would act just before them.
+
+        Likewise, if dan would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on dan's side.
+
+        dan's reactions and timing will be slightly faster than they would normally be.
+
+        dan's slightly improved initiative luck is just enough to act before opponents dan would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Firghorm:
+      - |
+        Social luck:
+        This round Firghorm has slightly positive social luck; if you'd expect Firghorm to narrowly fail in convincing or persuading an NPC, in this situation, Firghorm would narrowly succeed.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly positively with social luck slightly on Firghorm's side.
+
+        Social interactions will be slightly more positive towards Firghorm than they would normally be.
+
+        Firghorm's slightly improved social luck is just enough to overcome social challenges Firghorm would find "moderately challenging", but if the social situation is "quite" or "very" challenging for Firghorm, Firghorm will fail.
+      - |
+        Attacking luck:
+        This round Firghorm has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Firghorm's abilities and the situation.
+
+        Firghorm's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Firghorm will succeed or fail at offensive maneuvers based entirely on whether those challenges match Firghorm's combat capabilities.
+      - |
+        Defensive luck:
+        This round Firghorm has slightly negative defensive luck; if you'd expect Firghorm to be able to dodge, parry, or block an incoming attack, in this situation, Firghorm would be unable to execute these defenses.
+
+        Likewise, attacks that would glance off instead find weak spots or vulnerable angles with defensive luck slightly against Firghorm.
+
+        Firghorm's defensive actions and positioning will be slightly less effective than they would normally be.
+
+        Firghorm's slightly reduced defensive luck is just enough to fail against attacks Firghorm would find mildly challenging, but if the incoming attack is easy or of normal difficulty for Firghorm, Firghorm's defense will still succeed, perhaps more narrowly.
+      - |
+        Skills luck:
+        This round Firghorm has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given Firghorm's abilities and the situation.
+
+        Firghorm's skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        Firghorm will succeed or fail at skilled endeavors based entirely on whether those challenges match Firghorm's capabilities.
+      - |
+        Initiative luck:
+        This round Firghorm has moderately positive initiative luck; if you'd expect Firghorm to react slowly or be caught off-guard, but not completely surprised, then Firghorm would react quickly and seize the moment.
+
+        Likewise, if multiple characters would act simultaneously, Firghorm would clearly act first with initiative luck moderately on Firghorm's side.
+
+        Firghorm's reactions and timing will be moderately faster than they would normally be.
+
+        Firghorm's moderately improved initiative luck is enough to act before opponents Firghorm would find quite quick, but if the opponent is "very" or "extremely" fast, they will still act first.
+      Draenen:
+      - |
+        Social luck:
+        This round Draenen has neutral social luck; social outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        NPCs will respond to Draenen based purely on the circumstances, Draenen's approach, and their own dispositions.
+
+        Social interactions will be neither helped nor hindered by luck.
+
+        Draenen will succeed or fail at social challenges based entirely on whether those challenges match Draenen's social capabilities.
+      - |
+        Attacking luck:
+        This round Draenen has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        Draenen's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Draenen will succeed or fail at offensive maneuvers based entirely on whether those challenges match Draenen's combat capabilities.
+      - |
+        Defensive luck:
+        This round Draenen has moderately positive defensive luck; if you'd expect Draenen to fail to dodge, parry, or block, but not spectacularly, then Draenen manages one of these defenses.
+
+        Likewise, attacks that would wound moderately instead are deflected or turned into grazing blows with defensive luck moderately on Draenen's side.
+
+        Draenen's defensive actions and positioning will be moderately more effective than they would normally be.
+
+        Draenen's moderately improved defensive luck is enough to defend against attacks Draenen would find quite challenging, but if the incoming attack is "very" or "extremely" challenging for Draenen, Draenen's defense will fail.
+      - |
+        Skills luck:
+        This round Draenen has slightly negative skills luck; if you'd expect Draenen to narrowly succeed at a skilled task, in this situation, Draenen would narrowly fail.
+
+        Likewise, if a climbing hold would barely support Draenen's weight, it gives way, or if Draenen would just manage to move silently, they make a small noise with skills luck slightly against Draenen.
+
+        Draenen's skilled actions will be slightly less effective than they would normally be.
+
+        Draenen's slightly reduced skills luck is just enough to fail at tasks Draenen would find mildly challenging, but if the skilled task is easy or of normal difficulty for Draenen, Draenen will still succeed, perhaps more narrowly.
+      - |
+        Initiative luck:
+        This round Draenen has slightly positive initiative luck; if you'd expect Draenen to act just after another character, in this situation, Draenen would act just before them.
+
+        Likewise, if Draenen would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on Draenen's side.
+
+        Draenen's reactions and timing will be slightly faster than they would normally be.
+
+        Draenen's slightly improved initiative luck is just enough to act before opponents Draenen would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Eiliad:
+      - |
+        Social luck:
+        This round Eiliad has slightly negative social luck; if you'd expect Eiliad to narrowly succeed in convincing or persuading an NPC, in this situation, Eiliad would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against Eiliad.
+
+        Social interactions will be slightly more negative towards Eiliad than they would normally be.
+
+        Eiliad's slightly reduced social luck is just enough to fail social challenges Eiliad would find mildly challenging, but if the social situation is easy or of normal difficulty for Eiliad, Eiliad will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round Eiliad has slightly negative attacking luck; if you'd expect one of Eiliad's attacks to narrowly hit, in this situation, Eiliad would narrowly miss.
+
+        Likewise, if an attack would have moderate effectiveness without the luck, it has slightly less effectiveness with attacking luck slightly against Eiliad.
+
+        Eiliad's attacks will be slightly less effective than they would normally be.
+
+        Eiliad's slightly reduced attacking luck is just enough to fail against defenses Eiliad would find mildly challenging, but if the opponent's defense is easy or of normal difficulty for Eiliad, Eiliad's attack will still succeed, perhaps more narrowly.
+      - |
+        Defensive luck:
+        This round Eiliad has moderately negative defensive luck; if you'd expect Eiliad to successfully dodge, parry, or block, but not spectacularly, then Eiliad is unable to execute these defenses.
+
+        Likewise, attacks that would be deflected or cause minor wounds instead strike true with defensive luck moderately against Eiliad.
+
+        Eiliad's defensive actions and positioning will be moderately less effective than they would normally be.
+
+        Eiliad's moderately reduced defensive luck is enough to fail against attacks Eiliad would find moderately challenging, but if the incoming attack would normally be easy for Eiliad to defend against, Eiliad's defense will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Skills luck:
+        This round Eiliad has moderately negative skills luck; if you'd expect Eiliad to succeed at a skilled task, but not spectacularly, then Eiliad narrowly fails.
+
+        Likewise, if Eiliad would craft something functional, it has a critical flaw, or if Eiliad would navigate successfully, they take a wrong turn with skills luck moderately against Eiliad.
+
+        Eiliad's skilled actions will be moderately less effective than they would normally be.
+
+        Eiliad's moderately reduced skills luck is enough to fail at tasks Eiliad would find moderately challenging, but if the skilled task would normally be easy for Eiliad, Eiliad will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Initiative luck:
+        This round Eiliad has neutral initiative luck; Eiliad will act exactly when you would expect based on Eiliad's reflexes, awareness, and the situation.
+
+        Eiliad will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        Eiliad will seize or miss opportunities based entirely on their actual readiness and alertness.
+      Luath:
+      - |
+        Social luck:
+        This round Luath has moderately negative social luck; if you'd expect Luath to succeed in a social endeavor this round, but not spectacularly, then this round, Luath narrowly fails.
+
+        Likewise, if an NPC would respond neutrally to Luath without the luck, they respond negatively with social luck moderately against Luath.
+
+        Social interactions will be moderately more negative towards Luath than they would normally be.
+
+        Luath's moderately reduced social luck is enough to fail social challenges Luath would find moderately challenging, but if the social situation would normally be easy for Luath, Luath will still succeed, though with difficulty.
+      - |
+        Attacking luck:
+        This round Luath has moderately positive attacking luck; if you'd expect one of Luath's attacks to fail this round, but not spectacularly, then that attack narrowly succeeds.
+
+        Likewise, if an attack would have moderate effectiveness without the luck, it has high effectiveness with attacking luck moderately on Luath's side.
+
+        Luath's attacks will be moderately more effective than they would normally be.
+
+        Luath's moderately improved attacking luck is enough to overcome defenses Luath would find quite challenging, but if the opponent's defense is "very" or "extremely" challenging for Luath, Luath's attack will fail.
+      - |
+        Defensive luck:
+        This round Luath has neutral defensive luck; defensive outcomes will play out exactly as you would normally expect given Luath's abilities and the situation.
+
+        Luath's defensive actions will succeed or fail based purely on skill, positioning, and the opponent's attacks.
+
+        Defensive maneuvers will be neither helped nor hindered by luck.
+
+        Luath will defend successfully or unsuccessfully based entirely on whether incoming attacks match Luath's defensive capabilities.
+      - |
+        Skills luck:
+        This round Luath has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given Luath's abilities and the situation.
+
+        Luath's skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        Luath will succeed or fail at skilled endeavors based entirely on whether those challenges match Luath's capabilities.
+      - |
+        Initiative luck:
+        This round Luath has slightly positive initiative luck; if you'd expect Luath to act just after another character, in this situation, Luath would act just before them.
+
+        Likewise, if Luath would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on Luath's side.
+
+        Luath's reactions and timing will be slightly faster than they would normally be.
+
+        Luath's slightly improved initiative luck is just enough to act before opponents Luath would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Wolfmen Pack (Ambush):
+      - |
+        Social luck:
+        This round Wolfmen Pack (Ambush) has slightly positive social luck; if you'd expect Wolfmen Pack (Ambush) to narrowly fail in convincing or persuading an NPC, in this situation, Wolfmen Pack (Ambush) would narrowly succeed.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly positively with social luck slightly on Wolfmen Pack (Ambush)'s side.
+
+        Social interactions will be slightly more positive towards Wolfmen Pack (Ambush) than they would normally be.
+
+        Wolfmen Pack (Ambush)'s slightly improved social luck is just enough to overcome social challenges Wolfmen Pack (Ambush) would find "moderately challenging", but if the social situation is "quite" or "very" challenging for Wolfmen Pack (Ambush), Wolfmen Pack (Ambush) will fail.
+      - |
+        Attacking luck:
+        This round Wolfmen Pack (Ambush) has slightly positive attacking luck; if you'd expect one of Wolfmen Pack (Ambush)'s attacks to narrowly miss, in this situation, Wolfmen Pack (Ambush) would narrowly hit.
+
+        Likewise, if an attack would have moderate effectiveness without the luck, it has slightly more effectiveness with attacking luck slightly on Wolfmen Pack (Ambush)'s side.
+
+        Wolfmen Pack (Ambush)'s attacks will be slightly more effective than they would normally be.
+
+        Wolfmen Pack (Ambush)'s slightly improved attacking luck is just enough to overcome defenses Wolfmen Pack (Ambush) would find "moderately challenging", but if the opponent's defense is "quite" or "very" challenging for Wolfmen Pack (Ambush), Wolfmen Pack (Ambush)'s attack will fail.
+      - |
+        Defensive luck:
+        This round Wolfmen Pack (Ambush) has moderately positive defensive luck; if you'd expect Wolfmen Pack (Ambush) to fail to dodge, parry, or block, but not spectacularly, then Wolfmen Pack (Ambush) manages one of these defenses.
+
+        Likewise, attacks that would wound moderately instead are deflected or turned into grazing blows with defensive luck moderately on Wolfmen Pack (Ambush)'s side.
+
+        Wolfmen Pack (Ambush)'s defensive actions and positioning will be moderately more effective than they would normally be.
+
+        Wolfmen Pack (Ambush)'s moderately improved defensive luck is enough to defend against attacks Wolfmen Pack (Ambush) would find quite challenging, but if the incoming attack is "very" or "extremely" challenging for Wolfmen Pack (Ambush), Wolfmen Pack (Ambush)'s defense will fail.
+      - |
+        Skills luck:
+        This round Wolfmen Pack (Ambush) has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given Wolfmen Pack (Ambush)'s abilities and the situation.
+
+        Wolfmen Pack (Ambush)'s skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        Wolfmen Pack (Ambush) will succeed or fail at skilled endeavors based entirely on whether those challenges match Wolfmen Pack (Ambush)'s capabilities.
+      - |
+        Initiative luck:
+        This round Wolfmen Pack (Ambush) has slightly negative initiative luck; if you'd expect Wolfmen Pack (Ambush) to act just before another character, in this situation, Wolfmen Pack (Ambush) would act just after them.
+
+        Likewise, if Wolfmen Pack (Ambush) would barely notice an opening to act in time, they would spot it just too late with initiative luck slightly against Wolfmen Pack (Ambush).
+
+        Wolfmen Pack (Ambush)'s reactions and timing will be slightly slower than they would normally be.
+
+        Wolfmen Pack (Ambush)'s slightly reduced initiative luck is just enough to act after opponents Wolfmen Pack (Ambush) would find mildly quick, but if the opponent is slow or of normal speed compared to Wolfmen Pack (Ambush), Wolfmen Pack (Ambush) will still act first.
+  rotations: []
+- user: We continue north for another 3 miles, moving carefully but steadily.
+  dm: |-
+    **The party**: Advance north for 3 miles, moving carefully but steadily. Given the party's coordinated movement and the environment, they begin to advance north along the Old Road. Eiliad, as the scout, moves slightly ahead and to the side of dan's path. Her keen eyes scan the forest. Normally, without luck, Eiliad would move to scout ahead and to the side of dan's path, her keen eyes scanning the forest effectively. However, with Eiliad's slightly positive skills luck, she is better than usual at spotting details. She successfully identifies a faint deer trail branching off the Old Road, something she missed in the previous turn due to negative luck. She detects no immediate threats, as the wolfmen are still 4 miles away. dan continues to advance north along the road. Normally, without luck, dan would advance north along the road, proceeding as expected. However, dan's neutral initiative and skills luck mean the action proceeds exactly as expected. dan advances north for 3 miles, moving carefully but steadily. Firghorm moves with the party, maintaining his defensive posture and scanning the surroundings. Normally, without luck, Firghorm would move with the party, maintaining his defensive posture and scanning the surroundings, detecting nothing out of the ordinary at this distance. Firghorm's neutral initiative and skills luck mean the action proceeds exactly as expected. He detects no immediate threats. Draenen follows dan, scanning the immediate surroundings for useful plants and signs of danger. Normally, without luck, Draenen would follow dan, scanning the immediate surroundings for useful plants and signs of danger, finding nothing particularly noteworthy but maintaining general vigilance. However, with Draenen's slightly positive skills luck, she is better than usual at spotting plants. She successfully identifies a patch of common healing herbs growing by the roadside, which she tucks into her satchel. She detects no immediate threats. Luath follows dan, remaining vigilant and showing his characteristic nervousness. Normally, without luck, Luath would follow dan, remaining vigilant and showing his characteristic nervousness, remaining passive unless his anxiety peaked. Luath's moderately positive initiative luck means he *could* act slightly faster if an independent action were required, but as he is following the group's pace, his action is integrated into their movement. His neutral skills luck means his actions are as expected. He feels the tension of the forest and the known threat ahead, but does not yet feel compelled to use his moonshade.
+  metrics: Event sequence system active
+  reasoning_summary: |
+    **The Party's Advance**
+
+    Alright, let's break this down. The player wants the group to move north. My brain immediately jumps to: the Old Road, Welwaen Forest, potential ambushes, and everyone's individual goals.  So, the party (dan, Firghorm, Draenen, Luath, and Eiliad) sets out to move 3 miles north, cautiously.  Eiliad, the scout, naturally moves a bit ahead to check things out.  Normally, without her lucky boost, she'd just be doing her usual scouting, but with her slightly positive skills luck, she notices something she might have missed before – a deer trail off the road.  No immediate danger though, the wolfmen are still a ways off.  dan, just moves forward, doing what's expected. Firghorm, keeping his guard up, also finds nothing out of the ordinary, and the movement continues without any obstacles.  Draenen, who has a talent for plants, and today has a bit of luck on her side, spots some healing herbs growing by the road. Perfect timing. Luath, the anxious one, stays close to dan and looks like he is prepared and vigilant. The forest makes him nervous, but he remains calm for the moment. And with that, the party advanced successfully.
+  debug_info:
+    parsed_npc_analysis:
+      npc_psychological_analyses:
+      - npc_name: dan
+        emotional_state: |-
+          Perceives the situation as a necessary but potentially dangerous journey towards the crossroads, with a known threat (wolfmen) ahead
+        immediate_objectives:
+        - s to reach the crossroads safely and feel competent in the journey
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: Approves of the steady, careful advance as prudent and necessary for their goal.
+        self_initiated_action: null
+      - npc_name: Firghorm
+        emotional_state: |-
+          Perceives the situation as a mission requiring constant vigilance and protection, seeing the forest as a potential battlefield and the party as his charge
+        immediate_objectives:
+        - s to protect everyone, atone for past failures, and feel useful
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Approves of the steady, careful advance as prudent and aligned with his protective instincts.
+        self_initiated_action: null
+      - npc_name: Draenen
+        emotional_state: |-
+          Perceives the situation as a necessary trek through potentially resource-rich but dangerous territory, viewed through the lens of her herbalism and duty
+        immediate_objectives:
+        - s to ensure everyone's well-being, find teylan, and feel in control of her role
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Sees this as the sensible approach, perhaps thinking 'at least someone is thinking practically'.
+        self_initiated_action: null
+      - npc_name: Luath
+        emotional_state: |-
+          Perceives the situation as tense and potentially dangerous, amplified by his own anxiety, guilt, and the known threat ahead
+        immediate_objectives:
+        - |-
+          s to alleviate guilt, find peace, feel competent, and manage his anxiety/addiction
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Feels a measure of relief that the group is moving forward in a controlled manner, reducing his immediate anxiety.
+        self_initiated_action: null
+      - npc_name: Eiliad
+        emotional_state: |-
+          Perceives the situation as a task requiring vigilance and efficiency, viewing the forest as a place to navigate and secure
+        immediate_objectives:
+        - |-
+          s to protect the group, find teylan, feel competent and self-reliant, and avoid emotional entanglements
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Views this as the most efficient way to cover ground given the circumstances, and will adjust her scouting accordingly.
+        self_initiated_action: null
+    event_sequence:
+      event_sequence:
+      - actor: The party
+        attempt: Advance north for 3 miles, moving carefully but steadily.
+        how_attempt_plays_out: |-
+          Given the party's coordinated movement and the environment, they begin to advance north along the Old Road. Eiliad, as the scout, moves slightly ahead and to the side of dan's path. Her keen eyes scan the forest. Normally, without luck, Eiliad would move to scout ahead and to the side of dan's path, her keen eyes scanning the forest effectively. However, with Eiliad's slightly positive skills luck, she is better than usual at spotting details. She successfully identifies a faint deer trail branching off the Old Road, something she missed in the previous turn due to negative luck. She detects no immediate threats, as the wolfmen are still 4 miles away. dan continues to advance north along the road. Normally, without luck, dan would advance north along the road, proceeding as expected. However, dan's neutral initiative and skills luck mean the action proceeds exactly as expected. dan advances north for 3 miles, moving carefully but steadily. Firghorm moves with the party, maintaining his defensive posture and scanning the surroundings. Normally, without luck, Firghorm would move with the party, maintaining his defensive posture and scanning the surroundings, detecting nothing out of the ordinary at this distance. Firghorm's neutral initiative and skills luck mean the action proceeds exactly as expected. He detects no immediate threats. Draenen follows dan, scanning the immediate surroundings for useful plants and signs of danger. Normally, without luck, Draenen would follow dan, scanning the immediate surroundings for useful plants and signs of danger, finding nothing particularly noteworthy but maintaining general vigilance. However, with Draenen's slightly positive skills luck, she is better than usual at spotting plants. She successfully identifies a patch of common healing herbs growing by the roadside, which she tucks into her satchel. She detects no immediate threats. Luath follows dan, remaining vigilant and showing his characteristic nervousness. Normally, without luck, Luath would follow dan, remaining vigilant and showing his characteristic nervousness, remaining passive unless his anxiety peaked. Luath's moderately positive initiative luck means he *could* act slightly faster if an independent action were required, but as he is following the group's pace, his action is integrated into their movement. His neutral skills luck means his actions are as expected. He feels the tension of the forest and the known threat ahead, but does not yet feel compelled to use his moonshade.
+    luck_dice:
+      dan:
+      - |
+        Social luck:
+        This round dan has slightly negative social luck; if you'd expect dan to narrowly succeed in convincing or persuading an NPC, in this situation, dan would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against dan.
+
+        Social interactions will be slightly more negative towards dan than they would normally be.
+
+        dan's slightly reduced social luck is just enough to fail social challenges dan would find mildly challenging, but if the social situation is easy or of normal difficulty for dan, dan will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round dan has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given dan's abilities and the situation.
+
+        dan's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        dan will succeed or fail at offensive maneuvers based entirely on whether those challenges match dan's combat capabilities.
+      - |
+        Defensive luck:
+        This round dan has neutral defensive luck; defensive outcomes will play out exactly as you would normally expect given dan's abilities and the situation.
+
+        dan's defensive actions will succeed or fail based purely on skill, positioning, and the opponent's attacks.
+
+        Defensive maneuvers will be neither helped nor hindered by luck.
+
+        dan will defend successfully or unsuccessfully based entirely on whether incoming attacks match dan's defensive capabilities.
+      - |
+        Skills luck:
+        This round dan has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given dan's abilities and the situation.
+
+        dan's skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        dan will succeed or fail at skilled endeavors based entirely on whether those challenges match dan's capabilities.
+      - |
+        Initiative luck:
+        This round dan has neutral initiative luck; dan will act exactly when you would expect based on dan's reflexes, awareness, and the situation.
+
+        dan will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        dan will seize or miss opportunities based entirely on their actual readiness and alertness.
+      Firghorm:
+      - |
+        Social luck:
+        This round Firghorm has moderately positive social luck; if you'd expect Firghorm to fail in a social endeavor this round, but not spectacularly, then this round, Firghorm narrowly succeeds.
+
+        Likewise, if an NPC would respond neutrally to Firghorm without the luck, they respond positively with social luck moderately on Firghorm's side.
+
+        Social interactions will be moderately more positive towards Firghorm than they would normally be.
+
+        Firghorm's moderately improved social luck is enough to overcome social challenges Firghorm would find quite challenging, but if the social situation is "very" or "extremely" challenging for Firghorm, Firghorm will fail.
+      - |
+        Attacking luck:
+        This round Firghorm has slightly positive attacking luck; if you'd expect one of Firghorm's attacks to narrowly miss, in this situation, Firghorm would narrowly hit.
+
+        Likewise, if an attack would have moderate effectiveness without the luck, it has slightly more effectiveness with attacking luck slightly on Firghorm's side.
+
+        Firghorm's attacks will be slightly more effective than they would normally be.
+
+        Firghorm's slightly improved attacking luck is just enough to overcome defenses Firghorm would find "moderately challenging", but if the opponent's defense is "quite" or "very" challenging for Firghorm, Firghorm's attack will fail.
+      - |
+        Defensive luck:
+        This round Firghorm has slightly negative defensive luck; if you'd expect Firghorm to be able to dodge, parry, or block an incoming attack, in this situation, Firghorm would be unable to execute these defenses.
+
+        Likewise, attacks that would glance off instead find weak spots or vulnerable angles with defensive luck slightly against Firghorm.
+
+        Firghorm's defensive actions and positioning will be slightly less effective than they would normally be.
+
+        Firghorm's slightly reduced defensive luck is just enough to fail against attacks Firghorm would find mildly challenging, but if the incoming attack is easy or of normal difficulty for Firghorm, Firghorm's defense will still succeed, perhaps more narrowly.
+      - |
+        Skills luck:
+        This round Firghorm has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given Firghorm's abilities and the situation.
+
+        Firghorm's skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        Firghorm will succeed or fail at skilled endeavors based entirely on whether those challenges match Firghorm's capabilities.
+      - |
+        Initiative luck:
+        This round Firghorm has neutral initiative luck; Firghorm will act exactly when you would expect based on Firghorm's reflexes, awareness, and the situation.
+
+        Firghorm will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        Firghorm will seize or miss opportunities based entirely on their actual readiness and alertness.
+      Draenen:
+      - |
+        Social luck:
+        This round Draenen has slightly negative social luck; if you'd expect Draenen to narrowly succeed in convincing or persuading an NPC, in this situation, Draenen would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against Draenen.
+
+        Social interactions will be slightly more negative towards Draenen than they would normally be.
+
+        Draenen's slightly reduced social luck is just enough to fail social challenges Draenen would find mildly challenging, but if the social situation is easy or of normal difficulty for Draenen, Draenen will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round Draenen has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        Draenen's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Draenen will succeed or fail at offensive maneuvers based entirely on whether those challenges match Draenen's combat capabilities.
+      - |
+        Defensive luck:
+        This round Draenen has moderately positive defensive luck; if you'd expect Draenen to fail to dodge, parry, or block, but not spectacularly, then Draenen manages one of these defenses.
+
+        Likewise, attacks that would wound moderately instead are deflected or turned into grazing blows with defensive luck moderately on Draenen's side.
+
+        Draenen's defensive actions and positioning will be moderately more effective than they would normally be.
+
+        Draenen's moderately improved defensive luck is enough to defend against attacks Draenen would find quite challenging, but if the incoming attack is "very" or "extremely" challenging for Draenen, Draenen's defense will fail.
+      - |
+        Skills luck:
+        This round Draenen has slightly positive skills luck; if you'd expect Draenen to narrowly fail at a skilled task, in this situation, Draenen would narrowly succeed.
+
+        Likewise, if a lockpick would almost catch but not quite, it just clicks into place, or if Draenen would barely miss noticing something important, they just spot it with skills luck slightly on Draenen's side.
+
+        Draenen's skilled actions will be slightly more effective than they would normally be.
+
+        Draenen's slightly improved skills luck is just enough to overcome tasks Draenen would find "moderately challenging", but if the skilled task is "quite" or "very" challenging for Draenen, Draenen will fail.
+      - |
+        Initiative luck:
+        This round Draenen has neutral initiative luck; Draenen will act exactly when you would expect based on Draenen's reflexes, awareness, and the situation.
+
+        Draenen will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        Draenen will seize or miss opportunities based entirely on their actual readiness and alertness.
+      Luath:
+      - |
+        Social luck:
+        This round Luath has slightly negative social luck; if you'd expect Luath to narrowly succeed in convincing or persuading an NPC, in this situation, Luath would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against Luath.
+
+        Social interactions will be slightly more negative towards Luath than they would normally be.
+
+        Luath's slightly reduced social luck is just enough to fail social challenges Luath would find mildly challenging, but if the social situation is easy or of normal difficulty for Luath, Luath will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round Luath has moderately negative attacking luck; if you'd expect one of Luath's attacks to succeed this round, but not spectacularly, then that attack narrowly fails.
+
+        Likewise, if an attack would have high effectiveness without the luck, it only has moderate effectiveness with attacking luck moderately against Luath.
+
+        Luath's attacks will be moderately less effective than they would normally be.
+
+        Luath's moderately reduced attacking luck is enough to fail against defenses Luath would find moderately challenging, but if the opponent's defense would normally be easy for Luath to overcome, Luath's attack will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Defensive luck:
+        This round Luath has neutral defensive luck; defensive outcomes will play out exactly as you would normally expect given Luath's abilities and the situation.
+
+        Luath's defensive actions will succeed or fail based purely on skill, positioning, and the opponent's attacks.
+
+        Defensive maneuvers will be neither helped nor hindered by luck.
+
+        Luath will defend successfully or unsuccessfully based entirely on whether incoming attacks match Luath's defensive capabilities.
+      - |
+        Skills luck:
+        This round Luath has moderately negative skills luck; if you'd expect Luath to succeed at a skilled task, but not spectacularly, then Luath narrowly fails.
+
+        Likewise, if Luath would craft something functional, it has a critical flaw, or if Luath would navigate successfully, they take a wrong turn with skills luck moderately against Luath.
+
+        Luath's skilled actions will be moderately less effective than they would normally be.
+
+        Luath's moderately reduced skills luck is enough to fail at tasks Luath would find moderately challenging, but if the skilled task would normally be easy for Luath, Luath will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Initiative luck:
+        This round Luath has moderately positive initiative luck; if you'd expect Luath to react slowly or be caught off-guard, but not completely surprised, then Luath would react quickly and seize the moment.
+
+        Likewise, if multiple characters would act simultaneously, Luath would clearly act first with initiative luck moderately on Luath's side.
+
+        Luath's reactions and timing will be moderately faster than they would normally be.
+
+        Luath's moderately improved initiative luck is enough to act before opponents Luath would find quite quick, but if the opponent is "very" or "extremely" fast, they will still act first.
+      Eiliad:
+      - |
+        Social luck:
+        This round Eiliad has slightly negative social luck; if you'd expect Eiliad to narrowly succeed in convincing or persuading an NPC, in this situation, Eiliad would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against Eiliad.
+
+        Social interactions will be slightly more negative towards Eiliad than they would normally be.
+
+        Eiliad's slightly reduced social luck is just enough to fail social challenges Eiliad would find mildly challenging, but if the social situation is easy or of normal difficulty for Eiliad, Eiliad will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round Eiliad has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Eiliad's abilities and the situation.
+
+        Eiliad's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Eiliad will succeed or fail at offensive maneuvers based entirely on whether those challenges match Eiliad's combat capabilities.
+      - |
+        Defensive luck:
+        This round Eiliad has slightly negative defensive luck; if you'd expect Eiliad to be able to dodge, parry, or block an incoming attack, in this situation, Eiliad would be unable to execute these defenses.
+
+        Likewise, attacks that would glance off instead find weak spots or vulnerable angles with defensive luck slightly against Eiliad.
+
+        Eiliad's defensive actions and positioning will be slightly less effective than they would normally be.
+
+        Eiliad's slightly reduced defensive luck is just enough to fail against attacks Eiliad would find mildly challenging, but if the incoming attack is easy or of normal difficulty for Eiliad, Eiliad's defense will still succeed, perhaps more narrowly.
+      - |
+        Skills luck:
+        This round Eiliad has slightly positive skills luck; if you'd expect Eiliad to narrowly fail at a skilled task, in this situation, Eiliad would narrowly succeed.
+
+        Likewise, if a lockpick would almost catch but not quite, it just clicks into place, or if Eiliad would barely miss noticing something important, they just spot it with skills luck slightly on Eiliad's side.
+
+        Eiliad's skilled actions will be slightly more effective than they would normally be.
+
+        Eiliad's slightly improved skills luck is just enough to overcome tasks Eiliad would find "moderately challenging", but if the skilled task is "quite" or "very" challenging for Eiliad, Eiliad will fail.
+      - |
+        Initiative luck:
+        This round Eiliad has neutral initiative luck; Eiliad will act exactly when you would expect based on Eiliad's reflexes, awareness, and the situation.
+
+        Eiliad will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        Eiliad will seize or miss opportunities based entirely on their actual readiness and alertness.
+  rotations: []
+- user: We continue another mile north. I keep my hand on my sword and stay alert.
+  dm: |-
+    **dan**: The party continues north for another mile, with dan keeping hand on sword and staying alert. Given dan's neutral initiative, the party begins their movement as expected. As they advance into the 4-mile mark, the wolfmen, hidden in the dense forest flanking the Old Road, erupt from their concealed positions with guttural snarls. The Jagari, Witari, two Hunters, and an Apprentice charge the unsuspecting group.
+
+    **Luath**: React to the sudden ambush and prepare defenses. Given Luath's moderately positive initiative, he reacts swiftly to the sudden attack. His nervousness and the shock of the ambush cause him to instinctively reach for his Moonshade vial. His moderately negative skills luck means his attempt to quickly prepare a vial is clumsy, nearly causing him to drop it. However, his slightly positive defensive luck allows him to brace himself against a large oak tree as the first wolfman lunges, providing a moment of stability. He doesn't consume the Moonshade yet, but he is preparing his defenses and his preferred stimulant.
+
+    **Eiliad**: React to the ambush by drawing her bow and finding a firing position. Given Eiliad's slightly positive initiative and skills luck, she reacts with practiced efficiency. She draws her shortbow and nocks an arrow, her keen eyes already assessing targets. Her slightly positive skills luck means she can quickly and silently draw her bow, finding a good firing position behind a large oak tree, ready to unleash a shot.
+
+    **Firghorm**: React to the ambush by drawing his sword and shield and intercepting the closest threat. Given Firghorm's slightly positive initiative, he acts swiftly. He draws his steel longsword and plain steel shield. His slightly negative defensive luck means he's not quite as prepared for the initial shock of the attack as he'd like, making his defensive stance slightly less solid, but his innate vigilance still guides him. He moves to intercept the Jagari that is attacking him, planting his shield firmly to block the initial charge.
+
+    **Draenen**: React to the ambush by drawing her knife and preparing her supplies. Given Draenen's slightly positive initiative, she reacts quickly. She draws her knife and clutches her satchel. Her slightly negative skills luck means she fumbles slightly with her sling, making it harder to prepare a ranged shot immediately, but she manages to keep her wits about her, readying herself to use a poultice or antidote if needed.
+
+    **dan**: React to the ambush by keeping hand on sword and staying alert. Given dan's neutral initiative, he reacts as expected. He draws his sword and braces himself, scanning the attackers. His moderately negative defensive luck means he's slightly less able to avoid the initial shock of the attack or find perfect cover, making his defensive posture less effective, but he's still prepared to fight and stay alert.
+  metrics: Event sequence system active
+  reasoning_summary: "**Current Thoughts: Ambush!**\n\nAlright, I'm thinking... The player, controlling Dan, wants to move\
+    \ the party north for another mile.  \"We continue north for another mile. I keep my hand on my sword and stay alert.\"\
+    \ This is the key...  We're currently at the 5-mile mark from our start, and the ambush is at the 4-mile mark (1 mile\
+    \ from the crossroads). We know it's there. So, with Dan leading the party forward, we *will* trigger the ambush in that\
+    \ mile.\n\nThis means... it's happening *now*. Not a \"will happen,\" but \"is happening.\"\n\nHere's how I see it unfolding:\n\
+    \n**1.  We move... BAM!** Dan's call initiates the move.  \"Given Dan's neutral initiative, the party begins their movement\
+    \ as expected. As they advance into the 4-mile mark, the wolfmen, hidden in the dense forest flanking the Old Road, erupt\
+    \ from their concealed positions with guttural snarls. The Jagari, Witari, two Hunters, and an Apprentice charge the unsuspecting\
+    \ group.\"\n\n**2. Reactions Time!** \n\n*   **Luath (nervous as always, but quick!):**  \"Given Luath's moderately positive\
+    \ initiative, he reacts swiftly to the sudden attack. His nervousness and the shock of the ambush cause him to instinctively\
+    \ reach for his Moonshade vial. His moderately negative skills luck means his attempt to quickly prepare a vial is clumsy,\
+    \ nearly causing him to drop it. However, his slightly positive defensive luck allows him to brace himself against a large\
+    \ oak tree as the first wolfman lunges, providing a moment of stability. He doesn't consume the Moonshade yet, but he\
+    \ is preparing his defenses and his preferred stimulant.\"  (Fumbles, but survives!)\n\n*   **Eiliad (skill and precision):**\
+    \ \"Given Eiliad's slightly positive initiative and skills luck, she reacts with practiced efficiency. She draws her shortbow\
+    \ and nocks an arrow, her keen eyes already assessing targets. Her slightly positive skills luck means she can quickly\
+    \ and silently draw her bow, finding a good firing position behind a large oak tree, ready to unleash a shot.\" (Bow is\
+    \ drawn and aimed)\n\n*   **Firghorm (the shield!):** \"Given Firghorm's slightly positive initiative, he acts swiftly.\
+    \ He draws his steel longsword and plain steel shield. His slightly negative defensive luck means he's not quite as prepared\
+    \ for the initial shock of the attack as he'd like, making his defensive stance slightly less solid, but his innate vigilance\
+    \ still guides him. He moves to intercept the Jagari that is attacking him, planting his shield firmly to block the initial\
+    \ charge.\" (Sword and shield up, facing the threat)\n\n*   **Draenen (the healer!):** \"Given Draenen's slightly positive\
+    \ initiative, she reacts quickly. She draws her knife and clutches her satchel. Her slightly negative skills luck means\
+    \ she fumbles slightly with her sling, making it harder to prepare a ranged shot immediately, but she manages to keep\
+    \ her wits about her, readying herself to use a poultice or antidote if needed.\" ( Knife drawn. Antidotes at the ready.)\n\
+    \n*   **Dan (the solid front):** \"Given Dan's neutral initiative, he reacts as expected. He draws his sword and braces\
+    \ himself, scanning the attackers. His moderately negative defensive luck means he's slightly less able to avoid the initial\
+    \ shock of the attack or find perfect cover, making his defensive posture less effective, but he's still prepared to fight\
+    \ and stay alert.\" (On guard)\n\nThis is it! Time to see if these rolls of the die are with us.\n"
+  debug_info:
+    parsed_npc_analysis:
+      npc_psychological_analyses:
+      - npc_name: dan
+        emotional_state: |-
+          Perceives the forest as a place of potential, unseen threats, lacking complete control over the environment (Emptiness)
+        immediate_objectives:
+        - s to reach the crossroads safely and understand/overcome threats
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Would perceive dan's action as prudent and aligned with Firghorm's own goals. Would approve of the caution and vigilance, reinforcing Firghorm's own watchful stance. Might nod in silent acknowledgment of dan's readiness.
+        self_initiated_action: null
+      - npc_name: Firghorm
+        emotional_state: |-
+          Perceives the forest as a place where threats are constant, his past trauma reinforcing this hyper-vigilance (Horribleness)
+        immediate_objectives:
+        - |-
+          s to protect the group completely, atone for past failures by ensuring no one else gets hurt, and find peace from his guilt
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Would perceive dan's action as prudent and aligned with his own goals. Would approve of the caution and vigilance, reinforcing his own watchful stance. Might nod in silent acknowledgment of dan's readiness.
+        self_initiated_action: null
+      - npc_name: Draenen
+        emotional_state: |-
+          Perceives the forest as a place of potential harm to her group and a testing ground for her skills, possibly unappreciated (Horribleness, Emptiness)
+        immediate_objectives:
+        - |-
+          s to be seen as indispensable, and seeks useful resources (herbs) (concupiscence)
+        concerns_or_fears:
+        - s failure or lack of appreciation (emptiness)
+        attitude_towards_action: |-
+          Would perceive dan's action as responsible and necessary. Would likely appreciate the shared vigilance, as it means she doesn't have to bear the entire burden of watching. Might offer a brief, 'Good. Stay sharp,' or simply continue her own scanning.
+        self_initiated_action: null
+      - npc_name: Eiliad
+        emotional_state: |-
+          Perceives potential threats everywhere, assuming the worst-case scenario due to her survival instincts and past experiences (Horribleness)
+        immediate_objectives:
+        - |-
+          s to feel safe and in control, to protect those she cares about (like teylan), and to avoid emotional pain
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Would view dan's action as standard procedure, perhaps a bit too predictable. Might internally note that dan is being cautious but not exceptionally so. Would continue her own scouting, assuming dan is handling the direct path.
+        self_initiated_action: null
+      - npc_name: Luath
+        emotional_state: |-
+          Feels a profound lack of control over his past actions and their consequences, leading to guilt and anxiety (Emptiness)
+        immediate_objectives:
+        - |-
+          s to escape his guilt, find redemption, and feel useful and competent without the pressure that led to his downfall, and find relief from his anxiety
+        concerns_or_fears:
+        - Unknown threats
+        attitude_towards_action: |-
+          Would likely feel a sense of relief that dan is being vigilant, as it means he doesn't have to be the primary guardian. Might interpret dan's action as a sign that the group is taking the threat seriously, which could either increase his anxiety or provide a small measure of comfort. Would likely continue to follow dan's lead, remaining watchful but passive.
+        self_initiated_action: null
+    event_sequence:
+      event_sequence:
+      - actor: dan
+        attempt: |-
+          The party continues north for another mile, with dan keeping hand on sword and staying alert.
+        how_attempt_plays_out: |-
+          Given dan's neutral initiative, the party begins their movement as expected. As they advance into the 4-mile mark, the wolfmen, hidden in the dense forest flanking the Old Road, erupt from their concealed positions with guttural snarls. The Jagari, Witari, two Hunters, and an Apprentice charge the unsuspecting group.
+      - actor: Luath
+        attempt: React to the sudden ambush and prepare defenses.
+        how_attempt_plays_out: |-
+          Given Luath's moderately positive initiative, he reacts swiftly to the sudden attack. His nervousness and the shock of the ambush cause him to instinctively reach for his Moonshade vial. His moderately negative skills luck means his attempt to quickly prepare a vial is clumsy, nearly causing him to drop it. However, his slightly positive defensive luck allows him to brace himself against a large oak tree as the first wolfman lunges, providing a moment of stability. He doesn't consume the Moonshade yet, but he is preparing his defenses and his preferred stimulant.
+      - actor: Eiliad
+        attempt: React to the ambush by drawing her bow and finding a firing position.
+        how_attempt_plays_out: |-
+          Given Eiliad's slightly positive initiative and skills luck, she reacts with practiced efficiency. She draws her shortbow and nocks an arrow, her keen eyes already assessing targets. Her slightly positive skills luck means she can quickly and silently draw her bow, finding a good firing position behind a large oak tree, ready to unleash a shot.
+      - actor: Firghorm
+        attempt: |-
+          React to the ambush by drawing his sword and shield and intercepting the closest threat.
+        how_attempt_plays_out: |-
+          Given Firghorm's slightly positive initiative, he acts swiftly. He draws his steel longsword and plain steel shield. His slightly negative defensive luck means he's not quite as prepared for the initial shock of the attack as he'd like, making his defensive stance slightly less solid, but his innate vigilance still guides him. He moves to intercept the Jagari that is attacking him, planting his shield firmly to block the initial charge.
+      - actor: Draenen
+        attempt: React to the ambush by drawing her knife and preparing her supplies.
+        how_attempt_plays_out: |-
+          Given Draenen's slightly positive initiative, she reacts quickly. She draws her knife and clutches her satchel. Her slightly negative skills luck means she fumbles slightly with her sling, making it harder to prepare a ranged shot immediately, but she manages to keep her wits about her, readying herself to use a poultice or antidote if needed.
+      - actor: dan
+        attempt: React to the ambush by keeping hand on sword and staying alert.
+        how_attempt_plays_out: |-
+          Given dan's neutral initiative, he reacts as expected. He draws his sword and braces himself, scanning the attackers. His moderately negative defensive luck means he's slightly less able to avoid the initial shock of the attack or find perfect cover, making his defensive posture less effective, but he's still prepared to fight and stay alert.
+    luck_dice:
+      dan:
+      - |
+        Social luck:
+        This round dan has slightly positive social luck; if you'd expect dan to narrowly fail in convincing or persuading an NPC, in this situation, dan would narrowly succeed.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly positively with social luck slightly on dan's side.
+
+        Social interactions will be slightly more positive towards dan than they would normally be.
+
+        dan's slightly improved social luck is just enough to overcome social challenges dan would find "moderately challenging", but if the social situation is "quite" or "very" challenging for dan, dan will fail.
+      - |
+        Attacking luck:
+        This round dan has slightly positive attacking luck; if you'd expect one of dan's attacks to narrowly miss, in this situation, dan would narrowly hit.
+
+        Likewise, if an attack would have moderate effectiveness without the luck, it has slightly more effectiveness with attacking luck slightly on dan's side.
+
+        dan's attacks will be slightly more effective than they would normally be.
+
+        dan's slightly improved attacking luck is just enough to overcome defenses dan would find "moderately challenging", but if the opponent's defense is "quite" or "very" challenging for dan, dan's attack will fail.
+      - |
+        Defensive luck:
+        This round dan has moderately negative defensive luck; if you'd expect dan to successfully dodge, parry, or block, but not spectacularly, then dan is unable to execute these defenses.
+
+        Likewise, attacks that would be deflected or cause minor wounds instead strike true with defensive luck moderately against dan.
+
+        dan's defensive actions and positioning will be moderately less effective than they would normally be.
+
+        dan's moderately reduced defensive luck is enough to fail against attacks dan would find moderately challenging, but if the incoming attack would normally be easy for dan to defend against, dan's defense will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Skills luck:
+        This round dan has neutral skills luck; skill-based outcomes will play out exactly as you would normally expect given dan's abilities and the situation.
+
+        dan's skill attempts will succeed or fail based purely on training, natural ability, and environmental factors.
+
+        Skilled tasks will be neither helped nor hindered by luck.
+
+        dan will succeed or fail at skilled endeavors based entirely on whether those challenges match dan's capabilities.
+      - |
+        Initiative luck:
+        This round dan has neutral initiative luck; dan will act exactly when you would expect based on dan's reflexes, awareness, and the situation.
+
+        dan will neither act earlier nor later than their natural speed and positioning would dictate.
+
+        Reaction timing will be neither helped nor hindered by luck.
+
+        dan will seize or miss opportunities based entirely on their actual readiness and alertness.
+      Firghorm:
+      - |
+        Social luck:
+        This round Firghorm has slightly positive social luck; if you'd expect Firghorm to narrowly fail in convincing or persuading an NPC, in this situation, Firghorm would narrowly succeed.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly positively with social luck slightly on Firghorm's side.
+
+        Social interactions will be slightly more positive towards Firghorm than they would normally be.
+
+        Firghorm's slightly improved social luck is just enough to overcome social challenges Firghorm would find "moderately challenging", but if the social situation is "quite" or "very" challenging for Firghorm, Firghorm will fail.
+      - |
+        Attacking luck:
+        This round Firghorm has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Firghorm's abilities and the situation.
+
+        Firghorm's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Firghorm will succeed or fail at offensive maneuvers based entirely on whether those challenges match Firghorm's combat capabilities.
+      - |
+        Defensive luck:
+        This round Firghorm has slightly negative defensive luck; if you'd expect Firghorm to be able to dodge, parry, or block an incoming attack, in this situation, Firghorm would be unable to execute these defenses.
+
+        Likewise, attacks that would glance off instead find weak spots or vulnerable angles with defensive luck slightly against Firghorm.
+
+        Firghorm's defensive actions and positioning will be slightly less effective than they would normally be.
+
+        Firghorm's slightly reduced defensive luck is just enough to fail against attacks Firghorm would find mildly challenging, but if the incoming attack is easy or of normal difficulty for Firghorm, Firghorm's defense will still succeed, perhaps more narrowly.
+      - |
+        Skills luck:
+        This round Firghorm has moderately negative skills luck; if you'd expect Firghorm to succeed at a skilled task, but not spectacularly, then Firghorm narrowly fails.
+
+        Likewise, if Firghorm would craft something functional, it has a critical flaw, or if Firghorm would navigate successfully, they take a wrong turn with skills luck moderately against Firghorm.
+
+        Firghorm's skilled actions will be moderately less effective than they would normally be.
+
+        Firghorm's moderately reduced skills luck is enough to fail at tasks Firghorm would find moderately challenging, but if the skilled task would normally be easy for Firghorm, Firghorm will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Initiative luck:
+        This round Firghorm has slightly positive initiative luck; if you'd expect Firghorm to act just after another character, in this situation, Firghorm would act just before them.
+
+        Likewise, if Firghorm would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on Firghorm's side.
+
+        Firghorm's reactions and timing will be slightly faster than they would normally be.
+
+        Firghorm's slightly improved initiative luck is just enough to act before opponents Firghorm would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Draenen:
+      - |
+        Social luck:
+        This round Draenen has neutral social luck; social outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        NPCs will respond to Draenen based purely on the circumstances, Draenen's approach, and their own dispositions.
+
+        Social interactions will be neither helped nor hindered by luck.
+
+        Draenen will succeed or fail at social challenges based entirely on whether those challenges match Draenen's social capabilities.
+      - |
+        Attacking luck:
+        This round Draenen has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        Draenen's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Draenen will succeed or fail at offensive maneuvers based entirely on whether those challenges match Draenen's combat capabilities.
+      - |
+        Defensive luck:
+        This round Draenen has neutral defensive luck; defensive outcomes will play out exactly as you would normally expect given Draenen's abilities and the situation.
+
+        Draenen's defensive actions will succeed or fail based purely on skill, positioning, and the opponent's attacks.
+
+        Defensive maneuvers will be neither helped nor hindered by luck.
+
+        Draenen will defend successfully or unsuccessfully based entirely on whether incoming attacks match Draenen's defensive capabilities.
+      - |
+        Skills luck:
+        This round Draenen has slightly negative skills luck; if you'd expect Draenen to narrowly succeed at a skilled task, in this situation, Draenen would narrowly fail.
+
+        Likewise, if a climbing hold would barely support Draenen's weight, it gives way, or if Draenen would just manage to move silently, they make a small noise with skills luck slightly against Draenen.
+
+        Draenen's skilled actions will be slightly less effective than they would normally be.
+
+        Draenen's slightly reduced skills luck is just enough to fail at tasks Draenen would find mildly challenging, but if the skilled task is easy or of normal difficulty for Draenen, Draenen will still succeed, perhaps more narrowly.
+      - |
+        Initiative luck:
+        This round Draenen has slightly positive initiative luck; if you'd expect Draenen to act just after another character, in this situation, Draenen would act just before them.
+
+        Likewise, if Draenen would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on Draenen's side.
+
+        Draenen's reactions and timing will be slightly faster than they would normally be.
+
+        Draenen's slightly improved initiative luck is just enough to act before opponents Draenen would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Eiliad:
+      - |
+        Social luck:
+        This round Eiliad has moderately negative social luck; if you'd expect Eiliad to succeed in a social endeavor this round, but not spectacularly, then this round, Eiliad narrowly fails.
+
+        Likewise, if an NPC would respond neutrally to Eiliad without the luck, they respond negatively with social luck moderately against Eiliad.
+
+        Social interactions will be moderately more negative towards Eiliad than they would normally be.
+
+        Eiliad's moderately reduced social luck is enough to fail social challenges Eiliad would find moderately challenging, but if the social situation would normally be easy for Eiliad, Eiliad will still succeed, though with difficulty.
+      - |
+        Attacking luck:
+        This round Eiliad has neutral attacking luck; combat outcomes will play out exactly as you would normally expect given Eiliad's abilities and the situation.
+
+        Eiliad's attacks will land or miss based purely on skill, positioning, and the opponent's defenses.
+
+        Combat exchanges will be neither helped nor hindered by luck.
+
+        Eiliad will succeed or fail at offensive maneuvers based entirely on whether those challenges match Eiliad's combat capabilities.
+      - |
+        Defensive luck:
+        This round Eiliad has neutral defensive luck; defensive outcomes will play out exactly as you would normally expect given Eiliad's abilities and the situation.
+
+        Eiliad's defensive actions will succeed or fail based purely on skill, positioning, and the opponent's attacks.
+
+        Defensive maneuvers will be neither helped nor hindered by luck.
+
+        Eiliad will defend successfully or unsuccessfully based entirely on whether incoming attacks match Eiliad's defensive capabilities.
+      - |
+        Skills luck:
+        This round Eiliad has slightly positive skills luck; if you'd expect Eiliad to narrowly fail at a skilled task, in this situation, Eiliad would narrowly succeed.
+
+        Likewise, if a lockpick would almost catch but not quite, it just clicks into place, or if Eiliad would barely miss noticing something important, they just spot it with skills luck slightly on Eiliad's side.
+
+        Eiliad's skilled actions will be slightly more effective than they would normally be.
+
+        Eiliad's slightly improved skills luck is just enough to overcome tasks Eiliad would find "moderately challenging", but if the skilled task is "quite" or "very" challenging for Eiliad, Eiliad will fail.
+      - |
+        Initiative luck:
+        This round Eiliad has slightly positive initiative luck; if you'd expect Eiliad to act just after another character, in this situation, Eiliad would act just before them.
+
+        Likewise, if Eiliad would barely miss noticing an opening to act, they would spot it just in time with initiative luck slightly on Eiliad's side.
+
+        Eiliad's reactions and timing will be slightly faster than they would normally be.
+
+        Eiliad's slightly improved initiative luck is just enough to act before opponents Eiliad would find "moderately quick", but if the opponent is "quite" or "very" fast, they will still act first.
+      Luath:
+      - |
+        Social luck:
+        This round Luath has slightly negative social luck; if you'd expect Luath to narrowly succeed in convincing or persuading an NPC, in this situation, Luath would narrowly fail.
+
+        Likewise, if they would respond neutrally without the luck, they respond slightly negatively with social luck slightly against Luath.
+
+        Social interactions will be slightly more negative towards Luath than they would normally be.
+
+        Luath's slightly reduced social luck is just enough to fail social challenges Luath would find mildly challenging, but if the social situation is easy or of normal difficulty for Luath, Luath will still succeed, perhaps more narrowly.
+      - |
+        Attacking luck:
+        This round Luath has moderately negative attacking luck; if you'd expect one of Luath's attacks to succeed this round, but not spectacularly, then that attack narrowly fails.
+
+        Likewise, if an attack would have high effectiveness without the luck, it only has moderate effectiveness with attacking luck moderately against Luath.
+
+        Luath's attacks will be moderately less effective than they would normally be.
+
+        Luath's moderately reduced attacking luck is enough to fail against defenses Luath would find moderately challenging, but if the opponent's defense would normally be easy for Luath to overcome, Luath's attack will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Defensive luck:
+        This round Luath has slightly positive defensive luck; if you'd expect Luath to be unable to dodge, parry, or block an incoming attack, in this situation, Luath would narrowly manage one of these defenses.
+
+        Likewise, attacks that would strike solidly instead glance off armor or find less vulnerable angles with defensive luck slightly on Luath's side.
+
+        Luath's defensive actions and positioning will be slightly more effective than they would normally be.
+
+        Luath's slightly improved defensive luck is just enough to defend against attacks Luath would find "moderately challenging", but if the incoming attack is "quite" or "very" challenging for Luath, Luath's defense will fail.
+      - |
+        Skills luck:
+        This round Luath has moderately negative skills luck; if you'd expect Luath to succeed at a skilled task, but not spectacularly, then Luath narrowly fails.
+
+        Likewise, if Luath would craft something functional, it has a critical flaw, or if Luath would navigate successfully, they take a wrong turn with skills luck moderately against Luath.
+
+        Luath's skilled actions will be moderately less effective than they would normally be.
+
+        Luath's moderately reduced skills luck is enough to fail at tasks Luath would find moderately challenging, but if the skilled task would normally be easy for Luath, Luath will still succeed, though with perhaps reduced effectiveness.
+      - |
+        Initiative luck:
+        This round Luath has moderately positive initiative luck; if you'd expect Luath to react slowly or be caught off-guard, but not completely surprised, then Luath would react quickly and seize the moment.
+
+        Likewise, if multiple characters would act simultaneously, Luath would clearly act first with initiative luck moderately on Luath's side.
+
+        Luath's reactions and timing will be moderately faster than they would normally be.
+
+        Luath's moderately improved initiative luck is enough to act before opponents Luath would find quite quick, but if the opponent is "very" or "extremely" fast, they will still act first.
+  rotations: []
+characters:
+  cli-user: dan
+saved_at: '2025-07-23T18:42:25.303828'
