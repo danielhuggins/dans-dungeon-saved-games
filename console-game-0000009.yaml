@@ -1,48 +1,50 @@
 channel_id: console-game-0000009
 adventure_name: wolfman-fight
 config:
-  starter: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
 log:
 - user: ''
-  dm: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
   rotations: []
-- user: |-
-    I call out to my companions, 'Stay sharp, friends. These old roads have seen many ambushes. Eiliad, scout ahead but stay within sight.'
-  dm: |-
-    **Ragnar**:
-    While scouting, Eiliad notices wolf-tracks and muted movement ahead, warning the party before the ambushers are fully set.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Determining relative probabilities**\n\nI'm starting with Eiliad as the baseline for probabilities. I need to create a \"spotlight_probability_comparisons\" list that ensures each actor appears multiple times. My actors include Eiliad, Firghorm, WolfmenPack, Draenen, and Luath, and I'll establish that Eiliad has a probability of 1.0. \n\nFirghorm might be around 0.7 compared to Eiliad due to being slower but protective, while WolfmenPack is 4 miles ahead, possibly repositioning, though they may not be aware of the approaching party yet.\n**Calculating relative probabilities**\n\nEiliad is set at a baseline probability of 1.0. Firghorm might follow with around 0.55 due to being protective but not urgent. For Draenen, who collects herbs, I'd assign a probability of about 0.42, and Luath, being distracted, could be around 0.35. \n\nIt looks like I need to compute these probabilities relative to the previous actor in the list. So, I’ll construct a list of pairwise comparisons\
-    \ to show how each character relates to one another with their respective probabilities.\n\n---\n\n**Generating comparisons**\n\nI'm thinking about how to compare StandardScoutingSuccess with ScoutMinorSlip and FalseSenseOfSecurity. I'll set a baseline for Standard and aim for relative probability statements. I also want to compare EarlyAmbushDetection with AlertRevealsParty, crafting numbers that are random yet plausible.\n\nMy goal is to produce 14 comparisons, formatted as strings in an array as requested by the user. It's important that each comparison is clear and informative, so I’ll focus on precision. Let's get started!\n**Crafting comparisons**\n\nI've put together various comparisons using StandardScoutingSuccess as a base for likelihoods against other scenarios. For example, it's 2.137 times as likely as ScoutGoesTooFar and 1.923 times as likely as AlertRevealsParty. \n\nOn the flip side, ScoutGoesTooFar is less likely than EarlyAmbushDetection, at 0.687 times. Overall, I’ve\
-    \ generated 14 comparisons and am now ready to format them into a final JSON structure. Let’s finalize this!"
+- user: I call out to my companions, 'Stay sharp, friends. These old roads have seen
+    many ambushes. Eiliad, scout ahead but stay within sight.'
+  dm: '**Ragnar**:
+
+    While scouting, Eiliad notices wolf-tracks and muted movement ahead, warning the
+    party before the ambushers are fully set.'
   rotations:
   - part_number: 1
     spotlight_holder: Ragnar
-    action_taken: |-
-      I call out to my companions, 'Stay sharp, friends. These old roads have seen many ambushes. Eiliad, scout ahead but stay within sight.'
+    action_taken: I call out to my companions, 'Stay sharp, friends. These old roads
+      have seen many ambushes. Eiliad, scout ahead but stay within sight.'
     consequence_response:
       potential_consequences:
       - id: StandardScoutingSuccess
-        description: |-
-          Eiliad advances a short distance, remains in sight, and the whole party moves forward on heightened alert.
+        description: Eiliad advances a short distance, remains in sight, and the whole
+          party moves forward on heightened alert.
       - id: ScoutGoesTooFar
-        description: Eiliad’s caution turns to zeal and she slips beyond visual range before anyone can call her back.
+        description: Eiliad’s caution turns to zeal and she slips beyond visual range
+          before anyone can call her back.
       - id: EarlyAmbushDetection
-        description: |-
-          While scouting, Eiliad notices wolf-tracks and muted movement ahead, warning the party before the ambushers are fully set.
+        description: While scouting, Eiliad notices wolf-tracks and muted movement
+          ahead, warning the party before the ambushers are fully set.
       - id: AlertRevealsParty
-        description: |-
-          Ragnar’s shout carries; hidden wolfmen catch the sound and tighten their preparations, improving their ambush position.
+        description: Ragnar’s shout carries; hidden wolfmen catch the sound and tighten
+          their preparations, improving their ambush position.
       - id: ScoutMinorSlip
-        description: |-
-          A moss-slick cobble sends Eiliad stumbling; the noise draws brief attention and costs the scouting party a few moments.
+        description: A moss-slick cobble sends Eiliad stumbling; the noise draws brief
+          attention and costs the scouting party a few moments.
       - id: FalseSenseOfSecurity
-        description: |-
-          The call calms nerves more than intended, leading some companions to relax and lower their guard prematurely.
+        description: The call calms nerves more than intended, leading some companions
+          to relax and lower their guard prematurely.
       consequence_probability_comparisons:
       - StandardScoutingSuccess is 2.137x as likely as ScoutGoesTooFar
       - StandardScoutingSuccess is 1.468x as likely as EarlyAmbushDetection
@@ -60,8 +62,8 @@ log:
       - FalseSenseOfSecurity is 0.378x as likely as ScoutGoesTooFar
     actual_consequences:
     - id: EarlyAmbushDetection
-      description: |-
-        While scouting, Eiliad notices wolf-tracks and muted movement ahead, warning the party before the ambushers are fully set.
+      description: While scouting, Eiliad notices wolf-tracks and muted movement ahead,
+        warning the party before the ambushers are fully set.
     consequence_probabilities:
       StandardScoutingSuccess: 0.28740407565019166
       ScoutGoesTooFar: 0.14343475022670074
@@ -69,41 +71,37 @@ log:
       AlertRevealsParty: 0.18422707734296342
       ScoutMinorSlip: 0.12329875644832383
       FalseSenseOfSecurity: 0.04397211887072846
-- user: |-
-    I draw my sword and shield. 'Form up\! Defensive circle - backs to the center. Luath, ready your fire potions. We've got wolfmen ahead\!'
-  dm: |-
-    **Ragnar**:
-    The formation is uneven; Draenen and Eiliad are slow to position, leaving brief gaps in the shield wall.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Considering next actions in exploration**
+- user: I draw my sword and shield. 'Form up\! Defensive circle - backs to the center.
+    Luath, ready your fire potions. We've got wolfmen ahead\!'
+  dm: '**Ragnar**:
 
-    Eiliad scouted ahead and found wolf tracks, signaling a potential encounter. There's a shift from exploration to possible combat, and urgency is building. I need to figure out which character will take the spotlight next by calculating probabilities for the next actors. Candidates include party members like Firghorm, Draenen, Eiliad, and Luath, along with possible wolfman ambushers. I realize Ragnar, the GM, acted recently but is also included if they haven't just played their turn. It's a bit confusing!
-    **Evaluating potential actions**
-
-    I'm considering the next possible actors in the scenario. Since Ragnar just acted, I’ll exclude them despite the instruction to include them if they haven't just acted. Eiliad, Firghorm, Draenen, Luath, and the Wolfmen are potential actors. Eiliad could react to the tracks, Firghorm might prepare defenses, and the Wolfmen could ambush or reposition, even though they're physically far away. I need to calculate probabilities for each actor, ensuring everyone appears sufficiently in comparisons. Should I treat the Wolfmen as a group or identify individual members?
+    The formation is uneven; Draenen and Eiliad are slow to position, leaving brief
+    gaps in the shield wall.'
   rotations:
   - part_number: 1
     spotlight_holder: Ragnar
-    action_taken: |-
-      I draw my sword and shield. 'Form up\! Defensive circle - backs to the center. Luath, ready your fire potions. We've got wolfmen ahead\!'
+    action_taken: I draw my sword and shield. 'Form up\! Defensive circle - backs
+      to the center. Luath, ready your fire potions. We've got wolfmen ahead\!'
     consequence_response:
       potential_consequences:
       - id: CohesiveDefense
-        description: |-
-          The party snaps into a tight defensive circle, shields locked and weapons ready, gaining an immediate readiness edge.
+        description: The party snaps into a tight defensive circle, shields locked
+          and weapons ready, gaining an immediate readiness edge.
       - id: StaggeredCircle
-        description: |-
-          The formation is uneven; Draenen and Eiliad are slow to position, leaving brief gaps in the shield wall.
+        description: The formation is uneven; Draenen and Eiliad are slow to position,
+          leaving brief gaps in the shield wall.
       - id: LoudCommandAlert
-        description: Ragnar’s shouted orders echo through the woods, alerting the wolfmen and prompting an early charge.
+        description: Ragnar’s shouted orders echo through the woods, alerting the
+          wolfmen and prompting an early charge.
       - id: WolfmenHesitate
-        description: The display of discipline makes the wolfmen pause to reassess, briefly delaying their assault.
+        description: The display of discipline makes the wolfmen pause to reassess,
+          briefly delaying their assault.
       - id: PotionSlip
-        description: Luath fumbles a fire-potion vial, nearly dropping it and causing a momentary distraction.
+        description: Luath fumbles a fire-potion vial, nearly dropping it and causing
+          a momentary distraction.
       - id: FieryFlaskAccident
-        description: |-
-          A fire-potion slips and shatters, igniting leaf-litter and forcing the party to split attention between flames and foes.
+        description: A fire-potion slips and shatters, igniting leaf-litter and forcing
+          the party to split attention between flames and foes.
       consequence_probability_comparisons:
       - CohesiveDefense is 1.400x as likely as StaggeredCircle
       - CohesiveDefense is 1.944x as likely as LoudCommandAlert
@@ -123,8 +121,8 @@ log:
       - PotionSlip is 2.000x as likely as FieryFlaskAccident
     actual_consequences:
     - id: StaggeredCircle
-      description: |-
-        The formation is uneven; Draenen and Eiliad are slow to position, leaving brief gaps in the shield wall.
+      description: The formation is uneven; Draenen and Eiliad are slow to position,
+        leaving brief gaps in the shield wall.
     consequence_probabilities:
       CohesiveDefense: 0.3500063178445937
       StaggeredCircle: 0.2499891793494482
@@ -132,38 +130,38 @@ log:
       WolfmenHesitate: 0.10000000031202216
       PotionSlip: 0.07999996733279859
       FieryFlaskAccident: 0.04000001324909314
-- user: |-
-    I grab Draenen by the shoulder and pull her into position. 'Tighten up\! They'll hit us any second\!' I raise my shield high, ready to block the first attacker.
-  dm: |-
-    **Ragnar**:
-    The sudden yank makes Draenen stumble, leaving the gap open for a heartbeat and spilling a couple of herbs.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Analyzing character actions**\n\nI’m thinking about the character \"Ragnar\" and how the player issues commands. The Game Master has lines preceded by \"Ragnar,\" but the player's name remains uncertain. I see \"Ragnar\" as the focal point for the current scene while considering potential actions from the group of Wolfmen hiding 1 mile away. They might not act yet, but they could detect the players through sound and reposition. I also want to explore other potential actors in the environment and their probabilities. Let's dive deeper!\n**Identifying potential actions**\n\nI’m considering which characters or entities could act next in this scenario, especially with the threat of the Wolfmen. So far, I’m thinking about Eiliad, who’s scouting and aware of tracks; Firghorm, ready with his sword and shield; Luath with his fire potions; Draenen, positioning himself; Ragnar, the commanding player character; and the ambushing Wolfmen. \n\nEiliad could act quickly, alerting\
-    \ the party or even attacking. Firghorm might close the gap in the formation, and while Ragnar might not be the fastest, he’ll likely make strategic decisions based on the situation."
+- user: I grab Draenen by the shoulder and pull her into position. 'Tighten up\! They'll
+    hit us any second\!' I raise my shield high, ready to block the first attacker.
+  dm: '**Ragnar**:
+
+    The sudden yank makes Draenen stumble, leaving the gap open for a heartbeat and
+    spilling a couple of herbs.'
   rotations:
   - part_number: 1
     spotlight_holder: Ragnar
-    action_taken: |-
-      I grab Draenen by the shoulder and pull her into position. 'Tighten up\! They'll hit us any second\!' I raise my shield high, ready to block the first attacker.
+    action_taken: I grab Draenen by the shoulder and pull her into position. 'Tighten
+      up\! They'll hit us any second\!' I raise my shield high, ready to block the
+      first attacker.
     consequence_response:
       potential_consequences:
       - id: SmoothReposition
-        description: |-
-          Ragnar smoothly hauls Draenen into the gap, the shield wall locks tight and his shield is well-braced.
+        description: Ragnar smoothly hauls Draenen into the gap, the shield wall locks
+          tight and his shield is well-braced.
       - id: AwkwardReposition
-        description: Draenen lurches under Ragnar's tug but catches herself; the line closes albeit with a brief wobble.
+        description: Draenen lurches under Ragnar's tug but catches herself; the line
+          closes albeit with a brief wobble.
       - id: DraenenStumble
-        description: |-
-          The sudden yank makes Draenen stumble, leaving the gap open for a heartbeat and spilling a couple of herbs.
+        description: The sudden yank makes Draenen stumble, leaving the gap open for
+          a heartbeat and spilling a couple of herbs.
       - id: DraenenResists
-        description: |-
-          Irritated, Draenen half-shrugs Ragnar off and moves at her own pace, the gap lingering a moment longer.
+        description: Irritated, Draenen half-shrugs Ragnar off and moves at her own
+          pace, the gap lingering a moment longer.
       - id: ShoulderSprain
-        description: |-
-          Ragnar’s forceful pull wrenches Draenen’s shoulder, causing a flash of pain and a minor penalty to her arm use.
+        description: Ragnar’s forceful pull wrenches Draenen’s shoulder, causing a
+          flash of pain and a minor penalty to her arm use.
       - id: RagnarOffBalance
-        description: |-
-          While dragging Draenen, Ragnar’s raised shield tilts; he ends up off-balance and his guard is momentarily lowered.
+        description: While dragging Draenen, Ragnar’s raised shield tilts; he ends
+          up off-balance and his guard is momentarily lowered.
       consequence_probability_comparisons:
       - SmoothReposition is 1.613x as likely as AwkwardReposition
       - SmoothReposition is 2.674x as likely as DraenenStumble
@@ -185,8 +183,8 @@ log:
       - RagnarOffBalance is 0.100x as likely as SmoothReposition
     actual_consequences:
     - id: DraenenStumble
-      description: |-
-        The sudden yank makes Draenen stumble, leaving the gap open for a heartbeat and spilling a couple of herbs.
+      description: The sudden yank makes Draenen stumble, leaving the gap open for
+        a heartbeat and spilling a couple of herbs.
     consequence_probabilities:
       SmoothReposition: 0.4003995894656669
       AwkwardReposition: 0.2485926789152353

@@ -7,21 +7,11 @@ log:
 - user: ''
   dm: |-
     You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I make noise by dropping a coin
   dm: |-
     **TestHero5**:
     The coin strikes a hard surface, producing a sharp metallic clink clearly audible within several paces.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Analyzing GM Instructions**
-
-    I need to respond to the Game Master's request about determining the next character for the spotlight. They've asked for a thorough step-by-step analysis but want the final output strictly in JSON format. They emphasize that each character ID must appear at least three times in a specific array for comprehensive probability relationships. However, I'm noticing an inconsistency — the final format doesn’t include this required array. I’ll need to clarify that it might have been an oversight and address it accordingly in my response.
-    **Creating the JSON Structure**
-
-    I need to adapt the response by including a new key for 'spotlight_probability_comparisons.' This means that my final JSON will have two keys: 'next_actor' and the new array. The comparisons must include various actors, ensuring that each appears at least three times. The actors I've identified include Aethelwynn, Aethelflaed, Osric, and TestHero5. Given the context, it seems logical to designate TestHero5 as the next actor since they have agency in this exploration. I’ll need to create pairwise probability ratios for each actor and format it correctly as valid JSON without any additional comments.
   rotations:
   - part_number: 1
     spotlight_holder: TestHero5

@@ -7,25 +7,11 @@ log:
 - user: ''
   dm: |-
     You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I loudly shout a greeting to anyone nearby
   dm: |-
     **TestHero2**:
     Birds or small animals startle and burst from cover at the sudden loud voice. The shout vibrates loose dust or debris from overhead beams, sending a light shower downward.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Proposing audio effects**\n\nI'm considering how the audio situation unfolds in a scene. It's a bit\
-    \ awkward when the player realizes they're alone in silence. I’m thinking we should have concrete, measurable effects\
-    \ from that sound. For instance, local villagers could respond, or hidden scouts might overhear and mark the player’s\
-    \ presence. There could be wildlife that startles, or maybe an artifact reacts with a hum. A sore throat from shouting\
-    \ could add humor, and we could even attract insects. Altogether, I want to develop around eight possible consequences.\n\
-    **Defining consequences and actions**\n\nI'm outlining the joint probabilities for various outcomes. It's important to\
-    \ ensure that combinations make sense and that joint probabilities don’t exceed the minimum marginals. For example, I\
-    \ see that a friendly response can happen alongside wildlife flushing, and specific alerts can trigger dog barks. \n\n\
-    As I refine the list of consequences, I’ve settled on eight outcomes, like FriendlyReply and WildlifeFlush, along with\
-    \ NPC reactions such as GuardInvestigates and MerchantLooksUp. I’ll ensure to categorize everything clearly and avoid\
-    \ duplications where possible."
   rotations:
   - part_number: 1
     spotlight_holder: TestHero2

@@ -1,0 +1,137 @@
+channel_id: console-game-0000035
+adventure_name: wolfman-fight
+config:
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
+log:
+- user: ''
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
+  debug_info: null
+  rotations: []
+- user: I signal to Eiliad to scout ahead while we advance cautiously
+  dm: 'You signal Eiliad. A sharp, precise gesture, a language of motion understood
+    between you, the intent clear: reconnaissance. She melts into the dappled shadow
+    of the ancient oaks, a whisper of movement against the moss-laden stone. Her steps
+    are practiced, designed to leave no trace, to disturb no leaf unnecessarily. From
+    the cover of the dense undergrowth, she finds her vantage. The wolfmen are there,
+    positioned in their ambush, their presence yet unknown to them.
+
+
+    Behind you, the rest of the party advances with measured caution. Firghorm’s presence
+    is a solid anchor, his gaze sweeping the tree line, his hand never far from his
+    sword hilt, tracking Eiliad’s progress as much as the path ahead. Draenen, ever
+    observant of the natural world, scans the flora, her worn leather satchel a familiar
+    weight against her hip, staying close to Firghorm’s steady presence. Luath, a
+    knot of nervous energy, fidgets with a vial, muttering soft, unintelligible phrases
+    that trail off into the humid air, his focus inward.
+
+
+    The wolfmen, masters of their corrupted domain, remain precisely where they are,
+    unseen, unheard, their coiled tension a silent promise of the violence to come.
+    Moments later, Eiliad reappears from the treeline, her expression unchanged, her
+    report delivered with the same economy of motion that marked her departure. The
+    information she carries is stark: the number of threats, their positions, the
+    trap laid for you.'
+  debug_info: null
+  rotations: []
+- user: I prepare my weapon and tell the party to form a defensive position
+  dm: 'The air on the Old Road, heavy with the scent of damp earth and ancient oak,
+    presses in around you. Eiliad’s report hangs in the charged silence like a drawn
+    bowstring – wolfmen, waiting, a mile ahead. The knowledge of their presence, the
+    coiled threat, tightens your gut. You signal to Eiliad, a sharp, precise gesture,
+    a language of motion understood between you, the intent clear: reconnaissance.
+    She melts into the dappled shadow of the ancient oaks, a whisper of movement against
+    the moss-laden stone. From the cover of the dense undergrowth, she finds her vantage.
+    The wolfmen are there, positioned in their ambush, their presence yet unknown
+    to them.
+
+
+    Behind you, the rest of the party advances with measured caution. Firghorm’s presence
+    is a solid anchor, his gaze sweeping the tree line, his hand never far from his
+    sword hilt, tracking Eiliad’s progress as much as the path ahead. Draenen, ever
+    observant of the natural world, scans the flora, her worn leather satchel a familiar
+    weight against her hip, staying close to Firghorm’s steady presence. Luath, a
+    knot of nervous energy, fidgets with a vial, muttering soft, unintelligible phrases
+    that trail off into the humid air, his focus inward.
+
+
+    The wolfmen, masters of their corrupted domain, remain precisely where they are,
+    unseen, unheard, their coiled tension a silent promise of the violence to come.
+    Moments later, Eiliad reappears from the treeline, her expression unchanged, her
+    report delivered with the same economy of motion that marked her departure. The
+    information she carries is stark: the number of threats, their positions, the
+    trap laid for you.
+
+
+    This is not a moment for hesitation. You grip the hilt of your sword, the familiar
+    weight a small comfort. "Form up!" you bark, your voice cutting through the quiet
+    dread. "Defensive perimeter! Now!"
+
+
+    Immediately, the group reacts. Firghorm, ever the immovable bulwark, doesn''t
+    need a second command. His steel longsword is drawn with a smooth, practiced rasp,
+    the plain steel shield rising to meet the unseen threat. His grey eyes, tinged
+    with blue, fix on the direction Eiliad indicated, his stance widening, a silent
+    promise to absorb any blow. He reinforces his position, a solid wall of muscle
+    and resolve. "Aye," he rumbles, his voice calm despite the imminent danger, a
+    low anchor in the rising tide of tension. "Hold the line."
+
+
+    Beside him, Draenen moves with purpose, her worn apron and satchel a familiar
+    sight. She positions herself close to Firghorm, her hazel eyes scanning the surroundings
+    for any immediate advantage, her hands already reaching for her own tools. She
+    trusts Firghorm''s strength, and her own presence there is a silent declaration
+    of her commitment to protect, to be indispensable.
+
+
+    Luath, meanwhile, fumbles discreetly with a small vial from his bandolier. A tiny
+    glint of silvery powder catches the dappled light. He brings it to his nose, a
+    quick, furtive inhalation, his mutterings growing slightly more coherent, a desperate
+    attempt to steady his frayed nerves. "Just... need a moment..." he whispers, his
+    eyes momentarily losing their wildness, replaced by a flicker of focused, albeit
+    drug-induced, clarity. He checks his satchel, ensuring his precious alchemical
+    tools are within easy reach, a fragile defense against the encroaching horror.
+
+
+    Eiliad, having delivered her vital intelligence, remains a study in stillness.
+    Her sharp green eyes continue their ceaseless sweep of the surrounding woods,
+    her body poised, ready to react. She trusts your tactical judgment, and her own
+    role is now observation, waiting for the opportune moment to strike or evade.
+
+
+    But the wolfmen have heard your command. They sense the shift, the party forming
+    ranks, the brief moment of preparation. They see not a unified defense, but a
+    group caught mid-motion, vulnerable. Their patience, honed by countless ambushes,
+    snaps. The forest floor erupts.
+
+
+    A guttural roar splits the air, not one, but many, a chorus of primal fury. From
+    the dense undergrowth, figures of nightmare burst forth – hulking shapes of matted
+    fur, twisted limbs, and eyes that burn with malevolent, corrupted light. They
+    surge from the trees, their bronze-bound weapons glinting, their movements unnaturally
+    swift. The ambush, timed to catch you unprepared, hits with brutal efficiency
+    as you are still adjusting your formation.
+
+
+    The world explodes into a cacophony of snarls, the clang of steel, and the sharp
+    crack of Eiliad’s bow. Firghorm is already engaged, his shield absorbing the initial,
+    vicious lunge of a mutated wolfman, his sword a blur of motion. Draenen, caught
+    slightly out of position as she moved to support Firghorm, scrambles back, her
+    hand instinctively going to her satchel, her eyes wide with the sudden, terrifying
+    reality of the attack. Luath, jolted by the sudden violence, stumbles, his Moonshade-induced
+    focus momentarily shattered by the sheer ferocity of the assault. Eiliad, ever
+    the scout, has already loosed an arrow, a thin whistle that finds its mark in
+    the shoulder of a charging beast, but more are coming. The ambush has sprung,
+    and the fight for survival has begun in earnest.'
+  debug_info: null
+  rotations: []
+characters:
+  cli-user: Gareth the Swift
+saved_at: '2025-07-24T19:52:02.506834'

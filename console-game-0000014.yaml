@@ -1,72 +1,69 @@
 channel_id: console-game-0000014
 adventure_name: wolfman-fight
 config:
-  starter: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
 log:
 - user: ''
-  dm: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
   rotations: []
-- user: |-
-    I draw my sword and practice some sword forms, swinging it through the air to test its balance and sharpness.
-  dm: |-
-    **TestHero**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Calculating probability ratios**
+- user: I draw my sword and practice some sword forms, swinging it through the air
+    to test its balance and sharpness.
+  dm: '**TestHero**:
 
-    I'm going through some probability weights to compute pairwise comparisons. Starting with the defined probabilities, I’m calculating ratios like Eiliad versus Firghorm and finding their values. For example, Eiliad against Firghorm gives me a ratio of about 1.176, while against MoonwellPack balloons to 8.486. Each comparison helps me understand their relationships better, relying on precise calculations. I'm aiming to uncover the underlying probabilities systematically throughout this process!
-    **Creating probability ratios**
-
-    I’m calculating ratios based on character appearances in my comparisons. Starting with Eiliad as the baseline, I’m crafting 15 ratio strings to represent how likely each character is compared to others. For instance, Eiliad is 1.176 times as likely as Firghorm, and I also want to ensure each character appears at least three times throughout the list. After this, I plan to check how often each character is mentioned before summarizing the key information!
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero
-    action_taken: |-
-      I draw my sword and practice some sword forms, swinging it through the air to test its balance and sharpness.
+    action_taken: I draw my sword and practice some sword forms, swinging it through
+      the air to test its balance and sharpness.
     consequence_response:
       potential_consequences:
       - id: WarmUpFocus
-        description: |-
-          The blade sings true; TestHero’s muscles loosen and his mind steadies, granting a small surge of confidence for the next few minutes.
+        description: The blade sings true; TestHero’s muscles loosen and his mind
+          steadies, granting a small surge of confidence for the next few minutes.
         marginal_probability: 0.98
         joint_probabilities: {}
       - id: MinorSelfCut
-        description: |-
-          A slight mis-alignment lets the edge kiss TestHero’s forearm, opening a shallow, stinging cut that bleeds but poses no real danger.
+        description: A slight mis-alignment lets the edge kiss TestHero’s forearm,
+          opening a shallow, stinging cut that bleeds but poses no real danger.
         marginal_probability: 0.0007
         joint_probabilities:
           and SwordDropped: 0.00025
           and AllyNearMiss: 5.0e-05
       - id: SwordDropped
-        description: |-
-          Sweaty fingers slip; the sword clatters onto cobbles, the edge taking a tiny nick and ringing loud against the stone.
+        description: Sweaty fingers slip; the sword clatters onto cobbles, the edge
+          taking a tiny nick and ringing loud against the stone.
         marginal_probability: 0.0009
         joint_probabilities:
           and MinorSelfCut: 0.00025
           and WildlifeAlarmed: 0.0005
           and BranchSevered: 0.0002
       - id: BranchSevered
-        description: |-
-          A wide arc bites into a low oak limb, slicing it free so it drops onto the road in a shower of leaves.
+        description: A wide arc bites into a low oak limb, slicing it free so it drops
+          onto the road in a shower of leaves.
         marginal_probability: 0.04
         joint_probabilities:
           and WildlifeAlarmed: 0.03
           and SwordDropped: 0.0002
       - id: WildlifeAlarmed
-        description: |-
-          The swish of steel (or the crack of a falling branch) startles nearby birds and a squirrel, sending them crashing through foliage with sudden noise.
+        description: The swish of steel (or the crack of a falling branch) startles
+          nearby birds and a squirrel, sending them crashing through foliage with
+          sudden noise.
         marginal_probability: 0.22
         joint_probabilities:
           and BranchSevered: 0.03
           and SwordDropped: 0.0005
       - id: AllyNearMiss
-        description: |-
-          One flourish passes uncomfortably close to a companion, forcing them to hop back and eye TestHero warily.
+        description: One flourish passes uncomfortably close to a companion, forcing
+          them to hop back and eye TestHero warily.
         marginal_probability: 0.002
         joint_probabilities:
           and MinorSelfCut: 5.0e-05
@@ -79,40 +76,27 @@ log:
       WildlifeAlarmed: 0.22
       AllyNearMiss: 0.002
 - user: I carefully study the forest around us, looking for signs of movement or tracks.
-  dm: |-
-    **TestHero**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Considering actor dynamics**
+  dm: '**TestHero**:
 
-    I’m thinking about including six actors: Firghorm, Draenen, Eiliad, Luath, TestHero, and some Nearby Wildlife like deer or wolves. The Wolfmen could add an interesting dynamic; they might detect the noise from sword practice. Although they’re four miles away, they could still be preparing for something. I think we should establish Firghorm as the baseline actor and provide a "spotlight_probability_comparisons" demonstrating the likelihood of different actors’ actions in relation to one another, ensuring we have all necessary pairwise comparisons.
-    **Establishing actor probabilities**
-
-    I’m thinking about using six actors: Firghorm, Draenen, Eiliad, Luath, TestHero, and Wolfmen Scout for our scene. It’s an exploration moment, not combat, so time isn’t urgent. TestHero has just practiced, and potential actions follow. I could use Eiliad as the baseline with a probability of 1.0 since he's a scout. Firghorm might be around 0.8, TestHero at 0.6 for potential actions, and Draenen at 0.5, while Luath could be at 0.4, with Wolfmen Scout at 0.2 since they're distanced. I’ll need to list these probabilities and relationships clearly next.
-
-    ---
-
-    **Considering observation consequences**
-
-    I'm thinking about the user's request regarding the consequences of carefully studying the forest for signs of movement or tracks. Since the party is positioned five miles south of the crossroads, I need to factor in the dense forest environment. I’ll create 4-8 discrete consequences, considering probabilities. For example, I might have a high chance of detecting nothing unusual, but there's also a notable chance of spotting distant wildlife. I'll pursue this logically to establish a balanced mix of outcomes.
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero
-    action_taken: I carefully study the forest around us, looking for signs of movement or tracks.
+    action_taken: I carefully study the forest around us, looking for signs of movement
+      or tracks.
     consequence_response:
       potential_consequences:
       - id: NoSignsFound
-        description: |-
-          The quick survey reveals nothing out of the ordinary: no tracks, no movement save the restless leaves.
+        description: 'The quick survey reveals nothing out of the ordinary: no tracks,
+          no movement save the restless leaves.'
         marginal_probability: 0.68
         joint_probabilities:
           and FalseSenseOfSecurity: 0.35
           and WildlifeMovementSeen: 0.14
           and NoiseAlertsAmbushers: 0.01
       - id: WildlifeMovementSeen
-        description: |-
-          A squirrel darts across a branch and a distant deer steps between trunks, confirming only mundane life nearby.
+        description: A squirrel darts across a branch and a distant deer steps between
+          trunks, confirming only mundane life nearby.
         marginal_probability: 0.22
         joint_probabilities:
           and NoSignsFound: 0.14
@@ -120,29 +104,30 @@ log:
           and WolfmenTracksDetected: 0.008
           and FalseSenseOfSecurity: 0.08
       - id: WolfmenTracksDetected
-        description: |-
-          Faint, wide-spaced paw prints and a snapped fern hint that something large and bipedal passed this way not long ago.
+        description: Faint, wide-spaced paw prints and a snapped fern hint that something
+          large and bipedal passed this way not long ago.
         marginal_probability: 0.04
         joint_probabilities:
           and WildlifeMovementSeen: 0.008
           and NoiseAlertsAmbushers: 0.004
       - id: NoiseAlertsAmbushers
-        description: |-
-          While shifting position, the observer cracks a dry branch; unseen ears farther north become aware of the party’s presence sooner than they otherwise would have.
+        description: While shifting position, the observer cracks a dry branch; unseen
+          ears farther north become aware of the party’s presence sooner than they
+          otherwise would have.
         marginal_probability: 0.015
         joint_probabilities:
           and WolfmenTracksDetected: 0.004
           and NoSignsFound: 0.01
       - id: FalseSenseOfSecurity
-        description: |-
-          Interpreting the quiet as safety, the party’s guard relaxes slightly, reducing vigilance for the next few minutes.
+        description: Interpreting the quiet as safety, the party’s guard relaxes slightly,
+          reducing vigilance for the next few minutes.
         marginal_probability: 0.4
         joint_probabilities:
           and NoSignsFound: 0.35
           and WildlifeMovementSeen: 0.08
       - id: UsefulHerbDiscovered
-        description: |-
-          Among the moss, a cluster of ironwort—valuable for Draenen’s poultices—is spotted and easily gathered.
+        description: Among the moss, a cluster of ironwort—valuable for Draenen’s
+          poultices—is spotted and easily gathered.
         marginal_probability: 0.12
         joint_probabilities:
           and WildlifeMovementSeen: 0.03
@@ -155,13 +140,9 @@ log:
       FalseSenseOfSecurity: 0.4
       UsefulHerbDiscovered: 0.12
 - user: I practice a simple sword strike against a nearby tree trunk.
-  dm: |-
-    **TestHero**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Identifying potential actors**\n\nI'm considering various potential actors in the environment. There are environmental actors like wildlife, including deer and wolves, that could act, but it may not be necessary to include all of them. The prompt asks for characters that could plausibly act next, so wolfmen, though currently unaware, might still engage later. \n\nI should outline possible actors: Eiliad, the scout, is likely to act due to his high initiative; Firghorm could comment on practice; Draenen might gather herbs. I'm defining potential actions!\n**Defining actor comparisons**\n\nI'm identifying potential actors: Luath the alchemist might check reagents, and TestHero, though recently acted, could still take another action, albeit with lower probability. The Moonwell Pack of wolfmen is unknown to the party but could reposition or stalk for an ambush. Then there are environmental wildlife like deer and crows, which I could group as ForestCreatures.\n\nI need\
-    \ to ensure each actor ID appears at least three times in comparisons, so I’m aiming for a total of seven actors, generating about 21 comparisons to satisfy this requirement. I’ll choose Eiliad as the baseline for probability calculations to keep things organized.\n\n---\n\n**Considering TestHero's sword practice consequences**\n\nI need to generate JSON outlining possible outcomes from TestHero practicing a sword strike against a tree trunk. The context is a low-stakes action happening near an ambush, so I'll focus on immediate consequences. \n\nI can identify several potential outcomes: first, the sword strikes the tree without much impact, resulting in minor bark damage. Second, the blade could chip or dull a bit. There's also the possibility that the noise could attract nearby wildlife, like Wolfmen, or cause birds to take flight. I need to brainstorm around these ideas!\n**Refining consequences for sword practice**\n\nI’m considering the potential outcomes when TestHero practices\
-    \ a sword strike against a tree. Outcomes include blade dulling, minor self-injury from deflection, and a branch falling or causing insects to swarm. I’ll assign probabilities to these effects. For instance, minor self-injury might happen with a 0.005 chance, while blade dulling could be 0.02. I think I’ll go for six distinct consequences and include combinations for plausibility, focusing on the time scale of just a few seconds. I'll streamline my thoughts on these probabilities!"
+  dm: '**TestHero**:
+
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero
@@ -169,39 +150,42 @@ log:
     consequence_response:
       potential_consequences:
       - id: EdgeDulled
-        description: The sword's edge blunts slightly or chips, reducing its cutting efficiency until resharpened.
+        description: The sword's edge blunts slightly or chips, reducing its cutting
+          efficiency until resharpened.
         marginal_probability: 0.018
         joint_probabilities:
           and BladeWedged: 0.006
           and ShallowSelfCut: 0.001
       - id: BladeWedged
-        description: The blade bites too deep into the hardwood and momentarily lodges, requiring effort to free.
+        description: The blade bites too deep into the hardwood and momentarily lodges,
+          requiring effort to free.
         marginal_probability: 0.009
         joint_probabilities:
           and EdgeDulled: 0.006
           and ShallowSelfCut: 0.0008
       - id: ShallowSelfCut
-        description: A minor recoil or slip nicks the wielder's forearm or hand, causing a shallow but bleeding cut.
+        description: A minor recoil or slip nicks the wielder's forearm or hand, causing
+          a shallow but bleeding cut.
         marginal_probability: 0.004
         joint_probabilities:
           and EdgeDulled: 0.001
           and BladeWedged: 0.0008
       - id: TwigCascade
-        description: |-
-          The impact shakes the trunk, dislodging small branches or a shower of twigs that fall around the party.
+        description: The impact shakes the trunk, dislodging small branches or a shower
+          of twigs that fall around the party.
         marginal_probability: 0.028
         joint_probabilities:
           and HiveRoused: 5.0e-05
           and ShallowSelfCut: 0.0005
       - id: HiveRoused
-        description: |-
-          An unseen insect nest within the bark is disturbed, sending a small swarm buzzing outward in agitation.
+        description: An unseen insect nest within the bark is disturbed, sending a
+          small swarm buzzing outward in agitation.
         marginal_probability: 0.0004
         joint_probabilities:
           and TwigCascade: 5.0e-05
       - id: SoundCarries
-        description: |-
-          The sharp ring of steel on wood carries farther than expected through the forest hush, faintly alerting distant ears.
+        description: The sharp ring of steel on wood carries farther than expected
+          through the forest hush, faintly alerting distant ears.
         marginal_probability: 1.0e-05
         joint_probabilities:
           and EdgeDulled: 8.0e-07
@@ -214,13 +198,10 @@ log:
       HiveRoused: 0.0004
       SoundCarries: 1.0e-05
 - user: I shout 'Hello\!' loudly to see if anyone responds.
-  dm: |-
-    **TestHero**:
-    The shout echoes among the trees but no human voice replies; the immediate area seems undisturbed by people.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Analyzing potential actions**\n\nI'm considering a situation where a party on a road has taken minor actions and there's no immediate threat. The next logical actor is likely one of the companions who could either speak or act, or maybe there's an environmental trigger. Wolfmen are close by, potentially stalking the party. I’ll set a baseline probability for Eiliad, the scout, at 1.0, with other companions following relative to their initiative. For instance, Firghorm might be at 0.8, Draenen at 0.7, and TestHero at 0.3 since he already acted. Comparisons will be important here.\n**Computing relative probabilities**\n\nI'm working through how to establish relative probabilities for characters in a sequence. The baseline probability for the first character is set at 1.0, and each subsequent character's probability is relative to the one before it. For example, with Eiliad, Firghorm, Draenen, Luath, EnvironmentalEvent, TestHero, and WolfmenAmbush, I’m calculating the\
-    \ values. \n\nNext, I’ll ensure each character appears adequately in cross comparisons, producing symmetrical ratios to achieve at least three occurrences for each character. It’s a complex task, but I'll organize it carefully!\n\n---\n\n**Considering potential consequences**\n\nI'm thinking through the potential consequences and probabilities of TestHero shouting \"Hello!\" loudly while on the Old Road. There’s a lot at stake because a wolfmen pack is waiting nearby. I'll highlight a few consequences, focusing on 4-8 clear outcomes. For instance, \"EchoSilence\" could mean the forest stays quiet, which is likely. Another might be \"FriendlyBirdAlarm,\" where startled birds might alert others. There's also the possibility of a \"Nearby Traveller Responds,\" but that's less likely. These scenarios should help frame the situation.\n**Estimating consequences and probabilities**\n\nI’m examining the potential consequences of TestHero's shout, including a scenario where the Wolfmen, 4 miles\
-    \ away, overhear the voice. This might be unlikely due to distance, but their keen hearing could make it possible. One consequence could be \"WildWolvesHearAndHowl,\" indicating distant wolves respond with howling. I also considered \"ForestAcousticConfusion,\" where echoes could create confusion, which seems unlikely. The \"BranchFall\" scenario involves a startled animal, but that’s also a rare occurrence. I'll keep the total to six consequences and work on estimating their probabilities next."
+  dm: '**TestHero**:
+
+    The shout echoes among the trees but no human voice replies; the immediate area
+    seems undisturbed by people.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero
@@ -228,50 +209,51 @@ log:
     consequence_response:
       potential_consequences:
       - id: NoAnswer
-        description: |-
-          The shout echoes among the trees but no human voice replies; the immediate area seems undisturbed by people.
+        description: The shout echoes among the trees but no human voice replies;
+          the immediate area seems undisturbed by people.
         marginal_probability: 0.85
         joint_probabilities:
           and BirdFlurry: 0.28
           and WolfmenDetect: 0.0045
           and WolvesHowl: 0.036
       - id: BirdFlurry
-        description: A cluster of nearby birds startles and bursts into flight, leaves and feathers scattering noisily.
+        description: A cluster of nearby birds startles and bursts into flight, leaves
+          and feathers scattering noisily.
         marginal_probability: 0.3
         joint_probabilities:
           and NoAnswer: 0.28
           and WolvesHowl: 0.012
           and FallingBranch: 0.0005
       - id: DistantTravellerReply
-        description: |-
-          From somewhere along the road a faint human voice calls back, suggesting another traveller is within earshot.
+        description: From somewhere along the road a faint human voice calls back,
+          suggesting another traveller is within earshot.
         marginal_probability: 0.03
         joint_probabilities: {}
       - id: WolfmenDetect
-        description: |-
-          Far off, the Moonwell pack's keen ears catch the unnatural cry, prompting them to adjust their approach though they give no audible sign.
+        description: Far off, the Moonwell pack's keen ears catch the unnatural cry,
+          prompting them to adjust their approach though they give no audible sign.
         marginal_probability: 0.005
         joint_probabilities:
           and NoAnswer: 0.0045
           and WolvesHowl: 0.0001
       - id: WolvesHowl
-        description: |-
-          A natural wolf pack somewhere deeper in the forest answers with a prolonged howl, carrying through the trees.
+        description: A natural wolf pack somewhere deeper in the forest answers with
+          a prolonged howl, carrying through the trees.
         marginal_probability: 0.04
         joint_probabilities:
           and NoAnswer: 0.036
           and BirdFlurry: 0.012
           and WolfmenDetect: 0.0001
       - id: FallingBranch
-        description: |-
-          A startled squirrel or crow dislodges a rotten branch that crashes near the party, posing a minor hazard.
+        description: A startled squirrel or crow dislodges a rotten branch that crashes
+          near the party, posing a minor hazard.
         marginal_probability: 0.002
         joint_probabilities:
           and BirdFlurry: 0.0005
     actual_consequences:
     - id: NoAnswer
-      description: |-
-        The shout echoes among the trees but no human voice replies; the immediate area seems undisturbed by people.
+      description: The shout echoes among the trees but no human voice replies; the
+        immediate area seems undisturbed by people.
       marginal_probability: 0.85
     consequence_probabilities:
       NoAnswer: 0.85

@@ -1,0 +1,46 @@
+channel_id: console-game-0000034
+adventure_name: wolfman-fight
+config:
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
+log:
+- user: ''
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
+  debug_info: null
+  rotations: []
+- user: I cautiously advance along the road, keeping watch for any signs of danger
+  dm: 'You advance along the Old Road, each step measured, your eyes scanning the
+    dappled shadows. The air, thick with the scent of moss and damp earth, carries
+    the distant whisper of wind through leaves – a familiar quiet that always feels
+    poised on the edge of something else. Then, the forest itself seems to hold its
+    breath, a perfect, predatory stillness, before it erupts. A guttural howl tears
+    through the quiet, followed by the sharp snap of branches. From the dense undergrowth
+    on either side, figures burst forth – wolfmen, their forms a terrifying blend
+    of lupine and humanoid, closing the distance with unnatural speed.
+
+
+    The sudden violence catches you off guard, a jolt of surprise running through
+    you as the first wolfman lunges. Even your caution, your constant scanning, wasn''t
+    enough to anticipate the sheer ferocity of the ambush. Eiliad, ever ready, draws
+    her shortbow, her movements fluid and practiced. But the attackers are already
+    too close for a clean shot, the advantage lost before the first arrow can fly.
+    Firghorm lets out a roar, his shield snapping up as he moves to intercept the
+    closest threats, a bulwark against the tide. His stance is solid, unwavering,
+    a familiar sight of dependable defense. Draenen''s satchel hits the cobblestones
+    with a thud; she scrambles desperately for her knife, her face a mask of panic,
+    her usual composure shattered by the raw, immediate danger. Luath stumbles back,
+    his hands fumbling with a vial of moonshade, his eyes wide with sheer terror.
+    His immediate instinct is flight and self-medication, his mind already seeking
+    escape from the present horror.'
+  debug_info: null
+  rotations: []
+characters:
+  cli-user: Valeria the Bold
+saved_at: '2025-07-24T17:57:59.000944'
