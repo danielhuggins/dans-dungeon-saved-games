@@ -1,0 +1,44 @@
+channel_id: console-game-0000037
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+- user: |-
+    I suggest we proceed along the Old Road toward the crossroads, keeping alert for any danger.
+  dm: |-
+    You stand on the North End of the Old Road, the ancient cobblestones of Welwaen Forest worn smooth beneath your boots. Five miles north, the Crossroads with Tabernath Way awaits, a destination shrouded in local superstition and rumour. The air hangs heavy with the scent of damp earth and the decaying bark of colossal, sentinel oaks, their branches interlocked overhead, forming a dim, green canopy that filters the midday sun into shifting, dappled patterns. The forest presses in, a dense tapestry of moss-laden trunks and grasping roots, broken only by the faint, winding path of the Old Road.
+
+    You address your companions, your voice a low rumble, grounded by years of command and the weight of responsibility. "We press on. The Crossroads is our goal. Keep eyes sharp, for the whispers of the wolfmen are never far from these woods."
+
+    Eiliad, ever restless, nods curtly, her piercing green eyes already scanning the treeline. "Alert is good," she states, her voice a low rasp that carries the pragmatism of survival. "But *seeing* is better." With a fluid motion, she melts into the deeper shadows at the forest's edge, her lithe form a fleeting silhouette against the emerald gloom, moving aggressively ahead of the group's measured pace.
+
+    A sudden, sharp snap of a twig, impossibly loud and unnervingly close, echoes from the dense undergrowth to your left. It is not the sound of a deer or a foraging boar. Before you can fully turn, the forest erupts. A guttural snarl rips through the air, a sound laced with primal hunger and the unnatural resonance of the Corruption. Hulking shapes, fur matted and eyes burning with malevolent amber light, surge from the foliage. Three wolfmen, their forms twisted with the signs of rampant mutation—one bearing extra, weeping orifices along its spine, another with limbs that bend at impossible angles—burst from the trees, their bronze-tipped spears leveled with predatory intent. The ambush, meant for a mile further on, has been triggered prematurely by Eiliad's swift, independent movement.
+
+    Draenen lets out a sharp, involuntary gasp, her hand flying to her mouth, her usually stern features contorted with alarm. "By the Mother! What is this?!" Her eyes, wide with a sudden terror, dart between the encroaching horrors and the unprepared formation of your group.
+
+    Firghorm, without a word, plants his feet, his plain steel shield rising instinctively to block the immediate threat. His steel longsword becomes a glinting arc before him, a testament to his battle-hardened readiness. His weathered blue cloak snaps taut against his back as he braces for the inevitable impact, his grizzled expression a mask of grim resolve.
+
+    Luath stumbles back a step, his dark, curly hair falling across his smudged spectacles. His hands scrabble frantically at his alchemical satchel, his brown eyes wide with a raw, unadulterated panic. "No, no, not now! Not here!" he cries, his voice a thin, reedy thread of pure dread, the carefully constructed composure of his mind shattering under the sudden, violent reality.
+- user: |-
+    I draw my sword and charge the nearest wolfman, aiming to strike before they can overwhelm Eiliad.
+  dm: |-
+    You surge forward, your steel longsword, an heirloom bound with bronze, cleaving the humid air. The forest floor, a tapestry of moss and root-choked cobblestones, flies beneath your boots. The nearest wolfman, a hulking brute whose matted fur appears like old rags soaked in grime and whose eyes burn like chips of corrupted amber, lets out a pained snarl as your blade bites deep into its flank. A gout of dark, viscous fluid, not quite blood, sprays from the gash, and the creature lets out a choked roar of agony, its attention instantly and solely fixed upon you.
+
+    To your left, Eiliad moves with the predatory grace of a hunting cat. Her yew shortbow is drawn taut, a steel-tipped arrow nocked and humming with tension. With a silent exhale, she releases. The arrow flies true, striking the second wolfman squarely in its broad shoulder. The creature recoils, a guttural snarl ripping from its throat as it turns its mutated gaze towards the scout.
+
+    Firghorm, a bulwark of weathered leather and steel, plants his feet with the unyielding resolve of a mountain. His plain steel shield, scarred from countless forgotten blows, rises to meet the charge of the third wolfman, a hulking shape that barrels towards you with terrifying speed. His steel longsword is held ready, a glint of defiance in the encroaching gloom.
+
+    A sharp, involuntary gasp escapes Draenen. Her eyes, wide with a terror that momentarily eclipses her usual sternness, flick between the encroaching horrors and the chaotic melee. Her calloused hands, accustomed to the delicate work of the forest, scramble for her herbalist's satchel. She pulls out a thick, green poultice, its scent of crushed herbs momentarily cutting through the stench of rot and fear, and takes a defensive stance, observing the unfolding battle.
+
+    Luath stumbles back, a strangled cry escaping his lips. His dark, curly hair falls across his perpetually smudged spectacles, obscuring his frantic gaze. "No, no, not now! This is not the sequence! This is not the place for such... *unraveling*!" he rasps, his voice a thin, reedy thread of pure dread. His hands, stained with alchemical residue, fumble desperately for a smoke bomb within his satchel, seeking to create distance and confusion.
+
+    The wounded wolfman, its flank bleeding the dark, viscous fluid, lets out another pained roar. It lunges back, its mutated limbs churning, its sole focus now fixed on you, the source of its agony. The second wolfman, struck by Eiliad's arrow, turns its attention to the scout. A low, guttural snarl emanates from its twisted maw as it begins to advance on her position. The third wolfman, its hulking form a shadow against the dappled light, charges directly at Firghorm, its bronze-tipped spear aimed with deadly intent.
+
+    Luath's fumbling hands finally grasp a small, clay vial. With a desperate flick of his wrist, he hurls it. It shatters against the moss-slicked cobblestones, erupting in a thick, acrid cloud of grey smoke. The smoke billows outwards, obscuring Luath's position behind the ancient oak, and begins to drift, a suffocating shroud, towards your group. The dappled sunlight, already struggling to pierce the dense canopy of ancient oaks, is now further choked by the encroaching smoke. The air grows thick and heavy, rendering the immediate area a murky, disorienting haze where forms blur and distances become impossible to judge.
+characters:
+  cli-user: Gareth, a battle-hardened warrior
+saved_at: '2025-07-24T23:16:43.631616'
