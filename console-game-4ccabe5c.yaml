@@ -1,32 +1,54 @@
 channel_id: console-game-4ccabe5c
 adventure_name: thief
 config:
-  starter: |-
-    You stand on the shore of Lake Avertayn. Above you and to the north is the village of Avertayn. The members of your party are Firghorm, Draenen, Eiliad, and Luath
+  starter: You stand on the shore of Lake Avertayn. Above you and to the north is
+    the village of Avertayn. The members of your party are Firghorm, Draenen, Eiliad,
+    and Luath
 log:
 - user: ''
-  dm: |-
-    You stand on the shore of Lake Avertayn. Above you and to the north is the village of Avertayn. The members of your party are Firghorm, Draenen, Eiliad, and Luath
-  metrics: The adventure has just started; no metrics yet.
+  dm: You stand on the shore of Lake Avertayn. Above you and to the north is the village
+    of Avertayn. The members of your party are Firghorm, Draenen, Eiliad, and Luath
 - user: look around
-  dm: |-
-    **TestHero**:
+  dm: '**TestHero**:
+
     - Turning that into a story
 
-    You stand on the rocky shore of Lake Avertayn, the smooth stones shifting slightly under your feet. The sky above is overcast, casting a gray light over the calm waters that stretch before you. The lake's surface is undisturbed save for gentle ripples near the shore, and while several fishing huts and weathered jetties dot the coastline, no boats are currently visible on the water.
 
-    Above you, the village of Avertayn clings to its hillside perch. Smoke rises from several chimneys, and you can see villagers moving between the timber and thatch buildings. The paths leading up from the shore are partially overgrown, winding their way between the organically arranged dwellings. The great hall stands prominent among the smaller structures, its larger form dominating the village skyline.
+    You stand on the rocky shore of Lake Avertayn, the smooth stones shifting slightly
+    under your feet. The sky above is overcast, casting a gray light over the calm
+    waters that stretch before you. The lake''s surface is undisturbed save for gentle
+    ripples near the shore, and while several fishing huts and weathered jetties dot
+    the coastline, no boats are currently visible on the water.
 
-    To the west, dense woods fill the valleys, creating a dark and foreboding presence. The forest transitions gradually from the shoreline, with scattered trees becoming progressively thicker. A deer is visible at the forest's edge, cautiously drinking from the lake before darting back into the cover of the trees.
 
-    Your companions are spread nearby: Firghorm stands watchful in his blue cloak, scanning the surroundings; Draenen kneels to examine plants along the shoreline; Eiliad's eyes dart between various vantage points; and Luath nervously adjusts his alchemical supplies.
+    Above you, the village of Avertayn clings to its hillside perch. Smoke rises from
+    several chimneys, and you can see villagers moving between the timber and thatch
+    buildings. The paths leading up from the shore are partially overgrown, winding
+    their way between the organically arranged dwellings. The great hall stands prominent
+    among the smaller structures, its larger form dominating the village skyline.
+
+
+    To the west, dense woods fill the valleys, creating a dark and foreboding presence.
+    The forest transitions gradually from the shoreline, with scattered trees becoming
+    progressively thicker. A deer is visible at the forest''s edge, cautiously drinking
+    from the lake before darting back into the cover of the trees.
+
+
+    Your companions are spread nearby: Firghorm stands watchful in his blue cloak,
+    scanning the surroundings; Draenen kneels to examine plants along the shoreline;
+    Eiliad''s eyes dart between various vantage points; and Luath nervously adjusts
+    his alchemical supplies.
+
 
     Visible paths lead:
+
     - North: Up the overgrown path to the village
+
     - East: Along the rocky shoreline
+
     - West: Along the shore toward the woods
-    - South: A jetty extends into the lake
-  metrics: ''
+
+    - South: A jetty extends into the lake'
 characters:
   cli-user: TestHero
 saved_at: '2025-07-13T21:32:51.894129'

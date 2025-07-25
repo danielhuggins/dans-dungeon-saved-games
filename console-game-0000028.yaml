@@ -7,21 +7,11 @@ log:
 - user: ''
   dm: |-
     You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I move forward cautiously.
   dm: |-
     **Firghorm**:
     Firghorm steps over the moss-slick cobbles without noise or harm, gaining a pace along the Old Road.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Crafting JSON Format**
-
-    I'm noticing they request a "spotlight_probability_comparisons" array, which isn't detailed in the JSON example. It seems like they might expect a more extensive JSON format that includes this array. They mention that every character ID should appear at least three times for comprehensive probability relationships, indicating that both the "next_actor" and this comparisons array should be included in the final output. I’ll craft the JSON to reflect this requirement, ensuring it contains the necessary elements.
-    **Structuring JSON for Probability Comparisons**
-
-    I need to follow the required format closely while crafting the JSON output. It should include "next_actor" with their ID and reasoning, and a "spotlight_probability_comparisons" array that provides comparisons. I think a possible structure could have accumulated probabilities for each actor, reflecting their likelihood of acting next, along with pair-based comparisons for each character. I'm deciding to assign Eiliad a higher probability for scouting since they haven't been highlighted yet and have the right skills for the situation. Thus, I’m settling on the following probabilities to include in the JSON.
   rotations:
   - part_number: 1
     spotlight_holder: Firghorm

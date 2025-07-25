@@ -7,34 +7,11 @@ log:
 - user: ''
   dm: |-
     You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I look around carefully.
   dm: |-
     **Firghorm**:
     Finding naught amiss at first glance, Firghorm feels a brief reassurance that the way ahead is clear.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Calculating probabilities for exploration**\n\nThe party is 5 miles from the crossroads, and the wolves\
-    \ are lying in ambush just 1 mile away. This means they're 4 miles from the party, so there's still time before an encounter.\
-    \ It makes sense to have Eiliad act as the scout and prepare the path. Now, I’ll assign weights for the probabilities\
-    \ of each character’s actions: Firghorm, Draenen, Eiliad, Luath, and consider environmental hazards. The total weight\
-    \ comes to 9.5, leading to various calculated probabilities for each character.\n**Preparing comparisons for characters**\n\
-    \nI’m laying out the spotlight probability comparisons for each character's actions. Eiliad stands out, appearing in five\
-    \ comparisons, highlighting his strong position. Draenen and Luath each show up in three, which is good, while Firghorm\
-    \ and the Wolfmen each appear four times. I should ensure every character is well represented. \n\nIn the JSON format,\
-    \ I’ll note Eiliad as the next actor, emphasizing his urgency as a scout. Now, I’ll double-check the final formatting\
-    \ to ensure it’s valid.\n\n---\n\n**Choosing character observations**\n\nI'm considering various observations for him.\
-    \ If he sees nothing, it sets a general sense of safety, and we might avoid complexities.\n\nI think options like \"QuietConfidence\"\
-    \ offer reassurance, while \"DistantHowl\" could suggest presence nearby. \"CorruptionSign\" shows a hint of something\
-    \ unusual, and \"AnimalTrackFind\" offers intrigue with fresh tracks. There are also subtler clues, like \"LooseCobbleSlip\"\
-    \ and \"GlimpseWolfShadow,\" which play on uncertainty. Lastly, \"MilestoneDiscovery\" and \"PhantomLanterns\" add an\
-    \ element of mystery. I’ll choose wisely!\n**Defining NPC actions and probabilities**\n\nI'm outlining some potential\
-    \ actions and reactions for the NPCs, focusing on the forest's eerie atmosphere. I have a set of 11 IDs to provide descriptions\
-    \ and probabilities, so I’ll narrow it down to 8 actions. Options include a Wolfmen scout moving quietly or a deer grazing\
-    \ ahead. \n\nAdditionally, there are reactions to Firghorm's scanning, like Eiliad signaling for silence or Wolfmen freezing\
-    \ to avoid detection. I plan to define probabilities realistically while considering likely supernatural moments—keeping\
-    \ illusions rare seems wise! I’ll finalize the list of potential events with descriptions."
   rotations:
   - part_number: 1
     spotlight_holder: Firghorm

@@ -1,31 +1,19 @@
 channel_id: console-game-0000022
 adventure_name: core-game
 config:
-  starter: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  starter: You find yourself in the world of Avertayn, a land of ancient mysteries
+    and forgotten powers. The realm stretches before you, filled with opportunity
+    and danger.
 log:
 - user: ''
-  dm: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: You find yourself in the world of Avertayn, a land of ancient mysteries and
+    forgotten powers. The realm stretches before you, filled with opportunity and
+    danger.
   rotations: []
 - user: I sit down quietly and wait
-  dm: |-
-    **TestHero4**:
-    The player settles in without incident; their presence remains unobtrusive.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Exploring potential consequences**\n\nI’m considering some potential consequences for the player's\
-    \ action of sitting quietly. I have a mix of simple outcomes like CalmSitting, where nothing happens, and more dynamic\
-    \ results like CreekOfBench that could create noise. Other consequences include stirring up dust, losing a coin, or feeling\
-    \ fatigue. More interestingly, there’s a chance to notice surroundings better, encounter an insect bite, or experience\
-    \ a magical sensation from stillness. I’ll choose eight consequences from this list.\n**Defining proactive actions and\
-    \ probabilities**\n\nI’m brainstorming proactive NPC or creature actions that occur without player influence. Options\
-    \ include BarkerDogRoams, TiredGuardYawns, MerchantCountsCoins, and more. I’ll narrow it down to 4-8 actions. \n\nFor\
-    \ NPC reactions, I’m thinking about watchers reacting to the player’s quiet sitting. Some specific reactions could be\
-    \ a nearby guard glancing over or a bored child staring. I also need to outline probabilities for these consequences and\
-    \ actions, determining how likely they are to occur. \n\nJoint probabilities will be calculated too, allowing combinations\
-    \ like CalmSitting with SilentCreaks, showing how different actions may overlap."
+  dm: '**TestHero4**:
+
+    The player settles in without incident; their presence remains unobtrusive.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero4
@@ -33,54 +21,59 @@ log:
     consequence_response:
       potential_consequences:
       - id: CalmWait
-        description: The player settles in without incident; their presence remains unobtrusive.
+        description: The player settles in without incident; their presence remains
+          unobtrusive.
         marginal_probability: 0.97
         joint_probabilities:
           and CreakNoise: 0.14
           and ObservantGaze: 0.38
           and DustPuff: 0.045
       - id: CreakNoise
-        description: |-
-          The bench or floorboards emit a soft creak as the player sits, audible within a few paces.
+        description: The bench or floorboards emit a soft creak as the player sits,
+          audible within a few paces.
         marginal_probability: 0.15
         joint_probabilities:
           and TestHero4Acknowledges: 0.07
       - id: DustPuff
-        description: A small cloud of dust or pollen puffs up, slightly tickling noses nearby.
+        description: A small cloud of dust or pollen puffs up, slightly tickling noses
+          nearby.
         marginal_probability: 0.05
         joint_probabilities:
           and ChildStaresCuriously: 0.02
       - id: CoinClink
-        description: A loose coin slips from the player’s pouch and clinks faintly on the ground.
+        description: A loose coin slips from the player’s pouch and clinks faintly
+          on the ground.
         marginal_probability: 0.007
         joint_probabilities:
           and GuardEases: 0.004
       - id: ObservantGaze
-        description: |-
-          With nothing else to do, the player quietly studies their surroundings, noticing minor details others miss.
+        description: With nothing else to do, the player quietly studies their surroundings,
+          noticing minor details others miss.
         marginal_probability: 0.42
         joint_probabilities:
           and EthericFlutter: 0.0008
           and TestHero4Acknowledges: 0.35
       - id: InsectNibble
-        description: An unseen gnat or flea bites the player, causing a momentary itch.
+        description: An unseen gnat or flea bites the player, causing a momentary
+          itch.
         marginal_probability: 0.004
         joint_probabilities: {}
       - id: EthericFlutter
-        description: |-
-          A faint, momentary fluctuation in the local Power Field tingles across the player’s skin.
+        description: A faint, momentary fluctuation in the local Power Field tingles
+          across the player’s skin.
         marginal_probability: 0.001
         joint_probabilities:
           and ObservantGaze: 0.0008
       - id: SeatCrack
-        description: |-
-          A hidden crack in the seating surface worsens, giving a sharp snap but not yet collapsing.
+        description: A hidden crack in the seating surface worsens, giving a sharp
+          snap but not yet collapsing.
         marginal_probability: 0.0002
         joint_probabilities:
           and SeatlessPasserGrumbles: 0.00015
       npc_proactive_actions:
       - id: GuardStrolls
-        description: A nearby guard casually walks the perimeter of the area on his regular round.
+        description: A nearby guard casually walks the perimeter of the area on his
+          regular round.
         marginal_probability: 0.12
         joint_probabilities:
           and BreezeSways: 0.05
@@ -92,52 +85,56 @@ log:
           and BreezeSways: 0.07
           and ChildStaresCuriously: 0.03
       - id: MerchantBookkeep
-        description: |-
-          A merchant seated at a nearby stall quietly tallies today’s sales in a worn ledger.
+        description: A merchant seated at a nearby stall quietly tallies today’s sales
+          in a worn ledger.
         marginal_probability: 0.21
         joint_probabilities:
           and CoinClink: 0.002
       - id: DogSniffsAir
-        description: A village dog raises its nose, sniffing the breeze for interesting scents.
+        description: A village dog raises its nose, sniffing the breeze for interesting
+          scents.
         marginal_probability: 0.09
         joint_probabilities:
           and CatProwls: 0.01
       - id: BreezeSways
-        description: A gentle breeze stirs loose leaves and hanging signs for a few seconds.
+        description: A gentle breeze stirs loose leaves and hanging signs for a few
+          seconds.
         marginal_probability: 0.31
         joint_probabilities:
           and GuardStrolls: 0.05
           and CatProwls: 0.07
       npc_reactions:
       - id: TestHero4Acknowledges
-        description: |-
-          TestHero4 glances sideways, giving a brief nod or slight shift in posture on noticing the player sit.
+        description: TestHero4 glances sideways, giving a brief nod or slight shift
+          in posture on noticing the player sit.
         marginal_probability: 0.46
         joint_probabilities:
           and CreakNoise: 0.07
           and ObservantGaze: 0.35
       - id: GuardEases
-        description: |-
-          Seeing the player simply sit, the guard relaxes slightly, lowering his hand from his weapon hilt.
+        description: Seeing the player simply sit, the guard relaxes slightly, lowering
+          his hand from his weapon hilt.
         marginal_probability: 0.09
         joint_probabilities:
           and GuardStrolls: 0.04
           and CoinClink: 0.004
       - id: ChildStaresCuriously
-        description: A bored child nearby fixes curious eyes on the seated player for a moment.
+        description: A bored child nearby fixes curious eyes on the seated player
+          for a moment.
         marginal_probability: 0.05
         joint_probabilities:
           and DustPuff: 0.02
           and CatProwls: 0.03
       - id: SeatlessPasserGrumbles
-        description: |-
-          A passer-by who had hoped to sit mutters under their breath at finding the spot taken.
+        description: A passer-by who had hoped to sit mutters under their breath at
+          finding the spot taken.
         marginal_probability: 0.03
         joint_probabilities:
           and SeatCrack: 0.00015
     actual_consequences:
     - id: CalmWait
-      description: The player settles in without incident; their presence remains unobtrusive.
+      description: The player settles in without incident; their presence remains
+        unobtrusive.
       marginal_probability: 0.97
     probability_debug_info:
       random_value: 0.06831456779839706

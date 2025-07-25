@@ -2,14 +2,10 @@ channel_id: console-cli-session
 log:
 - user: ''
   dm: Welcome to the test adventure! You find yourself in a mysterious dungeon.
-  metrics: The adventure has just started; no metrics yet.
   ai_response: null
-  reasoning_summary: null
 - user: test action
   dm: Test response from game master
-  metrics: All systems normal
   ai_response: test ai response
-  reasoning_summary: null
 config:
   starter: Welcome to the test adventure! You find yourself in a mysterious dungeon.
 adventure_name: cli-test-adventure

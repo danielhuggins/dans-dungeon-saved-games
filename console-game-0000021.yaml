@@ -7,23 +7,11 @@ log:
 - user: ''
   dm: |-
     You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I draw my sword and wave it menacingly
   dm: |-
     **TestHero3**:
     Hearing or seeing the threatening flourish, the nearest guard turns sharply to assess the situation.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Estimating consequences and probabilities**
-
-    I'm considering the consequences of failing to draw a sword cleanly. I want to generate about eight potential outcomes. For proactive NPCs, I could have actions like an innkeeper cleaning glasses or a guard yawning. I’ll also outline 3-6 reactive behaviors, such as a guard investigating or a child running. I need to assign probabilities for each event occurring in a few seconds, using a proper scale. For example, self-cuts could be extremely rare, and I might estimate their probability at 0.01.
-    **Defining probabilities and events**
-
-    I'm planning to create events and their probabilities, as well as joint probabilities for specific pairs. I think it would be interesting to explore combinations like intimidation and a guard investigating, or a self-cut overshadowing intimidation.
-
-    I'll list potential consequences, assigning probabilities to each. For example, intimidation might have a probability of 0.38, while the sword making a loud whoosh could be around 0.72. Additionally, I want to define several proactive NPC actions with their probabilities, like a guard shifting weight or a merchant counting coins.
   rotations:
   - part_number: 1
     spotlight_holder: TestHero3

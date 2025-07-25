@@ -1,46 +1,44 @@
 channel_id: console-game-0000013
 adventure_name: wolfman-fight
 config:
-  starter: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
 log:
 - user: ''
-  dm: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
   rotations: []
-- user: |-
-    I carefully examine the road ahead, looking for any signs of recent tracks, disturbances, or anything unusual that might indicate danger or the presence of creatures.
-  dm: |-
-    **TestAdventurer**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Simulating the environment**
+- user: I carefully examine the road ahead, looking for any signs of recent tracks,
+    disturbances, or anything unusual that might indicate danger or the presence of
+    creatures.
+  dm: '**TestAdventurer**:
 
-    I need to simulate a scenario where the player scans the road for any signs of dangers or creatures. They’re currently four miles away from an ambush set by wolfmen, one mile from a crossroads. Since they are five miles from the crossroads, that means they won't see tracks or disturbances directly related to the ambush. However, there may be earlier signs indicating that the wolfmen have recently passed through. It’s worth pondering what visible traces might show up.
-    **Identifying potential consequences**
-
-    I’m considering various consequences for the player's search of the road. They might spot tracks or claw marks, see emptiness, or misinterpret signs, leading to false positives. While scanning, there's a chance of missing hidden hazards like roots, causing trips or injuries. Searching might even alert hidden creatures, although they're pretty far away. Plus, they could discover small resources like herbs or animals nearby. I need to establish probabilities for these outcomes, considering factors like wildlife traffic on the Old Road.
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: TestAdventurer
-    action_taken: |-
-      I carefully examine the road ahead, looking for any signs of recent tracks, disturbances, or anything unusual that might indicate danger or the presence of creatures.
+    action_taken: I carefully examine the road ahead, looking for any signs of recent
+      tracks, disturbances, or anything unusual that might indicate danger or the
+      presence of creatures.
     consequence_response:
       potential_consequences:
       - id: WolfmenPrintsDetected
-        description: |-
-          The examiner spots large, claw-marked tracks that match tales of wolfmen, fresh enough to suggest passage within the last day.
+        description: The examiner spots large, claw-marked tracks that match tales
+          of wolfmen, fresh enough to suggest passage within the last day.
         marginal_probability: 0.12
         joint_probabilities:
           and WildlifeTracksDetected: 0.08
           and TwistedAnkle: 0.001
           and StartleSmallAnimal: 0.02
       - id: WildlifeTracksDetected
-        description: |-
-          Numerous prints of deer, boar, or ordinary wolves are noticed, indicating recent animal movement along the road.
+        description: Numerous prints of deer, boar, or ordinary wolves are noticed,
+          indicating recent animal movement along the road.
         marginal_probability: 0.65
         joint_probabilities:
           and WolfmenPrintsDetected: 0.08
@@ -48,33 +46,35 @@ log:
           and HerbPatchSpotted: 0.045
           and StartleSmallAnimal: 0.05
       - id: FalseAlarm
-        description: |-
-          Natural marks or shadows are misread as signs of immediate danger, raising unwarranted concern in the party.
+        description: Natural marks or shadows are misread as signs of immediate danger,
+          raising unwarranted concern in the party.
         marginal_probability: 0.1
         joint_probabilities:
           and WildlifeTracksDetected: 0.06
           and StartleSmallAnimal: 0.01
       - id: NoSignificantFindings
-        description: Despite close scrutiny, nothing unusual or noteworthy is discovered on the road ahead.
+        description: Despite close scrutiny, nothing unusual or noteworthy is discovered
+          on the road ahead.
         marginal_probability: 0.3
         joint_probabilities:
           and TwistedAnkle: 0.003
       - id: TwistedAnkle
-        description: |-
-          While inspecting the cobblestones, the examiner slips on a root-buckled stone, suffering a minor sprain.
+        description: While inspecting the cobblestones, the examiner slips on a root-buckled
+          stone, suffering a minor sprain.
         marginal_probability: 0.007
         joint_probabilities:
           and WolfmenPrintsDetected: 0.001
           and NoSignificantFindings: 0.003
           and StartleSmallAnimal: 0.0005
       - id: HerbPatchSpotted
-        description: A cluster of useful medicinal herbs is noticed growing in the moss by the roadside.
+        description: A cluster of useful medicinal herbs is noticed growing in the
+          moss by the roadside.
         marginal_probability: 0.08
         joint_probabilities:
           and WildlifeTracksDetected: 0.045
       - id: StartleSmallAnimal
-        description: |-
-          A hidden rabbit or pheasant is inadvertently startled, dashing into the undergrowth with a loud rustle.
+        description: A hidden rabbit or pheasant is inadvertently startled, dashing
+          into the undergrowth with a loud rustle.
         marginal_probability: 0.06
         joint_probabilities:
           and WildlifeTracksDetected: 0.05
@@ -90,71 +90,55 @@ log:
       TwistedAnkle: 0.007
       HerbPatchSpotted: 0.08
       StartleSmallAnimal: 0.06
-- user: I shout loudly 'Is anyone out there?' and listen carefully for any response from the forest.
-  dm: |-
-    **TestAdventurer**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Considering possible scenarios**
+- user: I shout loudly 'Is anyone out there?' and listen carefully for any response
+    from the forest.
+  dm: '**TestAdventurer**:
 
-    The characters just checked the road for tracks, and nothing significant was found, indicating a calm moment of exploration without combat. Now, it’s about deciding what happens next. Potential actors include any party member, the wolfmen who might initiate an ambush, environmental hazards, or even some local wildlife like squirrels or deer. It’s crucial to focus on plausible actions while maintaining tension, since the wolfmen are lurking about four miles ahead, waiting for the right moment to strike.
-    **Assessing actor probabilities**
-
-    I need to determine the probabilities mathematically by identifying potential actors: Firghorm, Draenen, Eiliad, Luath, and TestAdventurer. I’ll also include environmental hazards and possibly the wolfmen pack, while making sure to manage the number of actors to keep things clear. Since each character ID must appear at least three times in the comparisons, I’ll stick to six actors. To build the spotlight comparisons, I’ll ensure to provide a variety of references and keep the exploration context in mind.
-    **Identifying actors and probabilities**
-
-    In this step, I’m identifying potential actors for the scene: Eiliad, TestAdventurer, Draenen, Firghorm, Luath, and the Moonwell Pack. My baseline actor will be Eiliad since, as a scout, they're likely to act first. I'll assign relative probabilities for each actor's likelihood of acting, making sure each character ID appears at least three times in the comparisons. From there, I can create the ratios that reflect their relative likelihoods, keeping the ratios symmetrical to ensure clarity in the comparisons.
-
-    ---
-
-    **Analyzing player actions**
-
-    I’m considering the scenario where the player shouts, “Is anyone out there?” and listens for a response. They’re currently 5 miles south of a crossroads, with an ambush of wolfmen 1 mile from the crossroads, making them 4 miles away. I need to compute the potential consequences of this action. The sound could travel far enough to alert both wildlife and the wolfmen. I should think about how the players can be impacted by their loud shout.
-    **Considering sound consequences**
-
-    I’m analyzing how the sound of a loud shout travels through the forest. While it’s unlikely the wolfmen, 4 miles away, will hear it, nearby wildlife might react more readily. For instance, birds could scatter and reveal their location, while deer might bolt and create a minor hazard. The players might hear echoes or distant howls, affecting their stealth. I’ll outline distinct possible outcomes to better understand the effects of the shout.
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: TestAdventurer
-    action_taken: I shout loudly 'Is anyone out there?' and listen carefully for any response from the forest.
+    action_taken: I shout loudly 'Is anyone out there?' and listen carefully for any
+      response from the forest.
     consequence_response:
       potential_consequences:
       - id: EchoingSilence
-        description: The forest swallows the call; only the traveller’s own echo returns and no clear reply is heard.
+        description: The forest swallows the call; only the traveller’s own echo returns
+          and no clear reply is heard.
         marginal_probability: 0.55
         joint_probabilities:
           and WolfScoutAlerted: 0.015
           and CorruptionWhisper: 0.003
       - id: BirdFright
-        description: |-
-          A clutch of roosting birds erupts from the branches with frantic cries and beating wings, loudly advertising the party’s position.
+        description: A clutch of roosting birds erupts from the branches with frantic
+          cries and beating wings, loudly advertising the party’s position.
         marginal_probability: 0.6
         joint_probabilities:
           and DeerBolts: 0.015
           and WolfHowlReturn: 0.02
       - id: WolfHowlReturn
-        description: |-
-          From somewhere deeper among the trunks comes a low, answering howl—whether wolf or something worse is unclear.
+        description: From somewhere deeper among the trunks comes a low, answering
+          howl—whether wolf or something worse is unclear.
         marginal_probability: 0.08
         joint_probabilities:
           and WolfScoutAlerted: 0.01
           and BirdFright: 0.02
       - id: DeerBolts
-        description: A startled deer bursts across the road, potentially spooking mounts or scattering loose gear.
+        description: A startled deer bursts across the road, potentially spooking
+          mounts or scattering loose gear.
         marginal_probability: 0.04
         joint_probabilities:
           and BirdFright: 0.015
       - id: WolfScoutAlerted
-        description: |-
-          A lone wolfman scout, ranging ahead of its pack, hears the shout and begins a cautious approach toward the party’s location.
+        description: A lone wolfman scout, ranging ahead of its pack, hears the shout
+          and begins a cautious approach toward the party’s location.
         marginal_probability: 0.02
         joint_probabilities:
           and EchoingSilence: 0.015
           and WolfHowlReturn: 0.01
       - id: CorruptionWhisper
-        description: |-
-          For a heartbeat the echo twists into hushed, layered voices—an eerie hallucination hinting at the creeping Corruption.
+        description: For a heartbeat the echo twists into hushed, layered voices—an
+          eerie hallucination hinting at the creeping Corruption.
         marginal_probability: 0.005
         joint_probabilities:
           and EchoingSilence: 0.003

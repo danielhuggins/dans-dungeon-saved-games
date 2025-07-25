@@ -7,34 +7,12 @@ log:
 - user: ''
   dm: |-
     You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: |-
     I suggest we advance carefully toward the crossroads, staying in formation. I'll take point and watch for any signs of danger ahead.
   dm: |-
     **Firghorm**:
     Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Analyzing potential actions**\n\nI think the Wolfmen might be getting ready but maybe not acting just\
-    \ yet. There’s a group called the \"Moonwell Pack\" to consider. I should calculate their potential involvement alongside\
-    \ our party members. Firghorm just finished his turn but can act again; the same goes for the others like Draenen, Eiliad,\
-    \ and Luath. There’s some urgency since they need a guide, and Eiliad seems likely to take the lead in scouting ahead.\
-    \ It’ll be interesting to see how this plays out!\n**Calculating probabilities and comparisons**\n\nI’m considering how\
-    \ to assign weights to characters: Eiliad gets 0.4, Firghorm 0.25, Draenen 0.2, Luath 0.1, and the Wolfmen 0.05 for their\
-    \ unseen prep. With these, I want to create pairwise comparisons that reflect the probabilities of each character against\
-    \ one another.\n\nI’ll start with comparisons like Eiliad vs. Firghorm, normalizing their weights to find the ratio. Each\
-    \ character needs to show up in at least three comparisons, so I’ll generate a set of ten comparisons to ensure fairness.\
-    \ Let's get started on that!\n\n---\n\n**Considering possible consequences**\n\nI'm thinking about the scenario where\
-    \ the party is about to start walking and may hear a distant howl, hinting at what's ahead. There could be wolfmen pack\
-    \ ambushing nearby, and the party's first steps will have various potential consequences. For instance, Firghorm might\
-    \ notice fresh tracks, which could be a danger sign, or he could stumble, causing noise. Other effects include the party\
-    \ establishing a tight formation for defense, visibility changes due to mist, and even a hidden bird startling them. Let’s\
-    \ explore those consequences further!\n**Identifying consequences and NPC actions**\n\nI’m outlining the consequences\
-    \ of the party's movements, focusing on potential outcomes like spotting fresh tracks or Firghorm tripping on cobblestones,\
-    \ which could create noise. Other events include the mist rolling in, reflecting sunlight off weapons, and a startled\
-    \ deer. That gives me ten consequences already, which is great! \n\nNow, I’ll think about NPC actions: maybe wolfmen scouts\
-    \ move closer, a distant wolf pack hunts, or a merchant caravan approaches. Let’s brainstorm some more options!"
   rotations:
   - part_number: 1
     spotlight_holder: Firghorm

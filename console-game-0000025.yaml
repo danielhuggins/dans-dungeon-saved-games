@@ -1,30 +1,20 @@
 channel_id: console-game-0000025
 adventure_name: core-game
 config:
-  starter: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  starter: You find yourself in the world of Avertayn, a land of ancient mysteries
+    and forgotten powers. The realm stretches before you, filled with opportunity
+    and danger.
 log:
 - user: ''
-  dm: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: You find yourself in the world of Avertayn, a land of ancient mysteries and
+    forgotten powers. The realm stretches before you, filled with opportunity and
+    danger.
   rotations: []
 - user: I wait and watch quietly
-  dm: |-
-    **TestHero6**:
-    No one in the vicinity notices TestHero6 as they stay motionless and silent. Nothing notable happens for the moment; time simply passes.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Analyzing player observation**\n\nI'm focusing on crafting a JSON for the action \"wait and watch\
-    \ quietly.\" In this scenario, the player is observing without acting, which opens up various consequences. They could\
-    \ remain unnoticed, detect subtle details, or overhear conversations. I need to think about NPC actions—like proactive\
-    \ behaviors they might exhibit—and how they respond to the player's quiet presence. Also, I’ll assign probabilities for\
-    \ each outcome, considering that some events are very unlikely. I’m picturing a small village street for context.\n**Defining\
-    \ player interactions**\n\nThe player may lose track of their target as time passes, or ambient noises like a creaking\
-    \ floor might inadvertently reveal their position. I need to outline several discrete effects, like experiencing a suppressed\
-    \ sneeze or getting bitten by bugs. For proactive NPC actions, I envision things like a guard patrolling, a merchant counting\
-    \ inventory, or a cat stalking prey. \n\nI should also establish probabilities, reflecting the likelihood of different\
-    \ outcomes, based on the player’s quiet observation."
+  dm: '**TestHero6**:
+
+    No one in the vicinity notices TestHero6 as they stay motionless and silent. Nothing
+    notable happens for the moment; time simply passes.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero6
@@ -32,7 +22,8 @@ log:
     consequence_response:
       potential_consequences:
       - id: RemainUnnoticed
-        description: No one in the vicinity notices TestHero6 as they stay motionless and silent.
+        description: No one in the vicinity notices TestHero6 as they stay motionless
+          and silent.
         marginal_probability: 0.87
         joint_probabilities:
           and NoticeSubtleDetail: 0.26
@@ -40,8 +31,8 @@ log:
           and GuardShiftsPosition: 0.35
           and UnremarkablePassage: 0.18
       - id: NoticeSubtleDetail
-        description: |-
-          By observing carefully, TestHero6 spots a small but important clue (e.g., a hidden sigil or loose floorboard).
+        description: By observing carefully, TestHero6 spots a small but important
+          clue (e.g., a hidden sigil or loose floorboard).
         marginal_probability: 0.3
         joint_probabilities:
           and OverhearConversation: 0.12
@@ -49,14 +40,15 @@ log:
           and BugBite: 0.02
           and OwlTakesFlight: 0.03
       - id: OverhearConversation
-        description: Faint voices carry to the hero, revealing useful snippets of information.
+        description: Faint voices carry to the hero, revealing useful snippets of
+          information.
         marginal_probability: 0.15
         joint_probabilities:
           and ConversationHushes: 0.03
           and RemainUnnoticed: 0.13
       - id: DetectedByGuard
-        description: |-
-          A nearby guard catches movement or sound and becomes aware of TestHero6’s presence.
+        description: A nearby guard catches movement or sound and becomes aware of
+          TestHero6’s presence.
         marginal_probability: 0.04
         joint_probabilities:
           and GuardGlances: 0.035
@@ -67,8 +59,8 @@ log:
         joint_probabilities:
           and RemainUnnoticed: 0.18
       - id: AccidentalNoise
-        description: |-
-          A creaking board or snapping twig betrays a faint sound from the hero’s position.
+        description: A creaking board or snapping twig betrays a faint sound from
+          the hero’s position.
         marginal_probability: 0.1
         joint_probabilities:
           and GuardGlances: 0.06
@@ -91,8 +83,8 @@ log:
           and SuppressedSneeze: 0.004
       npc_proactive_actions:
       - id: GuardShiftsPosition
-        description: |-
-          A patrolling guard adjusts stance and slowly paces a few steps to relieve stiffness.
+        description: A patrolling guard adjusts stance and slowly paces a few steps
+          to relieve stiffness.
         marginal_probability: 0.42
         joint_probabilities:
           and GuardGlances: 0.04
@@ -110,24 +102,26 @@ log:
         joint_probabilities:
           and DrunkardWaves: 0.008
       - id: ChildChasesBall
-        description: A village child darts after a rolling ball, entering the immediate area.
+        description: A village child darts after a rolling ball, entering the immediate
+          area.
         marginal_probability: 0.03
         joint_probabilities:
           and AccidentalNoise: 0.015
       - id: OwlTakesFlight
-        description: An owl, disturbed by subtle motion, launches from a perch and glides overhead.
+        description: An owl, disturbed by subtle motion, launches from a perch and
+          glides overhead.
         marginal_probability: 0.06
         joint_probabilities:
           and NoticeSubtleDetail: 0.03
       - id: RaiderScoutSpotsCamp
-        description: |-
-          Far off, an opportunistic Scraelingas scout surveys the settlement’s edge for weaknesses (unrelated to the hero).
+        description: Far off, an opportunistic Scraelingas scout surveys the settlement’s
+          edge for weaknesses (unrelated to the hero).
         marginal_probability: 0.0001
         joint_probabilities: {}
       npc_reactions:
       - id: GuardGlances
-        description: |-
-          Hearing or sensing something, the guard briefly looks toward the hero’s location.
+        description: Hearing or sensing something, the guard briefly looks toward
+          the hero’s location.
         marginal_probability: 0.08
         joint_probabilities:
           and DetectedByGuard: 0.035
@@ -145,14 +139,15 @@ log:
         joint_probabilities:
           and OverhearConversation: 0.03
       - id: DrunkardWaves
-        description: |-
-          The singing drunk notices a figure in the shadows and offers an unsteady greeting wave.
+        description: The singing drunk notices a figure in the shadows and offers
+          an unsteady greeting wave.
         marginal_probability: 0.01
         joint_probabilities:
           and DrunkardSings: 0.008
     actual_consequences:
     - id: RemainUnnoticed
-      description: No one in the vicinity notices TestHero6 as they stay motionless and silent.
+      description: No one in the vicinity notices TestHero6 as they stay motionless
+        and silent.
       marginal_probability: 0.87
     - id: UnremarkablePassage
       description: Nothing notable happens for the moment; time simply passes.

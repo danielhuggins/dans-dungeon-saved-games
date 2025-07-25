@@ -5,15 +5,11 @@ config:
 log:
 - user: ''
   dm: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I look around and examine the dungeon entrance carefully
   dm: |-
     **test wizard**:
     Faint, geometric patterns, almost imperceptible to the naked eye, are discovered etched into the stone around the entrance, hinting at a pre-collapse technological origin rather than mere decorative art.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: null
   rotations:
   - part_number: 1
     spotlight_holder: test wizard

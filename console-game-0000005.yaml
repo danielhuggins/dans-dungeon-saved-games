@@ -1,14 +1,18 @@
 channel_id: console-game-0000005
 adventure_name: wolfman-fight
 config:
-  starter: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
 log:
 - user: ''
-  dm: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
   rotations: []
 characters:
   cli-user: NewHero

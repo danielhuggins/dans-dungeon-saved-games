@@ -7,47 +7,17 @@ log:
 - user: ''
   dm: |-
     You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
-- user: I draw my sword and shout 'Form up for battle\! Something doesn't feel right here\!'
+- user: |-
+    I draw my sword and shout 'Form up for battle\! Something doesn't feel right here\!'
   dm: |-
     **TestCharacter**:
     The companions instinctively draw weapons, tighten ranks, and establish a defensive arc around TestCharacter. The firm order steadies frayed nerves, granting the party a brief surge of confidence and focus.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Computing actor ratios**
-
-    I need to calculate ratios greater than 1 for actor comparisons. For instance, "GuardCaptain is 3.244x as likely as WoundedMerchant" and its reciprocal must both be accounted for. Starting with the given probabilities for five actors, I can form pairs and compute the ratios.
-
-    For each pairing, I’ll ensure the comparison detects one actor being more likely than the other, for example, "Eiliad is 1.538x as likely as Firghorm." I’ll create a list of these comparisons for clarity.
-    **Compiling actor descriptions**
-
-    I have a list of potential actors with ids and descriptions:
-
-    - "Eiliad": An agile scout who is scanning the environment and likely to take action first by scouting or warning others.
-    - "Firghorm": Positioned as a guardian, perhaps ready to help.
-    - "Draenen": Focused on local flora and may search for herbs along the road.
-    - "Luath": Shows interest in the road with alchemical curiosity but is less urgent.
-    - "WolfmenAmbushPack": Hidden ahead and unaware of the group’s presence, with minimal chance to act.
-
-    Now I need to compile this into a final JSON format while maintaining the same order as their probabilities.
-
-    ---
-
-    **Determining encounter probabilities**
-
-    I’m analyzing different scenarios that might alert a hostile group, like noise traveling far enough. There's a low probability for that, around 0.03, but it depends on scouts. Then there's a chance of minor self-injury when a character fumbles their sword, which is very low at 0.002. I’m noticing a lack of coordination among party members could happen with a probability of 0.07. I’m deciding to pick six key scenarios for our final list and thinking about their descriptions and probabilities.
-    **Analyzing probabilities for events**
-
-    I'm sorting through different probabilities for potential events affecting the party's situation. The "CommandMisunderstood" probability is set at 0.15, even if there's miscommunication due to environmental noise. The "SelfCut" probability remains low at 0.002, but might increase with misunderstandings. "WildAlarm," where noise startles creatures, stands at 0.22, while "WolfScoutHears" is very low, around 0.01. I’ll finalize my list of six potential scenarios, ensuring I include their conditional probabilities. Now, I need to create a JSON structure with these details.
-    **Structuring event probabilities**
-
-    I'm working on defining the probabilities related to various events that could unfold. For "CommandMisheard," I have a marginal probability of 0.07, with a slight chance of 0.08 if the party is ready. I’ve renamed "BirdsStamped" to "BirdAlarm," with a marginal probability of 0.24 and higher conditional probabilities based on other events. "WolfScoutAlerted" has a marginal of 0.01, while "SelfNick" is at 0.002. Lastly, "MoraleBoost" is strong at 0.82. I’ll finalize the JSON structure, ensuring clear organization without errors.
   rotations:
   - part_number: 1
     spotlight_holder: TestCharacter
-    action_taken: I draw my sword and shout 'Form up for battle\! Something doesn't feel right here\!'
+    action_taken: |-
+      I draw my sword and shout 'Form up for battle\! Something doesn't feel right here\!'
     consequence_response:
       potential_consequences:
       - id: PartyReady
@@ -57,7 +27,8 @@ log:
         conditional_probabilities:
           given CommandMisheard: 0.25
       - id: MoraleBoost
-        description: The firm order steadies frayed nerves, granting the party a brief surge of confidence and focus.
+        description: |-
+          The firm order steadies frayed nerves, granting the party a brief surge of confidence and focus.
         marginal_probability: 0.82
         conditional_probabilities:
           given PartyReady: 0.95
@@ -93,7 +64,8 @@ log:
         The companions instinctively draw weapons, tighten ranks, and establish a defensive arc around TestCharacter.
       marginal_probability: 0.92
     - id: MoraleBoost
-      description: The firm order steadies frayed nerves, granting the party a brief surge of confidence and focus.
+      description: |-
+        The firm order steadies frayed nerves, granting the party a brief surge of confidence and focus.
       marginal_probability: 0.82
     consequence_probabilities:
       PartyReady: 0.92

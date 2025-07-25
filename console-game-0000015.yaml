@@ -1,95 +1,94 @@
 channel_id: console-game-0000015
 adventure_name: wolfman-fight
 config:
-  starter: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+  starter: 'You stand on the North End of the Old Road through the Welwaen Forest
+    with your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
 log:
 - user: ''
-  dm: |-
-    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: 'You stand on the North End of the Old Road through the Welwaen Forest with
+    your party. To your north along the Old Road lies the Crossroads with Tabernath
+    Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players
+    are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen
+    lying in ambush 1 mile from the crossroads).'
   rotations: []
-- user: |-
-    I kneel down and place my hand on the ancient stone road, feeling for vibrations or traces of magic that might tell me about those who have traveled this path before.
-  dm: |-
-    **Adventurer**:
-    Nothing notable happens.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Setting character probabilities**
+- user: I kneel down and place my hand on the ancient stone road, feeling for vibrations
+    or traces of magic that might tell me about those who have traveled this path
+    before.
+  dm: '**Adventurer**:
 
-    It's important to have all characters represented, ensuring each ID appears at least three times and includes both directions for some pairs. I think we should set 'Eiliad' as the baseline scout. Given that, I’ll compute relative weights for each character: Eiliad is 1.0, Firghorm 0.8, Adventurer 0.9, Draenen 0.6, Luath 0.4, and Wolfmen 0.2 due to distance. I’ll then calculate their probabilities based on their order in the list, starting with Eiliad as the baseline.
-    **Computing character probabilities**
-
-    I'm focusing on character probabilities relative to one another and starting with the Adventurer at 1.0. Eiliad will be treated as 1.3 times more likely than Adventurer. Then, I’ll evaluate Draenen at 0.7 relative to Eiliad, leading to absolute weight calculations for each character. For instance, Firghorm may be 1.2 relative to Draenen, while Luath is lower at 0.5, and Wolfmen at 0.4. I aim to craft around 20 comparisons while ensuring each character appears at least three times in the comparisons.
-    **Creating character descriptions in JSON**
-
-    I'm working on creating character descriptions for a JSON format. I’ll start with the Adventurer as the player character, describing them as taking the lead while being aware of the surroundings. Eiliad is the scout, quick on their feet and focused on threats, while Firghorm serves as the stoic guardian, vigilant and ready to act. Draenen, the herbalist, has a moderate sense of urgency, and Luath, the alchemist, is more focused on their vials with lower urgency. Finally, the Wolfmen Ambushers are lurking ahead but remain unaware of the party. Let's finalize this JSON!
+    Nothing notable happens.'
   rotations:
   - part_number: 1
     spotlight_holder: Adventurer
-    action_taken: |-
-      I kneel down and place my hand on the ancient stone road, feeling for vibrations or traces of magic that might tell me about those who have traveled this path before.
+    action_taken: I kneel down and place my hand on the ancient stone road, feeling
+      for vibrations or traces of magic that might tell me about those who have traveled
+      this path before.
     consequence_response:
       potential_consequences:
       - id: SenseTrail
-        description: |-
-          The adventurer feels subtle warmth and pressure patterns in the stones, allowing them to deduce that a group of heavy, claw-footed creatures passed here recently, heading south.
+        description: The adventurer feels subtle warmth and pressure patterns in the
+          stones, allowing them to deduce that a group of heavy, claw-footed creatures
+          passed here recently, heading south.
         marginal_probability: 0.12
         joint_probabilities:
           and SubtleTremor: 0.02
           and StoneHum: 0.001
       - id: SubtleTremor
-        description: |-
-          A faint vibration travels up the adventurer’s arm, hinting at distant footfalls roughly a mile ahead on the road.
+        description: A faint vibration travels up the adventurer’s arm, hinting at
+          distant footfalls roughly a mile ahead on the road.
         marginal_probability: 0.04
         joint_probabilities:
           and SenseTrail: 0.02
       - id: HiddenShard
-        description: A jagged fragment of ancient stone nicks the adventurer’s palm, drawing a thin line of blood.
+        description: A jagged fragment of ancient stone nicks the adventurer’s palm,
+          drawing a thin line of blood.
         marginal_probability: 0.015
         joint_probabilities:
           and CorruptionTingle: 0.001
           and InsectBite: 0.002
       - id: InsectBite
-        description: |-
-          Touching the road disturbs sting-ants nesting between the cobbles; several bites cause brief, burning pain.
+        description: Touching the road disturbs sting-ants nesting between the cobbles;
+          several bites cause brief, burning pain.
         marginal_probability: 0.02
         joint_probabilities:
           and HiddenShard: 0.002
       - id: StoneHum
-        description: |-
-          For a heartbeat, the roadway thrums like a distant bell, an audible hum that nearby companions can hear.
+        description: For a heartbeat, the roadway thrums like a distant bell, an audible
+          hum that nearby companions can hear.
         marginal_probability: 0.01
         joint_probabilities:
           and SenseTrail: 0.001
           and CorruptionTingle: 0.0007
           and EchoOfPast: 5.0e-05
       - id: CorruptionTingle
-        description: |-
-          A prickle of icy pins races up the adventurer’s arm as dormant corruption residue brushes their flesh, requiring a later check against infection.
+        description: A prickle of icy pins races up the adventurer’s arm as dormant
+          corruption residue brushes their flesh, requiring a later check against
+          infection.
         marginal_probability: 0.003
         joint_probabilities:
           and HiddenShard: 0.001
           and StoneHum: 0.0007
           and EchoOfPast: 1.0e-05
       - id: EchoOfPast
-        description: |-
-          For an instant, ghostly wagon wheels and murmured voices from centuries ago echo through the adventurer’s mind, leaving them momentarily disoriented.
+        description: For an instant, ghostly wagon wheels and murmured voices from
+          centuries ago echo through the adventurer’s mind, leaving them momentarily
+          disoriented.
         marginal_probability: 0.0005
         joint_probabilities:
           and StoneHum: 5.0e-05
           and CorruptionTingle: 1.0e-05
           and FlashFuture: 1.0e-06
       - id: SerenePulse
-        description: |-
-          A warm wave of tranquility flows through the adventurer, briefly steadying their nerves and restoring a sliver of stamina.
+        description: A warm wave of tranquility flows through the adventurer, briefly
+          steadying their nerves and restoring a sliver of stamina.
         marginal_probability: 0.005
         joint_probabilities: {}
       - id: FlashFuture
-        description: |-
-          A strobing after-image shows the adventurer a fleeting glimpse of lupine silhouettes in the trees ahead, gone before details can be fixed.
+        description: A strobing after-image shows the adventurer a fleeting glimpse
+          of lupine silhouettes in the trees ahead, gone before details can be fixed.
         marginal_probability: 1.0e-05
         joint_probabilities:
           and EchoOfPast: 1.0e-06
@@ -104,24 +103,24 @@ log:
       EchoOfPast: 0.0005
       SerenePulse: 0.005
       FlashFuture: 1.0e-05
-- user: |-
-    I draw my sword and bang it loudly against my shield while shouting 'COME OUT AND FACE US, COWARDS\!' at the top of my lungs, challenging any hidden enemies to show themselves.
-  dm: |-
-    **Adventurer**:
-    A burst of crows, squirrels, or other woodland creatures erupts from nearby boughs, the sudden motion rattling leaves and twigs.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Considering consequences of noise**\n\nI’m evaluating whether banging a sword or shield could cause physical damage or just noise. I want to outline 6-12 distinct consequences and assign probabilities. In a quiet forest, the effects of this noise might include: \n\n1. Sound echoes without any response; likely high probability for silence.\n2. Nearby wildlife, like crows or deer, might flee, moderate probability.\n3. Hidden predators may become aware of the noise, but the chance is low.\n4. Potential minor wear on the sword or shield from the impact, very low probability. \n\nThese possibilities need real-world evaluation!\n**Evaluating effects of noise**\n\nI’m considering the effects of banging on an old road stone. This could dislodge lichen or insects, but also might trigger illusions like a ghost caravan—though that seems unlikely. \n\nThe companions’ reactions could create tension, which has a moderate probability. Additionally, this noise could reveal their\
-    \ location to hidden threats, but that seems low for occurrence. \n\nI’ll craft a list of IDs for potential consequences, assigning probabilities based on immediate effects. Each scenario needs defining, balancing between reactions and environmental responses."
+- user: I draw my sword and bang it loudly against my shield while shouting 'COME
+    OUT AND FACE US, COWARDS\!' at the top of my lungs, challenging any hidden enemies
+    to show themselves.
+  dm: '**Adventurer**:
+
+    A burst of crows, squirrels, or other woodland creatures erupts from nearby boughs,
+    the sudden motion rattling leaves and twigs.'
   rotations:
   - part_number: 1
     spotlight_holder: Adventurer
-    action_taken: |-
-      I draw my sword and bang it loudly against my shield while shouting 'COME OUT AND FACE US, COWARDS\!' at the top of my lungs, challenging any hidden enemies to show themselves.
+    action_taken: I draw my sword and bang it loudly against my shield while shouting
+      'COME OUT AND FACE US, COWARDS\!' at the top of my lungs, challenging any hidden
+      enemies to show themselves.
     consequence_response:
       potential_consequences:
       - id: EchoingSilence
-        description: |-
-          The shouted challenge rolls away through the trees and returns only as an empty echo; no foe immediately reveals itself.
+        description: The shouted challenge rolls away through the trees and returns
+          only as an empty echo; no foe immediately reveals itself.
         marginal_probability: 0.83
         joint_probabilities:
           and StartledFlock: 0.38
@@ -129,52 +128,53 @@ log:
           and WolfmenEarPricked: 0.06
           and OldRoadResonance: 0.0025
       - id: StartledFlock
-        description: |-
-          A burst of crows, squirrels, or other woodland creatures erupts from nearby boughs, the sudden motion rattling leaves and twigs.
+        description: A burst of crows, squirrels, or other woodland creatures erupts
+          from nearby boughs, the sudden motion rattling leaves and twigs.
         marginal_probability: 0.43
         joint_probabilities:
           and EchoingSilence: 0.38
           and FallenBranch: 0.009
       - id: CompanionsChide
-        description: |-
-          One or more party members (most likely Draenen or Firghorm) rebuke the Adventurer for the reckless noise, causing a flicker of tension in the group.
+        description: One or more party members (most likely Draenen or Firghorm) rebuke
+          the Adventurer for the reckless noise, causing a flicker of tension in the
+          group.
         marginal_probability: 0.65
         joint_probabilities:
           and EchoingSilence: 0.6
       - id: WolfmenEarPricked
-        description: |-
-          Far-off wolfmen scouts, several miles ahead, faintly catch the clang and shout; they tighten their vigilance and adjust their ambush plans.
+        description: Far-off wolfmen scouts, several miles ahead, faintly catch the
+          clang and shout; they tighten their vigilance and adjust their ambush plans.
         marginal_probability: 0.07
         joint_probabilities:
           and EchoingSilence: 0.06
           and BanditArrowLoose: 0.0005
       - id: SwordEdgeBlunted
-        description: |-
-          The sword’s edge chips ever so slightly from repeated impact on the shield, requiring future honing to restore full keenness.
+        description: The sword’s edge chips ever so slightly from repeated impact
+          on the shield, requiring future honing to restore full keenness.
         marginal_probability: 0.025
         joint_probabilities: {}
       - id: FallenBranch
-        description: |-
-          Startled wildlife dislodges a dead limb, which crashes to the ground nearby; anyone directly beneath risks a minor bruise or startle.
+        description: Startled wildlife dislodges a dead limb, which crashes to the
+          ground nearby; anyone directly beneath risks a minor bruise or startle.
         marginal_probability: 0.01
         joint_probabilities:
           and StartledFlock: 0.009
       - id: OldRoadResonance
-        description: |-
-          The clang sets up a strange resonance in the ancient cobbles; for a heartbeat faint symbols glimmer along a buried milestone before fading.
+        description: The clang sets up a strange resonance in the ancient cobbles;
+          for a heartbeat faint symbols glimmer along a buried milestone before fading.
         marginal_probability: 0.003
         joint_probabilities:
           and EchoingSilence: 0.0025
       - id: BanditArrowLoose
-        description: |-
-          An unknown prowler, mistaking the noise for prey, looses a single arrow from afar; it thuds into a tree trunk harmlessly but heightens tension.
+        description: An unknown prowler, mistaking the noise for prey, looses a single
+          arrow from afar; it thuds into a tree trunk harmlessly but heightens tension.
         marginal_probability: 0.002
         joint_probabilities:
           and WolfmenEarPricked: 0.0005
     actual_consequences:
     - id: StartledFlock
-      description: |-
-        A burst of crows, squirrels, or other woodland creatures erupts from nearby boughs, the sudden motion rattling leaves and twigs.
+      description: A burst of crows, squirrels, or other woodland creatures erupts
+        from nearby boughs, the sudden motion rattling leaves and twigs.
       marginal_probability: 0.43
     consequence_probabilities:
       EchoingSilence: 0.83
@@ -185,80 +185,79 @@ log:
       FallenBranch: 0.01
       OldRoadResonance: 0.003
       BanditArrowLoose: 0.002
-- user: |-
-    I motion for my companions to spread out and approach the treeline cautiously, keeping my shield raised and sword ready as we advance north toward the crossroads.
-  dm: |-
-    **Adventurer**:
-    The group’s cautious advance goes largely unheard and unseen by any creatures within several hundred paces.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Identifying potential actors**\n\nI need to identify the potential actors in this scenario. There's a party on the road, and it sounds like the 'Adventurer'—who may have been controlling a character—has taken some actions already, like kneeling and banging, which might alert a nearby pack of wolfmen. Looking at the GM's list, I see there are four NPCs: Firghorm, Draenen, Eiliad, and Luath, accompanying the Adventurer. The situation of the wolfmen lies one mile ahead, but they might not hear the noise from this distance.\n**Analyzing potential actions**\n\nI’m thinking we might still include the Adventurer, but with low urgency since we just made a loud noise. The next move is likely by Firghorm, who may caution the Adventurer about staying stealthy. We've got several potential actors to consider, including Draenen, Eiliad, Luath, and random wildlife like crows, all reacting to the noise.\n\nI need to assess probabilities for who might act next, with Eiliad likely\
-    \ having the highest at 1.0, followed by Firghorm, Draenen, Luath, and the Adventurer. This helps create a action chain for the scenario.\n\n---\n\n**Considering movement consequences**\n\nI’m thinking about the group's movement and its various risks. Moving silently might help them progress normally, but noise could attract predators, or someone might stumble and injure themselves. They could also spot traces left by wolfmen. There are environmental hazards, like snapping branches, plus some might notice useful resources like herb patches. Party formation could lead to miscommunication. Additionally, a scout might sense distant howls or glimpse mystical illusions. It all depends on probabilities!\n**Creating consequences for movement**\n\nI think we should come up with some creative and unexpected consequences for the group's movement. Here are a few ideas: \n\nA party member might trip on a root or stone, causing a minor sprain. They could discover faint wolf tracks, which hint at\
-    \ an ambush. If they move silently, the wolves may not detect them. A branch might snap, alerting nearby creatures. Someone could spot useful herbs, or they might see a ghostly caravan. There's also the chance of a viper strike or the sun glinting off their gear, exposing their position. Finally, they could simply progress without incident. I'm considering the probabilities for each scenario!"
+- user: I motion for my companions to spread out and approach the treeline cautiously,
+    keeping my shield raised and sword ready as we advance north toward the crossroads.
+  dm: '**Adventurer**:
+
+    The group’s cautious advance goes largely unheard and unseen by any creatures
+    within several hundred paces.'
   rotations:
   - part_number: 1
     spotlight_holder: Adventurer
-    action_taken: |-
-      I motion for my companions to spread out and approach the treeline cautiously, keeping my shield raised and sword ready as we advance north toward the crossroads.
+    action_taken: I motion for my companions to spread out and approach the treeline
+      cautiously, keeping my shield raised and sword ready as we advance north toward
+      the crossroads.
     consequence_response:
       potential_consequences:
       - id: RootStumble
-        description: |-
-          Firghorm’s boot catches on a gnarled root jutting from the broken cobbles, wrenching his ankle and slowing the line for a moment.
+        description: Firghorm’s boot catches on a gnarled root jutting from the broken
+          cobbles, wrenching his ankle and slowing the line for a moment.
         marginal_probability: 0.025
         joint_probabilities:
           and SnapTwig: 0.01
       - id: SnapTwig
-        description: |-
-          A dry limb underfoot cracks sharply, the report echoing through the oaks and risking unwanted notice.
+        description: A dry limb underfoot cracks sharply, the report echoing through
+          the oaks and risking unwanted notice.
         marginal_probability: 0.07
         joint_probabilities:
           and SwordGlint: 0.02
           and RootStumble: 0.01
           and RemainUnnoticed: 0.005
       - id: SwordGlint
-        description: Sunlight kisses the adventurer’s polished steel, sending a brief flash deep into the treeline.
+        description: Sunlight kisses the adventurer’s polished steel, sending a brief
+          flash deep into the treeline.
         marginal_probability: 0.04
         joint_probabilities:
           and SnapTwig: 0.02
           and RemainUnnoticed: 0.006
       - id: WolfTrackDiscovery
-        description: |-
-          Eiliad spots fresh, oversized paw-prints in the damp verge, hinting at large hunters moving ahead of the party.
+        description: Eiliad spots fresh, oversized paw-prints in the damp verge, hinting
+          at large hunters moving ahead of the party.
         marginal_probability: 0.02
         joint_probabilities:
           and RemainUnnoticed: 0.015
           and HealingHerbsFound: 0.005
           and DistantWolfHowl: 0.006
       - id: HealingHerbsFound
-        description: |-
-          Draenen notices a clutch of rare wound-wort sprouting beneath a fallen log, enough for one good poultice.
+        description: Draenen notices a clutch of rare wound-wort sprouting beneath
+          a fallen log, enough for one good poultice.
         marginal_probability: 0.015
         joint_probabilities:
           and WolfTrackDiscovery: 0.005
           and RemainUnnoticed: 0.012
       - id: ForestViperStrike
-        description: |-
-          A mottled viper, disturbed in the leaf-litter, lashes out; its fangs scrape armour, threatening venom.
+        description: A mottled viper, disturbed in the leaf-litter, lashes out; its
+          fangs scrape armour, threatening venom.
         marginal_probability: 0.003
         joint_probabilities:
           and SnapTwig: 0.001
           and RemainUnnoticed: 0.0008
       - id: GhostCaravanGlimpse
-        description: |-
-          Between drifting veils of mist, a translucent line of ancient merchants flickers, then fades, leaving a chill in the air.
+        description: Between drifting veils of mist, a translucent line of ancient
+          merchants flickers, then fades, leaving a chill in the air.
         marginal_probability: 0.001
         joint_probabilities:
           and DistantWolfHowl: 4.0e-05
       - id: DistantWolfHowl
-        description: |-
-          From far along the northern road comes a low, lingering howl that rides the wind to the party’s ears.
+        description: From far along the northern road comes a low, lingering howl
+          that rides the wind to the party’s ears.
         marginal_probability: 0.06
         joint_probabilities:
           and WolfTrackDiscovery: 0.006
           and GhostCaravanGlimpse: 4.0e-05
       - id: RemainUnnoticed
-        description: |-
-          The group’s cautious advance goes largely unheard and unseen by any creatures within several hundred paces.
+        description: The group’s cautious advance goes largely unheard and unseen
+          by any creatures within several hundred paces.
         marginal_probability: 0.82
         joint_probabilities:
           and WolfTrackDiscovery: 0.015
@@ -268,8 +267,8 @@ log:
           and ForestViperStrike: 0.0008
     actual_consequences:
     - id: RemainUnnoticed
-      description: |-
-        The group’s cautious advance goes largely unheard and unseen by any creatures within several hundred paces.
+      description: The group’s cautious advance goes largely unheard and unseen by
+        any creatures within several hundred paces.
       marginal_probability: 0.82
     consequence_probabilities:
       RootStumble: 0.025
@@ -281,29 +280,25 @@ log:
       GhostCaravanGlimpse: 0.001
       DistantWolfHowl: 0.06
       RemainUnnoticed: 0.82
-- user: |-
-    I signal for everyone to halt and crouch low, then carefully peer through the undergrowth ahead, searching for any signs of movement, tracks, or the glint of eyes watching us.
-  dm: |-
-    **Adventurer**:
-    The adventurer sees no immediate threats or unusual signs; the way ahead appears quiet and unremarkable. Far off to the north, a lone, uncanny howl echoes through the forest canopy before fading.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: |-
-    **Considering consequences in Old Road environment**
+- user: I signal for everyone to halt and crouch low, then carefully peer through
+    the undergrowth ahead, searching for any signs of movement, tracks, or the glint
+    of eyes watching us.
+  dm: '**Adventurer**:
 
-    I'm thinking about the Old Road setting, which features wildlife and some illusions—maybe even gloom illusions with phantom lantern lights. I want to outline potential synergy pairs like spotting tracks and feeling suspicion, or seeing small animal glints. My goal is to create a list of ten possible consequences and their probabilities. For example, I might have "TracksObserved" with a probability of 0.12, along with joint occurrences like "HerbDiscovery". Let's keep building this!
-    **Crafting probabilities for consequences**
-
-    I'm focusing on different consequences in the environment. I need to develop a list of ten potential outcomes, including probabilities for each. Some examples include "ClearButNothing," likely at 0.7, and "AnimalEyes," around 0.25. I'll also consider combinations of these outcomes so that I can assign joint probabilities. For instance, "ClearButNothing" with "AnimalEyes" at 0.18 and others. It’s quite the puzzle to ensure all probabilities align! Let’s get started on modeling these connections.
+    The adventurer sees no immediate threats or unusual signs; the way ahead appears
+    quiet and unremarkable. Far off to the north, a lone, uncanny howl echoes through
+    the forest canopy before fading.'
   rotations:
   - part_number: 1
     spotlight_holder: Adventurer
-    action_taken: |-
-      I signal for everyone to halt and crouch low, then carefully peer through the undergrowth ahead, searching for any signs of movement, tracks, or the glint of eyes watching us.
+    action_taken: I signal for everyone to halt and crouch low, then carefully peer
+      through the undergrowth ahead, searching for any signs of movement, tracks,
+      or the glint of eyes watching us.
     consequence_response:
       potential_consequences:
       - id: ClearButNothing
-        description: |-
-          The adventurer sees no immediate threats or unusual signs; the way ahead appears quiet and unremarkable.
+        description: The adventurer sees no immediate threats or unusual signs; the
+          way ahead appears quiet and unremarkable.
         marginal_probability: 0.7
         joint_probabilities:
           and AnimalEyes: 0.18
@@ -313,8 +308,8 @@ log:
           and HerbPatch: 0.02
           and CorruptionHaze: 0.0008
       - id: AnimalEyes
-        description: |-
-          A pair of small, light-catching eyes (likely a fox or hare) glints from the undergrowth before vanishing.
+        description: A pair of small, light-catching eyes (likely a fox or hare) glints
+          from the undergrowth before vanishing.
         marginal_probability: 0.25
         joint_probabilities:
           and WildlifeBolts: 0.03
@@ -322,62 +317,66 @@ log:
           and TrackMarks: 0.02
           and WhisperingWind: 0.002
       - id: TrackMarks
-        description: |-
-          Faint paw-prints—vaguely lupine yet larger than a common wolf—are noticed in the soft earth beside the road.
+        description: Faint paw-prints—vaguely lupine yet larger than a common wolf—are
+          noticed in the soft earth beside the road.
         marginal_probability: 0.12
         joint_probabilities:
           and HerbPatch: 0.01
           and NoiseAccidental: 0.004
       - id: WildlifeBolts
-        description: |-
-          A hidden animal (deer or boar) suddenly crashes through the brush, creating a burst of noise and motion.
+        description: A hidden animal (deer or boar) suddenly crashes through the brush,
+          creating a burst of noise and motion.
         marginal_probability: 0.06
         joint_probabilities:
           and NoiseAccidental: 0.02
           and DistantHowl: 0.008
       - id: NoiseAccidental
-        description: A snapped twig or rustling branch from the party betrays their presence with a sharp sound.
+        description: A snapped twig or rustling branch from the party betrays their
+          presence with a sharp sound.
         marginal_probability: 0.03
         joint_probabilities:
           and WildlifeBolts: 0.02
           and AnkleTwist: 0.001
       - id: HerbPatch
-        description: Draenen spots a small cluster of useful medicinal herbs growing in the shade of a mossy log.
+        description: Draenen spots a small cluster of useful medicinal herbs growing
+          in the shade of a mossy log.
         marginal_probability: 0.03
         joint_probabilities:
           and TrackMarks: 0.01
       - id: AnkleTwist
-        description: |-
-          While crouching, one party member catches a boot on a protruding root, resulting in a minor ankle sprain.
+        description: While crouching, one party member catches a boot on a protruding
+          root, resulting in a minor ankle sprain.
         marginal_probability: 0.005
         joint_probabilities:
           and NoiseAccidental: 0.001
       - id: CorruptionHaze
-        description: |-
-          For an instant, a faint iridescent shimmer—too subtle for certainty—ripples in the air, hinting at distant corruption.
+        description: For an instant, a faint iridescent shimmer—too subtle for certainty—ripples
+          in the air, hinting at distant corruption.
         marginal_probability: 0.002
         joint_probabilities:
           and WhisperingWind: 0.001
           and ClearButNothing: 0.0008
       - id: WhisperingWind
-        description: |-
-          A momentary, almost-intelligible whisper rides the breeze, raising the hairs on the listeners’ necks.
+        description: A momentary, almost-intelligible whisper rides the breeze, raising
+          the hairs on the listeners’ necks.
         marginal_probability: 0.02
         joint_probabilities:
           and CorruptionHaze: 0.001
       - id: DistantHowl
-        description: Far off to the north, a lone, uncanny howl echoes through the forest canopy before fading.
+        description: Far off to the north, a lone, uncanny howl echoes through the
+          forest canopy before fading.
         marginal_probability: 0.05
         joint_probabilities:
           and WildlifeBolts: 0.008
           and ClearButNothing: 0.03
     actual_consequences:
     - id: ClearButNothing
-      description: |-
-        The adventurer sees no immediate threats or unusual signs; the way ahead appears quiet and unremarkable.
+      description: The adventurer sees no immediate threats or unusual signs; the
+        way ahead appears quiet and unremarkable.
       marginal_probability: 0.7
     - id: DistantHowl
-      description: Far off to the north, a lone, uncanny howl echoes through the forest canopy before fading.
+      description: Far off to the north, a lone, uncanny howl echoes through the forest
+        canopy before fading.
       marginal_probability: 0.05
     consequence_probabilities:
       ClearButNothing: 0.7

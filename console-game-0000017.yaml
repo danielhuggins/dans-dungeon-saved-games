@@ -7,26 +7,11 @@ log:
 - user: ''
   dm: |-
     You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
   rotations: []
 - user: I carefully sharpen my sword on a whetstone
   dm: |-
     **TestHero**:
     The blade gains a noticeably keener edge, increasing its cutting effectiveness in later use.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Considering character presence**\n\nAt the start, I’m identifying environmental elements like a merchant\
-    \ or a bird, but I'm realizing that we need at least four characters to meet the probability comparisons requirement since\
-    \ each must appear at least three times. This leads me to consider characters like TestHero, Aethelwynn, Aethelflaed,\
-    \ and Osric. However, I notice that our story hasn’t placed them yet. They need to be present in the scene. I'm thinking\
-    \ about setting the location at a crossroads near Thornwick. Alternatively, I wonder if I should focus on character selection\
-    \ based on the broader context instead.\n**Crafting character paths**\n\nLet's start by setting the scene — a moment of\
-    \ arrival where there's no combat or urgency, just exploration. I want to identify potential characters around the hero,\
-    \ which includes introducing a Town Crier, a Merchant, a Guard, or even a Bird. However, specific names in context are\
-    \ Aethelwynn, Aethelflaed, Osric, and TestHero, so I'll gather them together. \n\nIt seems plausible for our hero to be\
-    \ near the village of Ricthorp. I could create new IDs like Local Crier, but I’ll go with the established characters.\
-    \ Each character must appear multiple times in comparisons, so I’ll aim for around six pairwise comparisons using TestHero,\
-    \ Aethelflaed, Osric, and Aethelwynn."
   rotations:
   - part_number: 1
     spotlight_holder: TestHero

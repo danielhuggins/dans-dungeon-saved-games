@@ -1,30 +1,20 @@
 channel_id: console-game-0000023
 adventure_name: core-game
 config:
-  starter: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
+  starter: You find yourself in the world of Avertayn, a land of ancient mysteries
+    and forgotten powers. The realm stretches before you, filled with opportunity
+    and danger.
 log:
 - user: ''
-  dm: |-
-    You find yourself in the world of Avertayn, a land of ancient mysteries and forgotten powers. The realm stretches before you, filled with opportunity and danger.
-  metrics: The adventure has just started; no metrics yet.
-  reasoning_summary: null
+  dm: You find yourself in the world of Avertayn, a land of ancient mysteries and
+    forgotten powers. The realm stretches before you, filled with opportunity and
+    danger.
   rotations: []
 - user: I sit down quietly and meditate
-  dm: |-
-    **TestHero4**:
-    The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
-  metrics: 'Parts completed: 1'
-  reasoning_summary: "**Exploring creative consequences**\n\nI’m brainstorming various consequences for actions taken in a\
-    \ game scenario. Ideas include noticing distant AI, triggering a dormant device, or feeling goosebumps from a temperature\
-    \ drop. I want to craft eight unique consequences. \n\nAlso, I’m considering proactive NPC actions like those from guards\
-    \ or merchants, aiming to produce six relevant actions unrelated to the player's position. Additionally, I want to explore\
-    \ NPC reactions to meditation and calculate probabilities for events like an insect bite or an AI surge. Let’s refine\
-    \ this!\n**Calculating probabilities and actions**\n\nI'm weighing chances for various occurrences in this scenario. For\
-    \ example, I estimate a 25% chance of noticing a distant sound and 10% for a twig cracking. I want to generate proactive\
-    \ NPC actions like a guard yawning or a merchant counting coins, aiming for six in total. \n\nI also need to consider\
-    \ reactive NPC reactions, like a kid shushing gossip. For consequences, I’m crafting probabilities for situations like\
-    \ \"DeepFocus\" or \"InsectBite\" and their joint probabilities. It's all about creating an engaging experience!"
+  dm: '**TestHero4**:
+
+    The hero achieves a brief but notable state of heightened mental clarity and lowered
+    stress while meditating.'
   rotations:
   - part_number: 1
     spotlight_holder: TestHero4
@@ -32,15 +22,15 @@ log:
     consequence_response:
       potential_consequences:
       - id: DeepFocus
-        description: |-
-          The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
+        description: The hero achieves a brief but notable state of heightened mental
+          clarity and lowered stress while meditating.
         marginal_probability: 0.63
         joint_probabilities:
           and AromaticScent: 0.07
           and AmbientPowerFlicker: 0.0006
       - id: FootAsleep
-        description: |-
-          Reduced circulation causes pins-and-needles in one leg, creating mild discomfort on standing.
+        description: Reduced circulation causes pins-and-needles in one leg, creating
+          mild discomfort on standing.
         marginal_probability: 0.11
         joint_probabilities:
           and LooseItemFallen: 0.003
@@ -55,92 +45,98 @@ log:
         joint_probabilities:
           and DogApproachesSniffing: 0.0001
       - id: LooseItemFallen
-        description: A minor personal item slips from the hero’s pouch onto the ground unnoticed.
+        description: A minor personal item slips from the hero’s pouch onto the ground
+          unnoticed.
         marginal_probability: 0.019
         joint_probabilities:
           and FootAsleep: 0.003
           and DogApproachesSniffing: 0.004
       - id: AmbientPowerFlicker
-        description: |-
-          A faint hum and shimmer pass through the area as a distant Power Field momentarily fluctuates.
+        description: A faint hum and shimmer pass through the area as a distant Power
+          Field momentarily fluctuates.
         marginal_probability: 0.0008
         joint_probabilities:
           and AcolytePrays: 0.0003
           and DeepFocus: 0.0006
       - id: AromaticScent
-        description: |-
-          The hero notices a subtle herbal fragrance on the breeze, hinting at nearby plants or alchemical residues.
+        description: The hero notices a subtle herbal fragrance on the breeze, hinting
+          at nearby plants or alchemical residues.
         marginal_probability: 0.12
         joint_probabilities:
           and DeepFocus: 0.07
       - id: TemperatureDrop
-        description: |-
-          A thin cloud briefly obscures the sun, causing a noticeable chill and goose-bumps.
+        description: A thin cloud briefly obscures the sun, causing a noticeable chill
+          and goose-bumps.
         marginal_probability: 0.14
         joint_probabilities:
           and WindGustRattlesLeaves: 0.08
       npc_proactive_actions:
       - id: GuardAdjustsHelmet
-        description: |-
-          A nearby guard absent-mindedly tightens his helmet strap while continuing his watch.
+        description: A nearby guard absent-mindedly tightens his helmet strap while
+          continuing his watch.
         marginal_probability: 0.09
         joint_probabilities:
           and GuardGlancesAtMeditator: 0.05
       - id: MerchantCountsCoins
-        description: A traveling merchant quietly tallies the contents of his coin pouch.
+        description: A traveling merchant quietly tallies the contents of his coin
+          pouch.
         marginal_probability: 0.15
         joint_probabilities: {}
       - id: BirdTakesFlight
-        description: |-
-          A black crow launches from its perch, flapping overhead toward new scavenging ground.
+        description: A black crow launches from its perch, flapping overhead toward
+          new scavenging ground.
         marginal_probability: 0.27
         joint_probabilities:
           and StartledByNoise: 0.11
           and CatStalksMouse: 0.02
       - id: CatStalksMouse
-        description: A tavern cat slinks low, intent on pouncing upon a scurrying mouse.
+        description: A tavern cat slinks low, intent on pouncing upon a scurrying
+          mouse.
         marginal_probability: 0.11
         joint_probabilities:
           and BirdTakesFlight: 0.02
       - id: AcolytePrays
-        description: A young acolyte begins a quiet litany to the local deity, oblivious to others.
+        description: A young acolyte begins a quiet litany to the local deity, oblivious
+          to others.
         marginal_probability: 0.05
         joint_probabilities:
           and AmbientPowerFlicker: 0.0003
       - id: WindGustRattlesLeaves
-        description: A brief gust stirs branches and scatters dry leaves across the ground.
+        description: A brief gust stirs branches and scatters dry leaves across the
+          ground.
         marginal_probability: 0.32
         joint_probabilities:
           and TemperatureDrop: 0.08
       npc_reactions:
       - id: GuardGlancesAtMeditator
-        description: |-
-          Noticing the hero’s sudden stillness, the guard casts a curious glance before resuming his watch.
+        description: Noticing the hero’s sudden stillness, the guard casts a curious
+          glance before resuming his watch.
         marginal_probability: 0.13
         joint_probabilities:
           and GuardAdjustsHelmet: 0.05
           and MerchantLooksUp: 0.04
       - id: ChildQuietlyWatches
-        description: |-
-          A local child pauses play and stares at the meditating stranger in silent fascination.
+        description: A local child pauses play and stares at the meditating stranger
+          in silent fascination.
         marginal_probability: 0.06
         joint_probabilities: {}
       - id: DogApproachesSniffing
-        description: A village dog pads over to sniff the seated hero and the surrounding ground.
+        description: A village dog pads over to sniff the seated hero and the surrounding
+          ground.
         marginal_probability: 0.08
         joint_probabilities:
           and LooseItemFallen: 0.004
           and InsectBite: 0.0001
       - id: MerchantLooksUp
-        description: |-
-          Hearing the slight shift, the merchant raises his eyes from his coins toward the meditating figure.
+        description: Hearing the slight shift, the merchant raises his eyes from his
+          coins toward the meditating figure.
         marginal_probability: 0.09
         joint_probabilities:
           and GuardGlancesAtMeditator: 0.04
     actual_consequences:
     - id: DeepFocus
-      description: |-
-        The hero achieves a brief but notable state of heightened mental clarity and lowered stress while meditating.
+      description: The hero achieves a brief but notable state of heightened mental
+        clarity and lowered stress while meditating.
       marginal_probability: 0.63
     probability_debug_info:
       random_value: 0.4419942685044965
