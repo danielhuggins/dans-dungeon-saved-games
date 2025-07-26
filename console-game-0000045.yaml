@@ -1,0 +1,16 @@
+channel_id: console-game-0000045
+adventure_name: the-tapestry-of-reveries
+config:
+  starter: |-
+    You stand at the edge of the Whispering Woods, south of the legendary Tapestry of Reveries. The twisted trees before you seem to writhe in perpetual agony, their branches reaching out like skeletal arms. A heavy twilight pervades the area despite the time of day, and faint whispers drift from within the dark forest. Your companions - Firghorm the stoic guardian, Draenen the herbalist, Eiliad the cunning scout, and Luath the guilt-ridden alchemist - gather beside you, each eyeing the ominous woods with their own mixture of determination and unease. The path forward promises trials before you even reach the dungeon proper
+log:
+- user: ''
+  dm: |-
+    You stand at the edge of the Whispering Woods, south of the legendary Tapestry of Reveries. The twisted trees before you seem to writhe in perpetual agony, their branches reaching out like skeletal arms. A heavy twilight pervades the area despite the time of day, and faint whispers drift from within the dark forest. Your companions - Firghorm the stoic guardian, Draenen the herbalist, Eiliad the cunning scout, and Luath the guilt-ridden alchemist - gather beside you, each eyeing the ominous woods with their own mixture of determination and unease. The path forward promises trials before you even reach the dungeon proper
+- user: |-
+    I gather my companions together and say 'Before we enter these cursed woods, let us prepare ourselves. Eiliad, can you scout the edge of the forest for any immediate dangers? Draenen, do you have any protective herbs or remedies that might help against the whispers I hear? Firghorm, take point when we enter. Luath, stay alert for any alchemical opportunities or threats.'
+  dm: |-
+    Elara addresses the group, clearly assigning roles. Eiliad, ever pragmatic, nods curtly and immediately moves to the edge of the Whispering Woods, her eyes scanning the treeline for immediate threats and potential paths. Draenen, while accepting the task of preparing remedies, gives Luath a critical look and mutters about the importance of using the right ingredients, already beginning to rummage through her satchel with a determined, if slightly resentful, air. Firghorm acknowledges his role as point-man with a simple, stoic nod, his posture shifting subtly as he prepares to take the lead. Luath, visibly nervous, begins to check his bandolier of vials, his fingers trembling slightly as he mutters to himself about the potential alchemical properties of the woods. The whispers from the trees are present, a low hum of disquiet, but they do not immediately latch onto any individual with significant force. As Elara finishes her instructions, the group begins to move forward in a relatively organized manner, with Eiliad providing initial intel, Draenen preparing essential supplies, Firghorm ready to shield them, and Luath focused on his own preparations. The immediate consequence is a sense of fragile cohesion, with underlying tensions managed for the moment, allowing for a cautious advance into the woods.
+characters:
+  cli-user: Elara
+saved_at: '2025-07-26T18:31:09.018313'
