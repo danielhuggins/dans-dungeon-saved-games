@@ -1,0 +1,10 @@
+channel_id: console-game-0000043
+adventure_name: core-game
+config:
+  starter: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+log:
+- user: ''
+  dm: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+characters:
+  cli-user: Aldric
+saved_at: '2025-07-25T20:56:49.352642'

@@ -1,0 +1,30 @@
+channel_id: console-game-0000041
+adventure_name: wolfman-fight
+config:
+  starter: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+log:
+- user: ''
+  dm: |-
+    You stand on the North End of the Old Road through the Welwaen Forest with your party. To your north along the Old Road lies the Crossroads with Tabernath Way. The members of your party are Firghorm, Draenen, Eiliad, and Luath. The players are 5 miles from the crossroads. (Unknown to the party:  There is a pack of wolfmen lying in ambush 1 mile from the crossroads).
+- user: |-
+    Seeing the root-kin hesitate at the Talisman's glow, I thrust it forward more prominently while making a feint to the left. Then I quickly dash to the right, attempting to break through between the two flanking root-kin before they can fully close the trap. I aim to get past them and continue following Teylan's trail.
+  dm: |-
+    You stand on the North End of the Old Road, the ancient cobblestones worn smooth beneath your boots. Five miles of Welwaen Forest stretch between you and the Crossroads with Tabernath Way. The air hangs heavy with the scent of damp earth and decaying leaves, a familiar perfume of this ancient woodland.
+
+    Suddenly, you make a feint to your left, a sharp, unexpected movement. Your eyes fix on a glimmering artifact clutched in your hand – a **Talisman**, its faint, otherworldly glow a stark contrast to the muted greens and browns of the forest. You dash to your right, a desperate surge of motion, aiming to break through the narrow gap between two gnarled, root-like figures that flank your path. These **Root-kin**, their forms twisted and dark like ancient, petrified wood, seem to hesitate, their attention drawn by the Talisman's luminescence. You are following **Teylan's trail**, a faint, almost imperceptible thread of hope in this encroaching gloom.
+
+    **Firghorm**, his broad frame a bulwark of weathered leather and steel, observes your actions with a look of grave concern. His piercing gray eyes, tinged with a faint blue, narrow slightly as his gaze tracks your sudden, erratic movement. His hand, calloused from years of gripping sword and shield, instinctively drifts towards the hilt of his **Steel Longsword**, a subtle shift that speaks of readiness, of a guardian bracing for the unexpected.
+
+    **Draenen**, her hazel eyes sharp and etched with the lines of countless harvests, approaches you cautiously. Her worn leather apron is stained with the pigments of a hundred herbs, and her hands, rough and calloused, bear the marks of her craft. She stops a few paces away, her posture radiating a mixture of concern and assessment, her voice carrying a low, measured tone. "Are you feeling unwell, friend?" she asks, her words tinged with an unspoken question about your state of mind. "Or perhaps you are seeing things that are not truly there?"
+
+    **Eiliad**, the scout, her short-cropped black hair framing a face of sharp angles and watchful eyes, scans the dense foliage surrounding you. Her gaze flickers between your frantic movements and the impenetrable wall of ancient oaks, a frown of deep confusion creasing her brow. Her practical, well-worn attire seems to melt into the shadows, yet her quick reflexes are clearly at odds with the perplexing scene unfolding before her.
+
+    **Luath**, the alchemist, his wiry frame tense, mutters nervously under his breath. His perpetually smudged spectacles reflect the dappled sunlight as his eyes dart from you to the worn leather bandolier slung across his chest, filled with vials of his alchemical concoctions. His fingers fidget with a small object, perhaps contemplating the contents of his **Bandolier of Alchemical Vials**, a quick glance suggesting a possible sedative or a stimulant to steady his own fraying nerves.
+
+    From the dense shadows of the Welwaen Forest, a pack of **Wolfmen** observes your party. They are **Brunnakunja**, their russet and iron-grey fur blending with the undergrowth. Their amber and multiple small eyes, accustomed to the gloom, perceive the disarray within your group, the sudden, inexplicable actions of one individual drawing their predatory focus. The hesitation of the Root-kin, the confusion on Eiliad's face, the nervous energy radiating from Luath, and Firghorm's defensive stance – it all coalesces into a single, undeniable truth for the **Wolfmen**: the prey is distracted. The moment is opportune.
+
+    A chorus of guttural snarls, raw and primal, erupts from the trees. The sound, a symphony of predatory anticipation, tears through the quietude of the Old Road. From the dappled shadows, the **Wolfmen** launch their ambush. Their forms, a blend of lupine grace and unnatural mutation, surge forward, their bronze-bound weapons glinting. They catch your party utterly unprepared, your attention fractured by Testname's bewildering actions. The forest floor trembles with the thunder of their charge.
+characters:
+  cli-user: Testname
+saved_at: '2025-07-25T19:34:29.103915'

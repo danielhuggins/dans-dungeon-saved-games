@@ -1,0 +1,352 @@
+channel_id: console-game-0000044
+adventure_name: the-buried-covenant
+config:
+  starter: |-
+    You arrive at Darkbrook Village, a small settlement at the edge of the Gravewood Thicket. The air is heavy with tension and a faint metallic tang. Elder Thane Eldric has summoned you to the village square, where worried villagers whisper about strange red glows in the forest and their missing herbalist's apprentice, Teylan.
+log:
+- user: ''
+  dm: |-
+    You arrive at Darkbrook Village, a small settlement at the edge of the Gravewood Thicket. The air is heavy with tension and a faint metallic tang. Elder Thane Eldric has summoned you to the village square, where worried villagers whisper about strange red glows in the forest and their missing herbalist's apprentice, Teylan.
+- user: |-
+    I approach Elder Thane Eldric and say 'I have come as summoned. Tell me about these red glows and the missing apprentice Teylan.'
+  dm: |-
+    Thane Eldric began to explain the village's plight. He urged the party to investigate. His voice cracked. He looked down. His shoulders hunched.
+
+    Aldric asked, "I have come as summoned. Tell me about these red glows and the missing apprentice Teylan."
+
+    Eldric answered Aldric's question. His brow furrowed. He did not offer the talisman.
+
+    As Eldric answered, two villagers nearby exchanged nervous glances. One muttered audibly to the other, "He shouldn't be asking so much. It's dangerous."
+
+    Eldric heard the villagers' muttered warning. His brow furrowed deeper. He continued his explanation without acknowledgment.
+
+    Aldric received the information. Eldric's shoulders seemed to hunch further. The villagers continued their hushed talk. The air grew heavy. The metallic tang seemed stronger.
+- user: |-
+    I lean forward and press further: 'Elder, I need specifics. When did Teylan disappear? Where exactly in the Gravewood have these red glows been seen? What do you believe is causing them?'
+  dm: |-
+    Aldric leaned forward. His voice was tight. "Elder, I need specifics. When did Teylan disappear? Where exactly in the Gravewood have these red glows been seen? What do you believe is causing them?"
+
+    Thane Eldric’s shoulders hunched. He turned away from Aldric. "I've told you what I know!" His voice was sharp. "It's dangerous talk! Leave it be!"
+
+    One villager stepped forward. "You're pushing him too hard!" The villager’s voice was loud. "Can't you see he's upset? We don't need outsiders stirring up trouble!" The other villager glared at Aldric.
+
+    Eiliad shifted. She moved closer to Aldric.
+
+    Firghorm stepped forward. He stood between Aldric and the two villagers. His posture was straight. "We are here to help," Firghorm said. His voice was low. "Let the Elder speak."
+
+    Luath’s hand closed around Aldric’s arm. His breath was quick. "We should go," Luath whispered. "This isn't safe. We're making it worse!"
+- user: |-
+    I raise my hands peacefully and say 'Elder, you summoned me here to help find Teylan. I cannot do that without information. If you will not speak, perhaps someone else can point me toward the Gravewood where the apprentice was last seen.'
+  dm: |-
+    Aldric raised his hands. They were held open, palms outward. He spoke. "Elder, you summoned me here to help find Teylan. I cannot do that without information. If you will not speak, perhaps someone else can point me toward the Gravewood where the apprentice was last seen."
+
+    Thane Eldric heard. He looked at the villagers. A sigh escaped him. His shoulders dropped. "The Gravewood," he said. His voice was low. "It's east. That's all I can say. Be careful."
+
+    One villager stepped forward. He looked at Eldric, then at Aldric. "The boy," the villager said. His voice was clear. "Teylan. He was last seen heading towards the old oak near the thicket's edge. He always loved that old tree."
+
+    Eiliad watched. She gave a subtle nod. It was almost imperceptible.
+
+    Firghorm stood still. His hand rested on the hilt of his sword.
+
+    Luath fidgeted. He did not speak.
+- user: |-
+    I nod gratefully to the villager. 'Thank you. The old oak near the thicket's edge - I will start my search there.' I turn and head east toward the Gravewood, keeping alert for any signs of danger or the red glows mentioned.
+  dm: |-
+    Aldric nodded to the villager. 'Thank you. The old oak near the thicket's edge - I will start my search there.' He turned. He walked east, toward the Gravewood. His eyes scanned the ground, the trees. Eiliad moved to Aldric’s side. She took up a position ahead and to his left. Her eyes moved, scanning the path, the edges of the trees. Firghorm moved behind Aldric and Eiliad. He stood with his back to the village square. His eyes moved, sweeping the area. Luath hesitated. His feet did not move for a moment. Then he hurried. He moved to catch up with Aldric and Firghorm. He stayed close to Firghorm. He muttered words, too quiet to hear. Thane Eldric exhaled. His shoulders dropped. He turned and walked into his house. The door closed behind him. The villagers watched. They stood in the square. Their heads turned as the party moved away. Low sounds came from them, words about the dangers, about Teylan. The party reached the edge of the Gravewood Thicket. Trees stood close together. The air was still. Aldric stopped at the treeline. He looked at the entrance to the thicket. He looked at the ground where Teylan might have walked.
+- user: |-
+    I search for the old oak tree the villager mentioned, looking for any tracks or signs of Teylan's passage. I also watch for any unusual red glows in the forest.
+  dm: |-
+    Aldric reached the treeline. His eyes scanned the ground, searching for an old oak and signs of passage. Faint tracks led deeper into the thicket. Further within the woods, a faint red glow pulsed.
+
+    Eiliad scanned the path ahead and the surroundings, her gaze moving across the trees. She watched for threats.
+
+    Firghorm held his position at the rear. His eyes swept the area behind the party. The thicket was still. No immediate dangers presented themselves.
+
+    Luath stayed close to Firghorm. His fingers moved over the alchemical vials in his bandolier. His breath came in short, quick sounds.
+- user: |-
+    I follow the faint tracks deeper into the thicket, moving cautiously toward the pulsing red glow while staying alert for any danger.
+  dm: |-
+    Aldric moved into the Gravewood Thicket. Faint tracks marked the damp earth. He followed them deeper, toward a pulsing red glow.
+
+    Eiliad scouted ahead. Her eyes scanned the trees, the ground. She noted the tracks. They were too uniform, too clean. The primary red glow, she observed, seemed to emanate from a direction other than the tracks. She saw disturbed earth, a snapped twig out of place.
+
+    Firghorm stood at the rear. His position was fixed. His gaze swept the area behind the party, then shifted to Aldric and Eiliad.
+
+    Luath remained close to Firghorm. He did not move from his spot. His hands stayed near his bandolier.
+
+    The tracks ended at a patch of moss. It glowed with a soft red light. Deeper in the thicket, a strong red glow pulsed. It was obscured, or perhaps it lay in a different direction.
+
+    Eiliad turned. She spoke to Aldric. Her voice cut through the quiet. "The tracks are too neat. The glow is coming from over there." She gestured with her chin toward a denser part of the woods. "Could be a trap. Or a different way."
+
+    Aldric stopped. He stood where he was. His eyes moved from the moss patch to Eiliad, then to the deeper woods. His gaze moved over the ground.
+- user: |-
+    I approach the glowing moss patch carefully, using a stick to prod it from a safe distance before getting closer. I want to see if this is where Teylan went or if it's indeed a trap.
+  dm: |-
+    You cautiously approach the glowing moss patch, using a stick to prod it from a safe distance. The stick makes contact with damp moss. A single, faded footprint is visible in the earth. No immediate threat is detected.
+
+    Eiliad moves towards the stronger glow she previously identified. As Eiliad rounds a thicket, two Shadowy Stalkers leap from the trees. They move towards her.
+
+    A startled cry and the sound of rustling movement come from Eiliad's direction. Firghorm draws his steel longsword and moves forward, calling out, "Eiliad!"
+
+    The sudden commotion causes Luath to reach for his bandolier. His hand hovers over a Smoke Bomb.
+- user: |-
+    I immediately rush toward Eiliad's position, drawing my weapon as I move to help against the Shadowy Stalkers attacking her.
+  dm: |-
+    You rush forward, your weapon drawn. You engage one of the Shadowy Stalkers, drawing its attention. As you move, Firghorm intercepts both creatures, positioning himself to shield Eiliad. Luath hesitates for a moment, then prepares a Healing Tincture, holding it ready. The two Shadowy Stalkers focus on Firghorm. Eiliad, noting your engagement and Firghorm's position, uses the opening to attack the Stalker Firghorm is facing. Firghorm takes heavy hits from both creatures, but your intervention allows him to focus on one. Luath holds the Healing Tincture, observing the battle and waiting for an opportune moment.
+- user: |-
+    I press my attack against the Shadowy Stalker I'm engaging, trying to strike it down quickly to reduce the number of enemies attacking Firghorm.
+  dm: |-
+    Your weapon swings, meeting only air as the creature sidesteps. Immediately, it lunges, claws flashing. You bring your weapon up to parry a sharp strike. To your side, a heavy thud echoes, and Firghorm stumbles, his stance faltering. Luath, nearby, holds a glass vial, his hand still over his bandolier. The second creature presses its attack against Firghorm. Eiliad continues her engagement with her opponent.
+- user: |-
+    I continue my assault on the Shadowy Stalker, attempting another strike while calling out 'Luath, help Firghorm\!'
+  dm: |-
+    Your weapon connects with Shadowy Stalker 1. A wet tearing sound is heard, and a dark, viscous fluid seeps from a wound on its flank. The creature lets out a sharp hiss, its eyes widening, and it bares its teeth in a snarl.
+
+    The creature presses its attack against you with increased speed. Its claws slash through the air, aiming for your exposed side.
+
+    To your left, Shadowy Stalker 2 shifts its focus. It turns away from Firghorm and lunges towards Eiliad. Eiliad is now defending against the creature's rapid strikes, her body twisting to avoid its claws.
+
+    Firghorm, momentarily less engaged, leans heavily on his sword. His shoulders are slumped, and he breathes in short, sharp gasps.
+
+    Luath, who had been observing Firghorm's posture and Eiliad's sudden engagement, moves from his position near Firghorm. He clutches a glass vial in his hand and walks towards Firghorm.
+- user: |-
+    I dodge to avoid the Stalker's claws while attempting a counterattack against its wounded flank.
+  dm: |-
+    You twist away as the creature lunges, its claws swiping through the air where you stood. Your weapon swings, but the Shadowy Stalker sidesteps the blow. It snarls, dark, viscous fluid seeping from a wound on its flank. The creature presses its attack with increased speed, its claws slashing through the air, aiming for your exposed side.
+
+    To your left, Eiliad moves, deflecting the strikes of the second Shadowy Stalker. She holds her ground. Luath moves past you, a glass vial in his hand. He reaches Firghorm, who stands braced, and applies the liquid to the injured warrior. Firghorm remains still. The second Shadowy Stalker continues its assault on Eiliad. The creature you are facing presses its attack.
+- user: |-
+    I attempt to parry the creature's attacks while looking for an opening to strike at its wounded side again.
+  dm: |-
+    Luath moves past you, a glass vial in his hand. He reaches Firghorm, who is braced against his sword. Luath applies the liquid to the injured warrior. Firghorm nods. He shifts his weight, bringing his steel shield up. The shield intercepts a strike from the Shadowy Stalker you were fighting. The creature turns its attention to Firghorm.
+
+    As the creature redirects, you swing your weapon, connecting with its flank. Dark, viscous fluid seeps from the wound. The creature lets out a piercing shriek. It lunges past you, its attack directed at Firghorm.
+
+    To your left, Eiliad continues to deflect the rapid strikes of the second Shadowy Stalker. The creature fighting Eiliad momentarily shifts its posture, its head turning slightly towards the shriek. Eiliad continues to defend against the second Shadowy Stalker.
+- user: |-
+    I pursue the wounded Stalker and strike at it from behind while it's focused on Firghorm.
+  dm: |-
+    You pivot, your weapon a blur as it finds the creature's flank. A wet tearing sound echoes, and dark, viscous fluid begins to seep from a wound you've opened. The creature lets out a sharp hiss, its glowing eyes widening. It breaks its focus on Firghorm, lunging past you, its lunge now directed at you.
+
+    As the creature turns, you see Firghorm advance, his sword drawn, pressing his advantage against the momentarily distracted beast. To your left, Eiliad continues her engagement with the second Shadowy Stalker, her movements sharp as she deflects its rapid strikes. Nearby, Luath remains observant, his hand resting near his bandolier, his gaze sweeping across the melee. The second creature, Shadowy Stalker 2, remains locked onto Eiliad, continuing its assault. Shadowy Stalker 1, now critically wounded, is caught between your position and Firghorm's advance.
+- user: |-
+    I press my attack against the critically wounded Stalker, aiming to finish it off while it's caught between Firghorm and me.
+  dm: |-
+    Your sword cuts into the flank of the Shadowy Stalker. A wet tearing sound echoes through the dense, shadowed trees of the Gravewood. Dark, viscous fluid begins to seep from the wound you've opened. The creature lets out a sharp hiss. Its glowing eyes widen. It stumbles, its movements becoming erratic as the dark fluid drips onto the damp, moss-covered forest floor.
+
+    To your left, Firghorm advances. His plain steel longsword is raised, its surface glinting dully in the filtered light. He closes the distance and drives the blade into the creature's wounded side. The creature collapses onto the mossy ground. Its glow fades, leaving only the dark stain on the earth.
+
+    Across the clearing, Eiliad seizes the momentary distraction. Her movements are sharp and economical. She delivers a direct strike to the second Shadowy Stalker. The second creature falls, its form dissolving into shadow on the forest floor.
+
+    Luath stands a short distance away. His gaze sweeps across the scene, his hand resting near the vials on his bandolier. He remains watchful.
+- user: |-
+    I catch my breath and say 'Good fighting. Now, let's investigate that stronger red glow Eiliad spotted earlier. We need to find Teylan.' I move toward the denser part of the woods where the stronger glow was seen.
+  dm: |-
+    You confirm your intention to investigate the stronger red glow Eiliad spotted. Turning, you begin moving towards the denser section of the Gravewood. Eiliad, ever the scout, immediately moves ahead, her eyes scanning the path towards the glow. Behind you, Firghorm settles into his rear guard position, his gaze sweeping the ground you've covered. Luath follows closely, his hand instinctively near the vials on his bandolier.
+
+    The forest floor is a carpet of damp leaves and tangled roots. As you approach the area Eiliad indicated, the trees grow thicker, their branches weaving a tighter canopy overhead. The air here is cooler, carrying a faint, persistent hum. Suddenly, the path ahead is choked by a dense wall of thorny vines. They pulse with a faint, internal red light, and the low hum seems to emanate from their very core. You halt at the edge of this living barrier, your gaze sweeping over the pulsating thorns and assessing the nature of this new hazard.
+- user: |-
+    I examine the thorny vines more closely, looking for any gaps or weak points. I also check if they react when I bring my weapon near them without touching.
+  dm: |-
+    You bring your steel sword closer to the dense wall of thorny vines. They pulse with a faint, internal red light and emit a low hum. As the tip of your blade nears the barrier, a section of the growth writhes and lashes out with thorny tendrils. Firghorm immediately draws his steel longsword and moves to shield you from the lashing tendrils. Eiliad, who had been scouting ahead, pauses her movement, her gaze fixed on the vines' aggressive reaction and your immediate danger. Luath, startled by the sudden aggression, instinctively reaches for a healing tincture in his bandolier, preparing it.
+
+    The thorny tendrils strike. They whip around your legs, causing minor damage and entangling you. You are momentarily unbalanced by the sudden assault. You struggle against the binding tendrils, calling out for assistance. Firghorm engages the attacking vines, his sword hacking at the thick growth in an attempt to cut through them and free you. Across the clearing, Eiliad continues her engagement with her opponent.
+- user: |-
+    I struggle to cut the tendrils binding my legs with my sword while Firghorm helps from his angle.
+  dm: |-
+    You bring your sword to bear. Its steel tip bites into a thick, thorny vine, leaving a shallow score. Beside you, Firghorm's steel longsword hacks at the dense barrier. His blows are steady, making visible progress. Eiliad, positioned ahead, calls out, "Aldric, try the thicker parts near the base!" Her gaze sweeps over the pulsing vines, noting the root structure of the entanglement. Luath remains a short distance away, his hand near his bandolier, a glass vial of tincture held ready. The thorny vines continue their thrashing; Firghorm's relentless effort visibly weakens the barrier. Following Eiliad's direction, you angle your blade towards a thicker root. The steel bites deep. A sharp *snap* echoes as one tendril severs. Seizing the moment, Firghorm hacks through the freed connection. The binding releases. Your legs are free.
+- user: |-
+    I step back from the aggressive vines and say 'These vines are too dangerous to cut through directly. Let's look for another way around.' I search along the edges of the vine barrier for any gaps or alternate paths.
+  dm: |-
+    You step back from the wall of thorny vines. "Cutting through this is too dangerous," you state, your voice cutting through the low hum that seems to vibrate in your very bones. You turn, scanning the dense, impenetrable growth along the thicket's edges, searching for any gap, any alternate path. Your search yields nothing but a solid, unbroken barrier of thick, thorny growth. No passage is visible.
+
+    Luath, his hands trembling slightly, fumbles with a small vial. He wafts it near the vines. A brief puff of green mist drifts towards the barrier. The vines react; their internal red light pulses faster for a moment, the hum intensifying slightly.
+
+    Ahead, Eiliad watches the vines. "This is a tough one," she comments, her voice sharp.
+
+    Behind you, Firghorm remains a solid presence. His gaze sweeps the area behind the party, his hand resting on the pommel of his longsword.
+- user: |-
+    I examine the pulsing pattern of the red light in the vines more carefully. 'There must be a source controlling these vines. The pulsing and humming suggest something magical. Luath, what was in that vial? The vines reacted to it.'
+  dm: |-
+    You focus on the pulsing red light within the thorny vines. A low hum vibrates through the air, a constant thrum against your senses.
+
+    "Luath," you say, your voice steady. You turn to the alchemist, his hands stained with ink and chemicals. "That vial you used earlier. What was in it?" You gesture towards the barrier. "The pulsing, the hum... it suggests a control, something beyond simple growth."
+
+    Luath flinches at your question. His hands tremble as he grips a glass vial. He swallows hard, his gaze darting to the damp earth. "It... it was a volatile alchemical compound," he mutters, his voice thin. "Designed to agitate lifeblood energy. I... I fear it amplified their reaction."
+
+    Eiliad, who had been tracing the barrier's edge, calls out from further along the growth. "Here," she states, her voice cutting through the hum. "Near the ground. Overgrown, but there's a passage."
+
+    Firghorm, standing guard behind you, turns his head. His gaze moves from Luath's trembling hands to Eiliad's call, then settles back on the barrier. His hand remains on his sword's pommel.
+
+    As Luath finishes speaking, the red light within the vines pulses with sudden intensity. The low hum deepens, vibrating through the damp earth, then subsides, returning to its previous level.
+- user: |-
+    I move quickly to where Eiliad found the passage. 'Good eye, Eiliad. Let's see if we can clear this overgrowth carefully without triggering the vines.' I crouch down to examine the passage more closely.
+  dm: |-
+    You crouch at the edge of the dense wall of thorny vines. Eiliad’s call comes from further along the growth. You turn your gaze to the spot she indicated: a tight passage, choked with overgrowth, visible near the ground. You shift your weight; your eyes scan the tangled foliage for a safe path through. Eiliad watches your cautious examination.
+
+    Eiliad steps forward, scout's toolkit in hand. "Let me clear this bit of overgrowth," she states, her voice direct. Swift, economical movements. Her tools bite into the thick foliage; obstructive greenery falls away.
+
+    Luath remains a few paces behind you, hands still but fingers twitching. His gaze follows Eiliad's work. Firghorm, positioned at the rear, gives a slight nod. His eyes sweep the area behind you.
+
+    Eiliad finishes. The passage is now clear, a narrow opening in the vine barrier.
+- user: |-
+    I nod my thanks to Eiliad and say 'Well done. I'll go first.' I carefully crawl through the narrow passage, staying low and avoiding contact with the thorny vines.
+  dm: |-
+    "Well done. I'll go first," you say, nodding to Eiliad. You crouch low, your body angled towards the narrow opening she cleared. The passage is choked with dense, tangled foliage; thorny vines press in on either side. You begin to crawl forward, your movements deliberate, keeping your limbs close to your body to avoid brushing against the pulsing, red-veined growth. Eiliad watches your entry, her sharp eyes scanning the passage ahead. Behind her, Luath's gaze remains fixed on your movement, his fingers twitching near his bandolier. Firghorm stands his ground at the rear, his posture unmoving. His head subtly turns; his gaze drifts for a moment towards a point behind the party before returning to his watch.
+
+    You push through the confined space. The thorny vines remain still, their low hum a constant vibration against your senses. You emerge from the passage, finding yourself on the other side of the vine barrier. Firghorm, from his position, shifts his weight almost imperceptibly; his eyes briefly flick towards the direction of his earlier detection before settling back on his rear guard duty.
+- user: |-
+    I stand and quickly survey the area beyond the vine barrier while calling back 'It's clear. Come through one at a time.' I look for any signs of Teylan or the source of the red glow.
+  dm: |-
+    You push through the last of the tangled foliage, emerging from the narrow passage. The air on this side of the thorny barrier is cooler, carrying a faint, persistent hum. Your eyes scan the ground ahead. A barely-there trail, a subtle disturbance in the leaf litter, snakes deeper into the dense foliage. You turn back towards the opening. "It's clear," you call out. "Come through one at a time."
+
+    Eiliad, already moving, gives a sharp, economical nod. She begins her cautious passage through the opening. Behind her, Firghorm remains a solid presence at the rear guard, his head turning, sweeping the area you just exited. Luath stays close to Firghorm, his gaze flickering between your actions and the path ahead. The trail you spotted confirms a viable direction, a clear path forward.
+- user: |-
+    I wait for the others to emerge while keeping watch on the trail I spotted, ready to follow it once everyone is through the passage.
+  dm: |-
+    You stand at the passage's exit. Behind you, the dense, thorny vines form a solid wall. Your gaze sweeps over a subtle disturbance in the leaf litter ahead: a trail leading deeper into the Gravewood.
+
+    Eiliad emerges from the passage. Her sharp eyes scan the area before she begins to move towards the trail you observed. Firghorm follows, his imposing frame filling the exit for a moment. He turns, taking up his rear guard position, his gaze sweeping the area behind the party.
+
+    Then, Luath emerges. His trembling hands fumble a small vial from his bandolier. It clatters loudly on the stone near the passage exit. Firghorm’s head snaps towards the sound. His rear guard duty momentarily breaks as he assesses the noise. Your attention is pulled from the trail ahead by the sudden clatter and Firghorm’s reaction. Luath scrambles to retrieve the fallen vial. His face contorts in visible distress.
+- user: |-
+    I motion for quiet and say softly 'Let's move. Stay alert.' I begin following the trail deeper into the Gravewood, watching for any signs of danger or Teylan.
+  dm: |-
+    You raise a hand, a silent signal for quiet. Your voice, soft, cuts through the lingering stillness: "Let's move. Stay alert."
+
+    Eiliad darts ahead, her sharp eyes already sifting through the dense foliage as she moves towards the trail. The subtle disturbance in the leaf litter, a barely-there path, snakes deeper into the Gravewood.
+
+    Firghorm settles into his rear guard position, his gaze sweeping the shadowed area behind you. His posture is a solid, unmoving wall.
+
+    Luath stays close to Firghorm, his fingers twitching, fumbling with the glass vials on his bandolier. He remains quiet, his attention seemingly divided between the path ahead and his own jittery movements.
+
+    You begin to follow the trail. Your eyes watch the path ahead, alert for any signs of danger or Teylan.
+- user: |-
+    I continue following the trail, examining any footprints or disturbed vegetation for clues about who passed this way and how recently.
+  dm: |-
+    You continue along the barely-there trail, the disturbed leaf litter a subtle guide deeper into the Gravewood. The air grows cooler. A persistent hum, previously a faint vibration, now thrums noticeably louder. The ground ahead becomes more uneven, the earth disturbed as if by recent movement. Ahead, Eiliad pauses. Her sharp eyes fix on a cluster of fleshy, bioluminescent plants in a small, open area. They pulse with a soft, red light, the source of the hum. She calls back, her voice cutting through the stillness: "Here. Clearing. Fleshy plants pulsing. Source of the hum. Scuff marks and snapped twigs."
+
+    The intensified hum vibrates through your boots. Firghorm, at your rear, shifts his weight. His head turns, sweeping the area behind you, then settles forward. "Caution," his voice is low, steady. "Defensive approach."
+
+    Luath, near Firghorm, clutches a small glass vial. His shoulders hunch. His gaze darts between the clearing and the passage you exited, his fingers twitching.
+
+    You halt your advance. Eiliad's discovery and Firghorm's counsel register. Your gaze sweeps the clearing, assessing the pulsing plants and the signs of struggle. Eiliad waits, her body poised, ready to elaborate on the hazard.
+- user: |-
+    I approach the clearing cautiously and say 'These plants might be what's controlling the vines. Eiliad, what do you make of the scuff marks? Can you tell what happened here?'
+  dm: |-
+    You approach the clearing. Fleshy, bioluminescent plants pulse with a soft red light, their low hum a constant vibration against your senses. You scan the ground, noting the scuff marks and snapped twigs.
+
+    You turn to Eiliad, who is positioned ahead of you, her sharp eyes scanning the area. "What do you make of these marks?" you ask, gesturing towards the disturbed earth. "And these plants? They seem to be the source of the hum."
+
+    Eiliad begins to speak, her gaze fixed on the ground. "Teylan's," she states, referring to the scuff marks. "Looks like he was injured, or carrying something heavy." She shifts her attention to the pulsing plants. "And these..."
+
+    Before Eiliad can finish, a gruff voice cuts through the air. Firghorm, at your rear guard, snaps his head up. His gaze locks onto something behind your position. "Movement," he states, his voice low. "Behind us. Three, maybe four."
+
+    The sudden announcement makes Luath jump. His hands instinctively go to his bandolier, fingers fumbling for a vial. The hum of the plants seems to deepen, a subtle shift in the atmosphere. The focus of your investigation is broken. You adopt a defensive posture, turning your attention to the rear.
+- user: |-
+    I draw my weapon and turn to face the threat Firghorm detected. 'Form up\! Defensive positions\!' I ready myself for whatever is approaching from behind.
+  dm: |-
+    You pivot. Your weapon scrapes free of its sheath. Your gaze sweeps the area behind the party. "Form up! Defensive positions!" Your voice cuts through the low hum of the pulsing plants.
+
+    Firghorm, already braced, shifts his weight. His plain steel sword is drawn. He moves into a defensive stance. Luath stays close to Firghorm's side. His hands clutch the glass vials in his bandolier. His eyes are wide.
+
+    Eiliad does not move to form up. In the pause, she darts behind a pulsing, fleshy plant. Her sharp eyes fix on the approaching threat. As she moves, the plants react. Their red light pulses faster. A cloud of fine, disorienting spores puffs from their caps.
+
+    Eiliad coughs. The sound is sharp. Her vision blurs for a moment. Her voice, strained, reaches you. "Looks like... corrupted fauna... moving fast!"
+- user: |-
+    I call out 'Avoid the plants\! They release spores\!' I position myself to intercept the corrupted fauna while staying clear of the pulsing plants.
+  dm: |-
+    You pivot; your weapon flashes. "Avoid the plants!" you call out. "They release spores!" You shift your weight, planting your feet. Your gaze sweeps the clearing, the pulsing, fleshy plants a hazard to your left and right. You position yourself to intercept the approaching threat from behind.
+
+    Eiliad darts behind a pulsing, fleshy plant. Her sharp eyes fix on the approaching threat. Her hand goes to her shortbow.
+
+    Firghorm, already braced, shifts his weight. His plain steel sword is drawn. He moves into a defensive stance, a solid wall at your rear.
+
+    Luath, close to Firghorm, clutches a glass vial. His fingers twitch. He prepares a smoke bomb, holding it ready.
+
+    The low hum of the pulsing plants vibrates through the damp earth. The air grows cooler. The party holds its ground, a disciplined line ready for the engagement.
+- user: |-
+    I maintain my defensive stance, watching for the first sign of the corrupted fauna to emerge from the forest.
+  dm: |-
+    You stand your ground, scanning the dense foliage ahead. Firghorm holds his position behind you, steel sword drawn, shield braced. Luath stays close, hands near his bandolier. Eiliad's tools scrape nearby.
+
+    The plants near Eiliad pulse brighter. Red light flares from their caps. A fine mist drifts from them. It stings your eyes, blurring your vision. The hum intensifies, vibrating through the earth.
+
+    Movement breaks the stillness ahead. Shapes emerge from the trees. A new threat appears amidst the amplified plant activity. You register the approaching creatures and the spore hazard, adjusting your focus to manage both. Luath remains near Firghorm, hands still near his bandolier, posture tense.
+- user: |-
+    Despite my blurred vision from the spores, I engage the first corrupted creature that comes within range, trying to keep it away from the spore-releasing plants.
+  dm: |-
+    You pivot; your weapon flashes free. "Form up! Defensive positions!" Your voice cuts through the hum. The air, thick with spore mist, stings your eyes, blurring your vision. You plant your feet, shifting your weight to intercept the first shape emerging from the trees. A corrupted creature, a hunched form with glowing eyes, lunges for you. You meet its charge, your weapon biting into its flank. A wet, tearing rip. Dark fluid spills onto the damp earth. The creature hisses, its glowing eyes fixing on you.
+
+    To your left, Firghorm braces. His steel sword is drawn; his shield is up. He intercepts a second creature, a solid wall against its lunge. The creature engages Firghorm directly, its claws scraping against his shield. Luath stays close to Firghorm, his hands near his bandolier. He clutches a glass vial, ready, but does not deploy the smoke bomb.
+
+    Ahead, Eiliad prepares her shortbow. Her movements are sharp, but her vision is also impaired. She draws and fires at a third creature, a blur of motion. The arrow misses wide, striking a pulsing, fleshy plant nearby. The plant flares red, releasing a puff of spores. The third creature, alerted by the missed shot, wheels and lunges for Eiliad. Eiliad dodges, her body twisting. She deflects the creature’s rapid strikes with her shortbow. She is now engaged, her vision still blurred.
+- user: |-
+    I press my attack against the wounded creature, aiming to finish it quickly before the spore effects worsen.
+  dm: |-
+    You pivot; your weapon flashes, striking the creature's flank. A wet, tearing rip. Dark fluid spills onto the damp earth. The creature hisses, its glowing eyes fixing on you. It lunges, claws scraping your side. The world blurs for a moment as the impact worsens your vision.
+
+    To your left, Firghorm moves. His steel sword is drawn; his shield is up. He intercepts the creature's counter-attack, his shield biting into the lunge, but his stance falters.
+
+    Ahead, Eiliad struggles. Her vision, already blurred by spores, falters further. She attempts to dodge the second creature, but misjudges its lunge. A sharp cry escapes her as it connects. That creature presses its advantage against her, its attacks becoming more aggressive.
+
+    Luath, near Firghorm, clutches a glass vial. His fingers twitch. He watches the melee, his gaze darting, but makes no move.
+
+    The creature you wounded presses its attack again, its movements fueled by desperation.
+- user: |-
+    I grit my teeth against the pain and strike hard at the wounded creature's vital areas, trying to put it down so I can help Eiliad.
+  dm: |-
+    You grit your teeth. The world swims, a blur of pulsing red light and dark shapes. Your weapon flashes, biting deep into the creature's flank. A wet, tearing rip. Dark fluid spills onto the damp earth. The creature hisses, its glowing eyes fixing on you. It lunges, claws scraping your side. You twist away, the impact worsening your vision. The creature stumbles, caught by the vital blow, and collapses, its glow fading.
+
+    To your left, Eiliad dodges her opponent's lunge. Her shortbow flashes; a swift strike keeps the creature engaged. The creature is momentarily surprised but presses its attack. Behind you, Firghorm successfully blocks his opponent's heavy strike with his shield, maintaining his defensive stance. That creature is momentarily repelled but readies another attack. Luath remains near Firghorm, his hands near his bandolier, observing. The pulsing plants continue to release spores. The low hum persists.
+- user: |-
+    I rush to help Eiliad, attacking the creature pressing her from behind while shouting 'Luath, help Firghorm\!'
+  dm: |-
+    You pivot; your weapon flashes. "Luath, help Firghorm!" you call. A cloud of grey smoke erupts near Firghorm's opponent. Eiliad presses her attack on her own foe. Firghorm uses the cover and your presence to advance on his opponent. Firghorm's opponent recoils, its glowing eyes obscured by the sudden mist. Eiliad's opponent is momentarily distracted by her renewed aggression. The pulsing plants continue to release their disorienting spores; your vision remains blurred. Eiliad strikes her opponent. Firghorm presses his attack.
+- user: |-
+    I continue attacking the creature engaged with Eiliad, coordinating with her to bring it down quickly.
+  dm: |-
+    You pivot; your weapon flashes. Despite the blur of spores, you move toward Eiliad. Your action draws the corrupted creature's focus. The creature lunges, its glowing eyes fixing on you. To your left, Eiliad seizes the opening. Her shortbow flashes; a swift strike connects. The creature recoils, a dark fluid spilling from a new wound. Firghorm, a solid presence to your right, maintains his defensive posture against his obscured opponent. Luath stays near Firghorm, his hands near his bandolier, observing.
+- user: |-
+    I strike at the wounded creature while it's recoiling from Eiliad's hit, aiming to finish it off.
+  dm: |-
+    You pivot; your weapon flashes. The steel bites deep into the wounded Shadowy Stalker's flank, adding to the dark fluid spilling from its side. A final, choked hiss escapes the creature as it collapses, its faint glow fading into the damp earth.
+
+    Ahead, Eiliad sees your success. Her own opponent falters. She seizes the opening, landing a solid hit on Stalker 2, forcing it back. To your right, Firghorm maintains his defensive stance. His shield deflects a powerful strike from Stalker 3, keeping his position secure. Luath remains passive, hands near his bandolier, his gaze sweeping the combat.
+
+    Stalker 2 recovers from Eiliad's blow and renews its aggressive assault on her. Stalker 3, still obscured by smoke, continues to press its attack against Firghorm. The pulsing plants ahead continue to release their disorienting spores, their low hum a constant vibration.
+- user: |-
+    I continue supporting Eiliad, attacking Stalker 2 to help bring it down while it's focused on her.
+  dm: |-
+    Your weapon flashes, striking Shadowy Stalker 2's flank. The creature hisses, its glowing eyes fixing on you. It recoils. Eiliad darts forward, her shortbow flashing. A swift strike connects; dark fluid spills from a new wound.
+
+    To your right, Firghorm braces, shifting his weight. His shield intercepts a lunge, his steel sword drawn. Luath, near Firghorm, clutches a glass vial. He hurls it. It arcs, striking a cluster of pulsing plants.
+
+    The flask shatters. The plants erupt in a dense, choking cloud of spores, reducing visibility to near zero. Firghorm's target, Shadowy Stalker 3, vanishes within the grey haze. The creature hesitates, then lunges away, seeking clearer ground.
+- user: |-
+    I press my attack on the wounded Stalker 2, trying to finish it before the spore cloud engulfs us completely.
+  dm: |-
+    You pivot; your weapon flashes. Shadowy Stalker 2 blurs. Its claws scrape your side. A wet, tearing rip. Dark fluid spills onto the damp earth. The creature hisses, its glowing eyes fixing on you.
+
+    The creature presses its attack, its glowing eyes fixed on you. Ahead, Eiliad stumbles. A cloud of spores puffs from a nearby plant. Stalker 2’s head snaps towards the movement. Its focus shifts.
+
+    From the spore cloud, a disorienting hiss. Shadowy Stalker 3 lunges. It moves directly for Firghorm. Firghorm braces, raising his shield. Luath remains a few paces back, hands near his bandolier. His posture is tense. The pulsing plants release more spores. The air thickens, blurring your vision further.
+- user: |-
+    I make one final desperate strike at Stalker 2, putting all my strength behind the blow to end this fight.
+  dm: |-
+    You pivot; your weapon flashes. The strike meets resistance, parried by the Shadowy Stalker's swift defense. The creature retaliates, its glowing eyes fixing on you as it presses its attack. The fleshy plants nearby continue their steady release of disorienting spores, the mist stinging your eyes and blurring your vision.
+
+    Luath retreats from the immediate melee, his gaze shifting towards the pulsing plants. Ahead, Eiliad moves towards Firghorm's engagement, aiming to draw the attention of Shadowy Stalker 3. You hear Firghorm's blade press against his opponent, a renewed assault that momentarily distracts the creature. Stalker 3 falters, its focus shifting with the changing combat.
+- user: |-
+    I continue fighting Stalker 2, defending against its attacks while looking for an opening to strike.
+  dm: |-
+    You pivot; your weapon flashes. You meet Stalker 2's lunge, your shield biting into its advance. A small opening appears in its defense. You press your attack, seeking to exploit it. The air is thick with spores, blurring your vision, the low hum of the pulsing plants a constant vibration.
+
+    Ahead, Eiliad sees the opening. Her shortbow flashes. She presses her attack on Stalker 2, her movements sharp. The creature recoils from her assault, its glowing eyes momentarily shifting from you to her.
+
+    To your right, Firghorm shifts his weight. He attempts to reposition, trying to better locate Stalker 3 through the thick smoke. The attempt fails; he holds his ground, his posture rigid. Luath remains near Firghorm, his gaze fixed on the scene, his hands hovering near the vials on his bandolier. He prepares a healing tincture.
+
+    Through the swirling grey haze, Stalker 3 continues its blind assault on Firghorm.
+characters:
+  cli-user: Aldric
+saved_at: '2025-07-25T21:54:43.229680'
