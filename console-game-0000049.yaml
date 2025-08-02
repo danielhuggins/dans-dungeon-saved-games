@@ -1,0 +1,140 @@
+channel_id: console-game-0000049
+adventure_name: the-buried-covenant
+config:
+  starter: |-
+    The late afternoon sun casts long shadows across Darkbrook Village as you arrive at the central square. This small settlement sits precariously at the edge of the Gravewood Thicket, its weathered buildings huddled together as if seeking protection from the looming forest. The air carries an unsettling metallic tang that makes your throat tight, and the usual bustle of village life has been replaced by clusters of worried whispers.
+
+    Elder Thane Eldric stands near the old well at the square's center, his wiry frame tense with urgency. The gray-haired village leader's sharp eyes find yours immediately - you and your companions are known here as the most capable individuals who might help. Around him, a dozen villagers have gathered, their faces etched with fear.
+
+    'Thank the old gods you've come,' Eldric says, his voice carrying despite its soft tone. 'Three nights ago, strange red lights began appearing deep in the Gravewood. Our water has taken on a foul taste, and worse - our livestock have been vanishing without trace. But this morning...' He pauses, genuine anguish crossing his weathered features. 'This morning we discovered that Teylan, our herbalist Draenen's young apprentice, went into the forest alone seeking answers. He hasn't returned.'
+
+    The villagers' whispers grow more agitated. You catch fragments - 'the old ruins,' 'cursed sect,' 'lifeblood corruption.' Eldric raises a hand for silence. 'The Buried Covenant's ruins lie deep in the thicket. We've always avoided them, but I fear whatever evil sleeps there has awakened. You are our only hope.'
+log:
+- user: ''
+  dm: |-
+    The late afternoon sun casts long shadows across Darkbrook Village as you arrive at the central square. This small settlement sits precariously at the edge of the Gravewood Thicket, its weathered buildings huddled together as if seeking protection from the looming forest. The air carries an unsettling metallic tang that makes your throat tight, and the usual bustle of village life has been replaced by clusters of worried whispers.
+
+    Elder Thane Eldric stands near the old well at the square's center, his wiry frame tense with urgency. The gray-haired village leader's sharp eyes find yours immediately - you and your companions are known here as the most capable individuals who might help. Around him, a dozen villagers have gathered, their faces etched with fear.
+
+    'Thank the old gods you've come,' Eldric says, his voice carrying despite its soft tone. 'Three nights ago, strange red lights began appearing deep in the Gravewood. Our water has taken on a foul taste, and worse - our livestock have been vanishing without trace. But this morning...' He pauses, genuine anguish crossing his weathered features. 'This morning we discovered that Teylan, our herbalist Draenen's young apprentice, went into the forest alone seeking answers. He hasn't returned.'
+
+    The villagers' whispers grow more agitated. You catch fragments - 'the old ruins,' 'cursed sect,' 'lifeblood corruption.' Eldric raises a hand for silence. 'The Buried Covenant's ruins lie deep in the thicket. We've always avoided them, but I fear whatever evil sleeps there has awakened. You are our only hope.'
+- user: |-
+    I ask Eldric and Draenen for supplies and directions to find Teylan, then head into the Gravewood following his trail.
+  dm: |-
+    Eldric finishes speaking, the silence in the square thick with unspoken fear. You turn to him, your mind already on the task ahead. "Elder Eldric," you say, your voice steady, "we need to understand the immediate threats and prepare. What are the most critical dangers within the ruins, and what supplies can the village spare?"
+
+    Eldric nods, his lean build taut with haste. He explains the nature of the corruption and warns of the traps and guardians that likely still guard the old ruins. "These are all we have to offer in terms of knowledge," he states, producing his journal and a small, carved talisman. "The thicket is treacherous, but the Covenant is where the heart of this problem lies." He gestures towards the dense, dark trees bordering the village.
+
+    You then turn your attention to Draenen. She stands with her arms crossed, her expression a mix of worry and sharp exasperation. "Herbalist," you ask, "what specific remedies do you have for this lifeblood corruption, or for injuries we might sustain in the thicket?"
+
+    Draenen replies, her voice tight. "Teylan's foolishness has put us all at risk," she states. "I have poultices for wounds and potent antidotes for corruption. He likely took his basic kit. He's a determined boy, but easily distracted by rare flora." She reaches into her own satchel and pulls out a smaller bundle of herbs, handing it to you. "Look for his green scarf. And try not to be as reckless as he was."
+
+    The villagers murmur agreement with Eldric's warnings, their fear a palpable undercurrent. With Eldric's journal and talisman, and Draenen's vital supplies, you feel better prepared. The path into the Gravewood awaits.
+- user: |-
+    I secure the supplies from Draenen - the poultices and antidotes - then head east into the Gravewood, following the path Eldric indicated.
+  dm: |-
+    Draenen steps closer, her brow furrowed with a familiar intensity. "Wait," she says, her voice precise. "Teylan has a tendency to seek out Moonpetal Ferns near the murmuring water, even when the ground there is unsteady. If you find any sign of him, check that area first. He might be attempting to concoct something where he suspects the taint is strongest." She presses a small, dried sprig of an unfamiliar herb into your hand. "This could help guard against airborne irritants." She adds, her tone firm, "And ensure he doesn't stray by himself; he requires vigilant oversight."
+
+    Elder Eldric clears his throat, a quiet signal of the dimming sun. "Draenen, it is time. The day wanes." He offers you a brief, supportive nod. "Head east. The woods await."
+
+    The villagers observe, their expressions a blend of hope and unease. You and your companions turn towards the eastern edge, stepping into the dense woods. You now carry Draenen's specific directions on Teylan's likely movements and a protective herb. It's a small cost in time for a significant gain in foresight.
+- user: |-
+    I follow Teylan's trail of markers through the forest, past the vine barrier, past the creature at the corruption seep, to the Whispering Oak and into the underground passage.
+  dm: |-
+    You step into the dense woods, taking the lead. Luath, however, immediately begins scrutinizing the ground, setting a careful pace for the group. Before long, a wall of thorny vines blocks your path. Luath examines them, then retrieves an acid flask. He dissolves a section, creating an opening.
+
+    Following Teylan's faint markers, you arrive at a patch of corrupted ground where a shadowy stalker waits. Luath tosses a smoke bomb, creating a thick cloud. While the stalker is disoriented, Eiliad quickly guides you around the seep. The trail eventually leads you to a large oak, the 'Whispering Oak.' Luath spends time examining its bark, finding faint, almost hidden runes. He sketches them in his notebook, speculating about their purpose. Eiliad then spots the entrance to an underground passage. Luath uses his tools to check for traps, successfully disarming a tripwire.
+- user: I enter the underground passage.
+  dm: |-
+    You step into the damp, dark passage. As you move forward, Eiliad, still positioned at the entrance, calls out, "Aldric, the light!" You glance back to see her pointing at the passage walls, where faint patterns of light are shifting. Almost at once, a low grinding sound echoes from the depths ahead. Luath startles, his head snapping up. "What was that?" he asks, his voice strained. The grinding intensifies, and a section of the stone wall just ahead of you groans and slides inward, revealing a new, narrow path. The runes etched into the Whispering Oak outside pulse with a brief, soft red glow. The way forward has just opened.
+- user: I move forward through the passage, following Teylan's trail markers.
+  dm: |-
+    You step into the newly revealed path, your objective to follow Teylan's trail. Eiliad moves ahead, her bow ready. Her eyes sweep the corridor, searching for any immediate dangers or signs of the missing herbalist. "Looks clear for the first ten feet," she calls back, her voice low. "Stay sharp." Luath, close behind you, seems unsettled. His gaze flicks between the sealed entrance and the passage walls. "Remarkable," he murmurs, "the residual energy. I wonder if it's linked to the oak's markings, or perhaps a hidden mechanism." His unease makes his movements erratic, but he keeps pace, his focus on analyzing the situation rather than hindering your progress. You press onward, Eiliad scouting the way, Luath offering his nervous observations.
+- user: We continue deeper until we reach a fork in the passage with Teylan's warning.
+  dm: |-
+    You press onward, Eiliad scouting the way, Luath offering his nervous observations. The tunnel soon opens into a junction, splitting into two distinct paths. Eiliad reaches the split first. She scans the area intently, her usual sharp focus now tinged with unease. "Aldric, there's nothing here," she reports, her voice flat. "No marker from Teylan. He never misses a sign." Her gaze drifts, landing on a small, bent trowel near the entrance to the left passage. It’s caked with a thick, dark fluid. At the same moment, Luath, peering at the wall beside the junction, exclaims softly, "The runes here are agitated. They're pulsing unevenly, as if reacting to an absence. And that tool..." He points to the trowel Eiliad found. "It's damaged. This suggests Teylan was here, and perhaps in trouble." With Teylan's usual trail gone, the path ahead is uncertain. You're left to decide which way to proceed, or if you should examine the tool and the disturbed symbols more closely.
+- user: |-
+    I examine the bent trowel and the disturbed runes more closely before choosing a path.
+  dm: |-
+    You examine the bent trowel, noting its damage and the viscous residue clinging to it. Then, you turn to the runes etched into the wall beside the left path. They flare with an erratic, unsettling rhythm.
+
+    Luath leans in, his voice a hushed murmur. "Aldric, these symbols are active and unstable. It’s like a signal of distress, or perhaps a warning *away* from this fork," he explains. "And this tool... see how it’s twisted outwards? As if Teylan tried to force his way *from* something here." He gestures towards the right passage. "I believe he sensed danger on the left and chose the right passage, where his usual signs abruptly stop."
+
+    Eiliad, however, shakes her head, her gaze fixed on the tool and the wall. "That doesn't feel right," she counters. "The damage to the tool, the way the wall symbols are reacting – it's all concentrated *here*, at the entrance to the left path. It looks like Teylan ran into difficulty *right here*, and whatever happened made him alter his course, or perhaps he was pulled down that left tunnel." She meets your eyes. "If he wanted to avoid the left path, why would his last sign be right at its opening? I think he went left, and whatever he met is why his trail vanished."
+
+    You're left with two conflicting accounts. Luath believes Teylan found danger and turned back or went right. Eiliad thinks Teylan met trouble at the left path's entrance and continued down it. The evidence seems to support both possibilities, leaving you to decide which interpretation to trust.
+- user: I take the left passage, staying alert for dangers.
+  dm: |-
+    You choose the left passage. As you prepare to advance, Luath cries out, "No! It's too dangerous!" His voice strains with panic. In a desperate move, he throws a smoke bomb directly into the passage entrance, instantly shrouding it in thick, choking vapor. Eiliad reacts with sharp impatience. "Move aside, Luath, or be left behind," she barks, sidestepping the blinding cloud. She pushes past him, her movements swift and purposeful, heading into the left tunnel. You must now navigate the sudden obscuration and Eiliad's determined progress to follow her. Luath's frantic act has created an immediate rift, straining your group's unity.
+- user: I push through the smoke and follow Eiliad into the left passage.
+  dm: |-
+    You plunge into the dense vapor, moving deeper into the passage. Eiliad, now just ahead but obscured by the haze, suddenly cries out, her voice sharp with alarm. "Aldric! Hold! Something's here!" You see her bow is already taut. Behind you, Luath stumbles forward, his earlier panic escalating. He wrings his hands, muttering, "Oh gods, she found something... I knew it was a mistake..."
+- user: I ready my weapon and move forward to support Eiliad.
+  dm: |-
+    You ready your weapon and push into the thick haze. Your boot lands on unseen symbols etched into the passage floor. Eiliad's earlier shout was a warning of the passage's inherent instability. As you advance, Luath cries out, "Aldric, hold!" The symbols beneath your feet unleash raw power. A wave of heat and disorientation washes over you, making your head swim. Eiliad shouts again, her voice sharp as she reacts to the sudden surge, and Luath's fear intensifies.
+- user: I steady myself against the wall and look for a way to bypass the trap symbols.
+  dm: |-
+    You press your back against the rough stone wall, trying to anchor yourself against the swirling disorientation. Your eyes, struggling to focus, catch sight of a particular glyph etched near a hairline fracture in the stone. It seems to be the focal point of the dizzying sensation. You push against the wall beside it, hoping to disrupt whatever energy flows through that point.
+
+    From within the swirling haze, Eiliad's voice cuts through. "Aldric, faster! I hear something moving up ahead." Her impatience is clear. She shifts her weight, trying to pierce the gloom, and takes a cautious step further into the passage.
+
+    Behind you, Luath's fear boils over. He lunges, his hand clamping onto your arm. "Aldric, stop!" he cries, his voice tight with terror. "You'll make it worse!"
+
+    His grip breaks your concentration, yanking you away from the wall. The glyphs on the floor blaze brighter, and the dizzying sensation intensifies, making your knees buckle. Eiliad lets out a frustrated sound as your stumble forces her to shift her footing, further obscuring her view of whatever she detected.
+- user: |-
+    I shake off Luath's grip and tell him to calm down, then carefully move along the wall to avoid the floor symbols.
+  dm: |-
+    You struggle against Luath's desperate hold, trying to regain your footing and tell him to calm down. His panicked grip, however, remains unyielding. As you twist, the symbols beneath your feet erupt with a violent surge of power. The sheer force of the energy wave yanks you off balance, completely disrupting your attempt to brace against the wall.
+
+    Luath recoils from the blast, a cry escaping him as his hold finally breaks. He stumbles backward, visibly shaken by the raw energy, his terror now laced with physical pain. Ahead, Eiliad curses as the wave hits her too, forcing her to brace, her bow dipping. The sudden energy surge briefly flashes light down the passage, revealing a steady, new symbol etched into the stone wall ahead, separate from the chaotic floor markings.
+- user: |-
+    I focus on the new symbol on the wall ahead and move toward it, avoiding stepping on floor symbols.
+  dm: |-
+    You carefully edge along the wall, your attention fixed on the ground. You are concentrating on stepping only where the floor patterns are clear as you make your way toward the new glyph that appeared. Eiliad, ahead and still veiled by the residual mist, calls out, "Aldric, move it! What is that glyph?" Her tone is sharp. She shifts her weight, trying to get a better look at the marking. Behind you, Luath is completely still. His eyes are locked on the ground where the energy flared, his face a mask of dread. He seems unable to move. You manage to avoid the floor patterns and reach the wall. The new glyph brightens as you get close. Eiliad is nearer to it now, and her eagerness to proceed is clear. Luath is still unable to move.
+- user: I touch the bright glyph on the wall.
+  dm: |-
+    You reach out and press your hand against the bright glyph on the wall. The symbol intensifies its glow, casting a dim picture onto the far wall. It's a simple diagram showing a new passage branching off to the right, marked with a symbol resembling a snake.
+
+    "A map!" Eiliad calls out, her voice sharp. "A new path. See the serpent? That usually means trouble." She turns her attention to studying the drawing, trying to understand its meaning.
+
+    Behind you, Luath is still motionless. His gaze is locked on the spot where the energy erupted, and he hasn't moved since the blast. He remains paralyzed by fear.
+- user: I check if the passage marked with the serpent symbol is visible nearby.
+  dm: |-
+    You absorb the image on the wall, the serpent's coiled shape a clear indicator of a hidden route. Eiliad is already absorbed in deciphering the details. Your gaze sweeps the section of the wall where the glyph activated, searching for a physical counterpart to the diagram. You notice a subtle shift in the stone, a faint seam that suggests a concealed opening. Eiliad, her impatience evident, moves to examine this same area. She traces the line of the seam with her finger, her focus sharp. Spotting a particular point along the seam that seems to be a pressure point, she presses it. A low grinding sound emanates from the stone. A section of the wall pivots inward, revealing a dark corridor. Luath remains a statue of fear, his eyes fixed on the ground.
+- user: |-
+    I tell Luath we found a safe passage and help him move forward, then enter the serpent corridor with Eiliad.
+  dm: |-
+    The newly revealed opening beckons, and Eiliad is already poised at its threshold, peering into the darkness. Behind you, Luath remains utterly still, a figure anchored by his terror where the floor glyphs had erupted. You approach him, attempting to rouse him. "Luath, we need to move," you say, trying to pull him, but he offers no resistance, his weight making him immovable. It’s clear that moving him would consume precious time and effort, potentially leaving you both vulnerable.
+
+    Eiliad's voice cuts through the tense quiet, sharp with impatience. "Aldric! The way is open. Are you coming, or are you going to waste time with him?"
+
+    You assess the situation: Luath is incapacitated, and the risk of trying to drag him is too great. The mission demands progress. You give Luath a final, resolute look. "Stay put, Luath. We can't carry you right now. Find your own footing." With that, you turn and step into the serpent-marked corridor, following Eiliad's lead.
+- user: I follow Eiliad through the serpent corridor, watching for dangers.
+  dm: |-
+    You step into the dark corridor, Eiliad already moving ahead. As you advance, the serpent glyph on the wall flares again. This time, it casts a clear image onto the opposite wall. The projection shows the passage you just left. It illustrates how the floor symbols were a power source, and the serpent glyph acted as a channel to open this hidden path. Eiliad quickly understands the sect's clever design. "They made this a controlled entrance," she says, "using energy from the other symbols to reveal this route." You observe the projection, contemplating the sect's advanced methods. You also consider Luath, still paralyzed by the very energy that opened this way.
+- user: |-
+    We continue deeper through the serpent corridor, searching for Teylan or the ruins' core.
+  dm: |-
+    You continue deeper into this newly opened way, Eiliad scouting ahead. The tunnel walls, previously just stone, now seem to carry a subtle current of air. You pause, your fingers tracing the cool stone. A faint breeze tickles your hand, originating from a barely visible seam. Near it, minute carvings, unlike the bolder markings elsewhere, catch your eye. You signal Eiliad, who is further ahead. "Eiliad, wait," you call. "I think I've found something. A draft, and these tiny markings – they're different."
+
+    Eiliad, ever focused on forward movement, turns back. Though a flicker of impatience crosses her face, she trusts your sharp perception. She joins you, her own senses confirming the cool airflow. Her gaze sharpens as she examines the minute etchings, her mind already working to understand their purpose or find a way to interact with them. This discovery might reveal another route or a hidden secret, something Eiliad, in her haste, might have missed. She looks at you, a silent question in her eyes: what do you make of these subtle details?
+- user: I examine the minute carvings and test if the seam is another hidden door.
+  dm: |-
+    You're running your fingers over the delicate patterns etched into the stone, trying to decipher their meaning. Eiliad, however, shifts her weight, her attention drifting from the carvings to the slight seam in the wall nearby. You sense her growing impatience with your methodical approach. Without a word, she moves towards the seam. Her fingers find a pressure point, and a low grinding sound echoes as a section of the wall pivots inward, revealing a dark opening. Eiliad is already peering into the newly formed passage. Luath, still paralyzed by fear, remains a statue in the previous corridor. Your own examination of the wall's details is interrupted. You now have a choice: follow Eiliad into the unknown or try to rouse Luath.
+- user: I follow Eiliad through the new opening.
+  dm: |-
+    My fingers are still tracing the faint etchings on the stone, trying to understand their purpose. Eiliad's impatience is palpable as she turns her attention to the seam in the wall. I see her find a specific spot, and a scraping noise echoes as the stone slides aside, opening to a new tunnel. She's already at the edge, peering into the darkness. Luath remains immobile, trapped by his fear, his gaze locked downwards. The new path calls, but my investigation feels unfinished. Eiliad's voice slices through the silence, sharp with urgency. "Aldric, the way is clear. Will you join me, or linger here?"
+
+    I look from Eiliad, ready to move, to Luath, frozen in place. The etchings I was studying seem to hold a key, a deeper understanding of this place. But Eiliad is right; we need to advance. Still, leaving Luath behind feels wrong, and understanding this mechanism could be vital. I decide to focus on the immediate surroundings.
+
+    "Eiliad," I say, my voice firm, "I need a moment. I'm trying to understand this mechanism, and Luath is still incapacitated. I can't just leave him, nor can I ignore these symbols." I turn back to the wall, my fingers resuming their exploration of the etchings. "You go ahead if you must. I'll try to figure out how this works and see if I can get Luath moving."
+- user: |-
+    I quickly study the etchings to understand their purpose, then catch up with Eiliad.
+  dm: |-
+    You trace the faint lines on the stone, your mind working to understand their purpose. The serpent glyph is not just a marker; it's a caution. It signifies a 'Lifeblood Sentinel,' a guardian sensitive to disturbances. The patterns on the walls indicate its territory. Eiliad's voice, laced with impatience, cuts through your focus. "Aldric, what's the hold-up? Did you find a map to treasure or just more scribbles?"
+
+    You shout back, "It's a caution! The serpent means a sentinel is near! Stay quiet!" You see Luath, still immobile, and realize you can't move him. Your immediate task is to alert Eiliad. You move quickly into the serpent corridor, intent on sharing this vital information.
+characters:
+  cli-user: Aldric
+saved_at: '2025-07-27T20:53:43.307865'

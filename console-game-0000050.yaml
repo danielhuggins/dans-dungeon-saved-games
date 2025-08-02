@@ -1,0 +1,21 @@
+channel_id: console-game-0000050
+adventure_name: core-game
+config:
+  starter: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+log:
+- user: ''
+  dm: You find yourself at the entrance to a dungeon, ready to embark on an adventure.
+- user: I carefully examine the dungeon entrance and my immediate surroundings
+  dm: |-
+    You stand at the dungeon's threshold, taking in the rough stone of the archway. A faint, low hum seems to pulse from the darkness within, a vibration you feel more than hear. The air around you is unnaturally still, as if all breeze has died. Your gaze catches a patch of moss near the base of the stone, which glows with a soft, internal light. These subtle oddities stir a sense of unease, reminding you of old stories about places where the world's hidden forces are unusually strong.
+- user: |-
+    I kneel down and carefully examine the glowing moss, trying not to touch it directly
+  dm: |-
+    You kneel, your movements careful as you approach the glowing growth. The strange stillness in the air, coupled with the deep thrumming you feel resonating within, sets your nerves on edge. Recalling legends of places where potent, ancient energies reside, your mind immediately casts suspicion on the scene. You interpret the steady luminescence not as natural growth, but as a deliberate lure, and the unnatural order of the pattern suggests a crafted deception. The low vibration feels like a warning, the heavy air like a seal on something dangerous. Your caution escalates; your mind races with imagined dangers. Instead of a simple examination, you instinctively reach for your tool pouch, your focus shifting from the glowing patch to the wider archway. You scan the shadows for any sign of ambush or hidden wards. A strong hesitation grips you; the urge to delve deeper is now overshadowed by a primal fear. You consider disabling the perceived threat, seeking another path, or simply turning back.
+- user: |-
+    I take out my tools and carefully probe the ground around the entrance for pressure plates or trip wires
+  dm: |-
+    You pull a thin metal rod from your tool pouch. The deep hum from the dungeon pulses with your heartbeat, and the air feels unnaturally heavy, as if holding its breath. You approach the glowing patch of moss, your mind already expecting the worst. Gently, you push the rod into the soil near the moss. At one spot, the rod passes through, and the moss's light suddenly flares, pulsing wildly for a second. The hum from inside the dungeon grows louder, its pitch rising, then fades back to its previous level. You feel a strange prickling on your skin where the rod entered, and the metal feels unnaturally cold. A sharp fear grips you. This must be a discharge of energy, a defense from whatever ancient system is here. You quickly pull the rod back and step away. Your suspicions are confirmed; this place is actively dangerous. Your attention now turns from looking for simple traps to trying to understand and avoid this hidden defense.
+characters:
+  cli-user: Aldric
+saved_at: '2025-08-02T09:07:39.885172'
